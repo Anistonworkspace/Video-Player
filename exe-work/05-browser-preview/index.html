@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VideoPlayTool — UI MOCK (not the real player)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="mockBanner">
+  <strong>⚠ MOCK / REFERENCE ONLY</strong> — This is a hand-built HTML approximation of the Windows
+  <code>VideoPlayTool</code> player UI, created for a <em>future</em> redesign discussion.
+  <b>It is NOT the real player</b>, decodes no video, and was NOT extracted from
+  <code>VideoPlayToolSetup.exe</code> (extraction needs approved 7‑Zip). Layout is inferred from the
+  firmware web UI's plugin contract, not from the binary.
+</div>
+
+<div class="app">
+  <!-- Title bar -->
+  <header class="titlebar">
+    <div class="brand"><span class="dot"></span> VideoPlayTool <span class="ver">v2.0.0.0 (mock)</span></div>
+    <div class="winbtns"><span>—</span><span>▢</span><span class="close">✕</span></div>
+  </header>
+
+  <!-- Toolbar -->
+  <nav class="toolbar">
+    <button class="tb" data-act="Live">▶ Live</button>
+    <button class="tb" data-act="Playback">⏱ Playback</button>
+    <button class="tb" data-act="Snapshot">◉ Snapshot</button>
+    <button class="tb" data-act="Record">⏺ Record</button>
+    <button class="tb" data-act="Audio">🔊 Audio</button>
+    <span class="spacer"></span>
+    <button class="tb" data-act="Config">⚙ Config</button>
+    <button class="tb" data-act="Fullscreen">⛶ Full</button>
+  </nav>
+
+  <div class="body">
+    <!-- Device / channel tree -->
+    <aside class="channels">
+      <div class="panel-title">Devices</div>
+      <ul class="tree">
+        <li class="dev">▾ GK7205V300 (mock)</li>
+        <li class="chn on">● CH1 — Main</li>
+        <li class="chn">○ CH1 — Sub</li>
+        <li class="dev">▸ Add device…</li>
+      </ul>
+      <div class="hint">NetIP/DVRIP · TCP 34567 · RTSP 554 (mock labels)</div>
+    </aside>
+
+    <!-- Video grid -->
+    <main class="grid" id="grid">
+      <div class="cell active"><span class="tag">CH1</span><div class="ph">MOCK VIDEO<br><small>no decoding</small></div></div>
+      <div class="cell"><span class="tag">—</span><div class="ph">empty</div></div>
+      <div class="cell"><span class="tag">—</span><div class="ph">empty</div></div>
+      <div class="cell"><span class="tag">—</span><div class="ph">empty</div></div>
+    </main>
+
+    <!-- PTZ / properties -->
+    <aside class="ptz">
+      <div class="panel-title">PTZ</div>
+      <div class="dpad">
+        <button>↖</button><button>↑</button><button>↗</button>
+        <button>←</button><button class="home">⊙</button><button>→</button>
+        <button>↙</button><button>↓</button><button>↘</button>
+      </div>
+      <label>Zoom <input type="range" min="0" max="100" value="30"></label>
+      <label>Focus <input type="range" min="0" max="100" value="50"></label>
+      <label>Iris <input type="range" min="0" max="100" value="60"></label>
+      <div class="grid-modes">
+        <button class="wnd" data-n="1">1×1</button>
+        <button class="wnd active" data-n="4">2×2</button>
+        <button class="wnd" data-n="9">3×3</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Playback timeline -->
+  <footer class="timeline">
+    <button class="pb">⏮</button><button class="pb">⏯</button><button class="pb">⏹</button>
+    <div class="track"><div class="progress"></div></div>
+    <span class="time">00:00:00 / 24:00:00</span>
+  </footer>
+</div>
+
+<div class="statusbar" id="status">Ready — mock UI. Click controls to see labelled actions (nothing real happens).</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* preview.css — styling for the SAFE LOCAL PREVIEW banner + mock video overlay.
+   Injected at serve time; does not modify the shipped UI stylesheet. */
+
+#__preview_banner {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 2147483000;
+  background: repeating-linear-gradient(45deg, #16324a, #16324a 12px, #0f2334 12px, #0f2334 24px);
+  color: #eaf4ff; font: 12px/1.5 system-ui, "Segoe UI", Arial, sans-serif;
+  padding: 7px 34px 7px 12px; box-shadow: 0 1px 6px rgba(0,0,0,.45);
+  border-bottom: 1px solid #2f6d99;
+}
+#__preview_banner strong { color: #5cff9d; letter-spacing: .3px; }
+#__preview_banner code {
+  background: rgba(255,255,255,.12); padding: 1px 5px; border-radius: 3px; color: #ffd479;
+}
+#__preview_x {
+  position: absolute; top: 4px; right: 10px; cursor: pointer;
+  font-size: 18px; line-height: 1; color: #cfe4f5; padding: 2px 6px; border-radius: 4px;
+}
+#__preview_x:hover { background: rgba(255,255,255,.15); }
+body.__has_preview_banner { padding-top: 34px !important; }
+
+.__preview_video {
+  position: relative; display: inline-flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 6px;
+  min-width: 240px; min-height: 160px; width: 100%; max-width: 100%;
+  background: #0b0f13; border: 1px dashed #2b3a47; border-radius: 6px;
+  color: #8aa0b2; font: 12px/1.4 monospace; text-align: center; padding: 10px; overflow: hidden;
+}
+.__preview_video img { max-width: 100%; height: auto; border-radius: 4px; opacity: .92; }
+.__pv_tag {
+  position: absolute; top: 6px; left: 6px; background: #5cff9d; color: #06231a;
+  font: 700 10px/1 monospace; padding: 3px 6px; border-radius: 3px; letter-spacing: .5px;
+}
+.__pv_note { color: #6f8598; font-size: 11px; }
+
+.__preview_toast {
+  position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%) translateY(20px);
+  background: #1c2a36; color: #eaf4ff; border: 1px solid #34506a; border-radius: 6px;
+  padding: 8px 14px; font: 12px system-ui, sans-serif; z-index: 2147483000;
+  opacity: 0; transition: opacity .25s, transform .25s; pointer-events: none;
+}
+.__preview_toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }

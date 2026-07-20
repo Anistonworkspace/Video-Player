@@ -1,0 +1,4 @@
+Scratch area mapped read-write into Windows Sandbox (C:\scratch).
+Copy VideoPlayToolSetup.exe here INSIDE the sandbox before inspecting it.
+Never run the installer from the read-only C:\evidence mount.
+This folder is intentionally empty. Nothing here is executed automatically.

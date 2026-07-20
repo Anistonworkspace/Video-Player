@@ -1,0 +1,55 @@
+============================================================
+SOURCE FILE HASH RECORD  (Phase 1 — integrity baseline)
+Project: Video Player UI Lab
+Generated: 2026-07-20
+Host: Windows 11 Home Single Language 10.0.26200
+Working dir: C:\Users\aniston user\Desktop\Video Player
+Algorithm: SHA-256
+============================================================
+
+These two files are the ONLY original source evidence. They are
+treated as READ-ONLY. They were never executed, flashed, modified,
+renamed, repacked, or patched during setup. Re-run
+scripts/verify-environment.ps1 to confirm these hashes are unchanged.
+
+------------------------------------------------------------
+FILE 1 — Windows player installer
+------------------------------------------------------------
+Name        : VideoPlayToolSetup.exe
+Abs path    : C:\Users\aniston user\Desktop\Video Player\docs-recources\VideoPlayToolSetup.exe
+Size bytes  : 47064869
+Size (MB)   : 44.885
+Created UTC : 2026-07-20T08:19:30.1895842Z
+Modified UTC: 2026-07-20T07:26:41.0209406Z
+SHA-256     : ADE9CA40BD24D5C69A96D3FC5EE4058A5A1A9E90AF2EACFA2B8712861A09F06A
+
+Copy (read-only evidence):
+  exe-work\00-original-copy\VideoPlayToolSetup.exe
+  Copy SHA-256 : ADE9CA40BD24D5C69A96D3FC5EE4058A5A1A9E90AF2EACFA2B8712861A09F06A   [MATCH]
+
+------------------------------------------------------------
+FILE 2 — Camera firmware package
+------------------------------------------------------------
+Name        : 000699N5.1IPC_GK7205V300_G5F.Nat.dss.OnvifS.HIK_V5.00.R02.zip
+Abs path    : C:\Users\aniston user\Desktop\Video Player\docs-recources\000699N5.1IPC_GK7205V300_G5F.Nat.dss.OnvifS.HIK_V5.00.R02.zip
+Size bytes  : 7380645
+Size (MB)   : 7.039
+Created UTC : 2026-07-20T08:19:30.2380213Z
+Modified UTC: 2026-07-20T07:35:57.9236281Z
+SHA-256     : FF5DC0D2D6E7CEFD82854367FC5E581A947157A6E07FDE59D845971A4B66EC59
+
+Copy (read-only evidence):
+  firmware-work\00-original-copy\000699N5.1IPC_GK7205V300_G5F.Nat.dss.OnvifS.HIK_V5.00.R02.zip
+  Copy SHA-256 : FF5DC0D2D6E7CEFD82854367FC5E581A947157A6E07FDE59D845971A4B66EC59   [MATCH]
+
+------------------------------------------------------------
+Interpretation of the firmware filename tokens (from vendor naming):
+  GK7205V300 = HiSilicon / Goke GK7205V300 SoC (ARM, IP-camera class)
+  IPC        = IP Camera
+  ONVIF / OnvifS = ONVIF profile support
+  HIK        = Hikvision-compatible protocol layer (naming convention)
+  V5.00.R02  = firmware version / revision
+  .dss / .Nat = vendor feature tags
+NOTE: SoC/architecture claims above are naming-derived and are
+confirmed by binary inspection in reports/firmware-static-analysis.md.
+============================================================

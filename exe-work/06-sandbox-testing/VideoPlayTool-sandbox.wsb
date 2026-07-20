@@ -1,0 +1,52 @@
+<Configuration>
+  <!--
+    Windows Sandbox configuration for INSPECTING VideoPlayToolSetup.exe in isolation.
+
+    SAFETY / SCOPE:
+      * This file is PREP ONLY. Double-clicking it launches a disposable Windows
+        Sandbox VM. It does NOT auto-run the installer (no <LogonCommand>).
+      * The sandbox is a throwaway VM: nothing it does can touch the real host disk,
+        registry, or devices except through the mapped folders below.
+      * Networking is DISABLED so the unsigned installer cannot phone home, download,
+        or reach any camera during inspection.
+      * docs-recources is mapped READ-ONLY so the original .exe can never be modified.
+
+    REQUIRES YOUR EXPLICIT APPROVAL BEFORE USE. Windows Sandbox also requires:
+      * Windows 11 Pro/Enterprise/Education  -> "Windows Sandbox" optional feature, OR
+      * a supported edition with virtualization enabled in BIOS/UEFI.
+      NOTE: Windows 11 HOME (this host) does NOT include Windows Sandbox. See
+      06-sandbox-testing/README-sandbox.md for the approval + enablement steps.
+  -->
+
+  <VGpu>Disable</VGpu>
+  <Networking>Disable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Enable</ProtectedClient>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <PrinterRedirection>Disable</PrinterRedirection>
+
+  <MappedFolders>
+    <MappedFolder>
+      <!-- Original evidence: READ-ONLY, never writable inside the VM -->
+      <HostFolder>c:\Users\aniston user\Desktop\Video Player\docs-recources</HostFolder>
+      <SandboxFolder>C:\evidence</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <!-- Scratch area for anything produced during inspection -->
+      <HostFolder>c:\Users\aniston user\Desktop\Video Player\exe-work\06-sandbox-testing\scratch</HostFolder>
+      <SandboxFolder>C:\scratch</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+
+  <!--
+    Intentionally NO <LogonCommand>. The installer must be launched MANUALLY inside
+    the sandbox, by you, only after you have approved doing so. To inspect:
+      1. Open the sandbox, then open C:\evidence in Explorer.
+      2. Copy VideoPlayToolSetup.exe to C:\scratch (never run it from C:\evidence).
+      3. Right-click -> Properties to review it, or run it there if you approve.
+    Close the sandbox window to destroy the VM and everything in it.
+  -->
+</Configuration>

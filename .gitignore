@@ -1,0 +1,82 @@
+# ============================================================
+# Video Player UI Lab — .gitignore
+# Goal: never commit large/binary source evidence, extracted
+# firmware images, installer payloads, credentials, or build output.
+# ============================================================
+
+# ---- Original source evidence (READ-ONLY, never redistribute) ----
+docs-recources/
+exe-work/00-original-copy/
+firmware-work/00-original-copy/
+
+# ---- Installer / EXE extraction artifacts ----
+exe-work/01-static-analysis/**/*.bin
+exe-work/02-extracted-original/
+exe-work/03-ui-assets-original/
+exe-work/07-build-output/
+
+# ---- Firmware images, partitions, filesystems (large / binary) ----
+firmware-work/01-unpacked-package/
+firmware-work/02-partitions-original/
+firmware-work/03-filesystems-original/
+firmware-work/04-web-ui-original/
+firmware-work/09-build-output/
+*.img
+*.bin
+*.squashfs
+*.cramfs
+*.jffs2
+*.ubi
+*.ubifs
+*.dtb
+*.rom
+*.pak
+*.cfg.bin
+
+# ---- Installer / archive formats ----
+*.exe
+*.msi
+*.zip
+*.7z
+*.gz
+*.tar
+*.xz
+*.cab
+
+# ---- Emulation disks / snapshots ----
+firmware-work/08-emulation-research/**/*.qcow2
+firmware-work/08-emulation-research/**/*.raw
+*.qcow2
+
+# ---- Python cache / bytecode ----
+__pycache__/
+*.py[cod]
+
+# ---- Node / build tooling ----
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+.eslintcache
+
+# ---- Logs that may contain credentials / device data ----
+*.log
+**/logs/
+sandbox-results/
+**/collect-*-output/
+
+# ---- OS / editor cruft ----
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# ---- Local env / secrets ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
