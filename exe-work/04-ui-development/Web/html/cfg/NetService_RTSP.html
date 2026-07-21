@@ -1,0 +1,23 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Enable">Enable</div>
+		<div class="cfg_row_right">
+			<div id="SwitchEnable" class="" data="0"></div>
+		</div>
+	</div>
+	<div class="cfg_row" id="PortBox">
+		<div class="cfg_row_left" id="port">Port</div>
+		<div class="cfg_row_right">
+			<input class="inputTxt" id="InputPort" maxlength="5"
+			onkeyup="if(keyboardFilter(event)) {NumberRange(this,1,65535,-1);}"
+			onblur="NumberRange(this,1,65535,-1);"/>
+		</div>
+	</div>
+
+	<div class="cfg_row">
+		<div class="btn_box">
+			<button class="btn" id="BtnRf">Refresh</button>
+			<button class="btn SvBtnState" id="BtnSave">Save</button>
+		</div>
+	</div>
+</div>

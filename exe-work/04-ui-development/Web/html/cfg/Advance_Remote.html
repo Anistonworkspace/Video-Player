@@ -1,0 +1,233 @@
+<div class="alarm" id="RemotePage">
+	<div class="MaskDiv"></div>
+	<div id="DivBoxAll">
+		<div class="cfg_row">
+			<div id="CfgNameDiv" class="first">
+				<div class="cfg_row_left" id="CfgNameL">configuration</div>
+				<div class="cfg_row_right">
+					<input id="CfgName" class="inputTxt"/>
+				</div>
+			</div>
+			<div id="RemoteTypeDiv" class="second" style="display:none">
+				<div class="cfg_row_left" id="RemoteTypeL">Type</div>
+				<div class="cfg_row_right">
+					<select class="select" id="RemoteType"></select>
+				</div>
+			</div>
+		</div>	
+		<div class="cfg_row">
+			<div id="ReDevTypeDiv" class="first">
+				<div class="cfg_row_left" id="ReDevTypeL">Device Type</div>
+				<div class="cfg_row_right">
+					<select class="select" id="ReDevType">
+						<option value="IPC">IPC</option>
+						<option value="DVR">DVR</option>
+						<option value="HVR">HVR</option>
+					</select>
+				</div>
+			</div>
+			<div id="ProtocolDiv" class="second">
+				<div class="cfg_row_left" id="ProtocolL">Protocol</div>
+				<div class="cfg_row_right">
+					<select class="select" id="Protocol"></select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div id="RemoteChDiv" class="first">
+				<div class="cfg_row_left" id="RemoteChL">Remote Channel</div>
+				<div class="cfg_row_right">
+					<input id="RemoteCh" class="inputTxt"  maxlength="5"
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this,1,65535,-1)}"
+					onblur="NumberRange(this,1,65535,-1)"/>
+				</div>
+			</div>
+			<div id="StreamTypeDiv" class="second">
+				<div class="cfg_row_left" id="StreamTypeL">Stream</div>
+				<div class="cfg_row_right">
+					<select class="select" id="StreamType"></select>
+				</div>
+			</div>
+		</div>
+		
+		<div id="ProTypeBox">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="RemoteIPL">IP Address</div>
+				<div class="cfg_row_right">
+					<input id="RemoteIP" class="inputTxt" style="float:left;" autocomplete="off" onblur="LimitIP(this);" onkeyup="if(keyboardFilter(event)) {LimitIP(this);}"/>
+					<button id="NetWorkSet" class="btn">NetWork</button>
+				</div>
+			</div>
+			<div class="cfg_row" id="RemotePortDiv">
+				<div class="cfg_row_left" id="RemotePortL">Port</div>
+				<div class="cfg_row_right">
+					<input id="RemotePort" class="inputTxt" maxlength="5"
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this,1,65535,-1);}"
+					onblur="NumberRange(this,1,65535,-1);"/>
+				</div>
+			</div>
+		</div>
+		<div id="RTSPTypeBox" style="display:none">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="RTSPMainL">Main Stream</div>
+				<div class="cfg_row_right">
+					<input id="RTSPMain" class="inputTxt" style="width:200px;"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="RTSPSubL">Extra Stream</div>
+				<div class="cfg_row_right">
+					<input id="RTSPSub" class="inputTxt" style="width:200px;"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div id="RemoteUserDiv" class="first">
+				<div class="cfg_row_left" id="RemoteUserL">User Name</div>
+				<div class="cfg_row_right">
+					<input id="RemoteUser" class="inputTxt"/>
+				</div>
+			</div>
+			<div id="RemotePWDDiv" class="second">
+				<div class="cfg_row_left" id="RemotePWDL">Password</div>
+				<div class="cfg_row_right">
+					<div class="cfg_row_pwd">
+						<input class="inputTxt PswEyeShow" id="RemotePWD" type="text"/>
+						<div class="psw_eye_arc">
+							<div class="psw_eye_cicle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="NetListSplit" style="margin:8px 0px 5px 0px; width:600px; border-bottom:1px solid gray;"></div>
+		<div id="SearchBox">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="SearchProL">Protocol</div>
+				<div class="cfg_row_right">
+					<select class="select" id="SearchPro" style="float:left"></select>
+					<button id="RemoteSearch" class="btn">Search</button>
+				</div>
+
+			</div>
+			<div id="Remote_ligerGrid" style="margin-top:5px"></div>
+			<div style="width: 100%; height: 170px;">
+				<div id="RemoteList" style="height:160px;">
+					<div class="table-responsive">
+						<div class="table-head">
+							<table class="table grid" style="margin-bottom:0">
+								<colgroup>
+									<col style="width:10%">
+									<col style="width:25%">
+									<col style="width:25%">
+									<col style="width:25%">
+									<col style="width:15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th id="Head_No2"></th>
+										<th id="Head_DevName"></th>
+										<th id="Head_DevInfo"></th>
+										<th id="Head_IP2"></th>
+										<th id="Head_Port"></th>
+									</tr>
+								</thead>
+							</table>
+					    </div>
+					    <div class="table-content">
+							<table id="RemoteTable" class="table grid">
+								<colgroup>
+									<col style="width:10%">
+									<col style="width:25%">
+									<col style="width:25%">
+									<col style="width:25%">
+									<col style="width:15%">
+								</colgroup>
+								<tbody>
+								</tbody>
+							</table>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cfg_row">
+		<div class="btn_box" style="margin-left:225px;margin-top: 10px;">
+			<button id="RemoteOK" class="btn SvBtnState">OK</button>
+			<button type="button" class="btn btn_cancle" id="RemoteCancel">Cancel</button>
+		</div>
+	</div>
+</div>
+
+<!-- NetWork-->
+<div class="dialog_role" id="NetSet_Dialog" style="display:none;">
+	<ul class="SecondTitle">
+		<li><h3 id="NetSet_Dialog_Title">Network</h3><span class="second_close2">&times;</span></li>
+	</ul>
+	<ul class="content_details">
+		<li class="content_container alarm">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="NetSetIPL">IP Address</div>
+				<div class="cfg_row_right">
+					<input id="NetSetIP" class="inputTxt" style="width:200px; float:left;"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="NetSetMaskL">Subnet Mask</div>
+				<div class="cfg_row_right">
+					<input id="NetSetMask" class="inputTxt" style="width:200px; float:left;"/>					
+				</div>
+			</div>
+			
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="NetSetGetWayL">GetWay</div>
+				<div class="cfg_row_right">
+					<input id="NetSetGetWay" class="inputTxt" style="width:200px; float:left;"/>
+				</div>
+			</div>
+
+			<div id="NetSetUserDiv" class="cfg_row">
+				<div class="cfg_row_left" id="NetSetUserL">User Name</div>
+				<div class="cfg_row_right">
+					<input id="NetSetUser" class="inputTxt"/>
+				</div>
+			</div>
+			<div id="NetSetPWDDiv" class="cfg_row">
+				<div class="cfg_row_left" id="NetSetPWDL">Password</div>
+				<div class="cfg_row_right">
+					<div class="cfg_row_pwd">
+						<input class="inputTxt PswEyeShow" id="NetSetPWD" type="text"/>
+						<div class="psw_eye_arc">
+							<div class="psw_eye_cicle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn_box" style="padding-left:55px;">
+				<button type="button" class="btn autoWidth" id="NetSetAuto">Auto assigned</button>
+				<button type="button" class="btn" id="NetSetOK">OK</button>
+				<button type="button" class="btn" id="NetSetCancle">Cancel</button>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="dialog_role" id="Tip_Dialog" style="display:none; width:456px; left:20%; top:120px; border-radius:5px; background: #F5F5F5;">
+	<ul class="SecondTitle">
+		<li><h3 id="ChangeIP_Title">Prompt</h3><span class="second_close2">&times;</span></li>
+	</ul>
+	<ul class="content_details">
+		<li class="content_container alarm">
+			<div class="confirm_prompt">
+				<div class="confirm_str" id="confirm_str">IP Address</div>
+			</div>
+			<div class="btn_box" style="padding-left:100px;">
+				<button type="button" class="btn" id="ChangeIP_Save">OK</button>
+				<button type="button" class="btn" id="ChangeIP_Cancle">Cancel</button>
+			</div>
+		</li>
+	</ul>
+</div>

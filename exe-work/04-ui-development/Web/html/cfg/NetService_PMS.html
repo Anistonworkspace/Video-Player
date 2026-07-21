@@ -1,0 +1,47 @@
+<div class="cfg_container">
+	<div class=" cfg_row">
+		<div class="cfg_row_left" id="Enable">Enable</div>
+		<div class="cfg_row_right">
+			<div class="selectDisable" id="SwitchEnable" data="0"></div>
+		</div>
+	</div>
+
+	<div id="CfgBox">
+		<div class=" cfg_row">
+			<div class="cfg_row_left" id="ServerName">Server Address</div>
+			<div class="cfg_row_right">
+				<input id="InputServerName" class="inputTxt"/>
+			</div>
+		</div>
+		
+		<div class=" cfg_row">
+			<div class="cfg_row_left" id="HostPort">Port</div>
+			<div class="cfg_row_right">
+				<input id="InputHostPort" class="inputTxt"
+				onkeyup="if(keyboardFilter(event)) {NumberRangeMax(this,65535)}"
+				onblur="if(this.value == '') this.value='1'"/>
+			</div>
+		</div>
+		
+		<div class=" cfg_row">
+			<div class="cfg_row_left" id="BoxID">BoxID</div>
+			<div class="cfg_row_right">
+				<input id="InputBoxID" class="inputTxt" readonly="readonly"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="note-box" id="InfoNum" style="width:460px; display:none;">
+		<ul>
+			<span id="Notes_MaxSub"></span>
+		</ul>
+	</div>
+	
+	<div class="cfg_row">
+		<div class="btn_box">
+			<button id="BtnClear" class="btn">Clear</button>
+			<button id="BtnRf" class="btn">Refresh</button>
+			<button id="BtnSave" class="btn SvBtnState">Save</button>
+		</div>
+	</div>
+</div>

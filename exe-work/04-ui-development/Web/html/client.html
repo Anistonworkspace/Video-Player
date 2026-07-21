@@ -1,0 +1,71 @@
+<div class="content_Box">
+	<div class="ClientConfigTab_Box" style="width: auto;">
+		<button class="ClientConfigTab" id="PathConfig_Btn" name="">PathConfig</button>
+		<button class="ClientConfigTab" id="Version_Btn" name="active">VersionInfo</button>
+	</div>
+    <div id="Client_Content">
+		<div id="PathConfig_Page">
+			<div class="pathCfg">
+				<div class="config_box">
+					<div id="RecordType" class="config_title_text">RecordType</div>
+					<select id="RecordTypeSelect"></select>
+				</div>
+				<div class="config_box">
+					<div id="recordFile" class="config_title_text">Record Path</div>
+					<input id="Path_2" type="text" />
+					<div class="btn browserBtn" id="PathBtn_2">Browse</div>
+				</div>
+				<div class="config_box">
+					<div id="captureImg" class="config_title_text">Snapshot Path</div>
+					<input id="Path_1" type="text" />
+					<div class="btn browserBtn" id="PathBtn_1">Browse</div>
+				</div>
+				<div class="config_box">
+					<div id="downloadFile" class="config_title_text">Download Path</div>
+					<input id="Path_0" type="text" />
+					<div class="btn browserBtn" id="PathBtn_0">Browse</div>
+				</div>
+				<div class="config_box">
+					<div id="imageType" class="config_title_text">Snapshot Type</div>
+					<select id="imageTypeSelect"></select>
+				</div>
+				<div class="config_box" id="videoTypebox">
+					<div id="videoType" class="config_title_text">video rendering</div>
+					<select id="videoTypeSelect"></select>
+				</div>
+				<div class="btn" id="pathSave">Save</div>
+			</div>
+			
+		</div>
+		<div id="VersionInfo_Page" style="display: none;"> 
+			<div id="VersionInfo_Page_Content">
+				<div class="cfg_row pluginInfoClass" style="margin-top: 40px;">
+					<div class="client_version_type" id="SoftwareLicenses">Open Source Software Licenses</div>
+				</div>
+				<div class="cfg_row pluginInfoClass" style="margin-top: 20px;">
+					<div class="client_version_type" id="ToolVersion">ToolVersion：</div>
+					<div class="client_version_content" id="CurVersionContent">0.0.0.1</div>		
+				</div>
+				<div class="cfg_row" style="margin-top: 10px;">
+					<div class="client_version_type" id="WebVersion">WebVersion：</div>
+					<div class="client_version_content" id="CurWebVersionContent">3.0.0.0</div>	
+				</div>
+				<div class="cfg_row pluginInfoClass" style="margin-top: 20px;">
+					<button class="btn" id="CheckVersionBtn">CheckVersion</button>		
+				</div>
+				<div class="cfg_row pluginInfoClass" id="CheckResultBox" style="display:none;margin-top: 30px;">
+					<div class="client_version_type" id="UpdateStatus">Update status:</div>
+					<div id="UpdateStatusContent" style="display: inline-block;">latest</div>
+					<div class = "updateLogclass" id="updateLogdiv" style="display: none;">
+					</div>
+					<div class="cfg_row" style="margin-top: 20px;">
+						<a id="clientDownBtn">
+							<button class="btn" id="DownloadBtn" style="display: none;">Download</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

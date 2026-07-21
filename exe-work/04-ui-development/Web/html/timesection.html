@@ -1,0 +1,76 @@
+<div class="cfg_row" id="WeekBox">
+	<div class="inlinebox" id="WeekL">Week</div>
+	<div class="inlinebox">
+		<select id="WeekChild" style="width:135px; height:25px;"></select>
+	</div>
+</div>
+<div id="TimeSect1Box">
+	<div class="cfg_row" id="TimeSectRow1">
+		<div id="Sect1" class="Sectspan">
+			<span class="timespan">				
+				<input id="SectCheck1" type="checkbox"/>
+				<label for="SectCheck1">&nbsp</label>
+			</span>
+			<div id="Sect_Time1" class="time-div">
+				<input id="StartHour1" type="text" /><label class='timeSplit'>:</label>
+				<input id="StartMinute1" type="text" /><label class='timeSpace'>-</label>
+				<input id="EndHour1" type="text"  /><label class='timeSplit'>:</label>
+				<input id="EndMinute1" type="text" />
+			</div>
+		</div>
+		<div id="Sect2" class="Sectspan">
+			<span class="timespan">				
+				<input id="SectCheck2" type="checkbox"/>
+				<label for="SectCheck2">&nbsp</label>
+			</span>
+			<div id="Sect_Time2" class="time-div">
+				<input id="StartHour2" type="text"  /><label class='timeSplit'>:</label>
+				<input id="StartMinute2" type="text" /><label class='timeSpace'>-</label>
+				<input id="EndHour2" type="text"  /><label class='timeSplit'>:</label>
+				<input id="EndMinute2" type="text" />
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row" id="TimeSectRow2" style="margin-top:5px;">
+		<div id="Sect3" class="Sectspan">
+			<span class="timespan">				
+				<input id="SectCheck3" type="checkbox"/>
+				<label for="SectCheck3">&nbsp</label>
+			</span>
+			<div id="Sect_Time3" class="time-div">
+				<input id="StartHour3" type="text" /><label class='timeSplit'>:</label>
+				<input id="StartMinute3" type="text" /><label class='timeSpace'>-</label>
+				<input id="EndHour3" type="text" /><label class='timeSplit'>:</label>
+				<input id="EndMinute3" type="text" />
+			</div>
+		</div>
+		<div id="Sect4" class="Sectspan">
+			<span class="timespan">				
+				<input id="SectCheck4" type="checkbox"/>
+				<label for="SectCheck4">&nbsp</label>
+			</span>
+			<div id="Sect_Time4" class="time-div">
+				<input id="StartHour4" type="text" /><label class='timeSplit'>:</label>
+				<input id="StartMinute4" type="text" /><label class='timeSpace'>-</label>
+				<input id="EndHour4" type="text" /><label class='timeSplit'>:</label>
+				<input id="EndMinute4" type="text" />
+			</div>
+		</div>
+	</div>
+</div>
+<div id="TimeSect2Box" style="margin:25px 0px; overflow:hidden">
+	<div class="week-list">
+		<ul id="dayList">
+		</ul>
+	</div>
+	
+	<div id="weekDataDetect" style="float:left; width:510px; height:176px;">
+		<canvas id="ts_cvs1" width="510px" height="176px" style="position: absolute; z-index: 0;">No Support</canvas>
+		<canvas id="ts_cvs2" width="510px" height="176px" style="position: absolute; z-index: 1;">No Support</canvas>
+	</div>
+</div>
+
+<div class="btn_box" style="padding-left:200px;">
+	<button type="button" class="btn" id="Period_OK">OK</button>
+	<button type="button" class="btn" id="Period_cancle">Cancel</button>
+</div>

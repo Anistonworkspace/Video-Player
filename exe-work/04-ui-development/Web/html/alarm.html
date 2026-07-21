@@ -1,0 +1,100 @@
+<div class="alarm-wrp">
+	<div class="alarm_left">
+		<div class="check-box-row" id="alarmListBox">
+			<div class="alarm-type" id="AlarmType">Alarm Type</div>
+			<span id="alarmAllBox">
+				<input type="checkbox" id="allType"/>
+				<label for="allType" id="typeAll">All</label>
+			</span>
+			<span id="Motion_box">
+				<input type="checkbox" id="Motion_check" />
+				<label for="Motion_check" id="Motion">Detection</label>
+			</span>
+			<span id="Blind_box">
+				<input type="checkbox" id="Blind_check" />
+				<label for="Blind_check" id="Blind">Video Blind</label>
+			</span>
+			<span id="Loss_box">
+				<input type="checkbox" id="Loss_check" />
+				<label for="Loss_check" id="Loss">Video Loss</label>
+			</span>
+			<span id="IO_box">
+				<input type="checkbox" id="IO_check" />
+				<label for="IO_check" id="IOAlarm">I/O Trigger</label>
+			</span>
+			<span id="Analyze_box">
+				<input type="checkbox" id="Analyze_check" />
+				<label for="Analyze_check" id="Video_Analyze">Intelligent</label>
+			</span>
+			<span id="Human_box">
+				<input type="checkbox" id="Human_check" />
+				<label for="Human_check" id="Human">Human Detect</label>
+			</span>
+			<span id="FaceDetect_box">
+				<input type="checkbox" id="FaceDetect_check" />
+				<label for="FaceDetect_check" id="FaceDetect">Human Detect</label>
+			</span>
+			<span id="DiskError_box">
+				<input type="checkbox" id="DiskError_check" />
+				<label for="DiskError_check" id="Disk_Error">Disk Error</label>
+			</span>
+			<span id="DiskFull_box">
+				<input type="checkbox" id="DiskFull_check" />
+				<label for="DiskFull_check" id="Disk_Full">Disk Full</label>
+			</span>	
+			<span id="Carshape_box">
+				<input type="checkbox" id="Carshape_check" />
+				<label for="Carshape_check" id="Car_shape">Carshape</label>
+			</span>	
+			<span id="Falldown_box">
+				<input type="checkbox" id="Falldown_check" />
+				<label for="Falldown_check" id="Falldown">Falldown</label>
+			</span>
+            <span id="LeavePostDetection_box">
+				<input type="checkbox" id="LeavePostDetection_check" />
+				<label for="LeavePostDetection_check" id="LeavePostDetection">LeavePostDetection</label>
+			</span>
+		</div>
+		<div class="check-box-row">
+			<div class="alarm-type" id="OperationL">Operation</div>
+			<span id="Prompt_box">
+				<input type="checkbox" id="Prompt_check"/>
+				<label for="Prompt_check" id="PromptL">Prompt</label>
+			</span>
+		</div>
+	</div>
+    <div class="alarmContent" id="AlarmList">
+        <div class="table-responsive">
+            <div class="table-head">
+				<table class="table grid" style="margin-bottom:0">
+					<colgroup>
+						<col style="width:5%">
+						<col style="width:25%">
+						<col style="width:25%">
+						<col style="width:25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th id="Alarm_No">No.</th>
+							<th id="Alarm_Time">Time</th>
+							<th id="Alarm_Type">Alarm Type</th>
+							<th id="Alarm_Channel">Channel</th>
+						</tr>
+					</thead>
+				</table>
+            </div>
+            <div class="table-content">
+                <table id="AlarmTable" class="table grid">
+                    <colgroup>
+                        <col style="width:5%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                    </colgroup>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

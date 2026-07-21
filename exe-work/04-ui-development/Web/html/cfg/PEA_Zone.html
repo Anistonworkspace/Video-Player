@@ -1,0 +1,112 @@
+<div class="Int_Page">
+	<div id="PZ_Content_div" style="position:relative;">
+		<div id="PZ_Rect" style="width:600px; height:400px; margin-bottom:15px;">
+			<img id="PEA_Img" src="" style="position:absolute;
+				width:600px; height:400px;" />
+			<canvas id="cvs" width="600" height="400" style="position:absolute;">No Support</canvas>
+		</div>
+		<div class="cfg_row" id="ShowPedRuleBox" style="display: none;">
+			<div class="cfg_row_left" id="ShowPedRuleL">Intrusion</div>
+			<div class="cfg_row_right">
+				<span id="PedRuleDiv1" class="PedRuleSpan">
+					<span id="PedRuleEnableSpan1">
+						<input type="checkbox" id="PedRuleEnable1" data='1' checked disabled/><label for="PedRuleEnable1">&nbsp;</label>
+					</span>
+					<div id="Color1" class="color_falg" style="background:#f00;"></div>
+					<label>1</label>
+				</span>				
+				<span id="PedRuleDiv2" class="PedRuleSpan">
+					<span id="PedRuleEnableSpan2">
+						<input type="checkbox" id="PedRuleEnable2" data='2'/><label for="PedRuleEnable2">&nbsp;</label>
+					</span>
+					<div id="Color2" class="color_falg" style="background:#00f;"></div>
+					<label>2</label>
+				</span>				
+				<span id="PedRuleDiv3" class="PedRuleSpan">
+					<span id="PedRuleEnableSpan3">
+						<input type="checkbox" id="PedRuleEnable3" data='3'/><label for="PedRuleEnable3">&nbsp;</label>
+					</span>
+					<div id="Color3" class="color_falg" style="background:#0f0;"></div>
+					<label>3</label>
+				</span>
+				<span id="PedRuleDiv4" class="PedRuleSpan">
+					<span id="PedRuleEnableSpan4">
+						<input type="checkbox" id="PedRuleEnable4" data='4'/><label for="PedRuleEnable4">&nbsp;</label>
+					</span>
+					<div id="Color4" class="color_falg" style="background:#ff0;"></div>
+					<label>4</label>
+				</span>
+			</div>
+		</div>
+		<div class="cfg_row" id="ShowSwitch" style="display:none;">
+			<div id="ShowRuleDiv" style="float:left; margin-right: 15px">
+				<label id="ShowRuleL" style="float:left;">Show Rules</label>
+				<span id="ShowRuleSpan" style="float:left; margin: 6px 0 0 10px">
+					<input type="checkbox" id="ShowRule"/><label for="ShowRule">&nbsp;</label>
+				</span>
+			</div>
+			
+			<div id="ShowTraceDiv" style="float:left;">
+				<label id="ShowTraceL" style="float:left;">Show Trace</label>
+				<span id="ShowTraceSpan" style="float:left; margin: 6px 0 0 10px">
+					<input type="checkbox" id="ShowTrace"/><label for="ShowTrace">&nbsp;</label>
+				</span>
+			</div>
+		</div>
+		<div id="typeBox" style="overflow:hidden;">
+			<div id="RadioBox" style="float:left;">
+				<div class="form-group" id="TripWireDiv">
+					<span>
+						<input id="TripWireRadio" name="PEAEnable" type="radio">
+						<label for="TripWireRadio" id="TripWireL">Tripwire</label>
+					</span>
+				</div>
+				<div class="form-group" id="PerimeterDiv">
+					<span>
+						<input id="PerimeterRadio" name="PEAEnable" type="radio">
+						<label for="PerimeterRadio" id="PerimeterL">Intrusion</label>
+					</span>
+				</div>
+			</div>
+			<div id="ShapeBox" style="float:left; margin: 0px 0 0 20px;">
+				<div id="TripWireShape">
+					<div class="rulemodeBtn" id="lineIn" data_mode='lineIn'></div>
+					<div class="rulemodeBtn" id="lineOut" data_mode='lineOut'></div>
+					<div class="rulemodeBtn" id="lineBoth" data_mode='lineBoth'></div>
+				</div>
+				<div id="PerimeterShape" style="display:none;">
+					<div class="rulemodeBtn" id="sideIn" data_mode='sideIn'></div>
+					<div class="rulemodeBtn" id="sideOut" data_mode='sideOut'></div>
+					<div class="rulemodeBtn" id="sideBoth" data_mode='sideBoth'></div>
+					<div class="ruleRightLine"></div>
+					<div id="PerimeterShapeBox" style="margin-top:5px; float:left">
+						<div class="shapeBtn" id="side3" data_point='3'></div>
+						<div class="shapeBtn" id="side4" data_point='4'></div>
+						<div class="shapeBtn" id="side5" data_point='5'></div>
+						<div class="shapeBtn" id="side6" data_point='6'></div>
+						<div class="shapeBtn" id="side7" data_point='7'></div>
+						<div class="shapeBtn" id="side8" data_point='8'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row" id="RuleBorderStyle" style="display:none; margin-top: 8px; margin-bottom: 8px;">
+			<div id="RuleColorDiv" style="float:left; margin-right: 15px">
+				<div style="float:left; height: 27px" id="RuleBorderColorL">Border Color</div>
+				<input type="color" id="InputBorderColor" style="margin-left: 12px;">
+			</div>
+			<div id="RuleWidthDiv" style="float:left; margin-left: 25px;">
+				<label id="RuleBorderWidthL">Border Width</label>
+				<input type="text" id="InputBorderWidth" style="margin-left: 12px; width: 100px; height: 20px"
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this,2,6,-1);}"
+					onblur="NumberRange(this,2,6,-1);">
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row">
+		<div class="btn_box" style="padding-left:175px; margin-top:5px;">
+			<button id="PZ_SV" class="btn SvBtnState">Save</button>
+			<button type="button" class="btn btn_cancle" id="PZ_Cancel">Cancel</button>
+		</div>
+	</div>
+</div>

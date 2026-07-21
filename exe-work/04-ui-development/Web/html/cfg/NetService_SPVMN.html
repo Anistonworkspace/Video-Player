@@ -1,0 +1,191 @@
+<div class="cfg_container spvmn">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Enable">Enable</div>
+		<div class="cfg_row_right">
+			<div class="selectDisable" id="SwitchEnable" value="0"></div>
+		</div>
+	</div>
+	
+	<div class="cfg_row" id="SipBox1">
+		<div class="first">
+			<div class="cfg_row_left" id="SerNo">SIP Server No.</div>
+			<div class="cfg_row_right">
+				<input id="InputSerNo" class="inputTxt"/>
+			</div>
+		</div>
+		<div class="second">
+			<div class="cfg_row_left" id="SerDNS">SIP Server DNS</div>
+			<div class="cfg_row_right">
+				<input id="InputSerDNS" class="inputTxt"/>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cfg_row" id="SipBox2">
+		<div class="first">
+			<div class="cfg_row_left" id="SerIP">SIP Server IP</div>
+			<div class="cfg_row_right">
+				<input id="InputSerIP" class="inputTxt"/>
+			</div>
+		</div>
+		<div class="second" id="SipBox22">
+			<div class="cfg_row_left" id="SerPort">SIP Server Port</div>
+			<div class="cfg_row_right">
+				<input id="InputSerPort" class="inputTxt"
+				onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535)}"
+				onblur="if(this.value == '') this.value='0';"/>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cfg_row" id="SipBox3">
+		<div class="first">
+			<div class="cfg_row_left" id="DevNo">Device No.</div>
+			<div class="cfg_row_right">
+				<input id="InputDevNo" class="inputTxt"/>
+			</div>
+		</div>
+		<div class="second">
+			<div class="cfg_row_left" id="RegPasswd">Register code</div>
+			<div class="cfg_row_right">
+				<div class="cfg_row_pwd">
+					<input type="text" class="inputTxt PswEyeShow" id="InputRegPasswd" maxlength="64"/>
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cfg_row" id="SipBox4">
+		<div class="first">
+			<div class="cfg_row_left" id="LocalSer">Local SIP</div>
+			<div class="cfg_row_right">
+				<input id="InputLocalSer" class="inputTxt"
+				onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535)}"
+				onblur="if(this.value == '') this.value='0';"/>
+			</div>
+		</div>
+		<div class="second">
+			<div class="cfg_row_left" id="Validity">Validity</div>
+			<div class="cfg_row_right">
+				<input id="InputValidity" class="inputTxt"
+				onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535)}"
+				onblur="if(this.value == '') this.value='0';"/>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cfg_row" id="SipBox5">
+		<div class="first">
+			<div class="cfg_row_left" id="Cardiac">Cardiac</div>
+			<div class="cfg_row_right">
+				<input id="InputCardiac" class="inputTxt"
+				onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535)}"
+				onblur="if(this.value == '') this.value='0';"/>
+			</div>
+		</div>
+		<div class="second" id="SipBox52" style="display: none;">
+			<div class="cfg_row_left" id="SipIP">Sip IP</div>
+			<div class="cfg_row_right">
+				<input id="InputSipIP" class="inputTxt"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="cfg_row" id="SipBox8">
+		<div class="first" id="SipTransProBox">
+			<div class = "cfg_row_left" id = "SIPTransProtocolType" >Sip Protocol</div>
+			<div class = "cfg_row_right">
+				<select id="SipTransPro" class = "select"></select>
+			</div>
+		</div>
+		<div class="second" id = "StreamTypeBox">
+			<div class = "cfg_row_left" id = "SPVStreamType">Stream</div>
+			<div class = "cfg_row_right">
+				<select id = "StreamTypeSel" class = "select"></select>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cfg_row" id="split_Div">
+		<div style="width:830px; border-bottom: 1px solid #E6E6E6; display: inline-block; margin:15px auto;">
+		</div>
+	</div>
+	
+	<div class="cfg_row" id="SipBox6">
+		<div class="first">
+			<div class="cfg_row_left" id="Channel">Channel</div>
+			<div class="cfg_row_right">
+				<select id="SelChannel" class="select"></select>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cfg_row" id="SipBox7">
+		<div class="first">
+			<div class="cfg_row_left" id="ChanNo">Channel No.</div>
+			<div class="cfg_row_right">
+				<input id="InputChanNo" class="inputTxt"/>
+			</div>
+		</div>
+		<div class="second">
+			<div class="cfg_row_left" id="AlarmLev">Alarm level</div>
+			<div class="cfg_row_right">
+				<input id="InputAlarmLev" class="inputTxt"
+				onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535)}"
+				onblur="if(this.value == '') this.value='0';"/>
+			</div>
+		</div>
+	</div>
+
+	<div id="AlarmBox">
+		<div class="cfg_row">
+			<div class="first">
+				<div class="cfg_row_left" id="Alarm">Alarm</div>
+				<div class="cfg_row_right">
+					<select id="SelAlarm" class="select"></select>
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="first">
+				<div class="cfg_row_left" id="AlarmNo">Alarm No.</div>
+				<div class="cfg_row_right">
+					<input id="InputAlarmNo" class="inputTxt"/>
+				</div>
+			</div>
+			<div class="second">
+				<div class="cfg_row_left" id="AlarmLev2">Alarm level</div>
+				<div class="cfg_row_right">
+					<input id="InputAlarmLev2" class="inputTxt"
+					onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535)}"
+					onblur="if(this.value == '') this.value='0';"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cfg_row" id="SipBox9" style="display:none;">
+		<div class="first" id = "AudioOut">
+			<div class = "cfg_row_left" id = "TalkAudioOutID">Audio Out</div>
+			<div class = "cfg_row_right">
+				<input id="TalkAudioOut" class="inputTxt"/>
+			</div>
+		</div>
+		<div class="second" id = "TalkProtocol">
+			<div class = "cfg_row_left" id = "TalkTransProtocolType">Talk Protocol</div>
+			<div class = "cfg_row_right">
+				<select id = "TalkTransPro" class = "select"></select>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cfg_row">
+		<div class="btn_box">
+			<button class="btn" id="BtnRf">Refresh</button>
+			<button class="btn SvBtnState" id="BtnSave">Save</button>
+		</div>
+	</div>
+</div>

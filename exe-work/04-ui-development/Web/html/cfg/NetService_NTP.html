@@ -1,0 +1,55 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Enable">Enable</div>
+		<div class="cfg_row_right">
+			<div id="NtpEable" data="0"></div>
+		</div>
+	</div>
+
+	<div id="NTPBox">
+		<div class="radio-btn-box" id="RadioBox">
+			<span>
+		        <input type="radio" name="a" id="ChoseCustom"/>
+		        <label for="ChoseCustom" id="CustomTxt">Custom</label>
+		    </span>
+		    <span>
+		        <input type="radio" name="a" id="ChoseAuto"/>
+		        <label for="ChoseAuto" id="AutoTxt">Auto Select Server</label>
+		    </span>
+		</div>
+		
+		<div id="Custom" style="height: 0px; overflow: hidden;">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="NetIP">Server Ip</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" id="InputServerIP"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="NetPort">Port</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" id="InputPort" maxlength="5" 
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 65535, -1);}"
+					onblur="NumberRange(this, 0, 65535, -1);"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="UpdatePeriod">Update Period</div>
+			<div class="cfg_row_right">
+				<input class="inputTxt" id="InputUpdatePeriod" maxlength="5" 
+				onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 65535, -1);}"
+				onblur="NumberRange(this, 0, 65535, -1);"/>
+				<label id="UpdatePeriodUnit">Min</label>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cfg_row">
+		<div class="btn_box">
+			 <button class="btn" id="NtpBtnRf">Refresh</button>
+			<button class="btn SvBtnState" id="NtpBtnSave">Save</button>
+		</div>
+	</div>
+</div>

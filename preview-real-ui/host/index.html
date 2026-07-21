@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real UI Preview - VideoPlayTool (extracted)</title>
+
+<!-- (1) Globals the native shell normally injects, defined BEFORE the plugin JS.
+         common.js uses BrowseType / g_BrowseType / version_web at load time. -->
+<script>
+  var version_web = "V5.0.5.2";
+  var BrowseType = { BrowseMSIE:0, BrowseFirefox:1, BrowseChrome:2, BrowseOpera:3,
+                     BrowseSafari:4, BrowseEdge:5, BrowseUnknown:99 };
+  var g_BrowseType = BrowseType.BrowseChrome;
+  var g_browserVer = 120;
+  var g_bDebug = false;
+  var g_bReConnect = false, g_bDisconneting = false, g_videomovetime = -1, nKeepAliveCount = 0;
+  window.g_PCIP = "127.0.0.1";
+  window.g_PluginPort = 54455;
+  window.g_WebStyle = "Web";
+  window.g_defaultLanguage = "English";
+  window.g_b8M = false;            // -> WebCms.web.embedded = true -> downloadAddr = ""
+  window.g_bServerAccessible = false;
+  window.g_bLoadPlugin = false;
+</script>
+
+<!-- (2) The real skin, then harness chrome -->
+<link id="skinCss" rel="stylesheet" href="/images_general/skin.css">
+<link rel="stylesheet" href="/__harness/harness.css">
+
+<!-- (3) Offline jQuery + the real plugin framework (load order matters) -->
+<script src="/vendor/jquery.js"></script>
+<script>window.jQuery && (window.$ = window.jQuery);</script>
+<script src="/crypt-js/crypto-js.min.js"></script>
+<script src="/plugin/common.js"></script>
+<script src="/plugin/extend.js"></script>
+<script src="/plugin/language.js"></script>
+<script src="/plugin/function.js"></script>
+<script src="/plugin/RSUI.js"></script>
+<script src="/plugin/schedule.js"></script>
+<script src="/plugin/class.js"></script>
+<script src="/plugin/jquery.form.js"></script>
+<script src="/plugin/jquery.qrcode.min.js"></script>
+</head>
+
+<body>
+  <div id="hz-toolbar">
+    <span class="hz-title">Real&nbsp;UI&nbsp;Preview</span>
+    <span class="hz-tag">extracted VideoPlayTool &middot; real skin.css + JS &middot; mock backend</span>
+    <span class="hz-screens">
+      <button class="hz-btn hz-active" data-screen="login">Login</button>
+      <button class="hz-btn" data-screen="live">Live</button>
+      <button class="hz-btn" data-screen="config">Config</button>
+      <button class="hz-btn" data-screen="playback">Playback</button>
+      <button class="hz-btn" data-screen="alarm">Alarm</button>
+      <button class="hz-btn" data-screen="forgetpwd">Forgot&nbsp;Pwd</button>
+    </span>
+    <span class="hz-right">
+      <label class="hz-lang-lbl">Lang&nbsp;<select id="hz-lang"></select></label>
+      <button id="hz-reload" class="hz-btn" title="Reload skin.css + current screen">&#8635;&nbsp;Reload</button>
+    </span>
+  </div>
+
+  <div id="hz-stage">
+    <canvas id="videoCanvas" width="640" height="360" style="display:none"></canvas>
+    <div id="login" class="hz-screen-host" style="display:none"></div>
+  </div>
+
+  <div id="hz-errbadge" title="non-fatal JS notices"></div>
+
+  <script src="/__harness/harness.js"></script>
+</body>
+</html>

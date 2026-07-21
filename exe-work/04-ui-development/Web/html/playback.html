@@ -1,0 +1,169 @@
+<div class="content_Box">
+	<div class="leftContent">
+		<div id="SreachDlg">
+			<div class="pbItemBox">
+				<div class="pbItemLeft" id="playbackL">回放方式</div>
+				<div class="pbItemRight">
+					<select class="pbSelect" id="SelPlayBack"></select>
+				</div>
+			</div>
+			
+			<div id="remoteSearch">
+				<div class="pbItemBox">
+					<div class="pbItemLeft" id="queryMode">回放模式</div>
+					<div class="pbItemRight">
+						<span class="pbItemRightFirst" id="byFileSpan">
+							<input id="ByNameRadio" type="radio" value="0" name="pbMode">
+							<label id="ByNameLab" for="ByNameRadio">按文件</label>
+						</span>
+						<span class="pbItemRightSecond" id="byTimeSpan">
+							<input id="ByTimeRadio" type="radio" value="1" name="pbMode">
+							<label id="ByTimeLab" for="ByTimeRadio">按时间</label>
+						</span>
+					</div>
+				</div>
+				<div class="pbItemBox">
+					<div class="pbItemLeft" id="TypeL">类型</div>
+					<div class="pbItemRight">
+						<select class="pbSelect" id="SelType"></select>
+					</div>
+				</div>
+				
+				<div class="pbItemBox">
+					<div class="pbItemLeft" id="StartTimeL">开始时间</div>
+					<div class="pbItemRight">
+						<div class="pbItemRightFirst">
+							<input id="pbStartDate" readonly="readonly" type="text" data-date="" style="width: 100%; height: 100%;"/>
+						</div>
+						<div class="pbItemRightSecond">
+							<div id="pbStartTime" style="height: 25px; overflow: hidden;"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="pbItemBox">
+					<div class="pbItemLeft" id="EndTimeL">结束时间</div>
+					<div class="pbItemRight">
+						<div class="pbItemRightFirst" id="EndDateBox">
+							<input id="pbEndDate" readonly="readonly" type="text" data-date="" style="width: 100%; height: 100%;"/>
+						</div>
+						<div class="pbItemRightSecond">
+							<div id="pbEndTime" style="height: 25px; overflow: hidden;"></div>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="pbItemBox">
+					<div class="pbItemLeft" id="StreamModeL">Stream</div>
+					<div class="pbItemRight">
+						<select class="pbSelect" id="SelStream"></select>
+					</div>
+				</div>
+				
+				<div class="pbItemBox" id="SyncMode_Box" style="display:none">
+					<div class="pbItemLeft" id="SyncModeL">同步</div>
+					<div class="pbItemRight">
+						<div class="pbItemRightFirst">
+							<span id="SyncSpan">
+								<input type="checkbox" id="SyncMode"/><label for="SyncMode">&nbsp;</label>
+							</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="pbItemBox" id="Channel_Box" style="position:relative;">
+					<div class="MaskDiv"></div>
+					<div class="pbItemLeft" id="ChannelL">通道</div>
+					<div class="pbItemRight">
+						<div id="ChannelDiv"></div>
+					</div>
+				</div>
+				
+				<button class="btn" id="BtnSearch">Search</button>
+			</div>
+		</div>
+		
+		<div id="PlayListDlg" style="display: none;">
+			<div id="FirstBtnBox">
+				<button class="btn" id="GotoSearch">搜索</button>
+				<button class="btn" id="BtnPlay">播放</button>
+			</div>
+			<div id="SecondBtnBox">
+				<button class="btn" id="PageUp">上一页</button>
+				<button class="btn" id="PageDown">下一页</button>
+			</div>
+			<div id="ThirdBtnBox">
+				<button class="btn" id="BtnDownload">下载</button>
+				<button class="btn" id="BtnCancelDownload" style="display:none">取消</button>
+			</div>
+			<div id="DownloadPosBox" style="display:none">
+				<progress id="DownloadProgress" value="0" max="1000"></progress>
+				<p id="DownloadPos">0%</p>
+			</div>
+
+			
+			<div id="FileList">
+				<div class="table-responsive">
+					<div class="table-head">
+						<table class="table grid" style="margin-bottom:0">
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:60%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th id="List_CheckBox"><input type="checkbox" id="AllSelect"/></th>
+									<th id="List_No"></th>
+									<th id="List_File"></th>
+								</tr>
+							</thead>
+						</table>
+				    </div>
+				    <div class="table-content">
+				        <table id="FileTable" class="table grid">
+				            <colgroup>
+				                <col style="width:10%">
+				                <col style="width:10%">
+				                <col style="width:60%">
+				            </colgroup>
+							<tbody>
+				            </tbody>
+				        </table>
+				    </div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="pbTimer1" style="width: 285px; height: 0px; overflow: hidden;"></div>
+		<div id="pbTimer2" style="width: 285px; height: 0px; overflow: hidden;"></div>
+		<iframe id="pbframe1" style="width: 0px; height: 0px; border: 0px; overflow: hidden;position: absolute"></iframe>
+		<iframe id="pbframe2" style="width: 0px; height: 0px; border: 0px; overflow: hidden;position: absolute"></iframe>
+	</div>
+	<div class="playbackContent">
+		<div class="playbackCenter" id="playbackOcx"></div>
+		<div id="pbControlBtn_Box">
+			<div class="pbControlBtn" id="pbBtnPlay" data-posy="0"></div>
+			<input type="file" id="localPBKFileBrowse" style="display: none;" accept=".h265x"/>
+			<div class="pbControlBtn" id="pbBtnPause" data-posy="-37"></div>
+			<div class="pbControlBtn" id="pbBtnStop" data-posy="-74"></div>
+			<div class="pbControlBtn" id="pbBtnSlow" data-posy="-111"></div>
+			<div class="pbControlBtn" id="pbBtnFast" data-posy="-148"></div>
+			<div class="pbControlBtn" id="pbBtnPreFrame" data-posy="-185" style="display:none"></div>
+			<div class="pbControlBtn" id="pbBtnNextFrame" data-posy="-222"></div>
+			<div class="pbControlBtn" id="pbBtnRecord" data-posy="-259"></div>
+			<div class="pbControlBtn" id="pbBtnSnap" data-posy="-296"></div>
+			<div class="pbControlBtn" id="pbBtnAudio" data-posy="-333"></div>
+			<div class="pbControlBtn" id="pbBtnZoom" data-posy="-370" style="display:none"></div>
+			<div id="SliderBox">
+				<div id="PlaySlider"></div>
+                <span id="timeLabel" style="display: none;"></span>
+			</div>
+		</div>
+		<div id="progressBar">
+			<iframe id="Zoom_box" src="" frameborder="0" scrolling="no"></iframe>
+			<div id="progress-bar"></div>
+		</div>
+	</div>
+</div>

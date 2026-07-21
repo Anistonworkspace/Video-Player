@@ -1,0 +1,69 @@
+<!-- Outer containers -->
+<div class="cfg_container">
+    <div class="cfg_row">
+        <div class="cfg_row_left" id="Net3G_EnableL">Enable</div>
+        <div class="cfg_row_right mv_R">
+            <div id="Enable_Switch" data="" class="switch"></div>
+        </div>
+    </div>
+    <div id="Net3GDivBox">
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="NetTypeL">Type</div>
+			<div class="cfg_row_right">
+				<select class="select" id="NetType">
+					<option value="0">TD_SCDMA</option>
+					<option value="1">WCDMA</option>
+					<option value="2">CDMA1.x</option>
+					<option value="3">GPRS</option>
+	 				<option value="4">EVDO</option>
+				</select>	
+			</div>
+		</div>
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="APNL">AP</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="APN" maxlength="31"/>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="DialNumL">Dial Number</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" id="DialNum" type="text" maxlength="31"//>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="Net3G_NameL">User Name</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="Net3G_Name" maxlength="31"/>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="Net3G_PWL">Password</div>
+            <div class="cfg_row_right">
+                <div class="cfg_row_pwd">
+                    <input id="Net3G_PW" class="inputTxt PswEyeShow" type="text" maxlength="31"/>
+                    <div class="psw_eye_arc">
+                        <div class="psw_eye_cicle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Net3G_IPAddrL">IP Address</div>
+		<div class="cfg_row_right">
+			<input id="Net3G_IPAddr" class="inputTxt" disabled="true"/>
+		</div>
+	</div>
+
+    <div class="cfg_row">
+        <div class="btn_box">
+			<button id="Net3GRf" class="btn">Refresh</button>
+            <button id="Net3GSV" class="btn SvBtnState">Save</button>		
+        </div>
+    </div>
+</div>
+

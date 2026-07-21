@@ -1,0 +1,139 @@
+<div class="dialog_role alarm" id="SA_Advance_Dialog" style="width:825px; left:20%;top:0px;display:none;">
+	<ul class="SecondTitle">
+		<li>
+			<h3 id="SA_Advance_Title">Advance</h3>
+			<span class="second_close" id="SA_AdvanceDLgClose">&times;</span>
+		</li>
+	</ul>
+	<ul class="content_details">
+		<li class="content_container">
+			<div class="cfg_row">
+				<div id="SA_PeriodDiv" class="first">
+					<div class="cfg_row_left" id="SA_PeriodL">Period</div>
+					<div class="cfg_row_right">
+						<button id="SA_Period" class="btn" style="margin-left:0px;">Setting</button>
+					</div>
+				</div>
+				<div id="SA_IntervalDiv" class="second">
+					<div class="cfg_row_left" id="SA_IntervalL">Interval</div>
+					<div class="cfg_row_right">
+						<input id="SA_Interval" class="inputTxt timeTxt" maxlength="3"
+							onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 600, -1);}"
+							onblur="NumberRange(this, 0, 600, -1);" />
+						<label id="SA_IntervalSec">Sec(0-600)</label>
+					</div>
+				</div>
+			</div>
+			<div id="SA_AOEvent" class="cfg_row" style="position:relative;">
+				<div class="MaskDiv"></div>
+				<div class="first">
+					<div class="cfg_row_left" id="SA_AOL">Alarm Output</div>
+					<div class="cfg_row_right rightEx" id="SA_AOChannelDiv">	
+					</div>
+				</div>
+				<div id="SA_AODelayDiv" class="second">
+					<div class="cfg_row_left" id="SA_AODelayL">Delay</div>
+					<div class="cfg_row_right">
+						<input id="SA_AODelay" class="inputTxt timeTxt" 
+						onkeyup="if(keyboardFilter(event)) {NumberRangeMax(this, 300)}"
+						onblur="NumberRange(this, 10, 300, -1)" />
+						<label id="SA_AOSec">Sec</label>
+					</div>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div id="SA_PTZSetDiv" class="first">
+					<div class="cfg_row_left" id="SA_PTZSetL">PTZ Activation</div>
+					<div class="cfg_row_right">
+						<button id="SA_PTZSet" class="btn" style="margin-left:0px">Setting</button>
+					</div>
+				</div>
+				<div id="SA_RecordDelayDiv" class="second">
+					<div class="cfg_row_left" id="SA_RecordDelayL">Post Record</div>
+					<div class="cfg_row_right">
+						<input id="SA_RecordDelay" class="inputTxt timeTxt" maxlength="3"
+							onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 300);}"
+							onblur="NumberRange(this, 10, 300, -1);" />
+						<label id="SA_RecordSec">Sec(10-300)</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="check-btn-box" id="SA_enableBox" style="margin-top:15px">
+				<span id="SA_TourBox">
+					<input id="SA_Tour" type="checkbox" />
+					<label for="SA_Tour" id="SA_TourL">Tour</label>
+				</span>
+				<span id="SA_SendEmailBox">
+					<input id="SA_SendEmail" type="checkbox" />
+					<label for="SA_SendEmail" id="SA_sendEmailL">Send Email</label>
+				</span>
+				<span id="SA_SnapBox">
+					<input id="SA_Snap" type="checkbox" />
+					<label for="SA_Snap" id="SA_SnapL">Snap</label>
+				</span>
+				<span id="SA_FTPBox">
+					<input id="SA_FTP" type="checkbox" />
+					<label for="SA_FTP" id="SA_FTPL">FTP</label>
+				</span>
+				<span id="SA_WriteLogBox">
+					<input id="SA_WriteLog" type="checkbox" />
+					<label for="SA_WriteLog" id="SA_WriteLogL">Write Log</label>
+				</span>
+			</div>
+
+			<div style="height: 30px;">&nbsp;</div>
+
+			<div class="cfg_row" id="SA_Alarm_tone">
+				<div class="cfg_row_left" id="SA_alarm_toneL">alarm tone</div>
+				<div class="cfg_row_right" style="width: auto;">
+					<select class="select voiceTypeSelect" id="SA_AbAlarmToneType"></select>
+					<span id="SA_alarmAndCustom">
+						<select class="select customSelect" id="SA_AbAlarmTone"></select>
+						<button id="SA_AbAlarmToneCustomButton" class="btn"
+							style="margin-left:0px;float:none;"></button>
+					</span>
+				</div>
+			</div>
+
+			<div style="height: 5px;">&nbsp;</div>
+			
+			<div id="SA_IPC_AOEvent" class="cfg_row" style="position:relative; display: none;">
+				<div class="MaskDiv"></div>
+				<div class="first">
+					<div class="cfg_row_left" id="SA_IPC_AOL">Alarm Output</div>
+					<div class="cfg_row_right rightEx" id="SA_IPC_AOChannelDiv">	
+					</div>
+				</div>
+				<div id="SA_AODelayDiv" class="second">
+					<div class="cfg_row_left" id="SA_IPC_AODelayL">Delay</div>
+					<div class="cfg_row_right">
+						<input id="SA_IPC_AODelay" class="inputTxt timeTxt" 
+						onkeyup="if(keyboardFilter(event)) {NumberRangeMax(this, 300)}"
+						onblur="NumberRange(this, 10, 300, -1)" />
+						<label id="SA_IPC_AOSec">Sec</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="cfg_row" id="SA_VoiceTipDiv">
+				<div class="cfg_row_left" id="SA_VoiceTipL">Types of voice</div>
+				<div class="cfg_row_right">
+					<select class="select customSelect" id="SA_VoiceTip" style="float:left">
+					</select>
+					<div id="SA_Custom_box" style="float:left;">
+						<button id="SA_VoiceTipBtn" class="btn autoWidth" style="margin-left:5px;">Custom</button>
+					</div>
+				</div>
+			</div>
+			<div class="cfg_row">
+			</div>
+			<div class="cfg_row" style="text-align:center;">
+				<div id="SA_Advance_btn_box" style="display:inline-block;">
+					<button id="SA_Advance_Confirm" class="btn SvBtnState">Confirm</button>
+					<button id="SA_Advance_Cancel" class="btn btn_cancle">Cancel</button>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

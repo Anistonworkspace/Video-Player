@@ -1,0 +1,42 @@
+<!-- Outer containers -->
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="PPPOE_Enable">Enable</div>
+		<div class="cfg_row_right mv_R">
+			<div id="Enable_Switch" data="" class="switch"></div>
+		</div>
+	</div>
+	<div id="NetPPPoEBox">
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="PPPOE_NameL">User Name</div>
+			<div class="cfg_row_right">
+				<input class="inputTxt" type="text" id="PPPOE_Name" maxlength="31"/>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="PPPOE_PWL">PassWord</div>
+			<div class="cfg_row_right">
+				<div class="cfg_row_pwd">
+					<input class="inputTxt PswEyeShow" id="PPPOE_PW" type="text" maxlength="31"/>
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="PPPOE_IPAddrL">IP Address</div>
+		<div class="cfg_row_right">
+			<input id="PPPOE_IPAddr" class="inputTxt" disabled="true"/>
+		</div>
+	</div>
+
+    <div class="cfg_row">
+        <div class="btn_box">
+			<button id="PPPOERf" class="btn">Refresh</button>
+            <button id="PPPOESV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>

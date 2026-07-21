@@ -1,0 +1,92 @@
+<div class="cfg_container">
+    <div class="cfg_row">
+        <div class="cfg_row_left" id="GAT_EnableL">Enable</div>
+        <div class="cfg_row_right mv_R">
+            <div id="GAT_EnableSwi" data="" class="switch"></div>
+        </div>
+    </div>
+    <div id="GAT_DivBox">
+        <!--<div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_versionL">View-lib version</div>
+            <div class="cfg_row_right">
+                <select class="select" id="GAT_versionSel"></select>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_PicUpModeL">Piceture-Upload Mode</div>
+            <div class="cfg_row_right">
+                <select class="select" id="GAT_PicUpModeSel"></select>
+            </div>
+        </div>-->
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_DevidL">View-lib UserName</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="GAT_DevidInput"/>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_UserL">View-lib UserName</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="Gat_UserInput"/>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_PwdL">View-lib Password</div>
+            <div class="cfg_row_right">
+                <div class="cfg_row_pwd">
+                    <input id="GAT_PwdInput" class="inputTxt PswEyeShow" type="text"/>
+                    <div class="psw_eye_arc">
+                        <div class="psw_eye_cicle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_IPL">Server Address</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="GAT_IPInput"/>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_PortL">Port</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" id="GAT_PortInput" type="text"  maxlength="5"
+                       onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535);}"
+                       onblur="NumberRange(this, 21, 65535, -1);"/>
+            </div>
+        </div>
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="GAT_RegL">Register Status</div>
+            <div class="cfg_row_right">
+                <div id="GAT_RegStatus"></div>
+            </div>
+        </div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="GAT_HeartBeatL">HeartBeat</div>
+			<div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="GAT_HeartBeatInput"/>
+			</div>
+		</div>
+
+        <div class="cfg_row">
+			<div class="cfg_row_left" id="GAT_MaxHeartBeatL">Maximum HeartBeat</div>
+			<div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="GAT_MaxHeartBeatInput"/>
+			</div>
+		</div>
+        <div class="split"></div>
+    </div>
+
+    <div class="cfg_row">
+        <div class="btn_box" id="GAT_btn_box">
+			<button id="GAT_Rf" class="btn">Refresh</button>
+            <button id="GAT_SV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>

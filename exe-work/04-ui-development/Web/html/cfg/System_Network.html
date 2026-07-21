@@ -1,0 +1,219 @@
+<div class="cfg_container SystemNetWork">
+	<div style="width: 700px; height: 150px;" id="NetCardList">
+		<div class="table-responsive">
+			<div class="table-head">
+				<table class="table grid">
+					<colgroup>
+						<col style="width: 20%">
+						<col style="width: 30%">
+						<col style="width: 20%">
+						<col style="width: 15%">
+						<col style="width: 15%"> 
+					</colgroup>
+					<thead>
+						<tr>
+							<th id="NT_Netcard">Network Card</th>
+							<th id="NT_IPAddress">IP Address</th>
+							<th id="NT_NetMode">Network Mode</th>
+							<th id="NT_Compose">Compose</th>
+							<th id="NT_EditAndUnbind">Edit & Unbind</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="table-content">
+				<table id="NetCardTable" class="table grid">
+					<colgroup>
+						<col style="width: 20%">
+						<col style="width: 30%">
+						<col style="width: 20%">
+						<col style="width: 15%">
+						<col style="width: 15%">
+					</colgroup>
+				</table>
+				<tbody>
+				</tbody>
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row NT_SplitLine">
+		<div class="split"></div>
+	</div>
+	<div class="cfg_row" id="NT_NetcardInfoDiv">
+		<div class="cfg_row">
+			<div class="first NT_LableDiev" id="NT_IPAddressDiv">
+				<div id="NT_IpAddressL" class="SN_StaticLabelClass">IP Address:</div>
+				<div class="SN_InputClass">
+					<input id="NT_IpAddressLabel" readonly="readonly"/>
+				</div>
+			</div>
+			<div class="second NT_LableDiev" id="NT_GatewayDiv" style="margin-left: 10px;">
+				<div class="SN_StaticLabelClass" id="NT_GateWayL">Default Getway:</div>
+				<div class="SN_InputClass">
+					<input id="NT_GateWayLabel" readonly="readonly"/>
+				</div>
+			</div>
+			<div class="second NT_LableDiev" id="NT_NetModeDiv" style="margin-left: 20px;">
+				<div class="SN_StaticLabelClass" id="NT_NetModeL" style="width: 65px">Mode:</div>
+				<div class="SN_InputClass">
+					<input id="NT_NetModeLabel" readonly="readonly"/>
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row" style="margin-top: 10px">
+			<div class="first NT_LableDiev" id="NT_MacDiv">
+				<div class="SN_StaticLabelClass" id="NT_MacL">MAC:</div>
+				<div class="SN_InputClass">
+					<input id="NT_MacLabel" readonly="readonly"/>
+				</div>
+			</div>
+			<div class="second NT_LableDiev" id="NT_SubMaskDiv" style="margin-left: 10px;">
+				<div class="SN_StaticLabelClass" id="NT_SubMaskL">Submask:</div>
+				<div class="SN_InputClass">
+					<input id="NT_SubMaskLabel" readonly="readonly"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row NT_SplitLine" style="margin-top: 30px">
+		<div class="split"></div>
+	</div>
+	
+	<div class="cfg_row" id="Default_NetcardDiv">
+		<div class="cfg_row_left" id="DefaultNetcardL">Default Network Card</div>
+		<div class="cfg_row_right">
+			<div class="inlinebox">
+				<select id="SelectDefaultNetcard" class="select"></select>
+			</div>
+		</div>
+	</div>
+
+	<div class="cfg_row" id="NetCardSelectDiv">
+		<div class="cfg_row_left" id="NetCardL">Net Card</div>
+		<div class="cfg_row_right">
+			<div class="inlinebox">
+				<select id="SelNetCard" class="select"></select>
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row" id="AdaptiveIP_div">
+		<div class="cfg_row_left"></div>
+		<div class="cfg_row_right">
+			<div class="check-btn-box">
+				<span id="DHCPSpan">		
+					<input id="DHCPSwitch" type="checkbox"/>
+					<label for="DHCPSwitch" id="DHCPLab">DHCP Enable</label>
+				</span>
+				<span id="AdaptiveSpan" style="display: none;">
+					<input id="AdaptiveSwitch" type="checkbox"/>
+					<label for="AdaptiveSwitch" id="AdaptiveLab">Adaptive IP</label>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div id="IpBox">
+		<div class="cfg_row" id="table_ip_add">
+			<div class="cfg_row_left" id="NetIP">IP Address</div>
+			<div class="cfg_row_right">
+				<input id="IpAddressInput" class="inputTxt" onblur="LimitIP(this);" onkeyup="if(keyboardFilter(event)) {LimitIP(this);}"/>
+			</div>
+		</div>
+		<div class="cfg_row" id="table_subnet_mask">
+			<div class="cfg_row_left" id="SubnetMask">Subnet Mask</div>
+			<div class="cfg_row_right">
+				<input id="SubnetMaskInput" class="inputTxt"  onblur="LimitIP(this);" onkeyup="if(keyboardFilter(event)) {LimitIP(this);}"/>
+			</div>
+		</div>
+		<div class="cfg_row" id="table_gateway">
+			<div class="cfg_row_left" id="Gateway">Gateway</div>
+			<div class="cfg_row_right">
+				<input id="GatewayInput" class="inputTxt"  onblur="LimitIP(this);" onkeyup="if(keyboardFilter(event)) {LimitIP(this);}"/>
+			</div>
+		</div>
+	</div>
+	<div id="DNSBox" style="display: none;">
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="PrimaryDNS">Primary DNS</div>
+			<div class="cfg_row_right">
+				<input id="PrimaryDNSInput" class="inputTxt"  onblur="LimitIP(this);" onkeyup="if(keyboardFilter(event)) {LimitIP(this);}"/>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="SecondaryDNS">Secondary DNS</div>
+			<div class="cfg_row_right">
+				<input id="SecondaryDNSInput" class="inputTxt"  onblur="LimitIP(this);" onkeyup="if(keyboardFilter(event)) {LimitIP(this);}"/>
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row" id="MediaBox">
+		<div class="cfg_row_left" id="MediaPort">Media Port</div>
+		<div class="cfg_row_right">
+			<input id="MediaPortInput" style="width: 178px; height: 23px;" maxlength="5" 
+			onkeyup="if(keyboardFilter(event)) {NumberRange(this, 1, 65535, -1)}"
+			onblur="NumberRange(this, 1, 65535, -1);"/>
+		</div>
+	</div>
+	<div class="cfg_row" id="HttpBox">
+		<div class="cfg_row_left" id="HttpPort">Http Port</div>
+		<div class="cfg_row_right">
+			<input id="HttpPortInput" style="width: 178px; height: 23px;" maxlength="5" 
+			onkeyup="if(keyboardFilter(event)) {NumberRange(this, 1, 65535,-1)}"
+			onblur="NumberRange(this, 1, 65535, 80);if(this.value=='34567' || this.value=='34561')this.value='80'"/>
+		</div>
+	</div>
+	<div class="cfg_row" id="OnvifBox">
+		<div class="cfg_row_left" id="OnvifPort">Onvif Port</div>
+		<div class="cfg_row_right">
+			<input id="OnvifPortInput" style="width: 178px; height: 23px;" maxlength="5" 
+			onkeyup="if(keyboardFilter(event)) {NumberRange(this, 1, 65535, -1)}"
+			onblur="NumberRange(this, 1, 65535, -1);"/>
+		</div>
+	</div>
+	<div class="cfg_row" id="DevInfo_div">
+		<div class="cfg_row_left" id="DeviceInfoL">Device Info</div>
+		<div class="cfg_row_right">
+			<input id="DeviceInfoInput" class="inputTxt" readonly="readonly"/>
+		</div>
+	</div>
+	<div class="cfg_row" id="OnvifCheckBox" style="display: none;">
+		<div class="cfg_row_left" id="OnvifCheckLab">Onvif Check</div>
+		<div class="cfg_row_right">
+			<span style="margin: 6px 0 0 0; float: left;">
+				<input type="checkbox" id="OnvifCheckSwitch"/><label for="OnvifCheckSwitch">&nbsp;</label>
+			</span>
+		</div>
+	</div>
+	<div class="cfg_row" id="HSDownload_div">
+		<div class="cfg_row_left" id="HSDLab">HS Download</div>
+		<div class="cfg_row_right">
+			<span style="margin: 6px 0 0 0; float: left;">
+				<input type="checkbox" id="HSDSwitch"/><label for="HSDSwitch">&nbsp;</label>
+			</span>
+		</div>
+	</div>
+	<div class="cfg_row" id="table_transfer_policy">
+		<div class="cfg_row_left" id="TransferPolicy">Transfer Policy</div>
+		<div class="cfg_row_right" >
+			<select class="select" id="SelTransferPolicy"></select>
+		</div>
+	</div>
+	<div class="cfg_row" id="table_Network_Encryption"  style="display: none;">
+		<div class="cfg_row_left" id="NetworkEncryption">Network Encryption</div>
+		<div class="cfg_row_right" >
+			<select class="select" id="SelNetworkEncryption"></select>
+		</div>
+	</div>
+	<div class="cfg_row" id="table_PhysBandwidths"  style="display: none;">
+		<div class="cfg_row_left" id="LabelPhysBandwidths">Bandwidths</div>
+		<div class="cfg_row_right" >
+			<select class="select" id="SelPhysBandwidths"></select>
+		</div>
+	</div>
+	<div class="cfg_row">
+	    <div class="btn_box" id="img_Btn_box">
+	        <button id="NetworkRf" class="btn">Refresh</button>
+			<button id="NETSetUp" class="btn" style="display: none;">Setup</button>
+	        <button id="NetworkSave" class="btn SvBtnState">Save</button>
+	    </div>
+	</div>
+</div>

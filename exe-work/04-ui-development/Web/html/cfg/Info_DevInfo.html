@@ -1,0 +1,125 @@
+<div class="dialog_role" id="DevInfo_Dialog" style="width:630px; left:20%;top:0px;display:none;">
+	<ul class="SecondTitle">
+		<li>
+			<h3 id="DevInfo_Title">Device info.</h3>
+			<span class="second_close">&times;</span>
+		</li>
+	</ul>
+	<ul class="content_details">
+		<li class="content_container">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="AudioInChannelL">Audio In Channels</div>
+				<div class="cfg_row_right">
+					<input id="AudioInChannel" class="inputTxt" maxlength="2"/>
+				</div>
+			</div>	
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="AlarmInChannelL">Alarm In Channels</div>
+				<div class="cfg_row_right">
+					<input id="AlarmInChannel" class="inputTxt" maxlength="2"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="AlarmOutChannelL">Alarm Out Channels</div>
+				<div class="cfg_row_right">
+					<input id="AlarmOutChannel" class="inputTxt" maxlength="2"/>
+				</div>
+			</div>
+			<div class="cfg_row" id="PreviewMaxDiv" style="display:none;">
+				<div class="cfg_row_left" id="PreviewMaxChannelL1">Max support channel of preview :</div>
+				<div class="cfg_row_right">
+					<select class="select" id="PreviewMaxChannel">
+					</select>
+				</div>
+			</div>
+
+			<div class="cfg_row" id="RemoteType_Div" style="display: none;">
+				<div class="cfg_row_left" id="RemoteTypeL">Remote control type</div>
+				<div class="cfg_row_right">
+					<select id="RemoteType" class="select">
+						<option>General</option>
+					</select>
+				</div>
+			</div>	
+			<div class="cfg_row" id="PadType_Div" style="display: none;">
+				<div class="cfg_row_left" id="PadTypeL">Pad Type</div>
+				<div class="cfg_row_right">
+					<select id="PadType" class="select" >
+						<option>General</option>
+					</select>
+				</div>
+			</div>	
+			<div class="cfg_row" id="MaxPlayback_Div">
+				<div class="cfg_row_left" id="MaxPlaybackL">Maximum Playback large </div>
+				<div class="cfg_row_right">
+					<input id="MaxPlayback" class="inputTxt" maxlength="2"/>
+				</div>
+			</div>	
+			<div class="cfg_row" id="DefaultPB_Div">
+				<div class="cfg_row_left" id="DefaultPBL">Default Playback large</div>
+				<div class="cfg_row_right">
+					<span style="margin: 6px 0 0 0; float: left;">
+						<input type="checkbox" id="DefaultPBSwitch"/><label for="DefaultPBSwitch">&nbsp;</label>
+					</span>
+					<input id="DefaultPB" class="inputTxt" maxlength="2" style="width:200px;"/>
+				</div>
+			</div>
+
+			<div class="cfg_row" id="Buzzer_Div" style="display: none;">
+				<div class="cfg_row_left" id="BuzzerL">Enabel Buzzer</div>
+				<div class="cfg_row_right">
+					<span style="margin: 6px 0 0 0; float: left;">
+						<input type="checkbox" id="BuzzerSwitch"/><label for="BuzzerSwitch">&nbsp;</label>
+					</span>
+				</div>
+			</div>
+
+			<div class="cfg_row" id="RS232AndPTZ_Box" style="display: none;">
+				<div class="first" id="PTZ_Div" style="display: none;">
+					<div class="cfg_row_left" id="PTZL">Enable PTZ</div>
+					<div class="cfg_row_right">
+						<span style="margin: 6px 0 0 0; float: left;">
+							<input type="checkbox" id="PTZSwitch"/><label for="PTZSwitch">&nbsp;</label>
+						</span>
+					</div>
+				</div>
+				<div class="second" id="RS232_Div" style="display: none;">
+					<div class="cfg_row_left" id="RS232L">Enable RS232</div>
+					<div class="cfg_row_right">
+						<span style="margin: 6px 0 0 0; float: left;">
+							<input type="checkbox" id="RS232Switch"/><label for="RS232Switch">&nbsp;</label>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="cfg_row" id="FaceDetect_Div" style="display: none;">
+				<div class="cfg_row_left" id="FaceDetectL">Enable face detection</div>
+				<div class="cfg_row_right">
+					<span style="margin: 6px 0 0 0; float: left;">
+						<input type="checkbox" id="FaceDetectSwitch"/><label for="FaceDetectSwitch">&nbsp;</label>
+					</span>
+				</div>
+			</div>
+
+			<div class="cfg_row" id="EnableVirtualNetworkCard_Div" style="display: none;">
+				<div class="cfg_row_left" id="EnableVisualNetworkCardL">Enable Virtual network card</div>
+				<div class="cfg_row_right">
+					<span style="margin: 6px 0 0 0; float: left;">
+						<input type="checkbox" id="EnableVirtualNetworkCard"/><label for="EnableVirtualNetworkCard">&nbsp;</label>
+					</span>
+				</div>
+			</div>
+
+			<div class="cfg_row" id="split_Div">
+				<div style="width:100%; border-bottom: 1px solid gray; display: inline-block;margin:10px auto;">
+				</div>
+			</div>
+
+			<div class="btn_box" style="margin-left: 175px;">
+				<button id="DevInfo_Confirm" class="btn SvBtnState">Confirm</button>
+				<button id="DevInfo_Cancel" class="btn btn_cancle">Cancel</button>
+			</div>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,68 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="IPFilterlist_enable_text">Enable</div>
+		<div class="cfg_row_right">
+            <div class="switch" id="IPFilterlist_enable_switch" data="" style="float: left;"></div>
+        </div>
+	</div>
+	<div id="EnableBox">
+		<div class="cfg_row"></div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="IPFilterlist_Restricted_text">Restricted Type</div>
+			<div class="cfg_row_right">
+				<select class="select" id="IPFilterlist_Restricted"></select>
+			</div>
+		</div>
+		<div class="cfg_row" id="IPFilterlist_StartAddressDiv">
+			<div class="cfg_row_left" id="IPFilterlist_StartAddr">Start Address</div>
+			<div class="cfg_row_right">
+				<input class="inputTxt" type="text" style="ime-mode:disabled;float: left;" id="IPFilterlist_StartAddress"  onblur="LimitIP(this);" onkeyup="if(keyboardFilter(event)) {LimitIP(this);}"/>
+				<button id="IPFilterlist_SingleAdd" class="btn autoWidth">Single Add</button>
+			</div>
+		</div>
+		<div class="cfg_row"></div>
+		
+		<div style="width: 100%; height: 130;">
+			<div id="IPFilterList">
+				<div class="table-responsive">
+					<div class="table-head">
+						<table class="table grid" style="margin-bottom:0">
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:80%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th></th>
+									<th><input id="IPFilterCheckAll" type="checkbox"/></th>
+									<th id="Head_Address"></th>
+								</tr>
+							</thead>
+						</table>
+				    </div>
+				    <div class="table-content">
+						<table id="NetServiceTable" class="table grid">
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:80%">
+							</colgroup>
+							<tbody>
+							</tbody>
+						</table>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="cfg_row" id="IPFilterlist_btnbox" style="margin-top: 10px;">
+		<div id="DelBox">
+			<button id="IPFilterlist_Del" class="btn">Delete</button>
+		</div>
+		<button id="IPFilterlist_Rf" class="btn">Refresh</button>
+    	<button id="IPFilterlist_Save" class="btn SvBtnState">OK</button>
+    </div>
+</div>
+
+

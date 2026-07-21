@@ -1,0 +1,71 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="DDNSType">DDNS Type</div>
+		<div class="cfg_row_right">
+			<select class="select" id="SelDDNSType"></select>
+		</div>
+	</div>
+	
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Enable">Enable</div>
+		<div class="cfg_row_right">
+			<div id="SwitchEnable" class="selectDisable" data="0"></div>
+		</div>
+	</div>
+	
+	<div id="CfgBox">
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="ServerName">Server Name</div>
+			<div class="cfg_row_right">
+				<input id="InputServerName" class="inputTxt"/>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="Port">Port</div>
+			<div class="cfg_row_right">
+				<input id="InputPort" class="inputTxt" maxlength="5"
+				onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 65535, -1);}"
+				onblur="NumberRange(this, 0, 65535, -1);"/>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="UpdatePeriod">Update Period</div>
+			<div class="cfg_row_right">
+				<div class="inlinebox">
+					<input id="InputUpdatePreiod" class="inputTxt" maxlength="5"
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 65535, -1);}"
+					onblur="NumberRange(this, 0, 65535, -1);"/>
+				</div>
+				<div class="inlinebox" id="Unit">Min</div>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="ARSP_UserName">User Name</div>
+			<div class="cfg_row_right">
+				<input id="InputUserName" class="inputTxt"/>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="Password">Password</div>
+			<div class="cfg_row_right">
+				<div class="cfg_row_pwd">
+					<input id="InputPassword" class="inputTxt PswEyeShow" type="text"/>
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cfg_row">
+		<div class="btn_box">
+			<button id="BtnRf" class="btn">Cancel</button>
+			<button id="BtnSave" class="btn SvBtnState">Save</button>
+		</div>
+	</div>
+</div>

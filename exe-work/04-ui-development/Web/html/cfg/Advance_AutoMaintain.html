@@ -1,0 +1,52 @@
+<div class="cfg_container">
+    <div class="cfg_row">
+		<div id="auto_reboot">Auto-Reboot System</div>
+    </div>
+	<div class="cfg_row">
+		<div id="AutoRebootWeek" class="inlinebox">
+			<select id="weekSel" style="width: 200px; height: 25px;"></select>
+		</div>
+		<div id="timeLimit" style="float: left; width: 30px; margin-left: 10px;">At</div>
+		<div id="AutoRebootTime" class="inlinebox">
+			<select id="timeSel" style="width: 200px;height: 25px;"></select>
+		</div>
+	</div>
+	
+	<div class="cfg_row"></div>
+	<div class="cfg_row">
+		<div id="auto_del_files">Auto-Delete Old Files</div>
+	</div>
+	<div class="cfg_row">
+		<div id="AutoDelFiles" class="inlinebox">
+			<select id="delFileSel" style="width: 200px; height: 25px;"></select>
+		</div>
+		<div id="AutoDelDay" class="inlinebox">
+			<input id="AutoDelDayInput" type="text" class="inputTxt" style="width: 80px; margin-left: 40px;"
+			onkeyup="this.value=this.value.replace(/[^\d]/g,''); if(this.value>255)this.value=255; if(this.value<1)this.value=1;">
+		</div>
+		<div id="AutoDelDayUnit" class="inlinebox">Day(s) Ago</div>
+	</div>
+
+	<div class="cfg_row"></div>
+	<div id="table_online_upgrade" style="display: none;">
+		<div class="cfg_row">
+			<div id="online_upgrade">Online Upgrade</div>
+		</div>
+		<div class="cfg_row">
+			<div class="check-btn-box" id="upgradeCheckBox">
+				<span>
+					<input id="AutoUpgrade" type="checkbox">
+					<label for="AutoUpgrade" id="AutoUpgradeLab">Automatic firmware upgrade Important</label>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cfg_row"></div>
+	<div class="cfg_row">
+	    <div class="btn_box" id="hdd_btn_box">
+			<button id="AutoMaintainRf" class="btn">Refresh</button>
+			<button id="AutoMaintainSave" class="btn SvBtnState" value="0">Save</button>
+	    </div>
+	</div>
+</div>

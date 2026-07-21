@@ -1,0 +1,51 @@
+<div class="cfg_container" id="IPCVersion_page">
+	<div class="cfg_row" id="table_channel">
+		<div class="cfg_row_left" id="IPC_Channel">Record Channel</div>
+		<div class="cfg_row_right">
+			<select id="IPCChannelNum" class="select"></select>
+		</div>
+	</div>
+	<div class="cfg_row" id="table_Name">
+		<div class="cfg_row_left" id="IPC_Name">Channel Name</div>
+		<div class="cfg_row_right">
+			<input id="IPCName" class="inputTxt" onkeyup="if(keyboardFilter(event)) {BytesRangeMax(this, 63);}" onblur="BytesRangeMax(this, 63);" />
+		</div>
+	</div>
+	<div class="cfg_row" id="table_ip">
+		<div class="cfg_row_left" id="IPC_IP">IP Address</div>
+		<div class="cfg_row_right">
+			<input id="IPCIP" readonly="readonly" class="inputTxt" />
+		</div>
+	</div>
+	<div class="version" id="IPCVersion_Box">
+		<div class="cfg_row" id="table_system">
+			<div class="cfg_row_left" id="IPC_System">System</div>
+			<div class="cfg_row_right">
+				<input class="inputTxt" id="IPCSystem" readonly="readonly"/>
+			</div>
+		</div>
+		<div class="cfg_row" id="table_build_data">
+			<div class="cfg_row_left" id="IPC_Build_Date">Build Date</div>
+			<div class="cfg_row_right">
+				<input id="IPCBuildDate" readonly="readonly" class="inputTxt" />
+			</div>
+		</div>
+		<div class="cfg_row" id="table_serial_id">
+			<div class="cfg_row_left" id="IPC_Serial_ID">Serial ID</div>
+			<div class="cfg_row_right">
+				<input class="inputTxt" id="IPCSerialID" readonly="readonly"/>
+			</div>
+		</div>
+		
+		<div ID="IPCSNDiv">
+			<div id="IPCQR_SN" class="QR"></div>
+		</div>
+	</div>
+
+	<div class="cfg_row">
+        <div class="btn_box" id="vl_btn_box">
+            <button id="IPCVersionRf" class="btn">Refresh</button>
+            <button id="IPCVersionSave" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>

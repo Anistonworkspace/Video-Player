@@ -1,0 +1,78 @@
+<!-- Outer containers -->
+<div class="cfg_container">
+    <div class="cfg_row">
+        <div class="cfg_row_left" id="FTP_Startup">Enable</div>
+        <div class="cfg_row_right mv_R">
+            <div id="FTP_Switch" data="" class="switch"></div>
+        </div>
+    </div>
+    <div id="FtpDivBox">
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="FtpIpAddr">Server IP</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="FtpIpAddrInput" maxlength="63"/>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="FtpPort">Port</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" id="FtpPortInput" type="text" value="80" maxlength="5"
+                       onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 65535);}"
+                       onblur="NumberRange(this, 21, 65535, -1);"/>
+                       <label id="FtpPortTip"></label>
+            </div>
+        </div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="FtpAnonymity">Anonymous</div>
+			<div class="cfg_row_right mv_R">
+				<div id="Ftp_Anonymity" data="0" class="switch"></div>
+			</div>
+		</div>
+		<div id="FtpLoginBox">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="FtpLoginName">User Name</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" type="text" id="FtpNameInput" maxlength="31"/>
+				</div>
+			</div>
+
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="FtpLoginPwd">Password</div>
+				<div class="cfg_row_right">
+					<div class="cfg_row_pwd">
+						<input id="FTP_PW" class="inputTxt PswEyeShow" type="text" maxlength="31"/>
+						<div class="psw_eye_arc">
+							<div class="psw_eye_cicle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="FtpFileLength">Max File Length (M)</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="FtpLengthInput" maxlength="5"
+                       onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 65535, -1);}"
+                       onblur="NumberRange(this, 0, 65535, -1);"/>
+				<label id="FileUnit">M</label>
+            </div>
+        </div>
+
+        <div class="cfg_row" id="Ftp_DirName">
+            <div class="cfg_row_left" id="FtpDirName">DirName</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="FtpDirNameInput" maxlength="256"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="cfg_row">
+        <div class="btn_box" id="ftp_btn_box">
+            <button class="btn autoWidth" id="FtpTest">FTP Test</button>
+			<button id="FTPRf" class="btn">Refresh</button>
+            <button id="FTPSV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>

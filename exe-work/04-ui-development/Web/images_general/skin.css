@@ -1,0 +1,4018 @@
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+
+::-webkit-scrollbar-track {
+background-color: transparent;
+-webkit-border-radius: 2em;
+-moz-border-radius: 2em;
+border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #9c9da0;
+-webkit-border-radius: 2em;
+-moz-border-radius: 2em;
+border-radius: 2em;
+}
+*{
+	scrollbar-width:thin;
+}
+
+a,
+a[href],
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	cursor: pointer
+}
+/*login*/
+.loginTopLogo{
+	width:417px;
+	height:223px;
+	margin:auto;
+	display:none;
+}
+.login_main {
+	margin:auto;
+	width: 100%;
+	height: 400px;
+	font-size: 12px;
+	text-align: center;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loginDiv {
+	position: relative;
+	width: 360px;
+	margin-left: auto;
+	margin-right: auto
+}
+.language_box {
+	position: relative;
+	height: 22px
+}
+#login_language {
+	width: 100px;
+	height: 20px;
+	float: right;
+	margin-top: 2px;
+	margin-right: 10px
+}
+#login_language .select_text {
+	display: inline-block;
+	text-align: left
+}
+#login_language .select_bottom {
+	max-height: 200px
+}
+#login_language .select_item {
+	text-align: left
+}
+.loginLogoBg {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 10px
+}
+.loginLogo {
+	width: 320px;
+	height: 80px;
+	margin: 0;
+	margin-left: 20px;
+	line-height: 80px;
+	font-size:16px;
+	font-weight: bold;
+	font-family:   Arial, sans-serif;
+}
+.enterBox {
+	position: relative;
+	width: 280px;
+	margin: 10px auto;
+}
+.login_box {
+	position: relative;
+	width: 100%;
+	height: 35px;
+	line-height: 32px;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #E2EAF5 inset;
+	-webkit-text-fill-color: black;
+}
+
+.spanImg {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 2px 0 0 2px
+}
+.login_input {
+	width: 210px;
+	float: left;
+	margin-left: 6px;
+	height: 35px;
+	line-height: normal;
+	line-height: 30px;
+	border: 0
+}
+.login_input:focus {
+	outline: 0;
+	border: 0
+}
+#loginBtn {
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	font-weight: bold;
+	bottom: 35px;
+	border: 0
+}
+.LoginStatus {
+	position: relative;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 40px;
+	background: transparent
+}
+.loginPswCkbox_div {
+	width: 100%;
+	height: 25px;
+	line-height: 20px;
+	margin: 10px 0px;
+}
+#Web_false {
+	font-size: 12px;
+	display: none
+}
+.menuBox {
+	width:155px;
+	height: 70px;
+	padding:0px;
+	margin: 0px;
+}
+.menuBtn {
+	width:100%;
+	padding: 0px;
+}
+#alarmBtn {
+	height: 50px;
+}
+.alarmShowTip{
+	background:url(alarmTip.png) no-repeat;
+	width:8px;
+	height:8px;
+	position: relative;
+	margin-left: 71px;
+	margin-bottom: 10px;
+}
+/*prompt*/
+#PopPormptBox {
+	width: 240px;
+	height: 150px;
+	font-size: 12px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+	background-color:#dde3ed;
+	color:#6d6d6d;
+	z-index: 11000;
+	position: fixed;
+	bottom:0px;
+	left:0px;
+}
+#PopPormptBar{
+	background-color:#949fbb;
+	width:100%;
+	height: 36px;
+}
+#PopPormptTitle {
+	width: 200px;
+	overflow: hidden;
+	padding-top: 10px;
+	float: left;
+	padding-left: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6d6d6d;
+}
+#PopPormptClose {
+	margin-top: 10px;
+	margin-right: 13px;
+	width: 15px;
+	height: 15px;
+	float: right;
+	cursor: pointer;
+	background:url('close.png') 0 0;
+}
+#PopPormptContant {
+	max-height: 260px;
+	height:115px;
+	width: 220px;
+	padding: 0 10px;
+	white-space: normal;
+	word-break: break-all;
+	text-align: center;
+	vertical-align: middle;
+	overflow-y: auto;
+	text-align: center;
+	background-color:#dde3ed;
+	color:#6d6d6d;
+	display:inline-block;
+	word-wrap:break-word;
+}
+/*live*/
+.content_Box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.liveMain {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+.channelListBox {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	bottom: 0;
+	right: 10px;
+	width: 200px;
+	display: block;
+}
+.liveTalkBtn {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	right: 0;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px 0 10px;
+	text-align: center;
+}
+.liveBtnTalk {
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-left: 16px;
+	margin-top: 4px;
+}
+.liveBtnTitle {
+	float: left;
+	width: auto;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+}
+.SplitLine{
+	position: absolute;
+	top: 52px;
+	left:15px;
+	border:0px;
+	width:170px;
+	margin: auto;
+	height:1px;
+	background-color:  #312E81;
+	opacity: 0.21;
+}
+.channelList {
+	position: absolute;
+	top: 75px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-left: 10px;
+	overflow-y: auto
+}
+.channelRow {
+	width: 100%;
+	height: 30px;
+	float: left;
+}
+.chnBtn {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin: 2px 0 0 14px;
+	cursor: pointer;
+}
+.channelNum {
+	width: auto;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	text-align: left;
+	font-size: 12px;
+	margin: 2px 0 0 14px;
+}
+.liveTop {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0px;
+	height: 40px;
+}
+.LiveTabBtn{
+	position: relative;
+	top: 9px;
+	width: 22px;
+	height:22px;
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+#listBtn {
+	position: absolute !important;
+	left: 15px;
+}
+#PTZBtn {
+	margin-right: 17px;
+}
+.centerContent {
+	position: absolute;
+	top: 0;
+	left: 220px;
+	right: 220px;
+	bottom: 0;
+	min-width: 300px
+}
+.liveCenter {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	right: 10px;
+	bottom: 45px;
+}
+.liveBottom {
+	position: absolute;
+	left: 8px;
+	right: 8px;
+	bottom: 0;
+	height: 40px
+}
+.SystemStatus_Box {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top:6px;
+}
+.SystemStatusType {
+	display: inline-block;
+	width: auto;
+	height: 24px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: left;
+}
+.SystemStatusContent {
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	text-align: right;
+	border: none;
+	background-color: rgb(249,250,255);
+}
+
+.SystemStatusContent[name="active"] {
+	color: red;
+}
+.WndModeTabBtn{
+	position: relative;
+	float: left;
+	height:28px;
+	width: 36px;
+	margin-right: 18px;
+	margin-top:6px;
+	cursor: pointer;
+}
+.FullChannelPreviewTabBtn{
+	position: relative;
+	float: left;
+	height:28px;
+	width: 36px;
+	margin-right: 18px;
+	margin-top:6px;
+	cursor: pointer;
+}
+.liveControlBtn {
+	position: relative;
+	float: left;
+	height:28px;
+	width: 28px;
+	margin-right: 18px;
+	margin-top:6px;
+	cursor: pointer;
+}
+#playCanvas{
+	background: #000000;
+	display: block;
+  	width: 100%;
+ 	height: 100%;
+}
+/*live right*/
+.rightContent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	display: block;
+	overflow-y:hidden;
+	float: right;
+}
+#liveCtrlTip{
+	position: absolute;
+	top:0;
+	height:28px;
+	line-height: 28px;
+	width:100%;
+	overflow-y:hidden;
+	text-align: center;
+}
+#liveCtrlContent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	margin-top: 28px;
+	overflow-y:auto;
+	float: right;
+}
+.LiveRightPage {
+	position: absolute;
+	top: 30px;
+	bottom: 0;
+	right: 30px;
+	left: 30px;
+	width:140px;
+}
+#LIVE_YT {
+	height: 140px;
+	width: 140px;
+	overflow: hidden;
+	position: relative;
+	background-position: 0 -280px;
+	margin-bottom: 10px;
+}
+.ptz-button {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	cursor: pointer;
+}
+.ptz-button1 {
+	height: 46px;
+	width: 23px;
+	position: absolute;
+	cursor: pointer;
+}
+#ytMove_1 {
+	left: 7px;
+	top: 7px
+}
+#ytMove_2 {
+	left: 50px;
+	top: 0px;
+}
+#ytMove_3 {
+	left: 93px;
+	top: 7px;
+}
+#ytMove_4 {
+	left: 0px;
+	top: 50px
+}
+#ytCenterL {
+	left: 47px;
+	top: 47px
+}
+#ytCenterR {
+	left: 70px;
+	top: 47px
+}
+#ytMove_6 {
+	left: 100px;
+	top: 50px
+}
+#ytMove_7 {
+	left: 7px;
+	top: 94px;
+}
+#ytMove_8 {
+	left: 50px;
+	top: 100px;
+}
+#ytMove_9 {
+	left: 94px;
+	top: 93px
+}
+#SpeedTitle,#speedNum {
+	float: left;
+	width: 75px;
+	height: 20px;
+	line-height: 25px;
+	margin-top: 2px;
+}
+#speedNum {
+	float: right;
+	text-align: right;
+	width: 20px;
+}
+#ptz_speed {
+	width: 140px;
+	height: 20px;
+	float: left;
+	margin-top: 10px;
+}
+#ptz_speed .ptzSpeedBlock {
+	float: left;
+	height: 100%;
+	padding-right: 4px;
+	cursor: pointer
+}
+#ptz_speed .ptzSpeedBlock .ptzSpeedImg {
+	width: 14px;
+	height: 20px;
+}
+.PtzCtrl,.PtzDirectCtrl {
+	position: relative;
+	width: 100%;
+	height:50px;
+	margin-top: 5px;
+}
+.PtzCtrl2{
+	height:40px;
+}
+.PtzDirectCtrl{
+	height:70px;
+}
+.PtzCtrlTitle {
+	width: 100%;
+	height: 15px;
+	overflow: hidden;
+	line-height: 15px;
+	float: left;
+}
+.PtzCtrlMinus1 {
+	display: inline-block;
+	width: 44px;
+	height: 20px;
+	float:left;
+	margin-top: 5px;
+}
+.PtzCtrlPlus1 {
+	display: inline-block;
+	width: 44px;
+	height: 20px;
+	float:right;
+	margin-top: 5px;
+}
+.CtrlTitle{
+	width: 100%;
+	height: 15px;
+	overflow: hidden;
+	line-height: 15px;
+}
+.TalkTitle{
+	width: 150px;
+	height: 15px;
+	overflow: hidden;
+	line-height: 15px;
+}
+.CtrlOp {
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+}
+.PtzDirectCtrl .CtrlOp {
+	height: 50px;
+}
+.PtzCtrl2 .CtrlOp {
+	height: 30px;
+}
+.CtrlInput {
+	float: left;
+	width: 138px;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.PresetBtn, .TourBtn {
+	float: left;
+	width: 44px;
+	height: 20px;
+	margin-right: 4px;
+}
+/*color*/
+.SliderBox {
+	width: 140px;
+	height: 28px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 27px;
+}
+.SliderDiv {
+	float: left;
+	width: 140px;
+	height: 100%;
+}
+.ColorDefBtn{
+	position: absolute;
+	width: 140px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	bottom:22px;
+	border-radius: 4px;
+	cursor:pointer;
+}
+
+#CheckVersionPrompt {
+	width: auto;
+	height: 50%;
+	color:rgb(0,0,0);
+	background-color: rgb(255, 255, 255);
+}
+.Version_Tip_Btn {
+	width: 30%;
+	height: 20px;
+	color:rgb(0,0,0);
+	background-color: rgb(255, 255, 255);
+}
+
+/*talk*/
+#TalkChannelSelect {
+	width: 75px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+}
+.DevTalkBtn{
+	width: 43%;
+	height: 20px;
+	margin-top: 10px;
+	line-height: 20px;
+	text-align: center;
+}
+#btnTalkCtrl{
+	display: inline-block;
+	vertical-align: top;
+}
+#TalkDevice, #BroadcastChn{
+	margin-top: 10px;
+}
+/*Elect*/
+#Elect, #OSDMenu{
+	height: 140px;
+	width: 140px;
+	overflow: hidden;
+	position: relative;
+	background-position: -140px -140px;
+	margin-bottom: 10px;
+}
+.ElePreBtn{
+	float: left;
+	width: 44px;
+	height: 20px;
+	margin-right: 4px;
+}
+.ElePreBtn{
+	background: url("Live/ptzctrl.png") 0 0;
+	cursor: pointer;
+}
+.EleBtn, .MenuBtn{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	cursor: pointer;
+}
+#OnPreset{
+	left: 30px;
+	top: 0px;
+	height: 32px;
+	width: 75px;
+}
+#DownPreset{
+	left: 30px;
+	top: 108px;
+	height: 32px;
+	width: 75px;
+}
+#LeftPreset{
+	left: 0px;
+	top: 33px;
+	height: 75px;
+	width: 32px;
+}
+#RightPreset{
+	left: 106px;
+	top: 33px;
+	height: 75px;
+	width: 32px;
+}
+#GoElePrePtBtn {
+	background-position: -44px 0;
+}
+#AddElePrePtBtn {
+	background-position: -44px -20px;
+}
+#DelElePrePtBtn {
+	background-position:-44px -40px;
+}
+
+
+#ElectZoomOut, #ElectZoomIn, #ElectRedu{
+	width: 100%;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 20px;
+	text-align: center;
+}
+.CtrlElect{
+	width: 100%;
+	height: 15px;
+	overflow: hidden;
+	line-height: 15px;
+}
+.CtrlEle3{
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+}
+.CtrlEle1, .CtrlEle2{
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+}
+.ElectInput {
+	float: left;
+	width: 138px;
+	height: 20px;
+	line-height: 18px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.ElectSel{
+	float: left;
+	width: 138px;
+	height: 25px;
+	line-height: 18px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+.ElectDynamic{
+	color: #fff;
+	background-color: #a2a1ac;
+	cursor: pointer;
+}
+.ElectDynamic[name="active"], .ElectDynamic:hover{
+	
+	color: #FEFEFD;
+	background: -webkit-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -moz-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -o-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -ms-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+}
+/*OSD*/
+#SetMenu{
+	top: 54px;
+	left: 57px;
+	height: 32px;
+	width: 32px;
+}
+#UpMenu{
+	left: 30px;
+	top: 0px;
+	height: 32px;
+	width: 75px;
+}
+#DownMenu{
+	left: 30px;
+	top: 108px;
+	height: 32px;
+	width: 75px;
+}
+#LeftMenu{
+	left: 0px;
+	top: 33px;
+	height: 75px;
+	width: 32px;
+}
+#RightMenu{
+	left: 106px;
+	top: 33px;
+	height: 75px;
+	width: 32px;
+}
+/*foot*/
+#wndModeBar {
+	width: 300px;
+	height: 28px;
+	position: relative;
+	margin-left:268px;
+	cursor: pointer;
+}
+#StreamBar {
+	width: 300px;
+	height: 28px;
+	position: relative;
+	margin-left:460px;
+	text-align: center;
+	cursor: pointer;
+}
+#StreamBar :hover{
+	background: #6C5CE7;
+	color: ghostwhite;
+}
+#videoRatioBar{
+	width: 180px;
+	height: 28px;
+	position: relative;
+	margin-left: 560px;
+	cursor: pointer;
+}
+.WndModeBtn, .CurWndModeBtn, .FullChnPreviewBtn, .RatioBtn, .PlayRatioBtn{
+	float:left;
+	position: relative;
+	width: 28px;
+	height: 28px;
+	margin-left: 5px;
+}
+.CurWndModeBtn, .FullChnPreviewBtn, .PlayRatioBtn{
+	margin-left: 0px;
+}
+.WndModeDownBtn, .FullChnPreviewDownBtn, .PlayRatioDownBtn{
+	float:left;
+	position: relative;
+	width: 8px;
+	height: 28px;
+	margin-left: 0px;
+	margin-top:10px;
+}
+.StreamTypeBtn{
+	float:left;
+	position: relative;
+	min-width: 40px;
+	width: auto;
+	height: 20px;
+	border: 1px solid #cccccc;
+	margin-left: 5px;	
+}
+.StreamTypeBtn[name="active"]{
+	background: #6C5CE7;
+	color: ghostwhite;
+}
+.LiveRightPage .cfg_row_right  div{
+	width: 75px;
+}
+/*alarm*/
+.alarm-wrp {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.alarm_left {
+	position: absolute;
+	width: 300px;
+	padding: 20px 30px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.check-box-row {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+#alarmAllBox{
+	width: 100% !important;
+}
+.check-box-row span{
+	float: left;
+	margin: 0px 10px 10px 0px;
+	width: 140px
+}
+.check-box-row  label{
+	min-width: 100px;
+}
+.alarm-type{
+	margin-top:10px;
+	margin-bottom:15px;
+	font-size:12px
+}
+.alarmContent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 370px;
+	float: left;
+	padding: 30px;
+}
+
+/*client*/
+.ClientConfigTab_Box {
+	width: 800px;
+	padding-top: 10px;
+}
+.ClientConfigTab {
+	display: inline-block;
+	width: 140px;
+	height: 34px;
+	background: #F8F8F9;
+	border: 1px solid #DDE0E4;
+	opacity: 1;
+	border-radius: 6px 6px 0px 0px;
+	font-size: 12px;
+	font-family:  Arial, sans-serif;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
+	color: #5B5B5B;
+	opacity: 1;
+	outline: none;
+}
+#Client_Content {
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(249,250,255);
+}
+#VersionInfo_Page {
+	width: 100%;
+	height: 90%;
+}
+#VersionInfo_Page_Content {
+	width: 96%;
+	margin-top: 2%;
+	margin-left: 2%;
+	height: 90%;
+	border: 1px solid #D0D6DC;
+}
+#VersionInfo_Page .cfg_row {
+	width: 100%;
+	margin-bottom: 0px;
+}
+#DownloadBtn,#CheckVersionBtn {
+	width: auto;
+	outline: none;
+	cursor: pointer;
+	margin-left: 40px;
+}
+#DownloadBtn:hover,#CheckVersionBtn:hover {
+	background-color: #6C5CE7;
+}
+#CheckVersionBtn:disabled {
+	background-color: #C1C1C1;
+}
+.ClientConfigTab[name="active"],.ClientConfigTab:hover {
+	color: #5B5B5B;
+	background-color: rgb(249, 250, 255);
+	border: 1px solid #FFFFFF;
+}
+#PathConfig_Page {
+	position: relative;
+	height: 500px;
+	background: rgb(249,250,255);
+	opacity: 1;
+}
+.client_version_type {
+	margin-left: 40px;
+	width: auto;
+	display: inline-block;
+}
+
+.client_version_content {
+	display: inline-block;
+}
+.client_version_content .inputTxt{
+	width: 200px;
+	border:0px;
+	background-color: #FFFFFF;
+}
+
+.updateLogclass
+{
+	padding: 14px 14px 11px;
+	background-color: rgba(169,173,204,.1);
+    height: auto;
+	width: 300px;
+	margin-left: 40px;
+}
+
+.pathCfg{
+	position: relative;
+	width: 900px;
+	margin: auto;
+	padding-top: 128px;
+}
+.config_box {
+	position: relative;
+	width: 800px;
+	height: 24px;
+	margin-bottom: 18px;
+}
+#RecordTypeSelect, #imageTypeSelect, #videoTypeSelect{
+	width: 392px;
+	height: 24px;
+	font-size: 12px;
+	font-family:  Arial, sans-serif;
+	color: #030813;
+	float: left;
+	padding-left: 11px;
+}
+.config_box .config_title_text {
+	width: 180px;
+	font-size: 12px;
+	font-family:  Arial, sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	color: #030813;
+	float: left;
+}
+.config_box input[type="text"] {
+	width: 379px;
+	height: 24px;
+	background: #FFFFFF;
+	border: 1px solid #D4D8DC;
+	font-size: 12px;
+	font-family:  Arial, sans-serif;
+	font-weight: 400;
+	line-height: 20px;
+	color: #030813;
+	opacity: 1;
+	float: left;
+	padding-left: 11px;
+}
+#pathSave {
+	width: 276px;
+	margin-left:212px;
+}
+
+/*playback*/
+.leftContent {
+	position: absolute;
+	width: 340px;
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	padding-top: 20px;
+}
+.pbItemBox {
+	float: left;
+	width: 100%;
+	height: 25px;
+	margin: 0 0 15px 0;
+}
+.pbItemLeft {
+	float: left;
+	width: 110px;
+	height: 100%;
+	line-height: 25px;
+	margin: 0 0 0 10px;
+}
+.pbItemRight {
+	float: left;
+	width: 220px;
+	height: 100%;
+	line-height: 25px;
+}
+.pbSelect {
+	float: left;
+	width: 180px;
+	height: 100%;
+}
+#byFileSpan, #byTimeSpan, #SyncSpan{
+	float: left;
+	margin-top: 2px;
+}
+.pbItemRightFirst {
+	float: left;
+	width: 90px;
+	height: 25px;
+	margin: 0 0 0 0;
+}
+.pbItemRightSecond {
+	float: left;
+	width: 90px;
+	height: 25px;
+	margin: 0 0 0 10px;
+}
+#BtnSearch {
+	width: 280px;
+	height: 30px;
+	cursor: pointer;
+	bottom: 250px;
+	margin: 0 20px;
+}
+#FirstBtnBox{
+	position: absolute;
+	height: 30px;
+	left: 15px;
+	right: 15px;
+	top: 10px;
+}
+#SecondBtnBox {
+	position: absolute;
+	height: 30px;
+	top: 50px;
+	left: 15px;
+	right: 15px;
+}
+#ThirdBtnBox {
+	position: absolute;
+	height: 30px;
+	top: 90px;
+	left: 15px;
+	right: 15px;
+}
+#DownloadPosBox{
+	position: absolute;
+	height: 20px;
+	top: 140px;
+	left: 15px;
+	right: 15px;
+}
+#GotoSearch ,#PageUp{
+	float: left;
+	width: 45%;
+	margin: 0;
+}
+#BtnPlay ,#PageDown{
+	float: right;
+	width: 45%;
+	margin: 0;
+}
+#BtnDownload{
+	float: left;
+	width: 45%;
+	margin: 0;
+}
+#BtnCancelDownload{
+	float: left;
+	width: 45%;
+	margin: 0;
+}
+#DownloadProgress{
+	float: left;
+	width: 88%;
+	margin: 0;
+}
+#DownloadPos{
+	float: right;
+	width: 10%;
+	margin: 0;
+}
+#FileList {
+	position: absolute;
+	top: 130px;
+	left: 15px;
+	right: 15px;
+	bottom: 20px;
+}
+#SearchList {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.playbackContent {
+	position: absolute;
+	height: 100%;
+	right: 10px;
+	left: 360px
+}
+#playbackOcx {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 180px;
+}
+#pbControlBtn_Box {
+	position: absolute;
+	height: 40px;
+	bottom: 135px;
+	left: 10px;
+	right: 10px
+}
+.pbControlBtn {
+	width: 37px;
+	height: 37px;
+	float: left;
+	margin-top: 1px;
+	margin-right: 5px
+}
+#pbBtnPlay {
+	background-position: 0 0;
+}
+#pbBtnPause {
+	background-position: 0 -37px;
+}
+#pbBtnStop {
+	background-position: 0 -74px;
+}
+#pbBtnSlow {
+	background-position: 0 -111px;
+}
+#pbBtnFast {
+	background-position: 0 -148px;
+}
+#pbBtnPreFrame {
+	background-position: 0 -185px;
+}
+#pbBtnNextFrame {
+	background-position: 0 -222px;
+}
+#pbBtnRecord{
+	background-position: 0 -259px;
+}
+#pbBtnSnap{
+	background-position: 0 -296px;
+}
+#pbBtnAudio{
+	background-position: 0 -333px;
+}
+#pbBtnZoom{
+	background-position: 0 -370px;
+}
+#SliderBox {
+	width: 500px;
+	height: 40px;
+	float: right;
+	margin-right: 0px;
+}
+#PlaySlider {
+	margin-top: 8px;
+}
+#progressBar {
+	position: absolute;
+	height: 120px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px
+}
+#progress-bar {
+	width: 100%;
+	height: 100%;
+}
+#Zoom_box {
+	width: 32px;
+	height: 16px;
+	margin-top: 2px;
+	margin-left: 5px;
+	position: absolute;
+	z-index: 10003;
+	display: block
+}
+.timeline-movepointer {
+	position: absolute;
+	z-index: 102;
+	width: 1px;
+	height: 100%;
+	display: none
+}
+.timeline-clickpointer {
+	position: absolute;
+	z-index: 102;
+	width: 1px;
+	height: 100%;
+	display: none
+}
+.timeline-curtime {
+	position: absolute;
+	z-index: 102;
+	display: none;
+	font-size: 12px
+}
+#ChannelDiv{
+	line-height: 30px;
+}
+/*config*/
+.RemoteSet_Box {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 220px;
+	bottom: 0px;
+	float: left;
+	overflow: hidden;
+}
+.RemoteSet_Box_Scroll {
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.RemoteSet_Menu {
+	position: relative;
+	width: 165px;
+	height: 48px;
+	font-size: 12px;
+	line-height: 48px;
+	padding-left: 55px;
+	float: left;
+	margin: 0px;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.RemoteSet_Menu:hover {
+	cursor: pointer
+}
+.RemoteSet_Menu_list:hover {
+	cursor: pointer
+}
+.RemoteSet_Menu_listBox {
+	float: left;
+	width: 220px;
+	height: auto
+}
+.RemoteSet_Menu .configBtn{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: 7px;
+	left: 10px
+}
+.RemoteSet_Menu label{
+	float: left;
+	height: 100%
+}
+#mRecord  .configBtn{
+	background-position: 0 0;
+}
+#mRecord:hover .configBtn,
+#mRecord[d='active'] .configBtn {
+	background-position: -32px 0;
+}
+#mAlarm  .configBtn{
+	background-position: 0 -32px;
+}
+#mAlarm:hover .configBtn,
+#mAlarm[d='active'] .configBtn{
+	background-position: -32px -32px;
+}
+#mSystem  .configBtn{
+	background-position: 0 -64px;
+}
+#mSystem:hover .configBtn ,
+#mSystem[d='active'] .configBtn{
+	background-position: -32px -64px;
+}
+#mAdvanced  .configBtn{
+	background-position: 0 -96px;
+}
+#mAdvanced:hover .configBtn,
+#mAdvanced[d='active'] .configBtn{
+	background-position: -32px -96px;
+}
+#mInfo .configBtn{
+	background-position: 0 -128px;
+}
+#mInfo:hover .configBtn,
+#mInfo[d='active'] .configBtn{
+	background-position: -32px -128px;
+}
+.RemoteSet_Menu_list {
+	width: 165px;
+	height: 35px;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 55px;
+	line-height: 35px;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.remoteSetContent {
+	position: absolute;
+	left: 240px;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	min-width: 300px
+}
+.content_top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 48px
+}
+.content-top-item {
+	position: relative;
+	height: 27px;
+	float: left;
+	margin: 10px 5px;
+	line-height: 27px
+}
+.positionImg {
+	width: 26px
+}
+.arrow_left,
+.arrow_right{
+	width: 26px;
+	height: 27px;
+	margin: 3px 0px;
+}
+.arrow_title{
+	width: 26px;
+	margin: 8px 5px
+}
+.content {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto
+}
+.menu-wrapper {
+	position: relative;
+	width: 100%;
+	height: auto
+}
+.menu-wrapper:hover {
+	cursor: pointer
+}
+.menu-wrapper.active:after {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 12px 12px 0;
+	top: 12px;
+	right: 0
+}
+.menu-wrapper .menu-title {
+	position: relative;
+	width: 100%;
+	height: 48px;
+	font-size: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 12px 20px
+}
+.menu-wrapper .menu-list {
+	width: 100%;
+	height: auto;
+	padding: 0 10px 8px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.menu-wrapper .menu-list .menu-item {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	padding: 6px 7px 4px 2px;
+	font-size: 12px;
+}
+.menu-wrapper .menu-list .menu-item:after {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 16px;
+	top: 50%;
+	right: 0;
+	margin-top: -8px;
+	opacity: .6
+}
+.menu-wrapper .menu-list .menu-item:last-child:after {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 0
+}
+.content-menu-wrapper {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+	height: 35px
+}
+.content-menu-list {
+	display: none;
+	list-style: none;
+	height: 35px;
+	line-height: 35px
+}
+.content-menu-list.active {
+	display: block
+}
+.content-menu-list .content-menu-item {
+	display: inline-block;
+	position: relative;
+	min-width: 40px;
+	height: 100%;
+	padding: 0 15px;
+	font-size: 12px;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+/*
+.content-menu-list .content-menu-item:after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 16px;
+	top: 50%;
+	right: -2px;
+	margin-top: -8px;
+}
+*/
+.menu-item-after{
+	display: block;
+	position: absolute;
+	width: 2px;
+	height: 16px;
+	top: 50%;
+	right: -2px;
+	margin-top: -8px;
+	border-right: 1px solid #5b5b5b;
+}
+.MovBlock{
+	position : absolute;
+	cursor : crosshair; 
+}
+.cfg_container {
+	position: relative;
+	top: 0;
+	left: 0;
+	padding:20px 41px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden
+}
+.cfg_row {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+.cfg_row_left {
+	display: inline-block;
+	width: 180px;
+	height: 30px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 30px;
+	float: left;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.choose_file{
+	border: 1px solid #cccccc;
+	width: 97%;
+	height: 28px;
+	border-radius: 5px;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+#upfile_form{
+	position: relative;
+	cursor: pointer;
+	border-color: #204d74;
+	overflow: hidden;
+	min-width: 95px;
+	font-size: 12px;
+	background-color: #949FBB;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	margin: 2px 0px 2px 15px;
+	border-radius: 5px;
+	float: left
+}
+.cfg_row_right {
+	display: inline-block;
+	width: 70%;
+	height: 30px;
+	line-height: 30px;
+	float: left
+}
+.rightEx {
+	width: 500px
+}
+.videoDiv {
+	position: absolute;
+	top: 20px;
+	left: 900px
+}
+#colorsetOcx, #imagesetOcx {
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	overflow: hidden;
+}
+#roiSetOcx{
+	width: 300px;
+	height: 250px;
+}
+.videoDiv .btn_div {
+	position: absolute;
+	top: 260px;
+	right: 0;
+	width: 300px
+}
+#Vidoeshelter,
+#MotionSP,
+#PZ_Rect,
+#GLL_Rect,
+#PD_Rect{
+	top: 0;
+	right: 0;
+	background-color: #000;
+}
+.btn_box {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 145px;
+	margin-bottom: 2px
+}
+.btn {
+	height: 30px;
+	min-width: 85px;
+	width: auto;
+	padding: 0 5px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 15px;
+	line-height: 30px;
+	font-size: 12px;
+	float: left;
+	border: 0;
+}
+.copy_btn {
+	height: 30px;
+	width: 85px;
+	text-align: center;
+	display: inline-block;
+	line-height: 30px;
+	font-size: 12px;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer
+}
+.copyDay,
+.copyChannel {
+	float: left;
+	display: block
+}
+.autoWidth {
+	min-width: 85px;
+	width: auto;
+	padding: 0 5px
+}
+#email_btn_box,
+#pir_btn_box,
+#ftp_btn_box,
+#IPFilterlist_btnbox,
+#hdd_btn_box,
+.btn_box_left {
+	margin-left: -14px
+}
+.select {
+	width: 300px;
+	height: 25px;
+	margin-top: 3px
+}
+.inputTxt {
+	width: 298px;
+	height: 23px;
+	line-height: 23px;
+	margin-top: 5px
+}
+.select option {
+	padding: 2px
+}
+#years, #endyears  {
+	width: 80px;
+	height: 25px;
+}
+#months, #endmonths, 
+#days, #enddays {
+	width: 50px;
+	height: 25px;
+}
+#DstStartMonth, #DstEndMonth,
+#DstStartWeek, #DstEndWeek,
+#DstStartWeekDay, #DstEndWeekDay {
+	width: 70px;
+	height: 25px;
+}
+#DstStartWeek,#DstEndWeek{
+	width: 75px;
+}
+.inlinebox {
+	float: left;
+	margin-left: 10px
+}
+.inlinebox:first-child {
+	margin-left: 0
+}
+.bottom {
+	clear: left;
+	margin-left: -58px
+}
+.table_box {
+	float: left;
+	font-size: 14px
+}
+.user_data {
+	padding-right: 50px
+}
+.copy_box {
+	margin-top: 15px
+}
+.copy_R {
+	float: left
+}
+.copy_title {
+	height: 30px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 30px
+}
+#log_type_list {
+	width: 500px
+}
+#updateWarming,#UpgradeRezult {
+	border: 0;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #F00
+}
+#upgrade_Online,#upgrade_Local {
+	font-size: 14px;
+	font-weight: bold;
+}
+#DefaultResetPrompt,#FactoryResetPrompt{
+	display: inline-block;
+	margin-left: 10px;
+}
+.switch, .selectDisEnabled {
+	cursor: pointer;
+	margin-top: 6px;
+	width: 50px;
+	height: 18px;
+	border: 0;
+	outline: 0
+}
+#devlog_container {
+	overflow: auto
+}
+#log_search,
+#logType {
+	float: left
+}
+.cursor {
+	cursor: pointer
+}
+.cfg_row.copytitle {
+	text-align: center;
+	width: 100%;
+	margin-top: 0;
+	font-weight: bold
+}
+.l-grid td div {
+	font-size: 13px
+}
+.form-group{
+	width: auto;
+	height: 25px;
+	margin-bottom: 5px;
+	padding: 0;
+	text-align: left
+}
+.form-group span{
+	float: left;
+}
+.form-group label{
+	width: 130px;
+	float: left;
+	font-size: 12px;
+}
+
+.cfg_radio_box {
+	display: inline-block;
+	overflow:hidden;
+}
+.cfg_radio_box .form-group{
+	height: 30px;
+	margin-bottom: 10px;
+}
+.cfg_radio_box .form-group label{
+	line-height: 30px;
+}
+.cfg_radio_box .spanOne{
+	width: auto !important;
+	margin-left: 3px
+}
+
+.cfg_radio_box .radioSpan{
+	width: 20px;
+	overflow: hidden;
+	padding-top: 8px;
+	display: block;
+}
+
+.DAChanDisplay{
+	width:100%;
+	text-align: center; 
+	font-size: 15px; 
+	float:left;
+	position:relative
+}
+#DABox span{
+	margin-top: 3px;
+}
+#ModuleView .table {
+	border: 1px solid #C2C9D1;
+}
+#ModuleView .table>tr>td{
+	border-top: 1px solid #C2C9D1;
+	text-align: center;
+}
+#ModuleView .table tr td + td {
+	border-left: 1px solid #C2C9D1;
+}
+.DAbtn{
+	width:22px;
+	height:16px;
+	right:2px;
+	bottom:2px;
+	position:absolute
+}
+.note-box {
+	margin-top: 20px;
+	background: #F4F4F4;
+	border: 1px solid #C1C1C1;
+	/* background: #262d33; */
+	padding: 15px 20px;
+	border-radius: 5px
+}
+.note-box h4{
+	font-size:16px;
+}
+.note-box span{
+	font-size:15px;
+	line-height:30px
+}
+#SecurityPage .cfg_row_right{
+	width: auto;
+}
+#QuestionsDiv input, #QuestionsDiv select{
+	width: 400px;
+}
+
+.security-split{
+	float:left; 
+	width:200px; 
+	border-bottom:1px solid gray; 
+	display: inline-block;
+	margin:15px 0 0 5px
+}
+#UserInfo_ligerGrid .l-grid td div {
+	font-size: 12px;
+	line-height: 30px
+}
+#UserPage .btn {
+	min-width: 100px;
+	width: auto;
+}
+
+.tabs{
+	margin-bottom:0;
+	list-style:none;
+	overflow:hidden
+}
+.tabs  > li{
+	margin-right: 10px !important;
+	float:left;
+	margin-bottom: -1px;
+	position: relative;
+	list-style: none;
+}
+.tabs>li>a {
+	padding: 5px 0;
+	height: 20px;
+	line-height: 20px;
+	background: #d8dde3;
+	border: 0px;
+	border-bottom: 1px solid #C2C9D1;
+	width: 135px;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	display: block;
+	cursor: pointer;
+}
+.tabs>li>a:hover, .tabs>li>a:focus{
+	background: #e1f1ff !important;
+	color: inherit
+}
+.tabs-activeItem{
+	background: #8294a8 !important;
+	color: #ffffff;
+}
+.tab-pane{
+	padding: 20px;
+	background: transparent;
+	height: auto;
+	border: 1px solid #C2C9D1;
+	border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	overflow:hidden
+}
+.check-btn-box, .list-check-box {
+	display: inline-block;
+	float: none;
+	width: 100%;
+}
+.check-btn-box span {
+	width: auto;
+	float: left;
+	margin: 8px 30px 0px 0px;
+}
+.check-btn-box label{
+	width: auto;
+}
+
+.tab-pane .check-btn-box span:first-child{
+	width: 100% !important;
+	margin-right: 0px;
+}
+
+.tab-pane .check-btn-box span{
+	width: 192px;
+	margin: 0px 10px 10px 0px;
+}
+.tab-pane  .check-btn-box label{
+	width: 120px !important;
+}
+
+.radio-btn-box{
+	display: inline-block;
+	width: 100%
+}
+.radio-btn-box span{
+	float:left;
+	width:auto;
+	margin: 10px 30px 0 0;
+}
+.group-box label{
+	width: 120px;
+}
+
+#Playback_List span, #Monitor_List span{
+	width: auto;
+}
+#Playback_List label, #Monitor_List label{
+	min-width: 65px;
+	width: auto;
+}
+#delete_user, #delete_group, #delete_user_group{
+	top: 20px;
+	width: 400px;
+	margin-left: -350px;
+}
+#add_user_group{
+	top: 70px;
+	width: 610px;
+	left: 30%;
+	margin-left: 0px !important;
+}
+#modify_pwd_page .cfg_row{
+	margin-bottom: 10px;
+}
+.encode .cfg_row{
+	margin-bottom: 0px;
+}
+.alarm .cfg_row_left, 
+#VideoColorBox .cfg_row_left{
+	width: 180px;
+}
+.spvmn .cfg_row_left{
+	width: 210px;
+}
+.VideoCtrlBox{
+	float:left; margin-left:320px;
+}
+.alarm .cfg_row_right, 
+.encode .cfg_row_right,
+.spvmn .cfg_row_right,
+.camera .cfg_row_right{
+	width: auto;
+}
+.unitTip{
+	margin-left: 5px;
+}
+.version .inputTxt{
+	border: 0;
+	width: 100%
+}
+.alarm  .inputTxt,
+.encode  .inputTxt,
+.camera .inputTxt{
+	width: 138px;
+}
+.spvmn .inputTxt{
+	width: 178px;
+}
+.alarm .select, 
+.encode .select,
+.camera .select {
+	width: 140px;
+}
+.spvmn .select{
+	width: 180px;
+}
+.encode span{
+	float: left;
+	margin-top: 5px
+}
+.alarm .first,
+.spvmn .first ,
+.camera .first,
+.SystemNetWork .first{
+	float: left;
+}
+.alarm .second,
+.camera .second{
+	margin-left: 400px;
+}
+.spvmn .second{
+	margin-left: 430px;
+}
+.timeTxt{
+	width: 83px !important;
+}
+.alarm .split{
+	width:750px;
+	border-bottom:1px solid #E6E6E6;
+	padding-top:15px
+}
+.SystemNetWork .split{
+	width: 700px;
+	padding-top:20px;
+	border-bottom: 2px solid #e2e1e1;
+}
+#edit_netcard_div .split{
+	width:  100%;
+	padding-top: 10px;
+	border-bottom: 2px solid #e2e1e1;
+}
+#table_PID .second  .timeTxt{
+	width: 66px !important;
+}
+#RecordPzPage span{
+	float: left;
+}
+.encode .sub{
+	margin-left: 85px;
+}
+.encode .title{
+	width: 140px;
+	float: left;
+}
+.recsect{
+	float: left;
+}
+.recsect .timeSplit{
+	width: 10px;
+	float: left;
+	margin-left: 5px;
+}
+.recsect .timeSpace{
+	width: 15px;
+	margin-left: 10px;
+	float: left
+}
+.rectime{
+	width: 20px !important;
+	padding: 0px 5px;
+	float: left;
+}
+.recmask{
+	position: absolute;
+	left: 450px;
+}
+.recmask .rectip{
+	display: inline;
+	width: 100px;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+}
+.recmask span{
+	float: left;
+	width: 60px;
+	margin: 6px 10px 0px 40px;
+}
+.checkBox {
+	width: 400px;
+}
+.checkBox_row {
+	display: inline-block;
+	float: none;
+}
+.checkBox_row span{
+	width: 162px;
+	margin: 0px 10px 5px 0px;
+	float: left;
+}
+.checkBox_row label{
+	width: 140px
+}
+#DstSettingDlg {
+	top: 0px;
+	width: 550px;
+	margin-left: -350px
+}
+.shapeBtn{
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin-right: 15px;
+}
+.rulemodeBtn{
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin-right: 5px;
+}
+.PedRuleSpan{
+	float:left; 
+	margin-right:20px
+}
+.PedRuleSpan span{
+	float:left; 
+	margin: 4px 0 0 10px
+}
+.color_falg{
+	float:left; 
+	width:20px; 
+	height:15px;
+	margin: 6px 3px 0px -5px;
+}
+.ruleRightLine{
+	height:50px;
+	border-right:1px solid #707070; 
+	margin-right:8px;
+	float:left;
+}
+.MoveArea {
+	width: 600px;
+	height: 400px;
+	position: absolute;
+}
+.MoveArea>div {
+	width: auto;
+	height: 15px;
+	border:1px solid #f00;
+	line-height: normal;
+	overflow: hidden;
+	color: #FFF;
+	font-size: 12px;
+}
+.PTZBox {
+	width: 150px;
+	height: 25px;
+}
+.PTZBoxInput {
+	width: 148px;
+	height: 23px;
+}
+#SnapSchedulePage  .check-btn-box{
+	padding-left: 100px;
+}
+#SnapSchedulePage .check-btn-box  label{
+	width: 180px;
+}
+#RemotePage .cfg_row{
+	margin-bottom: 0px;
+}
+#NetSet_Dialog{
+	width: 480px; 
+	left: 20%;
+	top: 100px;
+	border-radius: 5px;
+	background: #F5F5F5
+}
+#ChannelNameSet{overflow: hidden}
+#ChannelNameSet .form-group {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 0px;
+	height: 30px;
+	padding: 0
+}
+#ChannelNameSet .form-group label {
+	width: 100px;
+	float: left;
+	line-height: 30px;
+}
+#ChannelNameSet .inputTxt{
+	width: 125px;
+	margin-left: 5px;
+	padding-left: 3px;
+	float: left;
+}
+
+#LogList {
+	position: absolute;
+	top: 120px;
+	bottom: 10px;
+	width: 750px;
+}
+#ChnStstusList ,#NetServiceList{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 750px;
+	margin: 20px;
+}
+#IPFilterList, #WifiList{
+	width: 700px;
+	height: 120px;
+}
+#TypeCapacityList, #RecordTimeList {
+	width: 700px;
+	height: 300px;
+}
+#HDDList{
+	width: 800px;
+	height: 300px;
+}
+#AccountList{
+	width: 700px;
+	height: 150px;
+}
+#TriggerSnapList {
+	width: 700px;
+	height: 180px;
+}
+#DigitalList {
+	width: 650px;
+	height: 210px;
+}
+#RemoteList {
+	width: 720px;
+	height: 240px;
+}
+.ImportExportBox{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.ImExBtn{
+	width: 130px;
+	margin-right: 20px;
+}
+.InputFileBox{
+	position: relative;
+	float: left;
+	cursor: pointer;
+	border-color: #204d74;
+	background-color: #949FBB;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 30px;
+	width: 85px;
+	height: 100%;
+	color: #e6ebf0;
+	border-radius: 5px;
+}
+.InputFile{
+	border: 1px solid #cccccc;
+	width: 97%;
+	height: 28px;
+	border-radius: 5px;
+	opacity: 0;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+.InputFileLabel{
+	float: left;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+#aa {
+	margin-top: 2px;
+	overflow: hidden;
+	height: 10px;
+	width: 0;
+	text-align: left;
+	border: 0;
+	background-color: #0F0
+}
+.update_bg {
+	background-color: #525252
+}
+#QRBox{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px
+}
+.qrSpan{
+	width: 250px;
+	height: 260px;
+	background: #F4F4F4;
+	border-radius: 14px;
+	-webkit-border-radius: 14px;
+	margin: 10px 50px 0 0;
+	box-sizing: border-box;
+	padding: 36px 40px 10px 40px;
+	float: left;
+	text-align: center;
+}
+
+.qrSpan .QR{
+	width: 170px;
+	height: 170px;
+	padding: 0;
+}
+
+.qrSpan .QRText{
+	margin-top: 17px;
+	color: #5E6874;
+}
+#VideoColorBox .cfg_row {
+	margin-top: 5px;
+}
+
+#VideoColorBox .cfg_row_right {
+	width: auto;
+	position: relative;
+}
+
+#VideoColorBox .cfg_row_right  div{
+	float: left;
+}
+#VideoColorBox .second{
+	margin-left: 15px;
+}
+#VideoColorBox #IrcutDiv div{
+	float: left;
+	width: 206px
+}
+#OperatorBtn .btn{
+	margin-top: 10px;
+}
+
+html,
+body {
+	min-width: 1300px;
+	background: #E2EAF5;
+	scrollbar-face-color: #C1C1C1;
+	scrollbar-3dlight-color: #DDD6FE;
+	scrollbar-darkshadow-color: #DDD6FE;
+	scrollbar-base-color: #DDD6FE;
+	scrollbar-shadow-color: #C1C1C1;
+	scrollbar-highlight-color: #FFF;
+	scrollbar-track-color: #F1F1F1;
+	scrollbar-arrow-color: #000000;
+}
+
+input,
+textarea {
+	background-color: #FFF;
+	border: 1px solid #D3E3F6;
+	color: #707070;
+	resize: none
+}
+
+.input-disabled {
+	background-color: #262d33;
+	color: #8d8e90;
+	cursor: not-allowed
+}
+
+:-moz-placeholder {
+	color: #666
+}
+
+::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #666
+}
+
+::-webkit-input-placeholder {
+	color: #666
+}
+
+.placeholder {
+	color: #666;
+}
+
+select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 1px solid #D3E3F6;
+	color: #767489;
+	font-size:12px;
+	padding-right: 14px;
+	background: url(arrow.png) no-repeat scroll right center #fff;
+}
+
+select:disabled {
+	color: #404040;
+	font-weight: bold
+}
+
+.IE9Select {
+	padding-right: 0;
+	background: none scroll right center transparent
+}
+
+select::-ms-expand {
+	display: none
+}
+
+/*Calendar*/
+.CalendarCtrl {
+	background-color: #FFF;
+	border: 1px solid #C6CDD4;
+}
+.CalendarCtrl select {
+	color: #6D6D6D;
+	border:1px solid #DEE2E6;
+}
+.CalendarCtrl tbody td div.date {
+	color: #6D6D6D;
+	border:1px solid #fff;
+}
+.CalendarCtrl tbody td div.date:hover {
+	color: #5A8BFF;
+	border:1px solid #DEE2E6;
+}
+.CalendarCtrl tbody td div.date.chosen {
+	color: #FFF;
+	background-color: #5A8BFF;
+}
+.CalendarCtrl tr.days th {
+	color: #6D6D6D;
+}
+.prevMonth {
+	background: url("direct.png") no-repeat 0 0;
+}
+.prevMonth:hover{
+	background-position: -19px 0;
+}
+.nextMonth {
+	background: url("direct.png") no-repeat 0 -19px;
+}
+.nextMonth:hover{
+	background-position: -19px -19px;
+}
+.timer tr td div, .timer tr td div select{
+	background: #fff;
+}
+#MaskLayout {
+	opacity: 1;
+	background: rgba(153,153,153,0.6);
+}
+/*menu*/
+.header {
+	border-bottom: 1px solid #8B5CF6;
+}
+.headerMenu {
+	background-color: #F3F6FD;
+}
+.otherBtn {
+	width: auto !important;
+	color:#5E6874;
+}
+.menuBox {
+	color: #5E6874;
+	background-color: #F3F6FD;
+}
+.menuBox:hover ,.menuBox[data-name="active"]{
+	cursor: pointer;
+	color: #FEFEFD;
+	background: -webkit-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -moz-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -o-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -ms-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+}
+.logoImg {
+	height: 50px;
+	width: 200px;
+	margin-left: 41px;
+	margin-top: 10px;
+	background: url("logo.png") no-repeat center;
+	background-size: contain;
+	float: left;
+}
+#Logout {
+	background: url("out.png") no-repeat 0 -24px;
+}
+#Logout:hover {
+	background: url("out.png") -24px -24px;
+}
+/*psw poap*/
+.popupBoxTitle {
+	background: #999;
+	border: 1px solid #aaa
+}
+.popupBoxContent {
+	background: #CCC;
+	border: 1px solid #aaa
+}
+.progress-bar_wrap {
+	width: 160px;
+	background-color: #ffffff;
+}
+.progress-bar_item-0.active {
+	background-color: #ff0000
+}
+.progress-bar_item-1.active {
+	background-color: #f9ae35;
+}
+.progress-bar_item-2.active {
+	background-color: #afaf00;
+}
+.progress-bar_item-3.active {
+	background-color: #2daf7d;
+}
+.progress-bar_wrap .progress-bar_text {
+	color: #aaa;
+}
+.PasswordStrength_Danger {
+	background-color: #ff0000;
+	visibility: inherit;
+}
+.PasswordStrength_Weak {
+	background-color: #f9ae35;
+	visibility: inherit;
+}
+.PasswordStrength_Medium {
+	background-color: #afaf00;
+	visibility: inherit;
+}
+.PasswordStrength_Strong {
+	background-color: #2daf7d;
+	visibility: inherit;
+}
+/*login*/
+.container {
+	float: none;
+	margin: 0px;
+}
+.login_main {
+	color: #707070;
+}
+a[href],
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+.loginDiv {
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.57)
+}
+.login_box {
+	border: 2px solid #C2C9D1
+}
+.login_input {
+	background-color: #E2EAF5
+}
+#login_language .select_top {
+	border: 0;
+	color: #32a0e1
+}
+#login_language .select_bottom {
+	border: 0
+}
+.loginBtnNormal {
+	background-color: #5A8BFF;
+	color: #fff
+}
+.LoginStatus {
+	color: red
+}
+.loginBtnOver {
+	cursor: pointer;
+	background-color: #3478bc;
+	color: #fff
+}
+.loginBtnDisable {
+	cursor: auto;
+	background-color: #1E1B4B;
+	color: #fff
+}
+/* live */
+.liveBtnTitle{
+	color: #767489;
+	opacity: 1;
+}
+
+.channelListBox , .liveBottom, .rightContent,.liveTop,.centerContent,.remoteSetContent,.RemoteSet_Box,
+.RemoteSet_Menu_listBox,.alarm_left,.alarmContent,.leftContent,.version .inputTxt {
+	background-color: #F9FAFF;
+}
+.chnBtn{
+	background: url("Live/chn.png") no-repeat 0 0;
+}
+.mainPlayBtn{
+	background-position: -18px -36px;
+}
+.mainPlayBtn[name="active"], .mainPlayBtn:hover{
+	background-position: 0px -36px;
+}
+.mainPlayBtn[name="disable"] {
+	background-position: -36px -36px;
+}
+.extraPlayBtn{
+	background-position: -18px -18px;
+}
+.extraPlayBtn[name="active"], .extraPlayBtn:hover{
+	background-position: 0px -18px;
+}
+.extraPlayBtn[name="disable"] {
+	background-position: -36px -18px;
+}
+.recordBtn {
+	background-position: -18px 0px;
+}
+.recordBtn[name="active"], .recordBtn:hover{
+	background-position: 0px 0;
+}
+.recordBtn[name="disable"] {
+	background-position: -36px 0;
+}
+.LiveTabBtn{
+	background: url("Live/liveTop.png") no-repeat 0 0;
+}
+#listBtn {
+	background-position: 0px 0;
+}
+#PTZBtn {
+	background-position: 0px -22px;
+}
+#colorBtn {
+	background-position: 0px -44px;
+}
+#TalkBtn {
+	background-position: 0px -66px;
+}
+#ElectBtn {
+	background-position: 0px -88px;
+}
+#MenuBtn {
+	background-position: 0px -110px;
+}
+#listBtn[name="active"], #listBtn:hover {
+	background-position: -22px 0;
+}
+#PTZBtn[name="active"], #PTZBtn:hover {
+	background-position: -22px -22px;
+}
+#colorBtn[name="active"], #colorBtn:hover {
+	background-position: -22px -44px;
+}
+#TalkBtn[name="active"], #TalkBtn:hover {
+	background-position: -22px -66px;
+}
+#ElectBtn[name="active"], #ElectBtn:hover {
+	background-position: -22px -88px;
+}
+#MenuBtn[name="active"], #MenuBtn:hover {
+	background-position: -22px -110px;
+}
+#Elect{
+	background: url("Live/Elect.png") no-repeat -140px -140px;
+}
+#OSDMenu{
+	background: url("Live/Elect.png") no-repeat -140px -140px;
+}
+#liveCtrlTip{
+	background-color: #F3F6FD;
+}
+#LIVE_YT {
+	background: url("Live/ptz.png") no-repeat 0 -280px;
+}
+.ptzSpeedImg {
+	background-color: #e6ebf0
+}
+.speed-img-active {
+	background-color: #32a0e1
+}
+.speed-img-hover {
+	background-color: #84caed
+}
+.PtzCtrlMinus1 {
+	background: url("Live/ptzctrl.png") -44px -40px;
+}
+.PtzCtrlPlus1 {
+	background: url("Live/ptzctrl.png") -44px -20px;
+}
+.PtzCtrlMinus1:hover {
+	background: url("Live/ptzctrl.png") 0px -40px;
+}
+.PtzCtrlPlus1:hover {
+	background: url("Live/ptzctrl.png") 0px -20px;
+}
+.PresetBtn, .TourBtn{
+	background: url("Live/ptzctrl.png") 0 0;
+	cursor: pointer;
+}
+
+.DevTalkBtn {
+	color: #fff;
+	background-color: #a2a1ac;
+	cursor: pointer;
+}
+
+.DevTalkBtn[name="active"],.DevTalkBtn:hover{
+	
+	color: #FEFEFD;
+	background: -webkit-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -moz-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -o-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: -ms-linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	background: linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+}
+#GoPreset {
+	background-position: -44px 0;
+}
+#AddPreset {
+	background-position: -44px -20px;
+}
+#DelPreset {
+	background-position:-44px -40px;
+}
+#startTour {
+	background-position:-44px -60px;
+}
+#stopTour {
+	background-position: -44px -80px;
+}
+#editTour {
+	background-position: -44px -100px;
+}
+#GoPreset:hover {
+	background-position: 0px 0;
+}
+#AddPreset:hover {
+	background-position: 0px -20px;
+}
+#DelPreset:hover {
+	background-position: 0px -40px;
+}
+#startTour:hover {
+	background-position: 0px -60px;
+}
+#stopTour:hover {
+	background-position: 0px -80px;
+}
+#editTour:hover {
+	background-position: 0px -100px;
+}
+.ColorDefBtn{
+	background: linear-gradient(52deg, #6C5CE7 0%, #8B5CF6 100%);
+	color: #FFFFFF;
+}
+/*live btn group*/
+.liveControlBtn, .FullChnPreviewBtn, .RatioBtn, .PlayRatioBtn{
+	background: url("Live/previewIcon.png") no-repeat;
+}
+#fullScreen {
+	background-position: 0 0;
+}
+#fullScreen:hover {
+	background-position: -28px 0;
+}
+#localCapture{
+	background-position: 0 -28px;
+}
+#localCapture[name="active"],#localCapture:hover{
+	background-position: -28px -28px;
+}
+#digitalZoom{
+	background-position: 0 -56px;
+}
+#digitalZoom[name="active"],#digitalZoom:hover{
+	background-position: -28px -56px;
+}
+.FullChnPreviewBtn{
+	background-position: 0 -84px;
+}
+.FullChnPreviewBtn[name="active"],.FullChnPreviewBtn:hover{
+	background-position: -28px -84px;
+}
+.PlayRatioBtn{
+	background-position: 0 -224px;
+}
+.PlayRatioBtn[name="active"],.PlayRatioBtn:hover{
+	background-position: -28px -224px;
+}
+#audio {
+	background-position: 0 -112px;
+}
+#audio:hover {
+	background-position: -28px -112px;
+}
+#audio[name="active"] {
+	background-position: 0 -140px;
+}
+#audio[name="active"]:hover {
+	background-position: -28px -140px;
+}
+#FullChannelRecord{
+	background-position: 0 -168px;
+}
+#FullChannelRecord[name="active"],#FullChannelRecord:hover{
+	background-position: -28px -168px;
+}
+#PlayOriginal{
+	background-position: 0 -196px;
+}
+#PlayOriginal[name="active"], #PlayOriginal:hover{
+	background-position: -28px -196px;
+}
+#PlayCoverWnd{
+	background-position: 0 -224px;
+}
+#PlayCoverWnd[name="active"], #PlayCoverWnd:hover{
+	background-position: -28px -224px;
+}
+#PlayRatio_4_3{
+	background-position: 0 -252px;
+}
+#PlayRatio_4_3[name="active"], #PlayRatio_4_3:hover{
+	background-position: -28px -252px;
+}
+#PlayRatio_16_9{
+	background-position: 0 -280px;
+}
+#PlayRatio_16_9[name="active"], #PlayRatio_16_9:hover{
+	background-position: -28px -280px;
+}
+.WndModeBtn,.CurWndModeBtn {
+	background: url("Live/wndMode.png") no-repeat 0 0;
+}
+.WndModeDownBtn{
+	background:url(Live/down.png) no-repeat;
+}
+.FullChnPreviewDownBtn, .PlayRatioDownBtn{
+	background:url(Live/down.png) no-repeat;
+}
+.typeCheck_box:hover
+ {
+	cursor: pointer;
+	background-color: #32a0e1
+}
+
+.typeCheck_box[name="active"] {
+	background-color: #32a0e1
+}
+
+.pbTypeNum {
+	color: #e6ebf0
+}
+
+.playbackContent {
+	background: #FFFFFF;
+}
+
+.timeline-movepointer {
+	background-color: #0f1214;
+}
+
+.timeline-clickpointer {
+	background-color: #0f1214;
+}
+
+.RemoteSet_Menu,.RemoteSet_Menu_listBox {
+	color: #5E6874;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.RemoteSet_Menu:hover,
+.RemoteSet_Menu[d="active"] {
+	background-color: #4898F6;
+	color: #fff
+}
+
+.RemoteSet_Menu_list,
+.RemoteSet_Menu_list[d="not-active"] {
+	color: #5E6874;
+}
+
+.RemoteSet_Menu_list:hover,
+.RemoteSet_Menu_list[d="not-active"]:hover {
+	color: #5E6874;
+	background: #F0F0F0
+}
+
+.RemoteSet_Menu_list_active,
+.RemoteSet_Menu_list[d="active"] {
+	background-color: #E1F1FF;
+	color: #5E6874;
+}
+
+#chlidCfgContent {
+	color: #5E6874;
+}
+
+.content_top {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.content-top-item {
+	color: #5E6874;
+}
+
+.menu-wrapper {
+	background-color: #004187;
+	border-bottom: 2px solid #A78BFA
+}
+
+.menu-wrapper.active {
+	background-color: #00215a
+}
+
+.menu-wrapper:hover {
+	background-color: #00215a
+}
+
+.menu-wrapper.active:after {
+	border-color: transparent #fff transparent transparent
+}
+
+.menu-wrapper .menu-list .menu-item.active {
+	color: #A78BFA
+}
+
+.menu-wrapper .menu-list .menu-item:hover {
+	cursor: pointer;
+	color: #A78BFA
+}
+
+.content-menu-wrapper,.content-menu-list {
+	background-color: #EFF3F6;
+}
+
+.content-menu-list .content-menu-item:hover {
+	cursor: pointer;
+	color: #4898F6
+}
+
+.content-menu-list .content-menu-item.active {
+	color: #A78BFA;
+	border-bottom: 2px solid #5B5B5B
+}
+
+.special_menu_item.active,
+.special_menu_item:hover,
+#firstLevelTitle:hover {
+	cursor: pointer;
+	color: #A78BFA;
+	border-bottom: 1px solid #A78BFA
+}
+
+.normal-menu {
+	background-color: #262d33
+}
+
+.normal-menu.active {
+	background-color: #0f1214
+}
+
+.normal-wrapper {
+	background-color: #262d33
+}
+
+.normal-menu:hover {
+	background-color: #0f1214
+}
+
+.cfg_container {
+	color: #6D6D6D;
+}
+
+.btn,
+.copy_btn {
+	background-color: #949FBB;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.btn:hover,
+.copy_btn:hover {
+	background: #6C5CE7;
+	cursor: pointer
+}
+
+.btn-disable,
+.btn-disable:hover {
+	background: #C1C1C1;
+	cursor: default
+}
+.select_top {
+	border: 1px solid #1E1B4B;
+	color: #e6ebf0
+}
+
+.select_arrow {
+	background-image: url("arrow.png")
+}
+
+.select_bottom {
+	border: 1px solid #1E1B4B
+}
+
+.select_item {
+	background: #EBF0F4
+}
+
+.select_item_over {
+	background-color: #C1C1C1
+}
+
+.select_item_selected {
+	background-color: #5A8BFF;
+	color: #fff
+}
+
+.timeline-curtime {
+	color: #5A8BFF
+}
+
+.timeline-selectedlines {
+	background-color: #9eaac0
+}
+
+.l-grid-header {
+	color: #FFF;
+	background: #949FBB;
+}
+
+.l-grid-header tr:nth-child(2){
+	background: #caceda;
+}
+.l-scroll {
+	scrollbar-face-color: #C1C1C1;
+	scrollbar-3dlight-color: #DDD6FE;
+	scrollbar-darkshadow-color: #DDD6FE;
+	scrollbar-base-color: #DDD6FE;
+	scrollbar-shadow-color: #C1C1C1;
+	scrollbar-highlight-color: #FFF;
+	scrollbar-track-color: #F1F1F1;
+	scrollbar-arrow-color: #000000;
+}
+
+.l-grid-row-over .l-grid-row-cell,
+.l-grid-row-over {
+	background: #efefef;
+}
+
+.l-selected .l-grid-row-cell,
+.l-selected {
+	background: #efefef;
+}
+
+.selectEnable {
+	background: #F9FAFF;
+	background-image: url("enable.png");
+	border: 0
+}
+
+.selectDisEnabled {
+	background: #F9FAFF;
+	background-image: url("disenabled.png");
+	border: 0
+}
+
+.selectDisable,.switch{
+	background: #F9FAFF;
+	background-image: url("disable.png");
+	border: 0
+}
+
+#uName .spanImg {
+	background: url("user.png") no-repeat 0 0
+}
+
+#pwd .spanImg {
+	background: url("user.png") no-repeat 0 -32px
+}
+
+.control-input:hover {
+	border-color: #A78BFA
+}
+
+.control-input:focus {
+	border-color: #A78BFA
+}
+
+.allCheck,
+.allType {
+	background: url("cbox.png") no-repeat
+}
+.pbControlBtn {
+	background: url("pbIcon.png") no-repeat;
+}
+
+#progress-bar {
+	border: 1px solid #a4a4a4;
+}
+
+.positionImg {
+	background: url("position_ui4.png")
+}
+
+.arrow_left{
+	background: url("arrow_left.png")
+}
+
+.arrow_title,
+.arrow_right{
+	background: url("arrow_title.png")
+}
+
+.slider-back {
+	background: url("Live/sliderBg.png") 0 0 repeat;
+}
+
+.slider-fore {
+	background: url("Live/sliderBg1.png") 0 0 repeat;
+}
+
+.slider-bar {
+	background: url("Live/sliderBar.png") 0 0 no-repeat;
+}
+
+.UserList {
+	background: #A78BFA;
+	border-top: 1px solid #1E1B4B
+}
+
+.UserList2 {
+	background: #32a0e1;
+	border-top: 1px solid #1E1B4B
+}
+
+.l-grid-detailpanel {
+	border-right: 1px solid #1E1B4B;
+	border-bottom: 1px solid #1E1B4B
+}
+
+#SysDstSysTime, #DstStartDate, #DstEndDate, #SysDate, #pbStartDate, #pbEndDate, #FlowStartDate{
+	background: url("date.png") no-repeat right 5px center #fff;
+	cursor: pointer;
+	border: 1px solid #D3E3F6;
+	color: #767489;
+	font-size:12px;
+}
+
+.cfg_row.copytitle {
+	background: #1E1B4B;
+	color: #fff
+}
+
+#SecondaryContent {
+	background-color: #FFFFFF;
+	color: #707070
+}
+
+.SecondTitle{
+	background-color: #EBF0F4;
+}
+
+.progress {
+	overflow: hidden;
+	height: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 30px;
+	background-color: #f7f7f7;
+	background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+	background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+	background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: 408px;
+	margin-right: 12px
+}
+
+.progress .bar {
+	width: 0;
+	height: 100%;
+	color: #CCC;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #0e90d2;
+	background-image: -moz-linear-gradient(top, #149bdf, #0480be);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
+	background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
+	background-image: -o-linear-gradient(top, #149bdf, #0480be);
+	background-image: linear-gradient(to bottom, #149bdf, #0480be);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: width .6s ease;
+	-moz-transition: width .6s ease;
+	-o-transition: width .6s ease;
+	transition: width .6s ease
+}
+
+.Analog{
+	background: url("toA.png") no-repeat;
+	background-position: 0 0
+}
+.Digital{
+	background: url("toD.png") no-repeat;
+	background-position: 0 0
+}
+.Analog_Active{
+	background: url("toA1.png") no-repeat;
+	background-position: 0 0
+}
+.Digital_Active{
+	background: url("toD1.png") no-repeat;
+	background-position: 0 0
+}
+.info_falg{
+	background-image: url("tip.png");
+}
+span input[type=checkbox]:not(old):checked + label {
+	background : url('checkbox-selected.png') no-repeat 0px 0px;
+}
+span input[type=checkbox]:not(old) + label {
+	background : url('checkbox-unselected.png') no-repeat 0px 0px;
+}
+span input[type=radio]:not(old):checked + label {
+	background : url('radio_check.png') no-repeat 0px 0px;
+}
+span input[type=radio]:not(old) + label {
+	background : url('radio_uncheck.png') no-repeat 0px 0px;
+}
+#MainVideoDiv input[type=checkbox]:not(old):checked + label,
+#PedRuleEnableSpan1 input[type=checkbox]:not(old):checked + label {
+	background : url('checkbox-selected-unchange.png') no-repeat 0px 0px;
+}
+.rulemodeBtn{
+	background: url("directionIcon.png") no-repeat;
+}
+#lineIn{
+	background-position: 0 0;
+}
+#lineOut{
+	background-position: -48px 0;
+}
+#lineBoth{
+	background-position: 0 -48px;
+}
+#sideIn{
+	background-position: -48px -48px;
+}
+#sideOut{
+	background-position: -48px -96px;
+}
+#sideBoth{
+	background-position: 0px -96px;
+}
+#side3{
+	background-position: -36px 0;
+}
+#side4{
+	background-position: 0 -36px;
+}
+#side5{
+	background-position: 0 -72px;
+}
+#side6{
+	background-position: -36px -36px;
+}
+#side7{
+	background-position: -36px -72px;
+}
+#side8{
+	background-position: 0 0;
+}
+.shapeBtn{
+	background: url("shapeIcon.png") no-repeat;
+}
+.RemoteSet_Menu .configBtn{
+	background: url("configIcon.png") no-repeat;
+}
+.UpgradeBtn{
+	background: url("upgradeIcon.png") no-repeat;
+}
+
+/* alarm */
+.alarm-wrp {
+	color: #707070;
+}
+
+/* config */
+.menu-wrapper .menu-title {
+	color: #fff;
+}
+
+.menu-wrapper .menu-list .menu-item {
+	color: #fff
+}
+
+.menu-wrapper .menu-list .menu-item:after {
+	background-color: #fff;
+}
+
+.content-menu-list .content-menu-item {
+	color: #5B5B5B;
+}
+/*
+.content-menu-list .content-menu-item:after {
+	background-color: #5B5B5B
+}
+*/
+#SecondaryContent .SecondTitle {
+	background-color: #EBF0F4;
+}
+.PswEyeShow {
+	ime-mode: disabled;
+}
+.cfg_row_pwd{
+	height: 23px;
+	background-color: #FFF;
+    border: 1px solid #D3E3F6;
+    color: #707070;
+    resize: none;
+}
+
+#Question .cfg_row_pwd, #SecurityPage .cfg_row_pwd{
+	width: 398px;
+}
+
+#Question #answer1, #Question #answer2,
+#SecurityPage #answer1, #SecurityPage #answer2{
+	width: 368px;
+}
+
+#PWDPage .cfg_row_pwd{
+	width: 300px;
+}
+
+#PWDBox .cfg_row_pwd, #modify_pwd_page .cfg_row_pwd,
+#CfgBox .cfg_row_pwd, #DDNSDivBox .cfg_row_pwd,
+#EmDivBox .cfg_row_pwd, #FtpDivBox .cfg_row_pwd,
+#GAT_DivBox .cfg_row_pwd, #NetPPPoEBox .cfg_row_pwd,
+#Net3GDivBox .cfg_row_pwd, #DASDivBox .cfg_row_pwd{
+	width: 298px;
+}
+
+#SipBox3 .cfg_row_pwd{
+	width: 178px;
+}
+
+#SipBox3 #InputRegPasswd{
+	width: 143px;
+}
+
+#ForgetPwdContent input{
+	width: 270px;
+}
+
+#RemotePage .cfg_row_pwd, #NetSet_Dialog .cfg_row_pwd{
+	width: 138px;
+}
+
+#RemotePage #RemotePWD, #NetSet_Dialog #NetSetPWD{
+	width: 108px;
+}
+
+.cfg_row_pwd .inputTxt{
+	margin-top: 0px;
+	width: 263px;
+	border: 0px;
+} 
+
+.login_box .psw_eye_cicle {
+	margin: 0px;
+}
+
+#DDNSDivBox .psw_eye_cicle, #CfgBox .psw_eye_cicle,
+#EmDivBox .psw_eye_cicle, #FtpDivBox .psw_eye_cicle,
+#GAT_DivBox .psw_eye_cicle, #NetPPPoEBox .psw_eye_cicle,
+#SipBox3 .psw_eye_cicle,
+#Net3GDivBox .psw_eye_cicle, #modify_pwd_page .psw_eye_cicle,
+#PWDBox .psw_eye_cicle, #DASDivBox .psw_eye_cicle{
+	margin-top: -4px;
+	margin-left: 10px;
+}
+
+#Question .psw_eye_cicle, #PWDPage .psw_eye_cicle,
+#RemotePage .psw_eye_cicle, #NetSet_Dialog .psw_eye_cicle,
+#SecurityPage .psw_eye_cicle{
+	margin-top: -4px;
+	margin-left: 4px;
+}
+
+#loginDiv .psw_eye_arc{
+	margin-top: 10px;
+	margin-left: 6px;
+}
+
+.psw_eye_arc,
+.psw_eye_arc2 {
+	width: 20px;
+	height: 20px;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-radius: 0px;
+	margin-top: 6px;
+	margin-left: 2px;
+}
+
+.cfg_row_pwd .psw_eye_cicle{
+	width: 20px;
+	height: 20px;
+	background-image: url("eye_close_small.png");
+}
+
+.cfg_row_pwd .psw_eye_cicle[status="active"]{
+	background-image: url("eye_open_small.png");
+}
+
+.psw_eye_cicle{
+	width: 18px;
+	height: 18px;
+	border-radius: 0px;
+	background-image: url("eye_close.png");
+}
+
+.psw_eye_cicle[status="active"]{
+	background-image: url("eye_open.png");
+}
+
+#ForgetPwdContent {
+	background:#FFFFFF;
+	color:#707070;
+	border: solid 1px #E6E6E6;
+}
+
+#ForgetPwdContent .SecondTitle {
+	color: #FFFFFF;
+	background-color: #949FBB
+}
+
+#ForgetPwdContent .btn_box{
+	border-top:1px solid gray;
+}
+
+.QR{
+	background:#fff
+}
+
+.dialog_role{
+	background: #F9FAFF;
+	color: #707070;
+	border: 1px solid #E6E6E6;
+}
+
+.dialog_role .time-div {
+	border:1px solid #C2C9D1;
+	background: #F5F6FA;
+}
+.dialog_role .time-div input{
+	background: #F5F6FA;
+}
+#VideoColorBox .time-div, 
+#DayTimeSection .time-div,
+#WhiteLightUpTimeSection .time-div
+{
+	border:1px solid #C2C9D1;
+}
+#VideoColorBox  .time-div input{
+	background: #F9FAFF;
+}
+
+#colorsetOcx, #imagesetOcx,#roiSetOcx {
+	border:0px solid #020202;
+	background: #F5F6FA;
+}
+.table-responsive {
+    border: 1px solid #C1C1C1;
+}
+
+.table-head {
+	background-color: #949FBB;
+	color: #ffffff;
+}
+
+.table-responsive .table td{
+	border-bottom: 1px solid #C1C1C1;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.table-responsive .table>thead>tr>th {
+	background: #949FBB;
+	line-height: normal;
+}
+
+.table-responsive .table>thead.secondHead>tr>th {
+	background: #caceda;
+}
+
+.table-responsive .table tr:hover {
+	background: #F0F0F0;
+}
+
+.table-responsive .table tr[d="active"] {
+	background-color: #E1F1FF;
+}
+
+.table-responsive .table tr th + th {
+	border-left: 1px solid #C1C1C1;
+}
+
+.table-responsive .table tr td + td {
+	border-left: 1px solid #C1C1C1;
+}
+
+/* playback */
+#SearchList {
+	border: 1px solid #C1C1C1;
+}
+
+/* RSUI */
+.select_item_c87 {
+	color: #5B5B5B;
+	background: #eee
+}
+
+.select_item_over_c87 {
+	background-color: #00ad98
+}
+
+.select_item_selected_c87 {
+	background-color: #ff8100
+}
+
+.slider-time div {
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.slider-time div div {
+	border-right: 1px solid #000
+}
+
+.slider-time .last {
+	border-right: 1px solid #000
+}
+.tab-pane  #SystemUserAuth label{
+	width: 150px !important;
+}
+#Playback_List label, #Monitor_List label{
+	width: 30px !important;
+}
+.tab-pane .check-btn-box span{
+	margin-right: 5px !important;
+}
+.ToolBoxBlock{
+	border: 2px solid #5A8BFF;
+	width:600px;
+	border-radius: 5px;
+	padding:10px 10px 10px 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.TableDivLine{
+	width:580px;
+	margin-bottom:5px;
+	margin-top: 5px;
+	height:35px;
+}
+.TableDivColumn{
+	display: inline-block;
+	width:180px;
+
+}
+.SA_Cfg_row{
+	width: 180px !important;
+}
+.SA_CheckBox{
+	width:19px;
+	height:19px;
+
+}
+.SA_CheckBox input+label{
+	float:none !important;
+}
+.voiceTypeSelect{
+	margin-right:10px;
+	float:left
+}
+.customSelect{
+	width:300px !important;
+	float:none;
+}
+.SmartAlarm .cfg_row{
+	margin-left:12px;
+}
+#DevInfo_Dialog .first{
+	float: left;
+}
+#DevInfo_Dialog .second{
+	margin-left: 300px;
+}
+.checkspan span{
+	float: left;
+	margin-top: 6px;
+}
+#IPCQR_SN{
+	width:130px; 
+	height:130px; 
+	border:1px solid #D3E3F6;
+}
+#ImageSet_page .time-div {
+	border-radius: 5px;
+	padding: 0 10px;
+	line-height: 25px;
+	float: left;
+	border:1px solid #C2C9D1;
+}
+#ImageSet_page .time-div input {
+	width: 17px;
+	height: 23px;
+	line-height: 23px;
+	border:0;
+	margin: 2px 0 0 0;
+	float:left;
+	background: #F9FAFF;
+}
+#ImageSet_page .cfg_row_right {
+	width: auto;
+	position: relative;
+}
+#ImageSet_page .cfg_row_right div{
+	float: left;
+}
+#ImageSet_page .second{
+	margin-left: 15px;
+}
+#ImageSet_page .camera_box .second{
+	margin-left: 350px;
+}
+#ImageSet_page select{
+	width: 140px;
+}
+#ImageSet_page .inputTxt{
+	width: 138px;
+}
+.WorkPeriod_Box .timeTxt{
+	float: left;
+}
+.WorkPeriod_Box .timeunit{
+	float: left;
+	margin: 3px 15px 0px 15px;
+	height: 27px;
+}
+#LinkAddressDiv {
+	border: 0;
+	background-color: #F9FAFF;
+}
+#CustomerFlow_page .topContent{
+	width:100%;
+	height:30px;
+	background-color: #EFF3F6;
+	position: absolute;
+	top: 0px;
+	left: 0px; 
+	line-height: 30px;
+}
+
+#CustomerFlow_page .leftContent{
+	width: 200px;
+	left: 0px;
+	right: 10px;
+	padding-top: 20px;	
+	padding-left:41px;
+	top:30px
+}
+#CustomerFlow_page #titleText1{
+	float: left;
+	padding-left: 41px;
+	width: 200px;
+	margin-right: 14px;
+}
+.QueryTitle2{
+	padding-left:10px; 
+	border-left:1px solid #C2C9D1; 
+	position: absolute; 
+	left: 255px; 
+	right: 10px;
+	float: left;
+}
+
+.QueryTitle2 #titleText2{
+	width: 200px;
+	float: left;
+}
+.ExportFlow_Box{
+	float:right;
+}
+.FlowItemBox{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.FlowItemTitle{
+	line-height: 25px;
+	width: 100%;
+}
+.FlowItemBox .select{
+	width: 180px;
+}
+.FlowBtn{
+	margin-left:0;
+	width:90%;
+}
+.FlowDelItemBox{
+	float: left;
+	width: 100%;
+	margin-top:75px;
+}
+.FlowContent {
+	position: absolute;
+	right: 10px;
+	left: 255px;
+	top: 30px;
+	bottom: 0px;
+	border-left: 1px solid #C2C9D1;
+}
+.FlowCenter{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	top: 0px;
+}
+.FlowTabBtn {
+	height: 26px;
+	min-width: 90px;
+	width: auto;
+	padding: 0 5px;
+	text-align: center;
+	font-size: 12px;
+	font-family:  Arial, sans-serif;
+	line-height: 24px;
+	color: #6D6D6D;
+	background: #EBEEF2;
+	border: 1px solid #949FBB;
+	float: left;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+.FlowTabBtn[name="active"],.FlowTabBtn:hover {
+	color: #fff;
+	background-color: #6C5CE7;
+}
+#FlowList{
+	position: absolute; 
+	top: 0px; 
+	bottom: 3px; 
+	width: 650px;
+}
+#FlowList .table-responsive{
+	border-left: 0px;
+}
+#UpGradeFileName,#OnlineUpGradeVersion{
+	width:450px;
+}
+#DayTimeSection .time-div,
+#WhiteLightUpTimeSection .time-div
+{
+	border-radius: 5px;
+	padding: 0 10px;
+	line-height: 25px;
+	float: left;
+}
+
+#DayTimeSection .time-div input,
+#WhiteLightUpTimeSection .time-div input
+{
+	width: 17px;
+	height: 23px;
+	line-height: 23px;
+	border:0;
+	margin: 2px 0 0 0;
+	float:left;
+}
+
+#SoftwareLicenses
+{
+	color: rgb(36, 93, 179);
+	cursor: pointer;
+}
+
+.SN_StaticLabelClass
+{
+	width: 100px;
+	float: left;
+	line-height: 30px;
+}
+
+.SN_InputClass
+{
+	width: 120px;
+	height: 30px;
+	float: left;
+}
+
+.SN_InputClass input
+{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	line-height: 30px;
+}
+
+.NT_LableDiev
+{
+	width: 250px;
+	height: 30px;
+	float: left;
+}
+
+.EditBtn, .UnbindBtn
+{
+	width: 18px;
+	height: 18px;
+	margin-left: 24px;
+	margin-top: 5px;
+	float: left;
+}
+.EditBtn
+{
+	background: url(edit_nc.png);
+}
+.UnbindBtn
+{
+	background: url(unbind.png);
+}
+.EditBtn:hover
+{
+	background: url(edit_nc_hover.png);
+}
+.UnbindBtn:hover
+{
+	background: url(unbind_hover.png);
+}
+/* ============================================================
+   AnistonCam - modern split-screen login + purple theme
+   (appended override block; base rules above untouched)
+   ============================================================ */
+:root{
+	--ac-primary:#6C5CE7;
+	--ac-primary-d:#5A48D6;
+	--ac-primary-2:#8B5CF6;
+	--ac-ink:#101828;
+	--ac-sub:#667085;
+	--ac-border:#D0D5DD;
+}
+.language_box, #login_language { display:none !important; }
+
+.authWrap{ display:flex; width:100%; min-height:640px; background:#fff;
+	font-family:'Inter','Segoe UI',Arial,sans-serif; }
+.authWrap *{ box-sizing:border-box; }
+.authLeft{ flex:1 1 50%; display:flex; align-items:center; justify-content:center; padding:48px 40px; }
+.authCard{ width:100%; max-width:380px; }
+
+.authBrand{ display:flex; align-items:center; gap:10px; margin-bottom:52px; }
+.authBrandLogo{ width:30px; height:30px; object-fit:contain; }
+.authBrandName{ font-size:18px; font-weight:700; color:var(--ac-ink); letter-spacing:.2px; }
+
+.authWrap .login_main{ width:100%; height:auto; text-align:left; user-select:none; }
+.authWrap .loginDiv{ width:100%; margin:0; position:static; }
+.authWrap .loginLogoBg{ width:auto; height:auto; margin:0; }
+.authWrap .loginLogo{ width:auto; height:auto; margin:0; line-height:1.2; font-size:30px;
+	font-weight:700; color:var(--ac-ink); text-align:left; font-family:'Inter','Segoe UI',Arial,sans-serif; }
+.authSub{ margin:8px 0 26px; color:var(--ac-sub); font-size:14px; }
+
+.authWrap .enterBox{ width:100%; margin:0; }
+.authWrap .fieldLabel{ display:block; text-align:left; font-size:13px; font-weight:600; color:#344054; margin:16px 0 6px; }
+.authWrap .spanImg{ display:none; }
+.authWrap .login_box{ position:relative; width:100%; height:44px; line-height:44px; display:block;
+	margin:0; border-radius:8px; border:1px solid var(--ac-border); background:#fff;
+	box-shadow:0 1px 2px rgba(16,24,40,.05); }
+.authWrap .login_box:focus-within{ border-color:var(--ac-primary); box-shadow:0 0 0 3px rgba(108,92,231,.18); }
+.authWrap .login_input{ width:100%; float:none; margin:0; height:42px; line-height:42px; padding:0 14px;
+	border:0; background:transparent; font-size:14px; color:var(--ac-ink); }
+.authWrap .login_input:focus{ outline:0; border:0; }
+.authWrap #pwd .login_input{ padding-right:42px; }
+.authWrap .psw_eye_arc{ position:absolute; right:12px; top:0; height:44px; display:flex; align-items:center; }
+
+.authWrap .loginPswCkbox_div{ width:100%; height:auto; margin:14px 0 0; line-height:normal; overflow:hidden; }
+.authWrap .loginPswCkbox_div a{ color:var(--ac-primary); font-weight:600; font-size:13px; text-decoration:none; cursor:pointer; }
+.authWrap .loginPswCkbox_div a:hover{ text-decoration:underline; }
+.authWrap .LoginStatus{ width:100%; min-height:18px; margin:10px 0 0; background:transparent; }
+
+.authWrap #loginBtn{ width:100%; height:46px; line-height:46px; margin:22px 0 0; bottom:auto;
+	border-radius:8px; background:var(--ac-primary); color:#fff; font-size:15px; font-weight:600;
+	text-align:center; cursor:pointer; box-shadow:0 1px 2px rgba(16,24,40,.08); transition:background .15s; }
+.authWrap #loginBtn:hover{ background:var(--ac-primary-d); }
+
+.authArt{ flex:1 1 50%; position:relative; overflow:hidden;
+	background:linear-gradient(155deg,#6C5CE7 0%,#8B5CF6 100%);
+	display:flex; align-items:center; justify-content:center; }
+.authArt::before{ content:""; position:absolute; inset:0;
+	background-image:radial-gradient(circle at 22% 22%, rgba(255,255,255,.12) 0, rgba(255,255,255,0) 42%),
+		radial-gradient(circle at 78% 72%, rgba(255,255,255,.10) 0, rgba(255,255,255,0) 46%); }
+.authArtInner{ position:relative; text-align:center; color:#fff; padding:40px; }
+.authArtLogo{ width:150px; height:150px; object-fit:contain; filter:brightness(0) invert(1); opacity:.96; }
+.authArtTitle{ margin-top:22px; font-size:30px; font-weight:700; letter-spacing:.4px; }
+.authArtDesc{ margin-top:10px; font-size:15px; color:rgba(255,255,255,.85); }
+
+@media (max-width:860px){ .authArt{ display:none; } .authLeft{ flex:1 1 100%; } }

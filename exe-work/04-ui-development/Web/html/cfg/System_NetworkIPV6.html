@@ -1,0 +1,48 @@
+<div class="cfg_container">
+    <div class="cfg_row">
+		<div class="cfg_row_left" id="LinkAddress">LinkAddress</div>
+		<div class="cfg_row_right">
+			<input class="inputTxt" id="LinkAddressDiv" readonly="readonly"/>
+		</div>
+	</div>
+    <div class="cfg_row">
+        <div class="cfg_row_left" id="IPV6Address">IPV6Address</div>
+        <div class="cfg_row_right">
+            <input class="inputTxt" id="IPAddressInput" data='' type="text"  maxlength="40"/>
+            <label>&nbsp&nbsp/&nbsp&nbsp</label>
+            <input class="inputTxt" id="BInput" data='' type="text"  maxlength="3" style="width:30px;"
+            onkeyup="if(keyboardFilter(event)) NumberRange(this, 1, 127, -1)" 
+			onblur="NumberRange(this, 1, 127, -1)"/>
+        </div>
+    </div>
+    <div class="cfg_row">
+        <div class="cfg_row_left" id="DefaultGateWay">DefaultGateWay</div>
+        <div class="cfg_row_right">
+            <input class="inputTxt" id="DefaultGateWayInput" data='' type="text"  maxlength="40"/>
+        </div>
+    </div>
+    <div class="cfg_row" id="DNSTIP" style="display: none;">
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="DnsTip_IPV6">DnsTip_IPV6</div>
+        </div>
+    </div>
+    <div class="cfg_row" id=PrimaryDNS style="display: none;">
+        <div class="cfg_row_left" id="IPV6PrimaryDNSL">PrimaryDNS</div>
+        <div class="cfg_row_right">
+            <input class="inputTxt" id="PrimaryDNSInput" data=''/>
+        </div>
+    </div>
+    <div class="cfg_row" id="SencondaryDNS" style="display: none;">
+        <div class="cfg_row_left" id="IPV6SecondaryDNSL">SecondaryDNS</div>
+        <div class="cfg_row_right">
+            <input class="inputTxt" id="SecondaryDNSInput" data=''/>
+        </div>
+    </div>
+    <div class="cfg_row">
+	    <div class="btn_box" id="img_Btn_box">
+            <button id="NetworkIPV6Rf" class="btn">Refresh</button>
+            <button id="NETSetUp" class="btn" style="display: none;">Setup</button>
+	        <button id="NetworkIPV6Save" class="btn SvBtnState">Save</button>
+	    </div>
+	</div>
+</div>

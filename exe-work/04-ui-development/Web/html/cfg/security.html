@@ -1,0 +1,91 @@
+<!-- Outer containers -->
+<div class="cfg_container" id="SecurityPage">	
+	<div class="cfg_row" id="security_tip1">To reset password,please input property or update in time</div>
+	<div id="QuestionsDiv">
+		<div class="cfg_row" style="width:600px;">
+			<div class="cfg_row_left" id="SafetyTitle" style="width:auto;">Safety Question</div>
+			<div class="security-split" id="SafetySplit">
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="pswQuestion1L">Question</div>
+			<div class="cfg_row_right">
+				<select id="question1" class="select" >
+				</select>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="pswAnswer1L">Answer</div>
+			<div class="cfg_row_right">
+				<div class="cfg_row_pwd">
+					<input id="answer1" class="inputTxt PswEyeShow" type="text" autocomplete="off"/>
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="pswQuestion2L">Question</div>
+			<div class="cfg_row_right">
+				<select id="question2" class="select" >
+				</select>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="pswAnswer2L">Answer</div>
+			<div class="cfg_row_right">
+				<div class="cfg_row_pwd">
+					<input id="answer2" class="inputTxt PswEyeShow" type="text" autocomplete="off"/>
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="VerifyDiv" style="margin-top:15px;">
+		<div class="cfg_row" style="width:600px;">
+			<div class="cfg_row_left" id="VerifyTitle" style="width:auto;">Reset password by verification code</div>
+			<div class="security-split" id="VerifySplit">
+			</div>
+		</div>
+		
+		
+		<div class="radio-btn-box">
+			<span>
+				<input id="verifyApp" name="verify" type='radio'>
+				<label for="verifyApp" id="AppL">Send verification code to mobile app</label>
+			</span>
+		</div>
+		<div class="radio-btn-box">
+			<span>
+				<input id="verifyContact" name="verify" type='radio'>
+				<label for="verifyContact" id="ContactL">Send verification code to my contact profile</label>
+			</span>
+		</div>
+		
+		<div class="cfg_row" id="contactDiv" style="margin-top:5px;">
+			<select class="select" id="contactSel" style="width:160px;"></select>
+			<input class="inputTxt" id="contactInput" style="width:400px;" type="text"/>
+		</div>
+	</div>
+	
+	<div class="note-box" style="width:560px">
+		<ul>
+			<h4 id="Notes">Notes:</h4>
+			<span id="securitySMTP"></span>
+		</ul>
+	</div>
+
+    <div class="cfg_row">
+        <div class="btn_box" id="ftp_btn_box">
+            <button id="SecurityRf" class="btn">Refresh</button>
+            <button id="SecuritySV" class="btn SvBtnState">Save</button>
+			<button id="SecurityExit" class="btn">Exit</button>
+        </div>
+    </div>
+</div>

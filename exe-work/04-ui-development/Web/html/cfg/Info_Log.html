@@ -1,0 +1,76 @@
+<div class="cfg_container" id="devlog_container">
+	<div id="QueryBox">
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="log_maintype">log_type</div>
+			<div class="cfg_row_right" id="log_type_list">
+				<select id="logType" class="select">
+				</select>
+				<button class="btn" id="log_search">Search</button>
+				<button class="btn" id="log_clear">Remove</button>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="begin_time">begin_time</div>
+			<div class="cfg_row_right">
+				<div id="begin_time_con" style="width:233px; overflow: hidden; clear: left; float: left;">
+					<select id="years">
+					</select>
+					<select id="months">
+					</select>
+					<select id="days">
+					</select>
+					<div id="beginDateHuili" style="float:right;display:none;margin-right:20px;"></div>
+				</div>
+				<div id="begin_Ttime" style="height: 25px; overflow: hidden; float: left;"></div>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="end_time">end_time</div>
+			<div class="cfg_row_right" style="width: auto;">
+				<div id="end_time_con" style="width:233px; overflow: hidden; clear: left; float: left;">
+					<select id="endyears">
+					</select>
+					<select id="endmonths">
+					</select>
+					<select id="enddays">
+					</select>
+					<div id="endDateHuili" style="float:right;display:none; margin-right:20px;"></div>
+				</div>
+				<div id="end_Ttime" style="height: 25px; overflow: hidden; float: left;"></div>
+				<button class="btn" id="log_PrePage">PrePage</button>
+				<button class="btn" id="log_NextPage">NextPage</button>
+			</div>
+		</div>
+	</div>
+	<div id="LogList" class="table-bgcolor">
+		<div class="table-responsive">
+		    <div class="table-head">
+				<table class="table grid" style="margin-bottom:0">
+					<colgroup>
+						<col style="width:20%">
+						<col style="width:35%">
+						<col style="width:45%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th id="Log_No"></th>
+							<th id="Log_Time"></th>
+							<th id="Log_Operator"></th>
+						</tr>
+					</thead>
+				</table>
+		    </div>
+		    <div class="table-content">
+		        <table id="LogTable" class="table grid">
+		            <colgroup>
+		                <col style="width:20%">
+		                <col style="width:35%">
+		                <col style="width:45%">
+		            </colgroup>
+		            <tbody>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+</div> 

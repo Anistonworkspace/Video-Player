@@ -1,0 +1,117 @@
+<div class="content_Box" style="display: none;">
+	<div class="RemoteSet_Box" id="RemoteSet_Box_Normal">
+		<div class="RemoteSet_Box_Scroll">
+			<div class="RemoteSet_Menu" id="mRecord" >
+				<div class="configBtn"></div>
+				<label id="mRecordL">Record</label>
+			</div>
+			<div class="RemoteSet_Menu_listBox" id="mRecord_parameter">
+				<div class="RemoteSet_Menu_list" id="Record_Manager">Record</div>
+				<div class="RemoteSet_Menu_list" id="Record_Manager_jh">Record</div>
+				<div class="RemoteSet_Menu_list" id="Record_Snap">SnapShot</div>
+				<div class="RemoteSet_Menu_list" id="Record_SnapSchedule">Image storage</div>
+				<div class="RemoteSet_Menu_list" id="Record_Ctrl" style="display:none">Record Mode</div>
+			</div>
+			<div class="RemoteSet_Menu" id="mAlarm">
+				<div class="configBtn"></div>
+				<label id="mAlarmL">Alarm</label>
+			</div>
+			<div class="RemoteSet_Menu_listBox" id="mAlarm_parameter">
+				<div class="RemoteSet_Menu_list" id="Alarm_Motion">Detection</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_SmartAlarm" style="display:none;">SmartAlarm</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_VideoBlind">Video Blind</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_HumanDetect" d="not-active" data-intell="1">PD</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_FaceDetect">Face Detect</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_CarShape" style="display:none">Car Shape</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_VideoLoss">Video Loss</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_Input" style="display: none;">Alarm Input</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_Output">Alarm Output</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_Intelligent" style="display: none;">Intelligent</div>
+				<div class="RemoteSet_Menu_list" id="Alarm_Exception">Events</div>
+			</div>			
+			<div class="RemoteSet_Menu" id="mSystem">
+				<div class="configBtn"></div>
+				<label id="mSystemL"></label>
+			</div>
+			<div class="RemoteSet_Menu_listBox" id="mSystem_parameter">
+				<div class="RemoteSet_Menu_list" id="System_General">General</div>
+				<div class="RemoteSet_Menu_list" id="System_Encode">Encode</div>
+				<div class="RemoteSet_Menu_list" id="System_Network">Network</div>
+				<div class="RemoteSet_Menu_list mInteSM" id="System_NetService">NetService</div>
+				<div class="RemoteSet_Menu_list" id="System_Display">GUI Display</div>
+				<div class="RemoteSet_Menu_list" id="System_PTZ" style="display: none;">PTZ Config</div>
+				<div class="RemoteSet_Menu_list" id="System_Serial" style="display: none;">RS232</div>
+				<div class="RemoteSet_Menu_list" id="System_CameraParam" style="display: none;">Camera Param</div>
+				<div class="RemoteSet_Menu_list" id="System_CameraParam_Simp" style="display: none;">Camera Param</div>
+				<div class="RemoteSet_Menu_list mInteSM" id="System_IPCParam" style="display: none;">IPC Param.</div>
+				<div class="RemoteSet_Menu_list" id="System_ColorParam">Color Param</div>
+				<div class="RemoteSet_Menu_list" id="System_NetworkIPV6" style="display: none;">NetworkIPV6</div>
+				<div class="RemoteSet_Menu_list" id="System_ROI" style="display: none;">ROI</div>
+			</div>
+			<div class="RemoteSet_Menu" id="mAdvanced">
+				<div class="configBtn"></div>
+				<label id="mAdvancedL">Advanced</label>
+			</div>
+			<div class="RemoteSet_Menu_listBox" id="mAdvanced_parameter">
+				<div class="RemoteSet_Menu_list" id="Advance_HddManager">HDD Manager</div>
+				<div class="RemoteSet_Menu_list" id="Advance_Account">Account</div>
+				<div class="RemoteSet_Menu_list" id="Advance_AutoMaintain">AutoMaintain</div>
+				<div class="RemoteSet_Menu_list" id="Advance_Default">Default</div>
+				<div class="RemoteSet_Menu_list" id="Advance_ImportEx">Import Export</div>
+				<div class="RemoteSet_Menu_list" id="Advance_Reboot">Reboot</div>
+				<div class="RemoteSet_Menu_list" id="Advance_Upgrade">Upgrade</div>
+				<div class="RemoteSet_Menu_list" id="Advance_Digital">Digital Channel</div>
+				<div class="RemoteSet_Menu_list" id="Advance_ChannelType">ChannelType</div>
+			</div>
+			<div class="RemoteSet_Menu" id="mInfo">
+				<div class="configBtn"></div>
+				<label id="mInfoL">Info</label>
+			</div>
+			<div class="RemoteSet_Menu_listBox" id="mInfo_parameter">
+				<div class="RemoteSet_Menu_list" id="Info_HddInfo">HDD Info</div>
+				<div class="RemoteSet_Menu_list" id="Info_Log">LOG</div>
+				<div class="RemoteSet_Menu_list" id="Info_CustomerFlow" style="display: none;">Customer Flow</div>
+				<div class="RemoteSet_Menu_list" id="Info_Version">Version</div>
+				<div class="RemoteSet_Menu_list" id="Info_ChanStatus">Channel Status</div>
+				<div class="RemoteSet_Menu_list" id="Info_QR">QR Code</div>
+			</div>
+		</div>
+	</div>
+	<div class="remoteSetContent" id="configRightDiv">
+		<div class="content_top">
+			<div class="content-top-item positionImg"></div>
+			<div class="content-top-item" id="firstLevelMenu">Display</div>
+			<div class="content-top-item arrow_title"></div>
+			<div class="content-top-item" id="secondLevelMenu">Live</div>
+		</div>
+		
+		<div class="content-menu-wrapper none">
+			<ul class="content-menu-list" id="System_NetService_item">
+			</ul>
+			<ul class="content-menu-list" id="System_IPCParam_item">
+				<li class="content-menu-item" id="IPCParam_Version">
+					<div id="IPCParam_VersionL">Version</div>
+					<div class="menu-item-after"></div>
+				</li>
+				<li class="content-menu-item" id="IPCParam_ImageSet">
+					<div id="IPCParam_ImageSetL">Image Set</div>
+					<div class="menu-item-after"></div>
+				</li>				
+				<li class="content-menu-item" id="IPCParam_LightSet">
+					<div id="IPCParam_LightSetL">Light Set</div>
+					<div class="menu-item-after"></div>
+				</li>
+				<li class="content-menu-item" id="IPCParam_Advanced">
+					<div id="IPCParam_AdvancedL">Advanced</div>
+					<div class="menu-item-after"></div>
+				</li>
+				<li class="content-menu-item" id="IPCParam_Maintain">
+					<div id="IPCParam_MaintainL">SystemMaintain</div>
+					<div class="menu-item-after"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="content" id="chlidCfgContent"></div>
+	</div>
+	<div id="tempOcx"></div>
+</div>

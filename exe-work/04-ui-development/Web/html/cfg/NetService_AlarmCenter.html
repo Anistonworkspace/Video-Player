@@ -1,0 +1,66 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Protocol_Type">Protocol Type</div>
+		<div class="cfg_row_right">
+			<select class="select" id="ProtoType"></select>
+		</div>
+	</div>
+	
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Center_Enable">Enable</div>
+		<div class="cfg_row_right mv_R">
+			<div id="Enable_Switch" data="" class="switch"></div>
+		</div>
+	</div>
+    <div id="CenterDivBox">
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="IpAddr">Server IP</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" type="text" id="IpAddrInput" maxlength="16"/>
+            </div>
+        </div>
+
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="Port">Port</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" id="PortInput" type="text" value="80" maxlength="5"
+                       onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 65535, -1);}"
+                       onblur="NumberRange(this, 0, 65535, -1);"/>
+            </div>
+        </div>
+
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="AlarmReportL">Alarm Report</div>
+			<div class="cfg_row_right mv_R">
+				<div id="Alarm_Report" data="" class="switch"></div>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="LogReportL">Log Report</div>
+			<div class="cfg_row_right mv_R">
+				<div id="Log_Report" data="" class="switch"></div>
+			</div>
+		</div>
+		<div class="cfg_row" id="HeartBeatUploadEnableDiv" style="display:none">
+			<div class="cfg_row_left" id="HeartBeatEnableL">Heart Beat Upload</div>
+			<div class="cfg_row_right mv_R">
+				<div id="HeartBeatUploadEnable" data="" class="switch"></div>
+			</div>
+		</div>
+		<div class="cfg_row" id="HeartBeatPeriodDiv" style="display:none">
+			<div class="cfg_row_left" id="HeartBeatPeriodL">Heart Beat Period</div>
+			<div class="cfg_rowRight">
+				<input class="inputTxt" type="text" id="HeartBeatPeriod" onfocusout="if(value<3)value=3;if(value>7200)value=27200;"/>
+				<label id="HeadtBeatPeriodTips">second. (3-7200)</label>
+			</div>
+		</div>
+    </div>
+
+    <div class="cfg_row">
+        <div class="btn_box" id="center_btn_box">
+			<button id="CenterRf" class="btn">Refresh</button>
+            <button id="CenterSV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>
+

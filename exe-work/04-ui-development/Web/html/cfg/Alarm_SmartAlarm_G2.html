@@ -1,0 +1,178 @@
+<div class="cfg_container alarm" id="SmartAlarm">
+    <div class="cfg_row">
+        <div class="first" id="SA_ChannelDiv">
+            <div class="SA_Cfg_row cfg_row_left" id="SA_ChannelL">Channel</div>
+            <div class="cfg_row_right">
+                <select class="select" id="SA_Channel"></select>
+            </div>
+        </div>
+    </div>
+    <div class="cfg_row">
+        <div class="first" id="SA_EnableDiv">
+            <div class="SA_Cfg_row cfg_row_left" id="SA_EnableL">Enable</div>
+            <div class="cfg_row_right">
+                <input type="button" class="selectDisable" id="SA_Enable" data='' />
+            </div>
+        </div>
+    </div>
+    <div class="cfg_row">
+        <div class="split"></div>
+    </div>
+    <div id="SA_CfgBox">
+        <div class="cfg_row">
+            <div class="first" id="SA_Sensitiveness">
+                <div class="SA_Cfg_row cfg_row_left" id="SA_SensitivenessL">Sensitiveness</div>
+                <div class="cfg_row_right">
+                    <select class="select" id="SA_SensitivenessS"></select>
+                </div>
+            </div>
+        </div>
+        <div class="cfg_row" id="SA_HumanDetectBox">
+            <div class="first">
+                <div class="SA_Cfg_row cfg_row_left" id="SA_HumanL">HumanDetect</div>
+                <div class="cfg_row_right">
+                    <input type="button" class="selectDisable"  id="SA_HumanEnable" data='' />
+                </div>
+            </div>
+        </div>
+        <div class="cfg_row" id="SA_FaceDetectBox">
+            <div class="first FaceClass">
+                <div class="SA_Cfg_row cfg_row_left" id="SA_FaceL">FaceDetect</div>
+                <div class="cfg_row_right">
+                    <input type="button" class="selectDisable" id="SA_FaceEnable" data='' />
+                </div>
+            </div>
+        </div>
+        <div class="cfg_row">
+            <div class="btn_box" id="SA_btn_box">
+                <button id="SA_RuleAndRegionBtn" class="btn">Region</button>
+                <button id="SA_PeriodBtn" class="btn">Period</button>
+                <button id="SA_AdvanceSetBtn" class="btn">Advance</button>
+            </div>
+        </div>
+    </div>
+    <div class="cfg_row">
+        <div class="btn_box" id="SA_btn_box">
+            <button id="SA_CP" class="btn" style="display:none">Copy</button>
+            <button id="SA_Paste" class="btn" style="display:none">Paste</button>
+            <button id="SA_Rf" class="btn">Refresh</button>
+            <button id="SA_Save" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+    <!-- Advance_Dialog -->
+    <div class="dialog_role" id="SA_Advance_Dialog" style="width:800px; left:10%;top:0px;display:none;">
+        <ul class="SecondTitle">
+            <li>
+                <h3 id="SA_Advance_Title">Advance</h3>
+                <span class="second_close" id="SA_AdvanceDLgClose">&times;</span>
+            </li>
+        </ul>
+        <ul class="content_details">
+            <li class="content_container">
+                <div class="cfg_row">
+                    <div id="SA_IntervalDiv" class="first">
+                        <div class="cfg_row_left" id="SA_IntervalL">Interval</div>
+                        <div class="cfg_row_right">
+                            <input id="SA_Interval" class="inputTxt timeTxt" maxlength="3"
+                                onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 600, -1);}"
+                                onblur="NumberRange(this, 0, 600, -1);" />
+                            <label id="SA_IntervalSec">Sec(0-600)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="cfg_row">
+                    <div id="SA_RecordDelayDiv" class="first">
+                        <div class="cfg_row_left" id="SA_RecordDelayL">Post Record</div>
+                        <div class="cfg_row_right">
+                            <input id="SA_RecordDelay" class="inputTxt timeTxt" maxlength="3"
+                                onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 300);}"
+                                onblur="NumberRange(this, 10, 300, -1);" />
+                            <label id="SA_RecordSec">Sec(10-300)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="cfg_row" id="SA_SendEmailBox">
+                    <div class="cfg_row_left" id="SA_sendEmailL">Send Email</div>
+                    <div class="cfg_row_right">
+                        <input type="button" class="selectDisable"  id="SA_SendEmail" data='' />
+                    </div>
+                </div>
+                <div class="cfg_row" id="SA_FTPBox">
+                    <div class="cfg_row_left" id="SA_FTPL">FTP</div>
+                    <div class="cfg_row_right">
+                        <input type="button" class="selectDisable"  id="SA_FTP" data='' />
+                    </div>
+                </div>
+                <div class="cfg_row" id="SA_WriteLogBox">
+                    <div class="cfg_row_left" id="SA_WriteLogL">WriteLog</div>
+                    <div class="cfg_row_right">
+                        <input type="button" class="selectDisable"  id="SA_WriteLog" data='' />
+                    </div>
+                </div>
+                <div class="cfg_row" id="SA_Record_line">
+                    <div class="cfg_row_left" id="SA_Record">Record</div>
+                    <div class="cfg_row_right">
+                        <input type="button" class="selectDisable"  id="SA_RecordChk" data='' />
+                    </div>
+                </div>
+                <div class="cfg_row" id="SA_PhoneUp_line">
+                    <div class="cfg_row_left" id="SA_PhoneUp">Record</div>
+                    <div class="cfg_row_right">
+                        <input type="button" class="selectDisable"  id="SA_PhoneUpChk" data='' />
+                    </div>
+                </div>
+                <div class="cfg_row" id="SA_Alarm_tone">
+                    <div class="cfg_row_left" id="SA_alarm_toneL">alarm tone</div>
+                    <div class="cfg_row_right" style="width: auto;">
+                        <select class="select voiceTypeSelect" id="SA_AbAlarmToneType"></select>
+                        <span id="SA_alarmAndCustom">
+                            <select class="select customSelect" id="SA_AbAlarmTone"></select>
+                            <button id="SA_AbAlarmToneCustomButton" class="btn"
+                                style="margin-left:0px;float:none;"></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="cfg_row" id="SA_VoiceTipDiv">
+                    <div class="cfg_row_left" id="SA_VoiceTipL">Types of voice</div>
+                    <div class="cfg_row_right">
+                        <select class="select customSelect" id="SA_VoiceTip" style="float:left">
+                        </select>
+                        <div id="SA_Custom_box" style="float:left;">
+                            <button id="SA_VoiceTipBtn" class="btn autoWidth" style="margin-left:5px;">Custom</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cfg_row">
+                </div>
+                <div class="cfg_row" style="text-align:center;">
+                    <div id="SA_Advance_btn_box" style="display:inline-block;">
+                        <button id="SA_Advance_Confirm" class="btn SvBtnState">Confirm</button>
+                        <button id="SA_Advance_Cancel" class="btn">Cancel</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Region Dialog-->
+    <div class="dialog_role" id="SA_Region_dialog" style="width:550px; left:10%; top:0px; display:none;">
+        <ul class="SecondTitle">
+            <li>
+                <h3 id="SA_Region_Title">Region</h3><span class="second_close">&times;</span>
+            </li>
+        </ul>
+        <ul class="content_details">
+            <li class="content_container">
+                <div id="SA_MotionSP" style="width:500px; height:400px;">
+                    <img id="SA_motion_Img" src="" style="position:absolute;
+				width:500px; height:400px;" />
+                    <canvas id="SA_motion_cvs" width="500" height="400" style="position:absolute;">No Support</canvas>
+                </div>
+
+                <div class="btn_box" style="padding-left:125px;">
+                    <button class="btn" id="SA_SaveRegionBtn">Save</button>
+                    <button class="btn btn_cancle" id="SA_Region_Cancel">Cancel</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

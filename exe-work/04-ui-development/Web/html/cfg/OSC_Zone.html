@@ -1,0 +1,39 @@
+<div class="Int_Page">
+	<div id="GLL_Content_div" style="position: relative">	
+		<div id="GLL_Rect" style="width:600px; height:400px;">
+			<img id="OSC_Img" src="" style="position:absolute;
+				width:600px; height:400px;" />
+			<canvas id="gr_cvs" width="600" height="400" style="position:absolute;">No Support</canvas>
+		</div>
+		<div id="typeBox" style="margin-top:15px; overflow:hidden;">
+			<div id="RadioBox" style="float:left;">
+				<div class="form-group">
+					<span><input id="StolenRadio" name="OSCEnable" type="radio">
+					<label for="StolenRadio" id="StolenL">Missing Object</label></span>
+				</div>
+				<div class="form-group">
+					<span><input id="AbandumRadio" name="OSCEnable" type="radio">
+					<label for="AbandumRadio" id="AbandumL">Abandoned</label></span>
+				</div>
+				<div class="form-group" id="NoParkingDiv" style="display:none;">
+					<span><input id="NoParkingRadio" name="OSCEnable" type="radio">
+					<label for="NoParkingRadio" id="NoParkingL">Illegal parking</label></span>
+				</div>  
+			</div>
+			<div id="ShapeBox" style="float:left; margin: 10px 0 0 50px;">
+				<div class="shapeBtn" id="side3" data_point='3' style="display:none;"></div>
+				<div class="shapeBtn" id="side4" data_point='4'></div>
+				<div class="shapeBtn" id="side5" data_point='5'></div>
+				<div class="shapeBtn" id="side6" data_point='6'></div>
+				<div class="shapeBtn" id="side7" data_point='7'></div>
+				<div class="shapeBtn" id="side8" data_point='8'></div>
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row">
+		<div class="btn_box" style="padding-left:175px; margin-top:5px">	
+			<button id="GLL_SV" class="btn SvBtnState">Save</button>
+			<button type="button" class="btn btn_cancle" id="GLL_Cancel">Cancel</button>
+		</div>
+	</div>
+</div>

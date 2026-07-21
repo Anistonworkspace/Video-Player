@@ -1,0 +1,82 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="email_enable">Enable</div>
+		<div class="cfg_row_right">
+			<div id="EmailEnable" data="0"></div>
+		</div>
+	</div>
+	<div id="EmDivBox">
+		<div id="NetEm_First_Rows">
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="SMTP_server">SMTP Server</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" type="text" id="EmailSMTP" maxlength="32"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="SMTP_port">SMTP Port</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" type="text" id="EmailPort" maxlength="5"
+						onkeyup="if(keyboardFilter(event)) NumberRange(this, 1, 65500, 587)" onblur="NumberRange(this, 1, 65500, 587)"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="encrypt_type">Encryption</div>
+				<div class="cfg_row_right">
+					<select class="select" id="EncryptType">
+						<option value="0">None</option>
+						<option value="1">SSL</option>
+					</select>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="email_username">User Name</div>
+				<div class="cfg_row_right">
+					<input type="text" id="EmailUserName" class="inputTxt" maxlength="32"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="email_passwd">Password</div>
+				<div class="cfg_row_right">
+					<div class="cfg_row_pwd">
+						<input type="text" class="inputTxt PswEyeShow" id="EmailPasswd" maxlength="64"/>
+						<div class="psw_eye_arc">
+							<div class="psw_eye_cicle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="email_sender">Sender</div>
+				<div class="cfg_row_right">
+					<input type="text" id="EmailSender" class="inputTxt" maxlength="64"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="email_recv">Receiver</div>
+				<div class="cfg_row_right">
+					<input type="text" id="EmailRecv" class="inputTxt" maxlength="320"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="email_title">Title</div>
+				<div class="cfg_row_right">
+					<input type="text" id="Title" class="inputTxt" maxlength="64"/>
+				</div>
+			</div>	
+        </div>
+    </div>
+    <div class="cfg_row">
+        <div class="btn_box" id="email_btn_box">
+			<div id="EmailTest_box">
+				<button class="btn autoWidth" id="EmailTest">Test Email</button>
+			</div>
+			<button disabled="true" id="EmailTestStop" class="btn" style="display:none;">Stop</button>
+			<button id="EmailRf" class="btn">Refresh</button>
+            <button id="EmailSV" class="btn SvBtnState">Save</button>
+            <button id="EmailDf" class="btn" style="display:none;">Default</button>
+        </div>
+    </div>
+</div>
+
+

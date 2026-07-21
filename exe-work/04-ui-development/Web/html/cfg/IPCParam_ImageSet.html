@@ -1,0 +1,229 @@
+<div class="cfg_container" id="ImageSet_page">
+    <div class="cfg_row" id="table_channel">
+        <div class="cfg_row_left " id="ImageChidL">Channel</div>
+        <div class="cfg_row_right">
+            <select class="select" id="ImageChid" style="width:200px"></select>
+        </div>
+    </div>
+    <div class="ColorSetCenter" id="imagesetOcx" style="left: 620px; top:20px"></div>
+        
+    <div id="VideoColor_Box">   
+        <div class="cfg_row" id="IPC_IR_Cut_0" style="display: none;">
+            <div class="cfg_row_left" id="IPC_TimeSectionL">Period</div>
+            <div id="IPC_SectBox">
+                <div id="IPC_Sect" style="float:left; margin-left:0px">
+                    <span class="timespan">				
+                        <input id="IPC_TimeEnable" type="checkbox" />
+                        <label for="IPC_TimeEnable">&nbsp</label>
+                    </span>
+                    <div id="TimeSection" class="time-div">
+                        <input id="IPC_BH" type="text" /><label class='timeSplit'>:</label>
+                        <input id="IPC_BM" type="text" /><label class='timeSpace'>-</label>
+                        <input id="IPC_EH" type="text" /><label class='timeSplit'>:</label>
+                        <input id="IPC_EM" type="text" />
+                    </div>
+                </div>
+                <div id="IPC_Sect2" class="second" style="float:left; margin-left:30px">
+                    <span class="timespan">				
+                        <input id="IPC_TimeEnable2" type="checkbox"/>
+                        <label for="IPC_TimeEnable2">&nbsp</label>
+                    </span>
+                    <div id="TimeSection2" class="time-div">
+                        <input id="IPC_BH2" type="text" /><label class='timeSplit'>:</label>
+                        <input id="IPC_BM2" type="text" /><label class='timeSpace'>-</label>
+                        <input id="IPC_EH2" type="text" /><label class='timeSplit'>:</label>
+                        <input id="IPC_EM2" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="IPC_IrcutDiv" style="display:none"style="float:left; margin-left:50px">
+                <div id="IPC_IrcutClose">Infrared Off</div>
+                <div id="IPC_IrcutOpen" class="second">Infrared On</div>
+            </div>
+            
+        </div>
+
+        <div class="cfg_row" id="IPC_IR_Cut_1" style="display:none;">
+            <div id="IPC_InfraredLamp_Close" style="margin-left:180px; width:165px; display: inline-block;">Close</div>
+            <div id="IPC_InfraredLamp_Open" style="margin-left:6px; display: inline-block;">Open</div>
+        </div>
+
+        <div class="cfg_row" id="IPC_BrightnessDiv">
+            <div class="cfg_row_left" id="IPC_BrightnessL">Brightness</div>
+            <div class="cfg_row_right">
+                <div class="MaskDiv" style="height: 100%;"></div>
+                <div id="IPCBrightness_Slider"></div>
+                <div id="IPCBrightness_Slider2" class="second"></div>
+            </div>
+        </div>
+        <div class="cfg_row" id="IPC_ContrastDiv">
+            <div class="cfg_row_left" id="IPC_ContrastL">Contrast</div>
+            <div class="cfg_row_right">
+                <div class="MaskDiv" style="height: 100%;"></div>
+                <div id="IPCContrast_Slider"></div>
+                <div id="IPCContrast_Slider2" class="second"></div>
+            </div>
+        </div>
+        <div class="cfg_row" id="IPC_SaturationDiv">
+            <div class="cfg_row_left" id="IPC_SaturationL">Saturation</div>
+            <div class="cfg_row_right">
+                <div class="MaskDiv" style="height: 100%;"></div>
+                <div id="IPCSaturation_Slider"></div>
+                <div id="IPCSaturation_Slider2" class="second"></div>
+            </div>
+        </div>
+        <div class="cfg_row" id="IPC_HueDiv">
+            <div class="cfg_row_left" id="IPC_HueL">Hue</div>
+            <div class="cfg_row_right">
+                <div class="MaskDiv" style="height: 100%;"></div>
+                <div id="IPCHue_Slider"></div>
+                <div id="IPCHue_Slider2" class="second"></div>
+            </div>
+        </div>
+        <div class="cfg_row" id="IPC_GainDiv">
+            <div class="cfg_row_left" id="IPC_GainL">Gain</div>
+            <div class="cfg_row_right">
+                <div class="MaskDiv" style="height: 100%;"></div>
+                <div id="IPCGain_Slider"></div>
+                <div id="IPCGain_Slider2" class="second"></div>
+            </div>
+        </div>	
+        <div class="cfg_row" id="IPC_HorizontalDiv">
+            <div class="cfg_row_left" id="IPC_HorizontalL">Horizontal Acutance</div>
+            <div class="cfg_row_right">
+                <div class="MaskDiv" style="height: 100%;"></div>
+                <div id="IPCHorizontal_Slider"></div>
+                <div id="IPCHorizontal_Slider2" class="second"></div>
+            </div>
+        </div>
+        <div class="cfg_row" id="IPC_VerticalDiv">
+            <div class="cfg_row_left" id="IPC_VerticalL">Vertical Acutance</div>
+            <div class="cfg_row_right">
+                <div class="MaskDiv" style="height: 100%;"></div>
+                <div id="IPCVertical_Slider"></div>
+                <div id="IPCVertical_Slider2" class="second"></div>
+            </div>
+        </div>
+    </div>
+    <div id="CameraSet_Box">
+        <div class="camera_box" id="Camera_Box">
+            <div class="cfg_row" id="IPC_DNModeDiv">
+                <div class="first">
+                    <div class="cfg_row_left" id="IPC_DNMode_L">Day/Night Mode</div>
+                    <div class="cfg_row_right" style="width:auto">			
+                        <select id="IPC_DNMode" class="select"></select>
+                    </div>
+                </div>
+                <div class="second" id="IPC_GearCtrlBox">
+                    <div class="cfg_row_left" id="IPC_GearCtrl">Gear Control</div>
+                    <div class="cfg_row_right" id="IPC_GearSlider">
+                        <div class="MaskDiv" style="height: 100%;"></div>
+                        <div id="IPC_RDNC"></div>
+                        <div id="IPC_Auto_Adjustment" style="display: none;"></div>
+                    </div>
+                </div>
+				<div class="second" id="IPC_DayNightSwitch" style="display: none">
+					<div class="cfg_row_left" id="IPC_DayNightSwitchL">DayNight Switch</div>
+					<div class="cfg_row_right">
+						<select id="IPC_DayNightSwtichSelect" class="select"></select>
+					</div>
+				</div>
+            </div>
+            <div class="cfg_row" id="IPC_DayNightSwitchExBox" style="display:none">
+                <div class="first" id="IPC_GearCtrlBox2">
+                    <div class="cfg_row_left" id="IPC_GearCtrl2">Gear Control</div>
+                    <div class="cfg_row_right" id="IPC_GearSlider2" style="position: relative;">
+                        <div class="MaskDiv" style="height: 100%;"></div>
+                        <div id="IPC_RDNC2"></div>
+                        <div id="IPC_Auto_Adjustment2" style="display: none;"></div>
+                    </div>
+                </div>
+                <div class="second" id="IPC_KeepDayPeriodBox">
+                    <div class="cfg_row_left" id="IPC_KeepDayPeriodL">Day Time Section</div>
+                    <div class="cfg_row_right" id="IPC_KeepDayPeriodDiv">
+                        <div id="IPC_KeepDayPeriod" class="time-div">
+							<input id="IPC_KeepDayPeriod_BH" type="text" maxlength="2" /><label class='timeSplit'>:</label>
+                            <input id="IPC_KeepDayPeriod_BM" type="text" maxlength="2" /><label class='timeSpace'>-</label>
+                            <input id="IPC_KeepDayPeriod_EH" type="text" maxlength="2" /><label class='timeSplit'>:</label>
+                            <input id="IPC_KeepDayPeriod_EM" type="text" maxlength="2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cfg_row" id="IPC_WhiteLightUpBox" style="display:none">
+                <div class="first" id="IPC_WhiteLightUpDiv">
+                    <div class="cfg_row_left" id="IPC_WhiteLightUpL">Light Up Time</div>
+                    <div class="cfg_row_right" id="IPC_WhiteLightUpTimeSection" style="margin-left: -33px">
+                        <span class="timespan">				
+                            <input id="LightUp_TimeEnable" type="checkbox"/>
+                            <label for="LightUp_TimeEnable">&nbsp</label>
+                        </span>
+                        <div id="LightUpTimeSection" class="time-div">
+                            <input id="LU_BH" type="text" maxlength="2" /><label class='timeSplit'>:</label>
+                            <input id="LU_BM" type="text" maxlength="2" /><label class='timeSpace'>-</label>
+                            <input id="LU_EH" type="text" maxlength="2" /><label class='timeSplit'>:</label>
+                            <input id="LU_EM" type="text" maxlength="2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cfg_row">
+                <div class="first" id="IPC_Image_Style_Div" style="display: none;">
+                    <div class="cfg_row_left" id="IPC_ImageStyle">Image Style</div>
+                    <div class="cfg_row_right">
+                        <select id="IPC_Image_Style" class="select"></select>
+                    </div>
+                </div>
+                <div class="second" id="IPCWhite_balance">
+                    <div class="cfg_row_left" id="IPC_WhiteBalance">Profiles</div>
+                    <div class="cfg_row_right">
+                        <select id="IPC_WBMode" class="select"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="cfg_row checkspan" id="IPC_BT_Div">
+                <div class="first">
+                    <div class="cfg_row_left" id="IPC_DwdrModeL" >DWDR</div>
+                    <span>
+                        <input id="IPC_DwdrModeSwitch" type="checkbox"/>
+                        <label for="IPC_DwdrModeSwitch">&nbsp</label>
+                    </span>
+                </div>
+                <div id="ipc_digital_wide" class="second">
+                    <div class="cfg_row_left" id="ipc_wide_value">Limit</div>
+                    <div class="cfg_row_right">
+                        <input id="IPC_DwdrStrength" class="inputTxt" maxlength="3" 
+                        onkeyup="if(keyboardFilter(event)) {NumberRange(this,0,100,-1);}"
+                        onblur="NumberRange(this,0,100,-1);" />
+                    </div>
+                </div>	
+            </div>
+        </div>
+    
+        <div class="check-box" id="CameraSet">
+            <span id="MirrorSpan">
+                <input type="checkbox" id="IPC_MirrorSwitch" />
+                <label for="IPC_MirrorSwitch" id="IPC_Mirror_lg">Mirror</label>
+            </span>
+            <span id="FlipSpan">
+                <input type="checkbox" id="IPC_FlipSwitch" />
+                <label for="IPC_FlipSwitch" id="IPC_Flip_lg">Flip</label>
+            </span>
+            <span id="CorridorModeSpan" style="display: none;">
+                <input type="checkbox" id="IPC_CorridorMode" />
+                <label for="IPC_CorridorMode" id="IPC_CorridorMode_lg">Corridor mode</label>
+            </span>
+            <span id="IrSwapSpan">
+                <input type="checkbox" id="IPC_IrSwapSwitch" />
+                <label for="IPC_IrSwapSwitch" id="IPC_IrSwap_lg">IRSwap</label>
+            </span>
+        </div>
+    </div>
+
+    <div class="btn_box">
+        <button type="button" class="btn autoWidth" id="ImageSetdefault">Default</button>
+        <button type="button" class="btn" id="ImageSet_Ok">OK</button>
+        <button type="button" class="btn" id="ImageSet_Rf">Refresh</button>
+    </div>
+    
+</div>

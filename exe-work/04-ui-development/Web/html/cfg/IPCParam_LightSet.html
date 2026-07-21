@@ -1,0 +1,67 @@
+<div class="cfg_container" id="IPCLightSet_page">
+	<div class="cfg_row" id="table_channel">
+		<div class="cfg_row_left" id="LightSetChidL">Record Channel</div>
+		<div class="cfg_row_right">
+			<select id="IPCChannelNum" class="select"></select>
+		</div>
+	</div>
+	<div class="cfg_row" id="DNMode_Div">
+		<div class="cfg_row_left" id="LightDNMode_L">Day/Night Mode</div>
+		<div class="cfg_row_right">			
+			<select id="LightDNMode" class="select"></select>
+		</div>
+	</div>
+	<div class="cfg_row" id="WorkMode_Div">
+		<div class="cfg_row_left" id="WorkModeL">Work Mode</div>
+		<div class="cfg_row_right">			
+			<select id="WorkMode" class="select"></select>
+		</div>
+	</div>
+	<div class="cfg_row" id="split_Div">
+		<div style="width:750px; border-bottom: 1px solid gray; display: inline-block;margin:15px auto;">
+		</div>
+	</div>
+	<div id="LightDivBoxAll">
+        <div class="cfg_row" id="LightLevel_Div">
+            <div class="cfg_row_left" id="LightLevelL">Sensitivity</div>
+            <div class="cfg_row_right">
+                <select class="select" id="LightLevel">               
+                </select>
+            </div>
+        </div>
+		<div class="cfg_row" id="Duration_Div">
+			<div class="cfg_row_left" id="DurationL">Duration</div>
+			<div class="cfg_row_right">
+				<div id="DurationSlider" style="width: 300px; float: left;">
+				</div>
+				<label id="DurationSec" style="margin-left: 15px;">Sec.</label>
+			</div>
+		</div>
+		<div id="WorkPeriod_Box" class="WorkPeriod_Box">
+			<div class="cfg_row" id="PeriodStart_Div">
+				<div class="cfg_row_left" id="PeriodStartL">Start Time</div>
+				<div class="cfg_row_right">
+					<input id="StartHour" class="inputTxt timeTxt" maxlength="2"/>
+					<label id="StartHourL" class="timeunit">Hour</label>
+					<input id="StartMinute" class="inputTxt timeTxt" maxlength="2" />
+					<label id="StartMinuteL" class="timeunit">Min</label>
+				</div>
+			</div>
+			<div class="cfg_row" id="PeriodEnd_Div">
+				<div class="cfg_row_left" id="PeriodEndL">End Time</div>
+				<div class="cfg_row_right">
+					<input id="EndHour" class="inputTxt timeTxt" maxlength="2" />
+					<label id="EndHourL" class="timeunit">Hour</label>
+					<input id="EndMinute" class="inputTxt timeTxt" maxlength="2"/>
+					<label id="EndMinuteL" class="timeunit">Min</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row">
+        <div class="btn_box" id="vl_btn_box">
+			<button id="LightSetRf" class="btn">Refresh</button>
+            <button id="LightSetSv" class="btn SvBtnState">Save</button>
+		</div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+<div id="ForgetPage">
+	<div id="ResetPage">
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="ResetTypeL">Reset Type</div>
+			<div class="cfg_row_right">
+				<select id="ResetType" class="select" style="width:250px !important;">
+				</select>
+			</div>
+		</div>
+		<div style="width:100%; border-bottom: 1px solid gray; 
+		display: inline-block;margin:10px auto;"></div>
+
+		<div id="Question">
+			<div id="securitques_tip">Please provide answer in order to reset password</div>
+			<div id="Question1Div">
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="question1L">Question</div>
+					<div class="cfg_row_right">
+						<select id="question1" class="select" disabled></select>
+					</div>
+				</div>	
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="answer1L">Answer</div>								
+					<div class="cfg_row_right">
+						<div class="cfg_row_pwd">
+							<input id="answer1" class="inputTxt PswEyeShow" type="text" autocomplete="off"/>
+							<div class="psw_eye_arc">
+								<div class="psw_eye_cicle"></div>
+							</div>
+						</div>
+					</div>
+				</div>							
+			</div>
+			<div id="Question2Div">
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="question2L">Question</div>
+					<div class="cfg_row_right">
+						<select id="question2" class="select" disabled></select>
+					</div>
+				</div>	
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="answer2L">Answer</div>
+					<div class="cfg_row_right">
+						<div class="cfg_row_pwd">
+							<input id="answer2" class="inputTxt PswEyeShow" type="text" autocomplete="off"/>
+							<div class="psw_eye_arc">
+								<div class="psw_eye_cicle"></div>
+							</div>
+						</div>
+					</div>
+				</div>						
+			</div>
+		</div>
+		
+		<div id="QR_Code" style="display:none;">
+			<div id="QRTips">
+				<div class="info_falg">
+				</div>
+				<div id="QRTipsInfo" style="margin-left: 23px">
+				</div>
+			</div>				
+			<div id="QRCode">
+				<div class="single-qr">
+					<div id="VerifyQR" class="QR"></div>
+					<h5 id="verificationCode">Verification code</h5>
+				</div>
+				<div class="single-qr" id="AppDiv">
+					<div id="App" class="QR"></div>
+					<h5 id="Android_APP">APP</h5>
+				</div>
+				<div class="single-qr" id="IOSAppDiv" style="display:none">
+					<div id="IOSApp" class="QR"></div>
+					<h5 id="IOS_APP">IOS APP</h5>
+				</div>
+			</div>
+			<div class="cfg_row" style="margin-left: 100px;">
+				<div class="cfg_row_left" id="CodeInfoL">Verification code</div>
+				<input id="CodeInfo" class="inputTxt" type="text" style="width:200px !important;" autocomplete="off"/>
+			</div>
+		</div>
+	</div>
+
+	<div id="PWDPage" style="display:none;">
+		<div id="Reset_tip">Reset password</div>
+		<div style="width:100%; border-bottom:1px solid gray; display: inline-block;margin:10px auto;">
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="user_name">User Name</div>
+			<div class="cfg_row_right" >
+				<input id="user" class="inputTxt" type="text" style="width:300px !important;">
+			</div>
+		</div>
+		
+		<div id="pwdFormatInfo" style="margin-left:160px" style="display: none;"></div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="New_Password">New Password</div>
+			<div class="cfg_row_right">			
+				<div class="cfg_row_pwd">
+					<input id="NewResetPWD" class="inputTxt PswEyeShow" type="text" autocomplete="off">
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</div>               
+		</div>
+		
+		<div class="cfg_row" id="strengthDiv" style="display: none">
+			<div class="cfg_row_left"></div>
+			<div class="cfg_row_right">
+				<div class="strengthBar_div">
+					<div class="progress-bar_wrap">
+						<span class="progress-bar_item progress-bar_item-0"></span>
+						<span class="progress-bar_item progress-bar_item-1"></span>
+						<span class="progress-bar_item progress-bar_item-2"></span>
+						<span class="progress-bar_item progress-bar_item-3"></span>
+					</div>
+					<span class="progress-bar_text">Low</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="Confirm_Password">Confirm Password</div>
+			<span class="cfg_row_right">		
+				<div class="cfg_row_pwd">
+					<input id="ConResetPWD" class="inputTxt PswEyeShow" type="text" autocomplete="off">
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</span>
+		</div>
+	</div>
+
+	<div class="LoginStatus" id="ForgetStatus" style="margin-bottom:0px;text-align:center;min-height:20px;height:100%;">
+		<div style="float:left;"> </div>
+		<div id="Forget_false" style="display:none;">132qwradfasdfasgfdsgasg</div>
+	</div>
+	<div class="btn_box" style="margin-top:10px;">
+		<button type="button" class="btn" id="Confirm_Ques">OK</button>
+		<button type="button" class="btn" id="Confirm_Code" style="display:none">OK</button>
+		<button type="button" class="btn" id="SavePWD"style="display:none;">OK</button>
+		<button type="button" class="btn btn_cancle" id="btn_cancle">Cancel</button>
+	</div>
+</div>

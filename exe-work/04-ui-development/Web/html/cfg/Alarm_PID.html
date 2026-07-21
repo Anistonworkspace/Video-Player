@@ -1,0 +1,133 @@
+<div class="alarm" id="table_PID">
+	<div id="DivBoxAll">
+		<div class="cfg_row">
+			<div id="PZ_PeriodDiv" class="first">
+				<div class="cfg_row_left" id="PZ_PeriodL">Period</div>
+				<div class="cfg_row_right">
+					<button id="PZ_Period" class="btn" style="margin-left:0px;">Setting</button>
+				</div>
+			</div>
+			<div id="PZ_EventLatchDiv" class="second">
+				<div class="cfg_row_left" id="PZEventLatchL">Interval</div>
+				<div class="cfg_row_right">
+					<input id="PZEventLatch" class="inputTxt timeTxt" maxlength="3"
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this, 0, 600, -1);}"
+					onblur="NumberRange(this, 0, 600, -1);"/>
+					<label id="PZLatchSec">Sec(0-600)</label>
+				</div>
+			</div>
+		</div>	
+
+		<div id="PZ_AOEvent" class="cfg_row">
+			<div class="first">
+				<div class="cfg_row_left" id="PZAOL">Alarm Output</div>
+				<div class="cfg_row_right rightEx" id="PZ_AOChannelDiv">
+					
+				</div>
+			</div>
+			<div id="PZ_AODelayDiv" class="second">
+				<div class="cfg_row_left" id="PZAODelayL">Delay</div>
+				<div class="cfg_row_right">
+					<input id="PZAODelay" class="inputTxt timeTxt" maxlength="3"
+					onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 300);}"
+					onblur="NumberRange(this, 10, 300, -1);"  />
+					<label id="PZAOSec">Sec(10-300)</label>
+				</div>
+			</div>
+		</div>
+		<div id="MulityAlarmLinkBox">
+			<div class="cfg_row" id="PZ_DivBoxRecord">
+				<div class="cfg_row_left" id="PZrecord_channel">Record channel</div>
+				<div class="cfg_row_right rightEx" id="PZ_RecChannelDiv"></div>
+			</div>
+
+			<div class="cfg_row" id="PZ_DivBoxTour">
+				<div class="cfg_row_left" id="PZtour_channel">Tour</div>
+				<div class="cfg_row_right rightEx" id="PZ_TourChannelDiv">	</div>
+			</div>		
+			
+			<div class="cfg_row" id="PZ_DivBoxSnap">
+				<div class="cfg_row_left" id="PZsnap_channel">Snap Channel</div>
+				<div class="cfg_row_right rightEx" id="PZ_SnapChannelDiv">	</div>
+			</div>
+		</div>	
+		<div class="cfg_row">
+			<div id="PZ_PTZSetDiv" class="first">
+				<div class="cfg_row_left" id="PZ_PTZSetL">PTZ Activation</div>
+				<div class="cfg_row_right">
+					<button id="PZ_PTZSet" class="btn" style="margin-left:0px">Setting</button>
+				</div>
+			</div>
+			
+			<div id="PZ_RecordDelayDiv" class="second">
+				<div class="cfg_row_left" id="PZRecordDelayL">Post Record</div>
+				<div class="cfg_row_right">
+					<input id="PZRecordDelay" class="inputTxt timeTxt" maxlength="3"
+					onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 300);}"
+					onblur="NumberRange(this, 10, 300, -1);"/>
+					<label id="PZRecordSec">Sec(10-300)</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="cfg_row" id="pid_Alarm_tone">
+			<div class="cfg_row_left" id="pid_alarm_toneL">alarm tone</div>
+			<div class="cfg_row_right" style="width: auto;">
+				<select class="select voiceTypeSelect" id="pid_AbAlarmToneType"></select>
+				<span id="pid_alarmAndCustom">
+					<select class="select customSelect" id="pid_AbAlarmTone"></select>
+					<button id="pid_AbAlarmToneCustomButton" class="btn" style="margin-left:0px;float:none;"></button>
+				</span>
+			</div>
+		</div>
+
+		<div class="check-btn-box group-box" id="AlarmLinkBox" style="margin-top:5px; display:none;">
+			<span id="PZ_RecordBox">
+				<input id="PZRecord" type="checkbox"/>
+				<label for="PZRecord" id="PZRecordL">Record</label>
+			</span>
+			<span id="PZ_TourBox">
+				<input id="PZTour" type="checkbox"/>
+				<label for="PZTour" id="PZTourL">Tour</label>
+			</span>
+			<span id="PZ_SnapBox">
+				<input id="PZSnap" type="checkbox"/>
+				<label for="PZSnap" id="PZSnapL">Snap Channel</label>
+			</span>
+		</div>
+		<div class="check-btn-box" id="PZ_enableBox" style="margin-top:15px">
+			<span id="PZ_ShowMessageBox" style="display:none">
+				<input id="PZShowMessage" type="checkbox"/>
+				<label for="PZShowMessage" id="PZshow_message">Show Message</label>
+			</span>
+			<span id="PZ_SendEmailBox">
+				<input id="PZSendEmail" type="checkbox"/>
+				<label for="PZSendEmail" id="PZsendEmailL">Send Email</label>				
+			</span>				
+			<span id="PZ_PhoneBox">
+				<input id="PZPhone" type="checkbox"/>
+				<label for="PZPhone" id="PZPhoneL">APP Push</label>				
+			</span>
+			<span id="PZ_FTPBox">
+				<input id="PZFTP" type="checkbox"/>
+				<label for="PZFTP" id="PZFTPL">FTP</label>				
+			</span>
+			<span id="PZ_WriteLogBox">
+				<input id="PZWriteLog" type="checkbox"/>
+				<label for="PZWriteLog" id="PZWriteLogL">Write Log</label>				
+			</span>
+			<span id="PZ_VoiceBox">
+				<input id="PZVoice" type="checkbox"/>
+				<label for="PZVoice" id="PZVoiceL">Alarm Sound
+				</label>				
+			</span>
+		</div>
+	</div>
+
+	<div class="cfg_row">
+		<div class="btn_box" style="margin-left:235px">
+			<button id="PZ_SV" class="btn SvBtnState">Save</button>
+			<button type="button" class="btn btn_cancle" id="PZ_Cancel">Cancel</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,53 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="Enable"></div>
+		<div class="cfg_row_right">
+			<div id="SwitchEnable" class="selectDisable" data="0"></div>
+		</div>
+	</div>
+	
+	<div id="CfgBox">
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="CommFunction"></div>
+			<div class="cfg_row_right">
+				<select id="SelCommFunc" class="select">
+					<option value="0">RS485</option>
+					<option value="1">RS232</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="ProtoType"></div>
+			<div class="cfg_row_right">
+				<select id="SelProtoType" class="select">
+					<option value="0">TCP</option>
+					<option value="1">UDP</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="ServerName"></div>
+			<div class="cfg_row_right">
+				<input id="InputServerName" class="inputTxt"/>
+			</div>
+		</div>
+		
+		<div class="cfg_row">
+			<div class="cfg_row_left" id="HostPort"></div>
+			<div class="cfg_row_right">
+				<input id="InputHostPort" class="inputTxt" maxlength="5"
+				onkeyup="if(keyboardFilter(event)) {NumberRange(this,0,65535,-1);}"
+				onblur="NumberRange(this,0,65535,-1);"/>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cfg_row">
+		<div class="btn_box">
+			<button id="BtnRf" class="btn">Refresh</button>
+			<button id="BtnSave" class="btn SvBtnState">Save</button>
+		</div>
+	</div>
+</div>

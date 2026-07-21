@@ -1,0 +1,43 @@
+<div class="cfg_container">
+    <div id="wlanDiv" style="display:block">
+		<div id="UpnpDiv" style="float: left;width: 700px;">
+			<div class="cfg_row" id="net_mode">
+				<div class="cfg_row_left" id="Upnp_enable">Enable</div>
+				<div class="cfg_row_right">
+					<div class="switch" id="UpnpSwitch" data=''></div>
+				</div>
+			</div>
+                           
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="HTTPPortL">HTTP Port</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" id="HTTPPort" type="text"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="TCPPortL">TCP Port</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" id="TCPPort" type="text"/>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="PhonePortL">Mobile Port</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" id="PhonePort" type="text"/>
+				</div>
+			</div>
+			<div class="note-box">
+				<ul>
+					<h4 id="Notes">Notes:</h4>
+					<span id="Notes_Desc">Make sure UPNP is running on router before using this.</span>
+				</ul>
+			</div>
+		</div>
+    </div>
+    <div class="cfg_row" style="float: right;">
+        <div class="btn_box" id="live_btn_box">
+			<button id="UpnpRf" class="btn">Refresh</button>
+            <button id="UpnpSV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>

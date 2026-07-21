@@ -1,0 +1,33 @@
+<!-- Outer containers -->
+<div class="cfg_container">
+    <div class="cfg_row">
+        <div class="cfg_row_left" id="Nat_EnableL">Enable</div>
+        <div class="cfg_row_right mv_R">
+            <div id="Enable_Switch" data="" class="switch"></div>
+        </div>
+    </div>
+    <div id="CloudDivBox">
+        <div class="cfg_row">
+            <div class="cfg_row_left" id="MTUL">MTU</div>
+            <div class="cfg_row_right">
+                <input class="inputTxt" id="MTU" maxlength="4"
+				onkeyup="NumberRangeMaxEx(this,1400)"
+				onblur="NumberRange(this,1000,1400,-1)" />
+				<label id="ByteL">BYTE</label>
+            </div>
+        </div>
+    </div>
+    <div class="cfg_row" id="IPEYE_Div" style="display: none;">
+        <div class="cfg_row_left" id="IPEYEL">IPEYE</div>
+        <div class="cfg_row_right">
+            <div id="IPEYE_Link"></div>
+        </div>
+    </div>
+    <div class="cfg_row">
+        <div class="btn_box">
+			<button id="NatRf" class="btn">Refresh</button>
+            <button id="NatSV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,31 @@
+<div class="cfg_container">
+    <div id="wlanDiv_RTMP" style="display:block">
+		<div id="RTMPDiv" style="float: left;width: 700px;">
+			<div class="cfg_row" id="net_mode_RTMP">
+				<div class="cfg_row_left" id="RTMP_enable">Enable</div>
+				<div class="cfg_row_right">
+					<div class="selectDisable" id="RTMPSwitch" data='0'></div>
+				</div>
+			</div>         
+			<div class="cfg_row" id="DirectoryBox">
+				<div class="cfg_row_left" id="ServerAddressL">Server address</div>
+				<div class="cfg_row_right">
+					<input class="inputTxt" id="ServerAddress" type="text"/>
+				</div>
+			</div>
+            <div class="cfg_row" id="rtmpStreamTypeBox">
+                <div class="cfg_row_left" id="rtmpStreamTypeTip">Stream Type</div>
+                <div class="cfg_row_right">
+                    <select id="rtmpSelStreamType" class="select">
+                    </select>
+                </div>
+            </div>
+		</div>
+    </div>
+    <div class="cfg_row" style="float: right;">
+        <div class="btn_box" id="RTMP_btn_box">
+			<button id="RTMPRf" class="btn">Refresh</button>
+            <button id="RTMPSV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>

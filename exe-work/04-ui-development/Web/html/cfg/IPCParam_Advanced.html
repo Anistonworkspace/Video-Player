@@ -1,0 +1,152 @@
+<!--<div class="cfg_container">-->
+<div class="cfg_container camera" id="IPCAdvanced_page">
+    <!--On 1-->
+    <div class="cfg_row" id="IPC_CHN_TABLE">
+        <div class="cfg_row_left" id="ipc_channel_num">Channel</div>
+        <div class="cfg_row_right">
+            <select id="ChncamChannelMask" class="select">
+            </select>
+        </div>
+    </div>
+
+	<div id="AdvacedSet_Box" style="position: relative;">
+		<div class="cfg_row">
+			<div class="first">
+				<div class="cfg_row_left" id="IPCexposureL">Exposure Mode</div>
+				<div class="cfg_row_right" style="width:auto">
+						<select id="IPCExposure_Mode" class="select"></select>
+				</div>
+			</div>
+			<div id="exposure_autoDiv" class="second" style="display:none;">
+				<label id="ipc_label_min">Minimum Time</label>
+				<input id="min_time_id" class="inputTxt" style="width:85px" maxlength="6" />
+				<label id="label_sp">--</label>
+				<label id="ipc_label_max">Maximum Time</label>
+				<input id="max_time_id" class="inputTxt" style="width:85px" maxlength="6" />
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="first">
+				<div class="cfg_row_left" id="IPC_Cam_AE_L">AE Reference</div>
+				<div class="cfg_row_right" style="width:auto;">
+					<input class="inputTxt" id="IPC_Cam_AE" type="text" maxlength="3" 
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this,0,100,-1);}"
+					onblur="NumberRange(this,0,100,-1);" />
+				</div>
+			</div>
+			<div class="second">
+				<div class="cfg_row_left" id="IPC_AE_DefaultL">Default</div>
+				<div class="cfg_row_right">
+					<label style="width:auto; height:30px;" id="IPC_Cam_AE_Default"></label>
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row checkspan" id="IPC_Auto_Gain_Div">
+			<div class="first">
+				<div class="cfg_row_left" id="IPC_Auto_Gain">AGC</div>
+				<div class="cfg_row_right">
+					<select id="IPC_Cam_GainMode" class="select" style="float:left; display: none;"></select>
+					<span>
+						<input id="IPC_GainModeSwitch" type="checkbox"/>
+						<label for="IPC_GainModeSwitch" id="IPC_GainMode">&nbsp</label>
+					</span>
+				</div>
+			</div>
+			<div class="second" id="IPC_Gainwide">
+				<div class="cfg_row_left" id="IPC_Gain_value">Level</div>
+				<div class="cfg_row_right">
+					<input id="IPC_Cam_GainStrength" class="inputTxt" maxlength="3" 
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this,0,100,-1);}"
+					onblur="NumberRange(this,0,100,-1);" />
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row checkspan" id="IPC_Defog_Mode_Div" style="position: relative;">
+			<div class="first">
+				<div class="cfg_row_left" id="IPC_Defog_Mode">Defogging</div>
+				<div class="cfg_row_right">
+					<select id="IPC_Cam_DefogMode" class="select" style="float:left; display: none;"></select>
+					<span>
+						<input id="IPC_DefogModeSwitch" type="checkbox"/>
+						<label for="IPC_DefogModeSwitch" id="IPC_DefogMode">&nbsp</label>
+					</span>
+				</div>
+			</div>
+			<div class="second" id="IPC_Defog_level">
+				<div class="cfg_row_left" id="ipc_level_value" >Rating</div>
+				<div class="cfg_row_right">
+					<input id="IPCCam_DefogThreshTarget" class="inputTxt" maxlength="3" 
+					onkeyup="if(keyboardFilter(event)) {NumberRange(this,0,100,-1);}"
+					onblur="NumberRange(this,0,100,-1);" />
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="first">
+				<div class="cfg_row_left" id="IPCDay_Noise_Level">DayNTLevel</div>
+				<div class="cfg_row_right" style="width: auto;">
+					<select class="select" id="IPCday_dn_id"></select>
+				</div>
+			</div>
+			<div class="second">
+				<div class="cfg_row_left" id="IPCNight_Noise_Level">NightNTLevel</div>
+				<div class="cfg_row_right">
+					<select class="select" id="IPCnight_dn_id"></select>
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row" >
+			<div class="first" id="IPC_IR_CUT_Div"> 
+				<div class="cfg_row_left" id="IPC_IR_CUTL">IR_CUT</div>
+				<div class="cfg_row_right">
+					<select id="IPC_IR_CUTR" class="select"></select>
+				</div>
+			</div>
+			<div class="second" id="IPC_Cam_Sen_Div">
+				<div class="cfg_row_left" id="IPC_Cam_SenL">AE Sensitivity</div>
+				<div class="cfg_row_right" style="position: relative;">
+					<div class="MaskDiv" style="height: 100%;"></div>
+					<div id="IPC_Cam_Sen"></div>
+				</div>
+			</div>
+		</div>
+		<div class="cfg_row" id="IPC_Slow_shutter">
+			<div class="cfg_row_left" id="IPC_Slow_shutterL">Slow Shutter</div>
+			<div class="cfg_row_right" style="width: auto;">
+					<select id="IPCCam_Slow_shutter" class="select"></select> 
+			</div>
+		</div>
+		<div class="check-btn-box">
+			<span id="IPC_BLC_Div">
+				<input id="IPC_Cam_BLC" type="checkbox"/>
+				<label for="IPC_Cam_BLC" id="IPC_Cam_BLCL">BLC</label>
+			</span>
+			<span id="IPC_Cam_Iris_Div">
+				<input id="IPC_Cam_Iris" type="checkbox"/>
+				<label for="IPC_Cam_Iris" id="IPC_Cam_IrisL">Auto Iris</label>
+			</span>
+			<span id="AntiSpan">
+				<input id="IPC_AntiSwitch" type="checkbox"/>
+				<label for="IPC_AntiSwitch" id="IPC_AntiMode">Anti Flicker</label>
+			</span>
+			<span id="PreOverExposureSpan">
+				<input id="IPC_PreOverExposureSwitch" type="checkbox"/>
+				<label for="IPC_PreOverExposureSwitch" id="IPC_PreOverExposureMode">No Red Face Exposure</label>
+			</span>
+		</div>
+		<div class="cfg_row" id="IPC_Volume_Div" style="display: none;">
+			<div class="cfg_row_left" id="IPC_VolumeL">Volume regulate</div>
+			<div class="cfg_row_right" style="position: relative;">
+				<div class="MaskDiv" style="height: 100%;"></div>
+				<div id="IPC_Volume">
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="cfg_row">
+        <div class="btn_box" id="img_Btn_box">
+            <button id="ChncamRf" class="btn">Refresh</button>
+            <button id="ChncamSV" class="btn SvBtnState">Save</button>
+        </div>
+    </div>
+</div>

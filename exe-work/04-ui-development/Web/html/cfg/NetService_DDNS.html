@@ -1,0 +1,51 @@
+<div class="cfg_container">
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="nd_type">DDNS Type</div>
+		<div class="cfg_row_right">
+			<select class="select" id="DDNSType"></select>
+		</div>
+	</div>
+	<div class="cfg_row">
+		<div class="cfg_row_left" id="nd_enable">Enable</div>
+		<div class="cfg_row_right mv_R">
+			<div id="DDNSEnable" data="" class="switch"></div>
+		</div>
+	</div>
+	<div id="DDNSDivBox">
+		<div class="cfg_row" id="TABLE_HOSTNAME">
+			<div class="cfg_row_left" id="nd_hostname">Domain Name</div>
+			<div class="cfg_row_right">
+				<input class="inputTxt" type="text" id="DDNSHostName" style="ime-mode:disabled" maxlength="32"
+					onkeyup="if(keyboardFilter(event)) {value=value.replace(/[^\w\.\@\!\#\$\%\^\&\*\-\/]/ig,'')}" />
+				<label id="HOST_NAME_TEXT"> .swanndvr.net</label>
+			</div>
+		</div>
+		<div class="cfg_row" id="TABLE_USERNAME">
+			<div class="cfg_row_left" id="nd_usename">UserName</div>
+			<div class="cfg_row_right">
+				<input class="inputTxt" type="text" id="DDNSUserName" style="ime-mode:disabled" maxlength="32"
+					onkeyup="if(keyboardFilter(event)) {value=value.replace(/[^\w\.\@\!\#\$\%\^\&\*\-\/]/ig,'')}" />
+			</div>
+		</div>
+		<div class="cfg_row" id="TABLE_PASSWORD">
+			<div class="cfg_row_left" id="nd_passwd">PassWord</div>
+			<div class="cfg_row_right">
+				<div class="cfg_row_pwd">
+					<input class="inputTxt PswEyeShow" type="text" id="DDNSUserPW" maxlength="32" />
+					<div class="psw_eye_arc">
+						<div class="psw_eye_cicle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cfg_row">
+		<div class="btn_box" id="live_btn_box">
+			<button id="DDNSRf" class="btn">Cancel</button>
+			<button id="DDNSSave" class="btn SvBtnState">Save</button>
+			<div id="DDNSTest_box" style="display:none">
+				<button id="DDNSTest" class="btn autoWidth">Test DDNS</button>
+			</div>
+		</div>
+	</div>
+</div>

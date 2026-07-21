@@ -1,0 +1,40 @@
+/* Harness chrome only — never touches the real skin.css / app markup. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; background: #20242b;
+  font-family: "Segoe UI", Arial, sans-serif; }
+
+#hz-toolbar {
+  position: fixed; top: 0; left: 0; right: 0; height: 46px; z-index: 99999;
+  display: flex; align-items: center; gap: 14px; padding: 0 14px;
+  background: #11141a; color: #cfd6e4; border-bottom: 1px solid #000;
+  font-size: 13px; user-select: none;
+}
+.hz-title { font-weight: 700; color: #fff; letter-spacing: .2px; }
+.hz-tag { font-size: 11px; color: #8b93a6; }
+.hz-screens { display: flex; gap: 6px; margin-left: 6px; }
+.hz-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.hz-lang-lbl { font-size: 12px; color: #aab2c4; }
+.hz-btn {
+  background: #232a35; color: #cfd6e4; border: 1px solid #333c4a;
+  border-radius: 6px; padding: 5px 11px; cursor: pointer; font-size: 12px;
+}
+.hz-btn:hover { background: #2d3644; }
+.hz-btn.hz-active { background: #2f6df6; border-color: #2f6df6; color: #fff; }
+#hz-lang { background: #232a35; color: #cfd6e4; border: 1px solid #333c4a;
+  border-radius: 6px; padding: 4px 6px; font-size: 12px; }
+
+#hz-stage {
+  position: absolute; top: 46px; left: 0; right: 0; bottom: 0;
+  overflow: auto; background: #e9edf2;
+}
+/* Container that receives the real page fragments. Positioned so any
+   absolutely-positioned skin elements anchor to the stage, not the toolbar. */
+.hz-screen-host { position: relative; width: 100%; min-height: 100%; }
+
+#hz-errbadge {
+  position: fixed; right: 10px; bottom: 10px; max-width: 46%; max-height: 42%;
+  overflow: auto; display: none; z-index: 99999;
+  background: rgba(30, 6, 6, .9); color: #ffb4b4; border: 1px solid #5a2a2a;
+  font: 11px/1.45 Consolas, monospace; padding: 8px 10px; border-radius: 8px;
+  white-space: pre-wrap;
+}

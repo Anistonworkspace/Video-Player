@@ -1,0 +1,99 @@
+ <div class="cfg_container" >
+	<div class="cfg_row">
+		<h3 id="DefTitle">Please select setting entries that you want to default</h3>
+	</div>
+	<div class="StyleV1">
+		<div class="cfg_row"></div>
+		<div class="cfg_row">
+			<div class="checkBox_row" id="AllBox">
+				<span>
+					<input id="AllDefault" type="checkbox">
+					<label for="AllDefault" id="labAllDefault">Select All</label>
+				</span>
+			</div>
+		</div>
+		<div class="checkBox" id="DefaultCfg">
+			<div id="GeneralBox" class="checkBox_row">
+				<span>
+					<input id="GeneralCfg" type="checkbox">
+					<label for="GeneralCfg" id="labGeneral">General</label>
+				</span>
+			</div>
+			<div id="EncodeBox" class="checkBox_row">
+				<span>
+					<input id="EncodeCfg" type="checkbox">
+					<label for="EncodeCfg" id="labEncode">Encode</label>
+				</span>
+			</div>
+			<div id="RecodeBox" class="checkBox_row">
+				<span id="RecodeBox">
+					<input id="RecordCfg" type="checkbox">
+					<label for="RecordCfg" id="labRecord">Record</label>
+				</span>
+			</div>
+			<div id="AlarmBox" class="checkBox_row">
+				<span id="AlarmBox">
+					<input id="AlarmCfg" type="checkbox">
+					<label for="AlarmCfg" id="labAlarm">Alarm</label>
+				</span>
+			</div>
+			<div id="NetworkBox" class="checkBox_row">
+				<span>
+					<input id="NetworkCfg" type="checkbox">
+					<label for="NetworkCfg" id="labNetwork">Network</label>
+				</span>
+			</div>
+			<div id="NetServerBox" class="checkBox_row">
+				<span>
+					<input id="NetServerCfg" type="checkbox">
+					<label for="NetServerCfg" id="labNetServer">NetServer</label>
+				</span>
+			</div>
+			<div id="DisplayBox" class="checkBox_row">
+				<span>
+					<input id="DisplayCfg" type="checkbox">
+					<label for="DisplayCfg" id="labDisplay">GUI Display</label>
+				</span>
+			</div>
+			<div id="AccountBox" class="checkBox_row">
+				<span>
+					<input id="AccountCfg" type="checkbox">
+					<label for="AccountCfg" id="labAccount">Account</label>
+				</span>
+			</div>
+			<div id="CommBox" class="checkBox_row">
+				<span>
+					<input id="CommCfg" type="checkbox">
+					<label for="CommCfg" id="labCommCfg">RS232</label>
+				</span>
+			</div>
+			<div id="CameraBox" class="checkBox_row" style="display: none;">
+				<span>
+					<input id="CameraCfg" type="checkbox">
+					<label for="CameraCfg" id="labCamera">Camera Param</label>
+				</span>
+			</div>
+		</div>
+		<div class="cfg_row">
+			<div class="btn_box_left" style="margin-top: 15px;">
+				<button class="btn SvBtnState" id="DefaultSave">Save</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="StyleV2">
+		<div class="cfg_row">
+			<div style="margin-top: 15px;">
+				<button class="btn SvBtnState" id="DefaultReset" style="width: 200px;">Default</button>
+				<div id ="DefaultResetPrompt">(Restore common configurations except Ip addresses and user information)</div>
+			</div>
+			
+		</div>
+		<div class="cfg_row">
+			<div style="margin-top: 15px;">
+				<button class="btn SvBtnState" id="FactoryReset" style="width: 200px;">Factory Reset</button>
+				<div id = "FactoryResetPrompt">(Restore all Settings to factory Settings)</div>
+			</div>
+		</div>
+	</div>
+</div>

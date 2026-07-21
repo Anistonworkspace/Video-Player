@@ -1,0 +1,283 @@
+<div class="content_Box">
+    <div class="liveMain">
+        <div class="channelListBox">
+			<div class="liveTalkBtn" id="talking">
+				<div class="liveBtnTitle" id="TalkTitle"></div>
+			</div>
+			<div class="SplitLine"></div>
+            <div class="channelList" id="channelList" selectIndex="-1"></div>
+        </div>
+        <div class="centerContent">
+			<div class="liveTop">
+				<div class="LiveTabBtn" id="listBtn" name="active" style="display:none;"></div>	
+				<div class="LiveTabBtn" id="PTZBtn" name="active"></div>
+                <div class="LiveTabBtn" id="colorBtn" name=""></div>
+				<div class="LiveTabBtn" id="TalkBtn" name=""></div>
+				<div class="LiveTabBtn" id="ElectBtn" name="" style="display:none;"></div>
+				<div class="LiveTabBtn" id="MenuBtn" name="" style="display:none"></div>
+			</div>
+            <div class="liveCenter" id="liveOcx">
+			</div>
+			<div class="liveBottom">
+				<div class="WndModeTabBtn" id="wndModeTabBtn">
+					<div class="CurWndModeBtn" id="curWndModeBtn"></div>
+					<div class="WndModeDownBtn"></div>
+				</div>
+				<div class="liveControlBtn" id="fullScreen" name=""></div>
+                <div class="liveControlBtn" id="play" name="" style="display: none;"></div>
+                <div class="liveControlBtn" id="stop" name="" style="display: none;"></div>
+				<div class="liveControlBtn" id="localCapture" name=""></div>
+				<div class="liveControlBtn" id="digitalZoom" name="" style="display: none;"></div>
+				<div class="liveControlBtn" id="audio" name=""></div>
+				<div class="FullChannelPreviewTabBtn" id="FullChnPreviewTabBtn">
+					<div class="FullChnPreviewBtn" id="FullChannelPreview" name=""></div>
+					<div class="FullChnPreviewDownBtn"></div>
+				</div>
+				<div class="liveControlBtn" id="FullChannelRecord" name=""></div>
+				<!--div class="liveControlBtn" id="PlayOriginal" name=""></div>
+				<div class="liveControlBtn" id="PlayCoverWnd" name=""></div-->				
+				<div class="FullChannelPreviewTabBtn" id="PlayRatioTabBtn">
+					<div class="PlayRatioBtn" id="PlayRatio" name=""></div>
+					<div class="PlayRatioDownBtn"></div>
+				</div>				
+				<div class="SystemStatus_Box">
+					<div class="SystemStatusType" id="SystemStatus_SystemCpu">SystemCpu:</div>
+					<input class="SystemStatusContent" id="SystemStatusContent_SystemCpu"></input>
+					<div class="SystemStatusType" id="SystemStatus_AppMemory">AppMemory:</div>
+					<input class="SystemStatusContent" id="SystemStatusContent_AppMemory"></input>
+				</div>
+			</div>
+			
+			
+        </div>
+		<div class="rightContent">
+			<div id="liveCtrlTip"></div>
+		    <div id="liveCtrlContent">
+				<div class="LiveRightPage" id="ptzPage">
+					<div id="LIVE_YT">
+						<div id="ytMove_1" class="ptz-button" data-uid="4" data-posx="420" data-posy="140"></div>
+						<div id="ytMove_2" class="ptz-button" data-uid="0" data-posx="0" data-posy="0"></div>
+						<div id="ytMove_3" class="ptz-button" data-uid="6" data-posx="140" data-posy="0"></div>
+						<div id="ytMove_4" class="ptz-button" data-uid="2" data-posx="280" data-posy="140"></div>
+						<div id="ytCenterL" class="ptz-button1" data-uid = "14" data-posx="140" data-posy="280"></div>
+						<div id="ytCenterR" class="ptz-button1" data-posx="280" data-posy="280"></div>
+						<div id="ytMove_6" class="ptz-button" data-uid="3" data-posx="280" data-posy="0"></div>
+						<div id="ytMove_7" class="ptz-button" data-uid="5" data-posx="140" data-posy="140"></div>
+						<div id="ytMove_8" class="ptz-button" data-uid="1" data-posx="0" data-posy="140"></div>
+						<div id="ytMove_9" class="ptz-button" data-uid="7" data-posx="420" data-posy="0"></div>
+					</div>
+					<div id="FlipMirrorSet">
+						<div class="check-btn-box">
+							<span>			
+								<input id="Flip" type="checkbox"/>
+								<label for="Flip"  id="LFlip"></label>
+							</span>
+						</div>
+						<div class="check-btn-box">
+							<span>			
+								<input id="Mirror" type="checkbox"/>
+								<label for="Mirror"  id="LMirror"></label>
+							</span>
+						</div>
+					</div>
+					<div class="PtzCtrl">
+						<div class="PtzSpeed_Box">
+							<div id="SpeedTitle">步长</div>
+							<div id="speedNum">5</div>
+							<div id="ptz_SpeedSlider" class="SliderDiv" style="display:none;"></div>
+						</div>
+						<div id="ptz_speed">
+							<div class="ptzSpeedBlock" data-uid="1">
+								<div class="ptzSpeedImg speed-img-active" data-uid="1" name="active"></div>
+							</div>
+							<div class="ptzSpeedBlock" data-uid="2">
+								<div class="ptzSpeedImg speed-img-active" data-uid="2" name="active"></div>
+							</div>
+							<div class="ptzSpeedBlock" data-uid="3">
+								<div class="ptzSpeedImg speed-img-active" data-uid="3" name="active"></div>
+							</div>
+							<div class="ptzSpeedBlock" data-uid="4">
+								<div class="ptzSpeedImg speed-img-active" data-uid="4" name="active"></div>
+							</div>
+							<div class="ptzSpeedBlock" data-uid="5">
+								<div class="ptzSpeedImg speed-img-active" data-uid="5" name="active"></div>
+							</div>
+							<div class="ptzSpeedBlock" data-uid="6">
+								<div class="ptzSpeedImg" data-uid="6"></div>
+							</div>
+							<div class="ptzSpeedBlock" data-uid="7">
+								<div class="ptzSpeedImg" data-uid="7"></div>
+							</div>
+							<div class="ptzSpeedBlock" data-uid="8" style="padding-right: 0px;">
+								<div class="ptzSpeedImg" data-uid="8"></div>
+							</div>
+						</div>
+					</div>
+					<div id="Zoom" class="PtzCtrl PtzCtrl2">
+						<div class="PtzCtrlTitle" id="ZoomTitle">Zoom</div>
+						<div class="PtzCtrlMinus1" id="ZoomMinus" data-uid="8">&nbsp;</div>
+						<div class="PtzCtrlPlus1" id="ZoomPlus" data-uid="9">&nbsp;</div>
+					</div>
+					<div id="Focus" class="PtzCtrl PtzCtrl2">
+						<div class="PtzCtrlTitle" id="FocusTitle">Focus</div>
+						<div class="PtzCtrlMinus1" id="FocusMinus" data-uid="10">&nbsp;</div>	
+						<div class="PtzCtrlPlus1" id="FocusPlus" data-uid="11">&nbsp;</div>
+					</div>
+					<div id="Iris" class="PtzCtrl PtzCtrl2">
+						<div class="PtzCtrlTitle" id="IrisTitle">Iris</div>
+						<div class="PtzCtrlMinus1" id="IrisMinus" data-uid="13">&nbsp;</div>
+						<div class="PtzCtrlPlus1" id="IrisPlus" data-uid="12">&nbsp;</div>
+					</div>
+					<div id="Preset" class="PtzDirectCtrl">
+						<div class="CtrlTitle" id="PresetTitle">预置点</div>
+						<div class="CtrlOp">
+							<input class="CtrlInput" id="InputPreset" maxlength="3" onblur="NumberRange(this,1, 255, -1)" value="1"/>
+							<div class="PresetBtn" id="DelPreset" data-uid="18" data-val="2"></div>
+							<div class="PresetBtn" id="AddPreset" data-uid="17" data-val="1"></div>
+							<div class="PresetBtn" id="GoPreset" data-uid="19" data-val= "0" style="margin-right:0px"></div>
+						</div>
+					</div>
+					<div id="Tour" class="PtzDirectCtrl">
+						<div class="CtrlTitle" id="TourTitle">点间巡航</div>
+						<div class="CtrlOp">
+							<input class="CtrlInput" id="InputTour" maxlength="3"  onblur="NumberRange(this,1,255,-1)" value="1"/>
+							<div class="TourBtn" id="editTour" data-val="5"></div>
+							<div class="TourBtn" id="stopTour" data-uid="29" data-val="4"></div>
+							<div class="TourBtn" id="startTour" data-uid="28" data-val="3" style="margin-right:0px"></div>
+						</div>
+					</div>
+				</div>
+				<div class="LiveRightPage" id="colorPage" style="display:none">
+					<div class="SliderBox">
+						<div id="BrightnessIcon" class="CtrlTitle"></div>
+						<div id="BrightnessSlider" class="SliderDiv"></div>
+					</div>
+					<div class="SliderBox">
+						<div id="ContrastIcon" class="CtrlTitle"></div>
+						<div id="ContrastSlider" class="SliderDiv"></div>
+					</div>
+					<div class="SliderBox">
+						<div id="SaturationIcon" class="CtrlTitle"></div>
+						<div id="SaturationSlider" class="SliderDiv"></div>
+					</div>
+					<div class="SliderBox">
+						<div id="HueIcon" class="CtrlTitle"></div>
+						<div id="HueSlider" class="SliderDiv"></div>
+					</div>
+					<div class="ColorDefBtn" id="SetDefault">Default</div>
+				</div>
+				<div class="LiveRightPage" id="TalkPage" style="display:none">
+					<div class="ChannelTalk_Box" >
+						<div class="TalkTitle" id="TalkChannel">ChannelTalk</div>
+						<div>
+							<select id="TalkChannelSelect"></select>
+							<div class="DevTalkBtn" id="btnTalkCtrl" name=""></div>
+						</div>
+					</div>
+					<div class="DeviceTalk_Box">
+						<div class="TalkTitle" id="TalkDevice">DeviceTalk</div>
+						<div class="DevTalkBtn" id="btnDeviceTalkCtrl" name=""></div>
+					</div>
+					<div class="Broadcast_Box">
+						<div class="TalkTitle" id="BroadcastChn">Broadcast</div>
+						<div class="DevTalkBtn" id="btnBroadcastCtrl" name=""></div>
+					</div>
+					<div class="SliderBox" id="MicphoneVolumn" style="display:none;">
+						<div id="MicphoneVolumnL" class="TalkTitle">Micphone volume</div>
+						<div id="MicphoneVolumnSlider" class="SliderDiv"></div>
+					</div>
+					<div class="SliderBox" id="HornVolumn" style="display:none;">
+						<div id="HornVolumnL" class="TalkTitle">Horn volume</div>
+						<div id="HornVolumnSlider" class="SliderDiv"></div>
+					</div>
+				</div>
+				<div class="LiveRightPage" id="ElectPage" style="display:none;">
+					<div id="Elect">
+						<div class="EleBtn" id="OnPreset" data-uid="30" data-val="0"></div>
+						<div class="EleBtn" id="DownPreset" data-uid="31" data-val="1"></div>
+						<div class="EleBtn" id="LeftPreset" data-uid="32" data-val="2"></div>
+						<div class="EleBtn" id="RightPreset" data-uid="33" data-val="3"></div>
+					</div>
+					<div id="Dynamic1">
+						<div class="CtrlEle3">
+							<div class="ElectDynamic" id="ElectZoomOut" data-uid="34" data-val="4" name=""></div>
+							<div class="ElectDynamic" id="ElectZoomIn" data-uid="35" data-val="5" name=""></div>
+							<div class="ElectDynamic" id="ElectRedu" data-uid="39" data-val="9" name=""></div>
+						</div>
+					</div>
+					<div id="Dynamic2">
+						<div class="CtrlEle1">
+							<div class="CtrlSel" id="ElectSpeed" name=""></div>
+							<select class="ElectSel" id="Sel">
+								<option value="16">16</option>
+								<option value="32">32</option>
+								<option value="64">64</option>
+								<option value="128">128</option>
+								<option value="256">256</option>
+							</select>
+						</div>
+					</div>
+					<div id="Preset">
+						<div class="CtrlElect" id="ElectTitle">预置点</div>
+						<div class="CtrlEle2" id="ElectPre">
+							<input class="ElectInput" id="InputEle" maxlength="3" onblur="NumberRange(this,1, 255, -1)" value="1"/>
+							<div class="ElePreBtn" id="DelElePrePtBtn" data-uid="36" data-val="6"></div>
+							<div class="ElePreBtn" id="AddElePrePtBtn" data-uid="37" data-val="7"></div>
+							<div class="ElePreBtn" id="GoElePrePtBtn" data-uid="38" data-val= "8" style="margin-right:0px"></div>
+						</div>
+					</div>
+				</div>
+				<div class="LiveRightPage" id="MenuPage" style="display:none">
+					<div id="OSDMenu">
+						<div class="MenuBtn" id="SetMenu" data-uid="40" data-val="1"></div>
+						<div class="MenuBtn" id="UpMenu" data-uid="41" data-val="2"></div>
+						<div class="MenuBtn" id="DownMenu" data-uid="42" data-val="3"></div>
+						<div class="MenuBtn" id="LeftMenu" data-uid="43" data-val="4"></div>
+						<div class="MenuBtn" id="RightMenu" data-uid="43" data-val="5"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<div class="dialog_role" id="PointLoopDlg" style="display: none; margin-left: -200px;">
+	<iframe style="position:absolute;z-index:-1;width:100%;height:100%;top:0;left:0; border:0;"></iframe>
+	<ul class="SecondTitle">
+		<li><h3 id="DlgTitle">Point Loop Setting</h3><span class="second_close_PointLoopSet">&times;</span></li>
+	</ul>
+	<ul class="content_details">
+		<li class="content_container">
+			<div id="PointLoopCtrl">
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="CruiseLine">巡航线路</div>
+					<div class="cfg_row_right">
+						<div id="CruiseInput">
+							<input id="InputLine" class="inputTxt" readonly="readonly"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="PresetPoint">预置点</div>
+				<div class="cfg_row_right">
+					<select id="SelPoint" style="width: 300px; height: 25px; margin-top: 3px;"></select>
+				</div>
+			</div>
+			<div class="cfg_row">
+				<div class="cfg_row_left" id="Interval">时间间隔</div>
+				<div class="cfg_row_right">
+					<input id="InputInterval" class="inputTxt"
+					onkeyup="if(keyboardFilter(event)) {NumberRangeMaxEx(this, 120);}"
+					onblur="if(this.value == '')this.value='5';NumberRangeMin(this, 3);"/>
+				</div>
+			</div>
+			<div class="btn_box" style="padding-left:60px;">
+				<button type="button" class="btn" style="width: auto;" id="btnAddPoint">增加预置点</button>
+				<button type="button" class="btn" style="width: auto;" id="btnClearPoint">删除预置点</button>
+				<button type="button" class="btn" style="width: auto;" id="btnClearLine">清除巡航路线</button>
+			</div>
+			<div class="cfg_row" id="DlgTip"></div>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,206 @@
+<div class="dialog_role" id="add_user_group" style="display:none;">
+	<ul class="SecondTitle">
+		<li><h3 id="Title">Add User</h3><span class="second_close">&times;</span></li>
+	</ul>
+	<ul class="content_details">
+		<li class="content_container">
+			<div id="add_modify_page">
+				<div id="UserInfoDiv">
+					<div class="cfg_row" id="UserNameListDiv" style="display: none;">
+						<div class="cfg_row_left" id="UserNameListL">User Name</div>
+						<div class="cfg_row_right">
+							<select id="UserNameList" class="select"></select>
+						</div>
+					</div> 
+					<div class="cfg_row" id="UserNameDiv">
+						<div class="cfg_row_left" id="UserNameL">User</div>
+						<div class="cfg_row_right">
+							<input id="UserName" class="inputTxt"/>
+						</div>
+					</div>
+					<div class="cfg_row" id="ShareableRow">
+						<div class="cfg_row_left" id="SharableL">Reuseable</div>
+						<div class="cfg_row_right">
+							<input type="button" class="switch" id="Sharable" data=''/>
+						</div>
+					</div>
+					<div id="PWDBox">
+						<div class="cfg_row">
+							<div class="cfg_row_left" id="PWDL">Password</div>								
+							<div class="cfg_row_right">
+								<div class="cfg_row_pwd">
+									<input id="PWD" class="inputTxt PswEyeShow" type="text"/>
+									<div class="psw_eye_arc">
+										<div class="psw_eye_cicle"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cfg_row" id="strengthDiv">
+							<div class="cfg_row_left"></div>
+							<div class="cfg_row_right">
+								<div class="strengthBar_div">
+									<div class="progress-bar_wrap">
+										<span class="progress-bar_item progress-bar_item-0"></span>
+										<span class="progress-bar_item progress-bar_item-1"></span>
+										<span class="progress-bar_item progress-bar_item-2"></span>
+										<span class="progress-bar_item progress-bar_item-3"></span>
+									</div>
+									<span class="progress-bar_text">Low</span>
+								</div>
+							</div>
+						</div>
+						<div class="cfg_row">
+							<div class="cfg_row_left" id="ConPWDL">Confirm Password</div>
+							<div class="cfg_row_right">
+								<div class="cfg_row_pwd">
+									<input id="ConPWD" class="inputTxt PswEyeShow" type="text"/>
+									<div class="psw_eye_arc">
+										<div class="psw_eye_cicle"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cfg_row" id="UserGroupBox">
+						<div class="cfg_row_left" id="GroupL">Group</div>
+						<div class="cfg_row_right">
+							<select id="UserGroup" class="select"></select>
+						</div>
+					</div>
+					<div class="cfg_row" id="MemoBox">
+						<div class="cfg_row_left" id="MemoL">Memo</div>
+						<div class="cfg_row_right">
+							<input id="Memo" class="inputTxt" maxlength="31"/>
+						</div>
+					</div>
+				</div>
+				<div id="GroupInfoDiv">
+					<div class="cfg_row" id="GroupNameListDiv" style="display: none;">
+						<div class="cfg_row_left" id="GroupNameListL">Group Name</div>
+						<div class="cfg_row_right">
+							<select id="GroupNameList" class="select"></select>
+						</div>
+					</div> 
+					<div class="cfg_row" id="GroupNameDiv">
+						<div class="cfg_row_left" id="GroupNameL">Group</div>
+						<div class="cfg_row_right">
+							<input id="GroupName" class="inputTxt" maxlength="16"/>
+						</div>
+					</div>
+					
+					<div class="cfg_row">
+						<div class="cfg_row_left" id="MemoL2">Memo</div>
+						<div class="cfg_row_right">
+							<input id="Memo2" class="inputTxt" maxlength="31"/>
+						</div>
+					</div>
+				</div>
+				<div id="AuthorityDiv">
+					<div class="cfg_row", id="AuthorityTip" style="font-size:17px; margin-bottom: 5px;">Authority</div>
+					<ul class="tabs" id="rightsTab">
+						<li> <a class="tabItem" id="UserAuthTab">System Manager</a></li>
+						<li><a class="tabItem" id="MonitorTab">Monitor</a></li>
+						<li><a class="tabItem" id="PlaybackTab">Playback</a></li>
+					</ul>
+				
+					<div class="tab-pane" style="height:120px;overflow: auto;">
+						<div class="check-btn-box" id="SystemUserAuth">          
+						</div>
+						<div class="check-btn-box" id="Playback_List" style="display: none;">
+						</div>
+						<div class="check-btn-box" id="Monitor_List" style="display: none;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="delete_page" style="display:none">
+				<div id="DeleteUser">
+					<div id="deletinfo" style="text-align:center; margin-top:15px;">Do you want to delete now?</div>
+				</div>
+				<div id="DeleteGroup">
+					<div class="cfg_row">
+						<div id="DelGroupListL" style="width: 140px; float: left;">Group Name</div>
+						<div style="width: 200px; float: left;">
+							<select id="DelGroupList" style="width:100%; height:25px;"></select>
+						</div>
+					</div> 
+					<div class="cfg_row">
+						<div id="DelGroupNameL" style="width: 140px; float: left;">Group</div>
+						<div style="width: 200px; float: left;">
+							<input id="DelGroupName" maxlength="16" style="width:100%; height:25px;"/>
+						</div>
+					</div>
+					<div class="cfg_row">
+						<div id="DelMemoL" style="width: 140px; float: left;">Memo</div>
+						<div style="width: 200px; float: left;">
+							<input id="DelMemo" maxlength="31" style="width:100%; height:25px;"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="modify_pwd_page" style="display:none">
+				<div class="cfg_row" id="PWD_UserNameListDiv">
+					<div class="cfg_row_left" id="PWDUserNameListL">User Name</div>
+					<div class="cfg_row_right">
+						<input id="PWDUserNameList" class="inputTxt"></input>
+					</div>
+				</div> 
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="ModOldPWDL">Old Password</div>
+					<div class="cfg_row_right">
+						<div class="cfg_row_pwd">
+							<input id="ModOldPWD" class="inputTxt PswEyeShow" type="text"/>
+							<div class="psw_eye_arc">
+								<div class="psw_eye_cicle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="ModPWDL">Password</div>                              
+					<div class="cfg_row_right">
+						<div class="cfg_row_pwd">
+							<input id="ModPWD" class="inputTxt PswEyeShow" type="text"/>
+							<div class="psw_eye_arc">
+								<div class="psw_eye_cicle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cfg_row" id="ModPWD_strengthDiv" style="margin:-10px 0 0 0">
+					<div class="cfg_row_left"></div>
+					<div class="cfg_row_right">
+						<div class="strengthBar_div">
+							<div class="progress-bar_wrap">
+								<span class="progress-bar_item progress-bar_item-0"></span>
+								<span class="progress-bar_item progress-bar_item-1"></span>
+								<span class="progress-bar_item progress-bar_item-2"></span>
+								<span class="progress-bar_item progress-bar_item-3"></span>
+							</div>
+							<span class="progress-bar_text">Low</span>
+						</div>
+					</div>
+				</div>
+				<div class="cfg_row">
+					<div class="cfg_row_left" id="ModConPWDL">Confirm Password</div>
+					<div class="cfg_row_right">
+						<div class="cfg_row_pwd">
+							<input id="ModConPWD" class="inputTxt PswEyeShow" type="text"/>
+							<div class="psw_eye_arc">
+								<div class="psw_eye_cicle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="btn_box" style="padding-left:175px;">
+                <button type="button" class="btn" id="AddBtn">OK</button>
+                <button type="button" class="btn" id="ModBtn" style="display:none;">OK</button>
+				<button type="button" class="btn" id="Confirm_Del" style="display:none;">OK</button>
+				<button type="button" class="btn" id="ModPWDBtn" style="display:none;">OK</button>
+                <button type="button" class="btn btn_cancle" id="Account_btn_cancle">Cancel</button>
+            </div>
+		</li>
+	</ul>
+</div>
