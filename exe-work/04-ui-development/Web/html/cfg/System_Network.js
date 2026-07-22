@@ -15,9 +15,9 @@ $(function () {
 	var oldTcpPort;
 	var oldHttpPort;
 	var lastNetCarID = 0;
-	var curNetcardID = 0;			// 网卡序号
-	var initialNetMode = -1;		// 初始网络模式
-	var targetNetMode = -1;			// 目标网络模式
+	var curNetcardID = 0;			// Net Card序号
+	var initialNetMode = -1;		// 初始NIC Mode
+	var targetNetMode = -1;			// 目标NIC Mode
 	var pageTitle = $("#System_Network").text();
 	var arrTransferPlan = ["AutoAdapt", "Quality", "Fluency", "Transmission"];
 	var bNetDHCP = GetFunAbility(gDevice.Ability.NetServerFunction.NetDHCP);
@@ -26,7 +26,7 @@ $(function () {
 	var bOnvifPwdCheckout = GetFunAbility(gDevice.Ability.NetServerFunction.OnvifPwdCheckout);
 	var bPoeDualEthernet = GetFunAbility(gDevice.Ability.NetServerFunction.POEDualEthernet);
 	var bDualEthernet = GetFunAbility(gDevice.Ability.NetServerFunction.DualEthernet) || bPoeDualEthernet;
-	var bNormalDualEthernet = GetFunAbility(gDevice.Ability.NetServerFunction.DualEthernet) && !bPoeDualEthernet;		// 常规双网卡设备
+	var bNormalDualEthernet = GetFunAbility(gDevice.Ability.NetServerFunction.DualEthernet) && !bPoeDualEthernet;		// 常规双Net Card设备
 	var bChangeOnvifPort = GetFunAbility(gDevice.Ability.OtherFunction.SuppportChangeOnvifPort);
 	var bSupportRTSP = GetFunAbility(gDevice.Ability.NetServerFunction.NetRTSP);
 	var bReboot = false;
@@ -79,10 +79,10 @@ $(function () {
 		var netEx = NetCommonEx[NetCommonEx.Name];
 		var netcardNums = 0;
 		var bChangeNetMode = changeNetMode(initialNetMode, targetNetMode);
-		if(targetNetMode == 0)		// 单网卡模式
+		if(targetNetMode == 0)		// SingleMode
 		{
 			netcardNums = 2;
-			// 有线网卡1
+			// Wire Netcard1
 			var tr = table.insertRow(0);
 			tr.classList.add("NetCardTableClass");
 			$(tr).attr("d", "not-active");
@@ -98,7 +98,7 @@ $(function () {
 			td4.innerHTML = "1";
 			td5.innerHTML = "<div index='0'><div class='EditBtnClass'></div></div>";
 
-			// 有线网卡2
+			// Wire Netcard2
 			tr = table.insertRow(1);
 			tr.classList.add("NetCardTableClass");
 			$(tr).attr("d", "not-active");
@@ -121,7 +121,7 @@ $(function () {
 		else
 		{
 			netcardNums = 1;
-			// 绑定网卡1
+			// Bind network card1
 			var tr = table.insertRow(0);
 			tr.classList.add("NetCardTableClass");
 			$(tr).attr("d", "not-active");
@@ -300,7 +300,7 @@ $(function () {
 			function SaveIPAddressCfg(bChangeNetMode, curNetcardID)
 			{
 				if(!bChangeNetMode){
-					// IP地址
+					// IP Address
 					if (!CheckIP($("#EditIPAddressInput").val())) {
 						ShowPaop(pageTitle, lg.get("IDS_IPLIST_INVALIDE"));
 						return;
@@ -308,7 +308,7 @@ $(function () {
 					var iptemp_arr = [];
 					iptemp_arr = $("#EditIPAddressInput").val().split(".");
 					
-					// 子网掩码
+					// Subnet Mask
 					if (!CheckMask($("#EditNetMaskInput").val())) {
 						ShowPaop(pageTitle, lg.get("IDS_NETMASK_ERR"));
 						return;
@@ -316,7 +316,7 @@ $(function () {
 					var masktemp_arr = [];
 					masktemp_arr = $("#EditNetMaskInput").val().split(".");
 
-					// 网关
+					// 网Close
 					var gwtemp_arr = [];
 					if (CheckIP($('#EditGatewayInput').val())) {
 						gwtemp_arr = $("#EditGatewayInput").val().split(".");
@@ -330,7 +330,7 @@ $(function () {
 					}
 				}
 
-				// DHCP在任何情况下都会保存
+				// DHCPAt任何情况下都会Save
 				if (curNetcardID == 0 || curNetcardID == 4) {
 					if(!bChangeNetMode){
 						var net = NetCommon[NetCommon.Name];
@@ -517,7 +517,7 @@ $(function () {
 			$(".NetCardTableClass")[0].click();
 		});
 
-		//表格支持单选行
+		//表格Support单选行
 		$(".NetCardTableClass").unbind().click(function(){
 			nSelectRow = $(this)[0].rowIndex;
 			$(".NetCardTableClass").attr("d", "not-active");
@@ -591,7 +591,7 @@ $(function () {
 			
 			if (netEx.BondMode != 0) {
 				$("#SelNetCard").append('<option value="0">'+ lg.get("IDS_NETW_BindNetcard") +'</option>');
-			}else {										//双网卡
+			}else {										//双Net Card
 				$("#SelNetCard").append('<option value="0">'+ lg.get("IDS_NETW_Wirecard")+ "1" +'</option>');
 				$("#SelNetCard").append('<option value="1">'+ lg.get("IDS_NETW_Wirecard")+ "2" +'</option>');
 			}
@@ -675,7 +675,7 @@ $(function () {
 			$("#OnvifPortInput").val(cfg.Port);
 		}
 
-		// POE双网卡设备禁用第二张网卡的设置，eth1是POE专用，驱动写死，不允许修改
+		// POE双Net Card设备禁用第二PicturesNet Card的设置，eth1YESPOE专用，驱动写死，不允许Modify
 		var bDisableNetSet = (bPoeDualEthernet && lastNetCarID == 1) ? 0 : 1;
 		DivBox(bDisableNetSet, "#AdaptiveIP_div");
 		if(lastNetCarID == 1 && bPoeDualEthernet)
@@ -786,7 +786,7 @@ $(function () {
 	}
 	function SaveIPAddressCfgNormal()
 	{
-		// IP地址
+		// IP Address
 		if (!CheckIP($("#IpAddressInput").val())) {
 			ShowPaop(pageTitle, lg.get("IDS_IPLIST_INVALIDE"));
 			return;
@@ -794,7 +794,7 @@ $(function () {
 		var iptemp_arr = [];
 		iptemp_arr = $("#IpAddressInput").val().split(".");
 		
-		// 子网掩码
+		// Subnet Mask
 		if (!CheckMask($("#SubnetMaskInput").val())) {
 			ShowPaop(pageTitle, lg.get("IDS_NETMASK_ERR"));
 			return;
@@ -802,7 +802,7 @@ $(function () {
 		var masktemp_arr = [];
 		masktemp_arr = $("#SubnetMaskInput").val().split(".");
 	
-		// 网关
+		// 网Close
 		var gwtemp_arr = [];
 		if (CheckIP($('#GatewayInput').val())) {
 			gwtemp_arr = $("#GatewayInput").val().split(".");
@@ -881,14 +881,14 @@ $(function () {
 				cfg.Port = $("#OnvifPortInput").val() *1;
 			}
 		}else if(lastNetCarID == 1 && bDualEthernet) {
-			// 2023-05-26： 多网卡的Http端口，tcp端口，是否使用网络高速下载，网络传输策略使用  NetCommon 配置保存
+			// 2023-05-26： 多Net Card的HttpPort，tcpPort，YESNO使用HS Download，Transfer Policy使用  NetCommon 配置Save
 			net.HttpPort = $("#HttpPortInput").val() *1;
 			net.TCPPort = $("#MediaPortInput").val() *1;
 			net.UseHSDownLoad = $("#HSDSwitch").prop("checked");
 			net.TransferPlan = arrTransferPlan[$("#SelTransferPolicy").val() *1];
 		}
 
-		// 单网卡模式下, 双网卡保存IP地址时候，IP设置为同网段时，提示"有线网卡1和有线网卡2的IP冲突"
+		// SingleMode下, 双Net CardSaveIP AddressHour候，IP设置为同网段Hour，Prompt"Wire Netcard1和Wire Netcard2的IP冲突"
 		if(bDualEthernet && optype == 1)
 		{
 			var netEx = NetCommonEx[NetCommonEx.Name];
@@ -897,7 +897,7 @@ $(function () {
 				ShowPaop(pageTitle, lg.get("IDS_NETW_DualEthernetIPConflict"));
 				return;
 			}
-			// 保存默认网卡
+			// SaveDefault NIC
 			if(!changeNetMode(initialNetMode, targetNetMode))
 			{
 				if(targetNetMode == 0)

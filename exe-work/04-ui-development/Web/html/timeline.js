@@ -49,7 +49,7 @@ var timeline = function(options) {
 	function _getLeftAndWidth(Begin, End) {
 		var left = 0.0001;
 		var width = 0.0001;
-		//传进来分钟转成秒，通过阵列比例获取宽度
+		//传进来Min钟转成Sec，通过阵列比例获取宽度
 		left = (Begin * _scaleWidth * 60) / (120 / ZoomLevel[_zoomLevel]*60);
 		width = (End * _scaleWidth * 60) / (120 / ZoomLevel[_zoomLevel]*60) - left;
 		return {

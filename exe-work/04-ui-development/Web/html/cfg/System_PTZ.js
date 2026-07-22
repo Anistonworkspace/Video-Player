@@ -77,7 +77,7 @@ $(function(){
 		$("#SelDataBitRS").val(RSCfg.Attribute[2]);
 		$("#SelStopBitRS").val(RSCfg.Attribute[3]);
 		
-		if (bShowPTZState) {		//获取云台的预置点或点间巡航的配置
+		if (bShowPTZState) {		//获取PTZ的Preset或点间巡航的配置
 			var cfg = ResumePTZState[ResumePTZState.Name].PtzState[0];
 			if (cfg.PresetState.Enable || cfg.TourState.Running || cfg.PoweroffState.Enable) {
 				$("#SwitchPowerBoot").removeClass("selectDisable").addClass("selectEnable").attr("data", "1");

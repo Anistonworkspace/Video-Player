@@ -1,7 +1,7 @@
 //# sourceURL=Advance_HddManager.js
 $(function () {
 	var sel = 0;				//当前选择硬盘
-	var hddInfoArr = [];		//硬盘信息数组
+	var hddInfoArr = [];		//硬盘信息数Group
 	var strTotalSpace = "";
 	var strRemainSpace = "";
 
@@ -48,16 +48,16 @@ $(function () {
 	function DiskOperator (nCtrlType, data) {
 		RfParamCall(function(Result) {
 			if (Result.Ret == 100) {
-				if (nCtrlType == 2)	{		//磁盘分区
+				if (nCtrlType == 2)	{		//HDD Partition
 					ShowPaop(pageTitle, lg.get("IDS_HDDM_OperatorSuc"));
 				}else{
 					LoadConfig();
 					ShowPaop(pageTitle, lg.get("IDS_HDDM_OperatorSuc"));
 				}
 			} else if(Result.Ret == 603){
-				if (nCtrlType == 2)	{		//磁盘分区
+				if (nCtrlType == 2)	{		//HDD Partition
 					RebootDev(pageTitle, lg.get("IDS_HDDM_PartitionSuc"), false);
-				}else if (nCtrlType == 3){	//清除操作
+				}else if (nCtrlType == 3){	//ClearOperation
 					RebootDev(pageTitle, lg.get("IDS_HDDM_ClearSuc"), false);
 				}else {
 					RebootDev(pageTitle, lg.get("IDS_HDDM_OperatorSuc"), false);
@@ -213,7 +213,7 @@ $(function () {
 			$("#diskBtnOk").click(function() {
 				var nLogicNo = $("#disk_No").val() *1;						//逻辑磁盘号
 				var selText = $("#disk_No").find("option:selected").text();
-				var nPartNo = (selText.split("-")[1]) *1 -1;				//分区号
+				var nPartNo = (selText.split("-")[1]) *1 -1;				//Partition号
 	
 				var OPStorageManager = {
 					"Action":"SetType",
@@ -253,7 +253,7 @@ $(function () {
 			$("#diskBtnOk").click(function() {
 				var nLogicNo = $("#disk_No").val() *1;						//逻辑磁盘号
 				var selText = $("#disk_No").find("option:selected").text();
-				var nPartNo = (selText.split("-")[1]) *1 -1;	//分区号
+				var nPartNo = (selText.split("-")[1]) *1 -1;	//Partition号
 				if (hddInfoArr[nLogicNo].Partition[nPartNo].DirverType == 1) {	//readonly
 					$("#btnCancel").click();
 					ShowPaop(pageTitle, lg.get("IDS_HDDM_CannotClear"));
@@ -295,7 +295,7 @@ $(function () {
 			$("#diskBtnOk").click(function() {
 				var nLogicNo = $("#disk_No").val() *1;						//逻辑磁盘号
 				var selText = $("#disk_No").find("option:selected").text();
-				var nPartNo = (selText.split("-")[1]) *1 -1;	//分区号
+				var nPartNo = (selText.split("-")[1]) *1 -1;	//Partition号
 				
 				var OPStorageManager = {
 					"Action":"Recover",
@@ -389,12 +389,12 @@ $(function () {
 				NumberRange(this, min, max, -1);
 				var curVal = parseInt($this.val(), 10) || 0;
 				if (supportPercent) {
-					// 百分比模式：同步另一个为 100 - curVal
+					// 百Min比Mode：Synchronous另一个为 100 - curVal
 					var otherVal = 100 - curVal;
 					if (otherVal < 0) otherVal = 0;
 					$other.val(otherVal);
 				} else {
-					// 数值模式：同步另一个为 totalVal - curVal
+					// 数值Mode：Synchronous另一个为 totalVal - curVal
 					var otherVal = totalVal - curVal;
 					if (otherVal < 0) otherVal = 0;
 					$other.val(otherVal);

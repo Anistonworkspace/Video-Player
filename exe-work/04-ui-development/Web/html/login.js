@@ -23,7 +23,7 @@ $(function(){
         }
     }
     if(g_BrowseType == BrowseType.BrowseChrome || g_BrowseType == BrowseType.BrowseOpera){
-        // skin.css 添加样式
+        // skin.css Add样式
         document.styleSheets[0].insertRule('.PswEyeShow {-webkit-text-security:disc}', 0);
     }
     $('#userName').prop('placeholder', lg.get("IDS_USERNAME"));

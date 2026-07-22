@@ -144,7 +144,7 @@ $(function () {
 		}
 		$("#AccountList .table-head").css("padding-right", nHeadPadding+"px");
 		
-		//表格支持单选行
+		//表格Support单选行
 		$(".CustomAccountClass").click(function(){			
 			nSelUser = $(this)[0].rowIndex;
 			$(".CustomAccountClass").attr("d", "not-active");
@@ -737,7 +737,7 @@ $(function () {
 				var confirmPsw = $("#ConPWD").val();
 				var nPswLen = newPsw.length;
 				
-				// 新增用户密码不能为空
+				// 新增User密码不能为空
 				if(newPsw == "")
 				{
 					ShowPaop(pageTitle, lg.get("IDS_NO_PASSWORD"));

@@ -55,7 +55,7 @@ function AlarmCenter(){
 }
 AlarmCenter.prototype.OpenAlarmChannel = function(ip, httpPort, salt, callback){
 	var isIPv6 = ip.indexOf("[") == -1 ? false : true;
-	if(isIPv6 && g_BrowseType == BrowseType.BrowseMSIE){	 	// UNC 和 IPV6地址兼容 (IE问题)
+	if(isIPv6 && g_BrowseType == BrowseType.BrowseMSIE){	 	// UNC 和 IPV6Address兼容 (IEQuestion)
 		var st = ip.indexOf("[");
 		var ed = ip.indexOf("]");
 		var temp = ip.substr(st + 1, ed - 1);
@@ -122,7 +122,7 @@ function CGIClass(canvas){
 	this.playtype = PlayType.TypeNoPlay;
 	this.m_playstatus = [];
 	this.streamPerWnd = [];
-	this.channelPerWnd = [];//每个窗口对应的通道
+	this.channelPerWnd = [];//每个窗口对应的Channel
 	this.callback = null;
 	
 	this.fileInfo = null;
@@ -154,7 +154,7 @@ function CGIClass(canvas){
 			h.channelPerWnd[i] = -1;
 		}
 		h.alarmCenter = new AlarmCenter();
-		/* a使用哪个cgi命令 b 表示数据 c 表示同步方式 d 函数 k超时时间*/
+		/* a使用哪个cgi命令 b 表示数据 c 表示Synchronous方式 d 函数 k超HourTime*/
 		h.sendRequest = function(a, b, c, d, k,y){
 			d == void 0 && (d = function(f,g) {});
 			k == void 0 && (k = 8000);
@@ -188,7 +188,7 @@ function CGIClass(canvas){
 						f = f.replace(/\r/g, "");
 					}
 					if(y){
-						var o = JSON.parse(f);	//针对一些字符串长度比较大，设备返回字符串不加密的情况（如获取64个通道的"Record"配置）
+						var o = JSON.parse(f);	//针对一些字符串Length比较大，设备返回字符串不加密的情况（如获取64个Channel的"Record"配置）
 						if(typeof o == "object" && o.Name != ""){ 
 							return f;
 						}
@@ -459,28 +459,28 @@ CGIClass.prototype.PTZcontrol = function(nCmdType, nCh, nParam1, nParam2, nParam
 							"ZoomWide", "ZoomTile", "FocusFar", "FocusNear", "IrisLarge", "IrisSmall" /*, "Menu"*/];
 	var szPresetCmd = ["SetPreset", "ClearPreset", "GotoPreset"];
 	var  szTourCmd = ["AddTour", "DeleteTour", "StartTour", "StopTour", "ClearTour"];
-	if (nCmdType >=0 && nCmdType <= 7){				//方向控制：nParam1为步长; nParam2为是否停止,1停止,0打开
+	if (nCmdType >=0 && nCmdType <= 7){				//方向控制：nParam1为Speed; nParam2为YESNOStop,1Stop,0Open
 		szCmd = szNormalCmd[nCmdType];
 		nStep = nParam1;
 		nPreset = nParam2 == 1 ? -1 : 65535;
-	}else if(nCmdType >= 8 && nCmdType <= 13){		//变倍、变焦、光圈：nParam1为步长; nParam2为是否停止,1停止,0打开
+	}else if(nCmdType >= 8 && nCmdType <= 13){		//Zoom、Focus、Iris：nParam1为Speed; nParam2为YESNOStop,1Stop,0Open
 		szCmd = szNormalCmd[nCmdType];
 		nStep = nParam1;
 		nPreset = nParam2 == 1 ? -1 : 65535;
 	
-	}/*else if(14 == nCmdType) {						// OSD菜单
+	}/*else if(14 == nCmdType) {						// OSD Menu
 		szCmd = szNormalCmd[nCmdType];
 		nStep = nParam1;
 		nPreset = nParam2 == 1 ? -1 : 65535;
-	}*/else if (nCmdType >= 17 && nCmdType <= 19){	//预置点设置：nParam1为预置点
+	}*/else if (nCmdType >= 17 && nCmdType <= 19){	//Preset设置：nParam1为Preset
 		szCmd = szPresetCmd[nCmdType-17];
 		nPreset = nParam1;
-	}else if(nCmdType == 26 || nCmdType == 27){		//加入、删除预置点到巡航：nParam1为巡航线路值，nParam2为预置点值,nParam3为时间间隔
+	}else if(nCmdType == 26 || nCmdType == 27){		//加入、删除PresetTo巡航：nParam1为Patrol No值，nParam2为Preset值,nParam3为Interval
 		szCmd = szTourCmd[nCmdType-26];
 		nTour = nParam1;
 		nPreset = nParam2;
 		nStep = nParam3;
-	}else if(nCmdType >= 28 && nCmdType <= 30){		//开始、结束、清除巡航：nParam1为巡航线路值
+	}else if(nCmdType >= 28 && nCmdType <= 30){		//Start、End、Clear巡航：nParam1为Patrol No值
 		szCmd = szTourCmd[nCmdType-26];
 		nTour = nParam1;
 	}else {
@@ -504,7 +504,7 @@ CGIClass.prototype.PTZcontrol = function(nCmdType, nCh, nParam1, nParam2, nParam
 	};
 	var that = this;
 	(function (nChannel, callback) {
-		//关闭消费类IPC云台镜像翻转功能改成true
+		//Close闭消费类IPCPTZMirrorFlip功能改成true
 		if (false) {
 			callback({ FlipOperation: false, MirrorOperation: false });
 		}
@@ -1727,15 +1727,15 @@ function DeviceInfo() {
 				function d(e){
 					var f = {};
 					switch (e.ret) {
-						case CallBack_Error: //抛出异常
+						case CallBack_Error: //抛出Abnormal
 							break;
 						case CallBack_Loading: //加载中
 							break;
-						case CallBack_Stop: //播放停止
+						case CallBack_Stop: //PlayStop
 							break;
-						case CallBack_Pause: //播放暂停
+						case CallBack_Pause: //Play暂停
 							break;
-						case CallBack_Playing: //播放中
+						case CallBack_Playing: //Play中
 							f.Ret = WEB_ERROR.ERR_SUCESS;
 							f.Chn = chn;
 							f.Stream = stream;
@@ -1743,15 +1743,15 @@ function DeviceInfo() {
 							callback(f);
 							b.oldChn = chn;
 							break;
-						case CallBack_Finished: //播放完成
+						case CallBack_Finished: //Play完成
 							break;
-						case CallBack_Timeout: //请求超时
+						case CallBack_Timeout: //请求超Hour
 							break;
 						case CallBack_Abort: //请求中断
 							break;
-						case CallBack_PlaybackMsg: //回放消息推送
+						case CallBack_PlaybackMsg: //playback消息推送
 							break;
-						case CallBack_HttpErrMsg: //http请求异常消息推送
+						case CallBack_HttpErrMsg: //http请求Abnormal消息推送
 							break;
 						case CallBack_parseFrame:
 							break;
@@ -1792,8 +1792,8 @@ function DeviceInfo() {
 				}
 				var url = t+b.ip+"/websocket-bin/Type=HttpRealplay?Salt="+gNet.Salt+"&Channel="+chn+"&Stream="+f+"&XMHead=1";
 				b.player.fnPlay({
-					url: url, //播放地址
-					isStream: true, //预览，回放,
+					url: url, //PlayAddress
+					isStream: true, //预览，playback,
 					urlProto: "pri",
 					elemVideo:$("#playCanvas")[0],
 					enableHEVC:false,
@@ -2015,11 +2015,11 @@ function DeviceInfo() {
                 function d(e){
 					var f = {};
 					switch (e.ret) {
-						case CallBack_Error: //抛出异常
+						case CallBack_Error: //抛出Abnormal
 							break;
 						case CallBack_Loading: //加载中
 							break;
-						case CallBack_Stop: //播放停止
+						case CallBack_Stop: //PlayStop
                             if(typeof playbackEventCallBack === 'function'){
                                 playbackEventCallBack({
                                     SubEvent: PlaybackEvent.SubEventPlaybackEnd,
@@ -2028,7 +2028,7 @@ function DeviceInfo() {
                                 });
                             }
 							break;
-						case CallBack_Pause: //播放暂停
+						case CallBack_Pause: //Play暂停
                             if(typeof playbackEventCallBack === 'function'){
                                 playbackEventCallBack({
                                     SubEvent: PlaybackEvent.SubEventPlaybackSelectWndChanged,
@@ -2044,7 +2044,7 @@ function DeviceInfo() {
                                 });
                             }
 							break;
-						case CallBack_Playing: //播放中
+						case CallBack_Playing: //Play中
 							//f.Ret = WEB_ERROR.ERR_SUCESS;
 							//callback(f);
                             if(typeof playbackEventCallBack === 'function'){
@@ -2054,7 +2054,7 @@ function DeviceInfo() {
                                     Data: { Wnd: 0 },
                                     PlayIndex: 0
                                 });
-                                // 同时触发窗口选择事件，更新按钮状态
+                                // 同Hour触发窗口选择事件，Update按钮Status
                                 playbackEventCallBack({
                                     SubEvent: PlaybackEvent.SubEventPlaybackSelectWndChanged,
                                     Ret: WEB_ERROR.ERR_SUCESS,
@@ -2073,7 +2073,7 @@ function DeviceInfo() {
 								b.player.fnSetTrack(timeTrack, timeLabel, progressBarModal);
                             }
 							break;
-						case CallBack_Finished: //播放完成
+						case CallBack_Finished: //Play完成
                             if(typeof playbackEventCallBack === 'function'){
                                 playbackEventCallBack({
                                     SubEvent: PlaybackEvent.SubEventPlaybackEnd,
@@ -2085,11 +2085,11 @@ function DeviceInfo() {
 								}
                             }
 							break;
-						case CallBack_Timeout: //请求超时
+						case CallBack_Timeout: //请求超Hour
 							break;
 						case CallBack_Abort: //请求中断
 							break;
-						case CallBack_PlaybackMsg: //回放消息推送
+						case CallBack_PlaybackMsg: //playback消息推送
                             var duration = e.message.duration;
 							var currentSec = e.message.second;
                             if(duration > 0 && currentSec >= 0)
@@ -2101,7 +2101,7 @@ function DeviceInfo() {
 								}
                             }
 							break;
-						case CallBack_HttpErrMsg: //http请求异常消息推送
+						case CallBack_HttpErrMsg: //http请求Abnormal消息推送
 							break;
 						case CallBack_parseFrame:
 							break;
@@ -2145,14 +2145,14 @@ function DeviceInfo() {
 					"Salt": gNet.Salt
 				};
                 if(playMode == PlayBackType.PBK_TYPE_REMOTE_FILE && fileinfo && fileinfo.length > 0){
-					// 按文件回放
+					// By Nameplayback
 					playbackOptions.HttpPlayBack.PlayMode = "PlayByName";
 					playbackOptions.HttpPlayBack.PlayByName = {
 						"LocalTime": fileinfo[0].BeginTime || "",
 						"FileName": fileinfo[0].FileName || fileinfo[0].File || ""
 					};
 				}else if(playMode == PlayBackType.PBK_TYPE_REMOTE_TIME){
-					// 按时间回放
+					// By Timeplayback
 					playbackOptions.HttpPlayBack.PlayMode = "PlayByTime";
 					if(fileinfo && fileinfo.length > 0){
 						playbackOptions.HttpPlayBack.PlayByTime = {
@@ -2226,7 +2226,7 @@ function DeviceInfo() {
         function downloadNextFile() {
             var queue = b.downloadQueue;
 			if (!queue || queue.curIndex >= queue.files.length) {
-				// 所有文件下载完成
+				// 所有FileDownload完成
 				b.downloadQueue = null;
 				return;
 			}
@@ -2360,14 +2360,14 @@ function DeviceInfo() {
 							});
 						}
 
-						// 继续下载下一个文件
+						// 继续Download下一个File
 						b.downloadState = null;
 						b.downloadQueue.curIndex++;
 						if (b.downloadQueue.curIndex < b.downloadQueue.files.length) {
-							// 延迟一小段时间再下载下一个文件
+							// 延迟一小段Time再Download下一个File
 							setTimeout(downloadNextFile, 500);
 						} else {
-							// 所有文件下载完成
+							// 所有FileDownload完成
 							var queue = b.downloadQueue;
 							b.downloadQueue = null;
 							console.log("=== DOWNLOAD ALL COMPLETE: " + queue.downloadedFiles.length + " files ===");
@@ -2505,7 +2505,7 @@ function DeviceInfo() {
                         chnStatus.Status = PlayStatus.StatusPause;
                         break;
                     case PlaybackCtrl.PlaybackFast:
-                        // 快放
+                        // Fast
                         var fastSpeeds = [1.0, 2.0, 4.0, 8.0];
                         var currentIdx = fastSpeeds.indexOf(b.playbackSpeed);
                         if (currentIdx === -1 || currentIdx >= fastSpeeds.length - 1) {
@@ -2518,7 +2518,7 @@ function DeviceInfo() {
                         chnStatus.Mode = b.playbackSpeed;
                         break;
                     case PlaybackCtrl.PlaybackSlow:
-                        // 慢放
+                        // Slow
                         var slowSpeeds = [1.0, 0.5, 0.25, 0.125];
                         var currentIdx = slowSpeeds.indexOf(b.playbackSpeed);
                         if (currentIdx === -1 || currentIdx >= slowSpeeds.length - 1) {
@@ -2535,7 +2535,7 @@ function DeviceInfo() {
                         chnStatus.Status = PlayStatus.StatusPlaying;
                         break;
                     case PlaybackCtrl.PlaybackNextFrame:
-                        //下一帧
+                        //Next Frame
                         b.player.fnPlayNextFrame();
                         chnStatus.Status = PlayStatus.StatusNextFrame;
                         break;
@@ -2933,7 +2933,7 @@ function GlobalVar() {
 		if(typeof g_productID  !== "string"){
 			window.g_productID="G1";
 		}
-		// 取消main.js 针对密码框绑定的click事件
+		// Cancelmain.js 针对密码框绑定的click事件
 		$("body").unbind("click");
 		$("body").on("click", ".btn_cancle,.second_close", function() {
 			if(this.id=="AudioDLgClose"){
@@ -2966,7 +2966,7 @@ function GlobalVar() {
 
 				var reg = /[^\w\s\`~!@#$%^&*\(\)\-+=\[\]\{\}|;:\',.\<\>/?\\"]/g
 				var tmp = b.val().replace(reg, '');
-				// 不以 \ 为开始
+				// 不以 \ 为Start
 				reg = /^[\\]*/g
 				tmp = tmp.replace(reg, '');
 				// 不以 \ " 为结尾
@@ -2999,7 +2999,7 @@ function GlobalVar() {
 
 				var reg = /[^\w\s\`~!@#$%^&*\(\)\-+=\[\]\{\}|;:\',.\<\>/?\\"]/g
 				var tmp = b.val().replace(reg, '');
-				// 不以 \ 为开始
+				// 不以 \ 为Start
 				reg = /^[\\]*/g
 				tmp = tmp.replace(reg, '');
 				// 不以 \ " 为结尾
@@ -3066,7 +3066,7 @@ function GlobalVar() {
 					}else{
 						gDevice.PreviewStop(-1, function(){
                             gVar.CurChannel = -1;
-						    // 清理所有通道的播放按钮和录像状态
+						    // 清理所有Channel的Play按钮和Record Status
                             for(var i = 0; i < gDevice.loginRsp.ChannelNum; i++){
                                 $("#chnMainPlay_" + i).attr("name", "");
                                 $("#chnExtraPlay_" + i).attr("name", "");
@@ -3497,7 +3497,7 @@ function OemInfo() {
         }
 		lang = $.cookie("Language") || lang;
 
-		// 获取到的预登录语言
+		// 获取To的预LoginLanguage
 		this.setCurLang(lang);
 		this.bInit = !0;
 	}

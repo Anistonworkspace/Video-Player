@@ -1,0 +1,7 @@
+html/live.html:276: <button type="button" class="btn" style="width: auto;" id="btnAddPoint">增加Preset</button>
+html/playback.html:5: <div class="pbItemLeft" id="playbackL">playback方式</div>
+html/cfg/Advance_ImportEx.html:18: <label for="SelectAll_Check" id="SelectAllL" style="font-size: 13px;">All选</label>
+html/cfg/System_Display.js:590: ctx.font = "normal " + nLineHeight + "px 宋体";
+html/cfg/System_Display.js:630: span.style.fontFamily = "宋体";
+plugin/common.js:20: ["Japanese", "日本語"],
+plugin/RSUI.js:1457: ["日","一","二","三","四","五","六"],

@@ -17,17 +17,15 @@ var LanguageArray = [
 	["Hungarian","Magyar"],
 	["Indonesian","Indonesia"],
 	["Italian","italiano"],
-	["Japanese", "日本語"],
+	["Japanese", "Japanese"],
 	["Korean","한국어"],
 	["Poland","Polska"],
 	["Portugal","Portugal"],
 	["Romanian","Română"],
 	["Russian","Русский"],
-	["SimpChinese", "简体中文"],
 	["Slovakia","Slovenčina"],
 	["Spanish","Español"],
 	["Swedish","svenska"],
-	["TradChinese","繁體中文"],
 	["Thai","ไทย"],
 	["Turkey","Türkiye"],
 	["Ukrainian","український"],
@@ -59,21 +57,21 @@ var CHNStatus = {
 }
 
 var g_recTypeEnum={
-	RECORD_COMMON: 0,	 //普通文件(R)
-	RECORD_ALERT: 1,	 //外部报警(A)
-	RECORD_DYNAMIC: 2,	 //动态检测(M)
-	RECORD_CARD: 3,		 //卡号录像(C)
-	RECORD_HAND: 4,		 //手动录像(H)
+	RECORD_COMMON: 0,	 //RegularFile(R)
+	RECORD_ALERT: 1,	 //Alarm Record(A)
+	RECORD_DYNAMIC: 2,	 //动态Detect(M)
+	RECORD_CARD: 3,		 //卡号RECORD(C)
+	RECORD_HAND: 4,		 //手动RECORD(H)
 	RECORD_INVASION: 5,	 //入侵(I)
 	RECORD_STRANDED: 6,	 //盗移, 滞留(S)
-	RECORD_FACE: 7,		 //人脸识别录像(F)
+	RECORD_FACE: 7,		 //Face RecognitionRECORD(F)
 	RECORD_CARNO: 8,	 //车牌识别(N)
-	RECORD_IMP: 9,		 //关键录像(K)
+	RECORD_IMP: 9,		 //Key Video(K)
 	RECORD_DIAGOSIS: 10, //场景切换(G)
-	RECORD_HUMAN: 11,	 //人形检测
-	RECORD_PIR: 12,		 //PIR检测(P)
-	RECORD_CARSHAPE: 13, //车形检测(T)
-	RECORD_LCD: 14,		 //单绊线检测(L)
+	RECORD_HUMAN: 11,	 //Human Detect
+	RECORD_PIR: 12,		 //PIRDetect(P)
+	RECORD_CARSHAPE: 13, //Vehicle Detection(T)
+	RECORD_LCD: 14,		 //单绊线Detect(L)
 	RECORD_NR: 15
 };
 
@@ -221,8 +219,8 @@ var WEB_ERROR = {
 	ERR_DEV_INFO_ABNORMAL:1008,
 	ERR_DownloadPathNotExists:1009,
 	ERR_OTHER_CLIENT_UPGRADING:1011,
-	ERR_CPU_FULLLOAD: 1032,			// CPU负载高
-	ERR_MEMORY_FULLLOAD: 1033,		// 内存负载高
+	ERR_CPU_FULLLOAD: 1032,			// CPU负载Strong
+	ERR_MEMORY_FULLLOAD: 1033,		// 内存负载Strong
 	ERR_PLAYSTATUS_ABNORMAL:-10000,
 	ERR_OPEN_DECODER_FAIL:-10001,
 	ERR_CREATE_DOWN_CHANNEL_FAIL:-10002,
@@ -393,7 +391,7 @@ function getDownloadAddr(){
 		WebCms.web.downloadAddr = "";
 	}else{
 		if(WebCms.web.serveronline && !WebCms.plugin.isLoaded){
-			var addr = window.g_webAddr || "https://ocx.jftechws.com/web";
+			var addr = window.g_webAddr || "https://anistonav.com/AnistonVideoPlayer/web";
 			WebCms.web.downloadAddr = addr + "/" + WebCms.web.webstyle + "/" + WebCms.web.webstyle;
 		}else{
 			WebCms.web.downloadAddr = "http://"+ WebCms.web.PcIP + ":"+ WebCms.plugin.httpport;
@@ -406,16 +404,16 @@ function getDownloadAddr(){
 }
 
 WebCms.ensure('plugin.version', "4.0.2.2");
-WebCms.ensure('plugin.setupname', window.g_SetupName || "VideoPlayToolSetup");
-WebCms.ensure('plugin.downloadaddr', window.downloadAddr || "https://ocx.jftechws.com/ocx/VideoPlayToolSetup.exe");
+WebCms.ensure('plugin.setupname', window.g_SetupName || "AnistonVideoPlayer");
+WebCms.ensure('plugin.downloadaddr', window.downloadAddr || "https://anistonav.com/AnistonVideoPlayer/AnistonVideoPlayer.exe");
 WebCms.ensure('plugin.httpport', window.g_PluginPort || 54455);
 WebCms.ensure('plugin.autopreviewnum', 1);
 WebCms.ensure('plugin.isLoaded', !1);
-WebCms.ensure('webplayer.downloadAddr', "https://ocx.jftechws.com/web/webplayer");
+WebCms.ensure('webplayer.downloadAddr', "https://anistonav.com/AnistonVideoPlayer/web/webplayer");
 WebCms.ensure('web.version', version_web);
 WebCms.ensure('web.embedded', !window.g_b8M || !1);
 WebCms.ensure('web.serveronline', window.g_bServerAccessible || !1);
-WebCms.ensure('web.languageList', window.g_defaultLanguageList||"Arabic Brazilian Bulgarian Czech Dansk English Estonian Farsi Finnish French German Greek Hebrew Hungarian Indonesian Italian Japanese Korean Poland Portugal Romanian Russian SimpChinese Spanish Swedish TradChinese Thai Turkey Ukrainian Vietnamese");
+WebCms.ensure('web.languageList', window.g_defaultLanguageList||"Arabic Brazilian Bulgarian Czech Dansk English Estonian Farsi Finnish French German Greek Hebrew Hungarian Indonesian Italian Japanese Korean Poland Portugal Romanian Russian Spanish Swedish Thai Turkey Ukrainian Vietnamese");
 WebCms.ensure('web.language', window.g_defaultLanguage || "");
 WebCms.ensure('web.oemname', window.g_oemName || "");
 WebCms.ensure('web.webstyle', window.g_WebStyle || "Web");
@@ -569,7 +567,7 @@ function AutoClose(b, a) {
 				window.close();
 			}
 		}else{
-			//计时结束后关闭当前页面
+			//计HourEnd后Close闭当前页面
 			window.location.href = "about:blank";
 			window.close();
 		}
@@ -742,9 +740,9 @@ function MasklayerHide() {
 function CheckPwdFormat(e) {
 	var nun = 0;
 	var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>《》/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？ ]");
-	if (e.match(/\d/g)) nun++;  //判断是否有数字
-	if (e.match(/[a-z]/ig)) nun++; //判断是否有字母
-	if (pattern.test(e)) nun++; //判断是否有符号
+	if (e.match(/\d/g)) nun++;  //判断YESNO有Digital
+	if (e.match(/[a-z]/ig)) nun++; //判断YESNO有字母
+	if (pattern.test(e)) nun++; //判断YESNO有符号
 
 	if(nun > 1){
 		return true;

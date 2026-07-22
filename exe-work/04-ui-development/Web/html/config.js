@@ -22,7 +22,7 @@ $(function() {
 		var $item = $("#System_NetService_item");
 		$item.empty();
 		var dataHtml = '<li class="arrow_left" style="display:none; float:left"></li>\n';
-		if (GetFunAbility(pFunc.NetIPFilter)) {		//白黑名单
+		if (GetFunAbility(pFunc.NetIPFilter)) {		//白Black List
 			dataHtml += '<li class="content-menu-item" id="NetService_IPFilter">\n' + 
 			'	<div id="NetService_IPFilterL">'+lg.get("IDS_NETS_NetIPFilter")+'</div>\n' +
 			' 	<div class="menu-item-after"></div>\n' + 
@@ -60,7 +60,7 @@ $(function() {
 			' 	<div class="menu-item-after"></div>\n' + 
 			'</li>\n';
 		}
-		if (GetFunAbility(pFunc.Net3G)) {				//3G网络Wireless
+		if (GetFunAbility(pFunc.Net3G)) {				//3GNetWireless
 			dataHtml += '<li class="content-menu-item" id="NetService_3G">\n' +
 			'	<div id="NetService_3GL">'+lg.get("IDS_NETS_Net3G")+'</div>\n' +
 			' 	<div class="menu-item-after"></div>\n' + 
@@ -84,7 +84,7 @@ $(function() {
 			' 	<div class="menu-item-after"></div>\n' + 
 			'</li>\n';
 		}
-		if (GetFunAbility(pFunc.NetAlarmCenter)) {		//报警中心
+		if (GetFunAbility(pFunc.NetAlarmCenter)) {		//AlarmServer
 			dataHtml += '<li class="content-menu-item" id="NetService_AlarmCenter">\n' + 
 			'	<div id="NetService_AlarmCenterL">'+lg.get("IDS_NETS_NetAlarmCenter")+'</div>\n' +
 			' 	<div class="menu-item-after"></div>\n' + 
@@ -97,7 +97,7 @@ $(function() {
 			' 	<div class="menu-item-after"></div>\n' + 
 			'</li>\n';
 		}
-		if (GetFunAbility(pFunc.NetDAS)) {				//主动注册
+		if (GetFunAbility(pFunc.NetDAS)) {				//主动Register
 			dataHtml += '<li class="content-menu-item" id="NetService_DAS">\n' +
 			'	<div id="NetService_DASL">'+lg.get("IDS_NETS_NetDAS")+'</div>\n' +
 			' 	<div class="menu-item-after"></div>\n' + 
@@ -109,7 +109,7 @@ $(function() {
 			' 	<div class="menu-item-after"></div>\n' + 
 			'</li>\n';
 		}
-		if (GetFunAbility(pFunc.NetSPVMN)) {			//国标28181
+		if (GetFunAbility(pFunc.NetSPVMN)) {			//GB 28181
 			dataHtml += '<li class="content-menu-item" id="NetService_SPVMN">\n' +
 			'	<div id="NetService_SPVMNL">'+lg.get("IDS_NETS_NetSPVMN")+'</div>\n' +
 			' 	<div class="menu-item-after"></div>\n' + 
@@ -236,12 +236,12 @@ $(function() {
 			gDevice.Ability.OtherFunction.SupportSnapSchedule = !1;
 			gDevice.Ability.EncodeFunction.SnapStream = !1;
 		}
-		if (GetFunAbility(gDevice.Ability.CommFunction.CommRS485)) {	//485串口能力级
-			if (gDevice.loginRsp.VideoInChannel) {		//存在模拟通道
+		if (GetFunAbility(gDevice.Ability.CommFunction.CommRS485)) {	//485Comm能力级
+			if (gDevice.loginRsp.VideoInChannel) {		//存AtAnalogChannel
 				$("#System_PTZ").css("display", "");
 				System_PTZ.innerHTML = lg.get("IDS_SYSTEM_PTZ");
 			}else {
-				if (gDevice.loginRsp.DigChannel) {		//全数字通道
+				if (gDevice.loginRsp.DigChannel) {		//AllDigitalChannel
 					$("#System_PTZ").css("display", "");
 					System_PTZ.innerHTML = lg.get("IDS_PTZ_TitleRS");
 				}
@@ -250,7 +250,7 @@ $(function() {
 		if (GetFunAbility(gDevice.Ability.CommFunction.CommRS232)) {
 			$("#System_Serial").css("display", "");
 		}
-		if (GetFunAbility(gDevice.Ability.OtherFunction.NOHDDRECORD)) {	//无硬盘录像
+		if (GetFunAbility(gDevice.Ability.OtherFunction.NOHDDRECORD)) {	//无硬盘RECORD
 			$("#mRecord, #mRecord_parameter, #Advance_HddManager, #Info_HddInfo").css("display", "none");
 		}else{
 			var bSnapSchedule = GetFunAbility(gDevice.Ability.OtherFunction.SupportSnapSchedule);
@@ -260,7 +260,7 @@ $(function() {
 				$("#Record_SnapSchedule").css("display", "none");
 			}
 			var bSnap = GetFunAbility(gDevice.Ability.EncodeFunction.SnapStream);
-			if (gDevice.loginRsp.VideoInChannel == 0){  //全数字通道
+			if (gDevice.loginRsp.VideoInChannel == 0){  //AllDigitalChannel
 				bSnap =  false;
 			}
 			if( bSnap && !bSnapSchedule){

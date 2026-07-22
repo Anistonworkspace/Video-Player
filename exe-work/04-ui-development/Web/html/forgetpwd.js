@@ -126,7 +126,7 @@ $(document).ready(function() {
 		$("#SavePWD").css("margin-left", "78px");
 		$("#ForgetPwdContent #content_title").text(lg.get("IDS_MOD_PWD"));
 		$("#user").val($("#userName").val());
-		if($("#userName").val() == "")			// 补充一个默认值
+		if($("#userName").val() == "")			// 补充一个Defaults
 		{
 			$("#user").val("admin");
 		}
@@ -136,7 +136,7 @@ $(document).ready(function() {
 		}
 		$("#user").attr("disabled", true);		
 		$("#user").fadeTo("slow", 0.6);
-		if (!nAnyAccount) {						// 0 表示只支持对admin用户重置密码
+		if (!nAnyAccount) {						// 0 表示只Support对adminUserReset password
 			$("#user").val("admin");
 		}else{					
 			GetRandomFunc(function(a){

@@ -1,11 +1,11 @@
 //# sourceURL=System_NetworkIPV6.js
 $(function () {
 	var pageTitle = $("#System_NetworkIPV6").text();
-	var m_bEnable;				//是否启用ipv6
-	var m_LocalLinkAddr;	//本地链路地址
-	var m_Address;				//ipv6地址
-	var m_Gateway;			//网关
-	var	m_Prefix;  				//ipv6前缀长度
+	var m_bEnable;				//YESNOEnableipv6
+	var m_LocalLinkAddr;	//LocalLink Address
+	var m_Address;				//ipv6Address
+	var m_Gateway;			//网Close
+	var	m_Prefix;  				//ipv6前缀Length
     function GetNetWorkIPV6Cfg(){
         RfParamCall(function(a){
             if (a.Ret == 100) {

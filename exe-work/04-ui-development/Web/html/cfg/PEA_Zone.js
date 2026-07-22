@@ -274,9 +274,9 @@ var PEAZone = function (options) {
 			var n; //直线与y轴交点
 			m = pointBegin.y - pointEnd.y;
 			n = (pointBegin.x * pointEnd.y) - (pointEnd.x * pointBegin.y);
-			var y0 = 0; //因为m和n都乘上了(pointBegin.x - pointEnd.x)，所以判断的时候y0也要乘上这个值
+			var y0 = 0; //因为m和n都乘上了(pointBegin.x - pointEnd.x)，所以判断的Hour候y0也要乘上这个值
 			var x0 = 0;
-			var y = 0; //y = m * x0 + n  x0和y0是点的坐标，通过比较y和y0的大小，就可以确定两个点是否在一条直线的同一侧
+			var y = 0; //y = m * x0 + n  x0和y0YES点的坐标，通过比较y和y0的大小，就可以OK两个点YESNOAt一条直线的同一侧
 			var side1 = 0;
 			var side2 = 0;
 			if(pointBegin.x == pointEnd.x){
@@ -570,7 +570,7 @@ var PEAZone = function (options) {
 						*(tripWire[i].Line.EndPt.x-pt.x)
 						+(tripWire[i].Line.EndPt.y-pt.y)
 						*(tripWire[i].Line.EndPt.y-pt.y);
-					if ( len <= 4 ){		// 在线上
+					if ( len <= 4 ){		// Online上
 						bFinded = true;
 						state=4;
 						PointId=i;		

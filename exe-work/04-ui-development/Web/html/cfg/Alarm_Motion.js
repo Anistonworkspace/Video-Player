@@ -727,7 +727,7 @@ $(function () {
 					var mask = [];
 					mask[1] = parseInt(Region_temp.substr(0, 4), 16);
 					mask[0] = parseInt(Region_temp.substr(4, 4), 16);
-					for (var j = 0; j < 32; j++){		// 列上限32位
+					for (var j = 0; j < 32; j++){		// 列Upper limit32位
 						var m = parseInt(j/16);
 						var n = j % 16;
 						if(j < _nCol)
@@ -967,7 +967,7 @@ $(function () {
 		if(nIndex < gDevice.loginRsp.ChannelNum){
 			if (bNVRHuman && isObject(digitalHumanAbility[nIndex]) && (digitalHumanAbility[nIndex].SupportAlarmLinkLight || digitalHumanAbility[nIndex].SupportAlarmVoiceTips)
 			&& bGetIPCMotion[nIndex]){
-				//2019-04-16 同步是否启用选项
+				//2019-04-16 SynchronousYESNOEnable选项
 				IPCMotion[nIndex][IPCMotion[nIndex].Name].Enable = motionCfg[nIndex][motionCfg[nIndex].Name].Enable;
 				RfParamCall(function(a){
 					SaveIPCMotion(nIndex + 1);

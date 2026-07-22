@@ -75,12 +75,12 @@ $(function() {
 		
 		$("#TimeMode").prop("disabled", false);
 		if (sLastMode == "MULTI"){
-			if (!bDel ){ //删除时这些就不刷新了
+			if (!bDel ){ //删除Hour这些就不Refresh了
 				$("#SynChEn_Div").css("display", "none");
 				$("#TourTimeDiv").css("display", "");
 				$("#TourTime").val(DigitChnInfo.TourIntv);
 			}
-			for (var i = 0, nIndex = 0; i < listData[nChn].length; i++,nIndex++) {  //处理删除异常问题
+			for (var i = 0, nIndex = 0; i < listData[nChn].length; i++,nIndex++) {  //处理删除AbnormalQuestion
 				while (DigitChnInfo.Decoder[nIndex].IPAddress == ""){
 					nIndex ++;
 				}
@@ -95,7 +95,7 @@ $(function() {
 				}	
 			}
 		}else{
-			if (!bDel){ //删除时这些就不刷新了
+			if (!bDel){ //删除Hour这些就不Refresh了
 				$("#SynChEn_Div").css("display", "");
 				$("#TourTimeDiv").css("display", "none");
 				$("#SynChEn").attr("data", DigitChnInfo.SynchResolution ? 0 : 1);
@@ -225,7 +225,7 @@ $(function() {
 				DigitChnInfo.Decoder[i].Enable = $(itemCheck).prop("checked");
 				DigitChnInfo.TourIntv = $("#TourTime").val() * 1;
 			}
-		}else{   //单连接
+		}else{   //Single connect
 			DigitChnInfo.SynchResolution = $("#SynChEn").attr("data") * 1 ? false : true;
 		}
 	}
@@ -251,7 +251,7 @@ $(function() {
 				if (DigitChnInfo.SingleConnId > 0){
 					$("#listCheck" + (DigitChnInfo.SingleConnId -1)).prop("checked", false);
 				}
-				DigitChnInfo.SingleConnId = "0x" + toHex((nIndex + 1), 8);  //暂时记录打钩的情况
+				DigitChnInfo.SingleConnId = "0x" + toHex((nIndex + 1), 8);  //暂Hour记录打钩的情况
 				if (3 == s_DevType[DigitChnInfo.Decoder[nIndex].DevType]){
 					$("#TimeMode").prop("disabled", true);
 					$("#TimeMode").val(3);
@@ -446,7 +446,7 @@ $(function() {
 				chnIndex = nChannel;
 			} else {
 				if (nChannel != chnIndex ) {
-					SaveChnData(chnIndex);  //先保存之前的数字通道
+					SaveChnData(chnIndex);  //先Save之前的DigitalChannel
 					ShowData(nChannel);
 					chnIndex = nChannel;
 					nHavCheck = 0;
@@ -597,7 +597,7 @@ $(function() {
 			if (nChn == nDigChannel){
 				nChn = 0;
 			}
-			SaveChnData(nChn);  //先保存之前的数字通道
+			SaveChnData(nChn);  //先Save之前的DigitalChannel
 			nCopyChn = nChn;
 		});
 		$("#DigitalPaste").click(function(){

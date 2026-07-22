@@ -135,7 +135,7 @@ $(function(){
 	$(function(){
 		var BuildTime = gDevice.loginRsp.BuildTime;
 		var Time = new Date(Date.parse(BuildTime.split(" ")[0]));
-		var OkTime = new Date(Date.parse("2012-06-22")); //设备那端这个时间之后的才支持wifi的dhcp
+		var OkTime = new Date(Date.parse("2012-06-22")); //设备那端这个Time之后的才Supportwifi的dhcp
 		if (Time > OkTime) {
 			bDhcpVisible = true;	
 		}

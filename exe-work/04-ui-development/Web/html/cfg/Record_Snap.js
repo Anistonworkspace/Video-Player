@@ -411,8 +411,8 @@ $(function () {
 			var tmp = $(this).val().replace(/\D/g,'');
 			$(this).val(tmp);
 			var i;
-			var nSect;	//组别
-			var nWitch;	//0开始时间小时. 1开始时间分钟 2结束时间小时. 3结束时间分钟
+			var nSect;	//Group别
+			var nWitch;	//0StartTime小Hour. 1StartTimeMin钟 2End Time小Hour. 3End TimeMin钟
 			var a = $("div[id^='secttime']");
 			var b;
 			for(i = 0; i < 4; i++){
@@ -431,7 +431,7 @@ $(function () {
 			var bChange = false;	
 			var timeArr = [b.eq(0).val() * 1, b.eq(1).val() * 1,
 						   b.eq(2).val() * 1, b.eq(3).val() * 1];		
-			if (0 == nWitch || 2 == nWitch){//小时检查
+			if (0 == nWitch || 2 == nWitch){//小Hour检查
 				if (timeArr[nWitch] > 24){
 					timeArr[nWitch] = 24;
 					bChange = true;
@@ -441,7 +441,7 @@ $(function () {
 					timeArr[nWitch] = 24;
 					bChange = true;
 				}
-			}else{//分钟检查
+			}else{//Min钟检查
 				if (timeArr[nWitch] > 59){
 					timeArr[nWitch] = 59;
 					bChange = true;

@@ -5,7 +5,7 @@ $(function() {
 	var dataHtml = "";
 	$("#RecordTypeSelect").empty();
 	dataHtml += '<option value="' + 0 + '">' + "h265x" + '</option>';
-	//禁用AVI格式，V3版本插件使用老SDK有快进的问题且不再维护，V4版本插件使用二次封装SDK弃用了该格式
+	//禁用AVI格式，V3Version插件使用老SDK有快进的Question且不再维护，V4Version插件使用二次封装SDK弃用了该格式
 	//dataHtml += '<option value="' + 2 + '">' + "avi" + '</option>';
 	dataHtml += '<option value="' + 3 + '">' + "mp4" + '</option>';
 	$("#RecordTypeSelect").append(dataHtml);

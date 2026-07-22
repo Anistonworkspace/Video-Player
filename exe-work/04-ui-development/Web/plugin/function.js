@@ -91,7 +91,7 @@ function DecIpToHexIp(HexIp) {
 	return ssip;
 }
 
-// 判断IP输入是否合理
+// 判断IP输入YESNO合理
 function CheckIP(ip) {
 	obj = ip;
 	var exp = /^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
@@ -103,7 +103,7 @@ function CheckIP(ip) {
 	}
 }
 
-// 判断子网掩码输入是否合理
+// 判断Subnet Mask输入YESNO合理
 function CheckMask(mask) {
 	obj = mask;
 	var exp = /^(254|252|248|240|224|192|128|0)\.0\.0\.0|255\.(254|252|248|240|224|192|128|0)\.0\.0|255\.255\.(254|252|248|240|224|192|128|0)\.0|255\.255\.255\.(254|252|248|240|224|192|128|0)$/;
@@ -115,7 +115,7 @@ function CheckMask(mask) {
 	}
 }
 
-// 判断输入网关是否合理
+// 判断输入网CloseYESNO合理
 function CheckGateway(ip, mask, getway) {
 	var res0 = parseInt(ip[0]) & parseInt(mask[0]);
 	var res1 = parseInt(ip[1]) & parseInt(mask[1]);
@@ -224,7 +224,7 @@ function PtInPolygon (p, ptPolygon, nCount) {
 			continue;
 		// 求交点的x坐标（由直线两点式方程转化而来）
 		var x = 1.0 *(p.y - p1.y) * (p2.x - p1.x) /(p2.y - p1.y) + p1.x;
-		// 只统计p1p2与p向右射线的交点  
+		// 只Countp1p2与p向右射线的交点  
 		if ( x > p.x ){
 			nCross++;
 		}
@@ -580,7 +580,7 @@ function base64ToBytes(b64) {
     var len = wa.sigBytes;
     var u8 = new Uint8Array(len);
     for (var i = 0; i < len; i++) {
-        // 从 32-bit 小端字里取单字节
+        // 从 32-bit 小端字里取单BYTE
         u8[i] = (wa.words[Math.floor(i / 4)] >>> (24 - (i % 4) * 8)) & 0xFF;
     }
     return u8;          // 需要 ArrayBuffer 就再返回 u8.buffer
@@ -592,7 +592,7 @@ function bytesToBase64(bin){
 }
 
 function SaveFileToLocal(content, filename) {
-	// 字符内容转变成blob地址
+	// 字符内容转变成blobAddress
 	var stype = "";
 	if(filename.match(/.csv/ig)){
 		stype = "data:text/csv;charset=utf-8";
@@ -603,7 +603,7 @@ function SaveFileToLocal(content, filename) {
 		  window.navigator.msSaveOrOpenBlob(blob, filename);
 		}  
 	}else{
-		// 创建隐藏的可下载链接
+		// 创建隐藏的可Download链接
 		var eleLink = document.createElement('a');
 		eleLink.download = filename;
 		eleLink.style.display = 'none';
@@ -634,7 +634,7 @@ function CheckPasswordStrength(strPwd){
 		return PASSWORD_STRENTH.DANGER;
 	}
 
-	// 弱密码校验
+	// 弱密码Parity
 	var WeakPwdList = [
 		"123", "1234", "12345", "123456", "1234567", "12345678", "123456789", "1234567890",
 		"147258369", "987654321", "123123", "123321", "654321", "123456a", "114514",
@@ -651,13 +651,13 @@ function CheckPasswordStrength(strPwd){
 
 	var  pwdlen = strPwd.length;
 
-	//密码长度为1，直接是danger
-	//密码长度为2，如果两个字符相同就是danger，不同就是weak
-	//密码长度大于等于3，是常见的弱密码就是danger，否则往后判断字符类型数
-	//字符类型数为1，长度  3-5:weak   6-8:medium   >8:strong
-	//字符类型数为2，长度  3  :weak   4-6:medium   >6:strong
-	//字符类型数为3，长度             3-4:medium   >4:strong
-	//字符类型数为4，长度                         >=4:strong
+	//密码Length为1，直接YESdanger
+	//密码Length为2，如果两个字符相同就YESdanger，不同就YESweak
+	//密码Length大于等于3，YES常见的弱密码就YESdanger，NO则往后判断字符Type数
+	//字符Type数为1，Length  3-5:weak   6-8:medium   >8:strong
+	//字符Type数为2，Length  3  :weak   4-6:medium   >6:strong
+	//字符Type数为3，Length             3-4:medium   >4:strong
+	//字符Type数为4，Length                         >=4:strong
 
 	// 通用限制
 	var minlen = gDevice.devType == devTypeEnum.DEV_IPC ? 2 : 5;
@@ -678,7 +678,7 @@ function CheckPasswordStrength(strPwd){
 		return PASSWORD_STRENTH.DANGER;
 	}
 
-	//分别标记密码中是否存在：数字、小写字母、大写字母、其它字符
+	//Min别标记密码中YESNO存At：Digital、小写字母、大写字母、其它字符
 	var typeFlag = [0, 0, 0, 0];
 	for(var j = 0; j < pwdlen; j++){
 		if(strPwd[j]>='0' && strPwd[j]<='9'){
@@ -1791,7 +1791,7 @@ function CheckCustomIPC(nChn, callback) {
 				bSupportOnvif = false;
 			}
 		} else {
-			bSupportOnvif = true;  //获取不到默认支持onvif
+			bSupportOnvif = true;  //获取不To默认Supportonvif
 		}
 		GetIpcSystemFunction(nChn, function (a) {
 			if(a == undefined){
@@ -1951,8 +1951,8 @@ function ShowPeriod(timeSection, nAlarmType,KeepMask,callback){
 		var tmp = $(this).val().replace(/\D/g,'');
 		$(this).val(tmp);
 		var i;
-		var nSect;	//组别
-		var nWitch;	//0开始时间小时. 1开始时间分钟 2结束时间小时. 3结束时间分钟
+		var nSect;	//Group别
+		var nWitch;	//0StartTime小Hour. 1StartTimeMin钟 2End Time小Hour. 3End TimeMin钟
 		var a = $("div[id^='Sect_Time']");
 		var b;
 		for(i = 0; i < 4; i++){
@@ -1973,7 +1973,7 @@ function ShowPeriod(timeSection, nAlarmType,KeepMask,callback){
 		var bChange = false;	
 		var timeArr = [b.eq(0).val() * 1, b.eq(1).val() * 1,
 					   b.eq(2).val() * 1, b.eq(3).val() * 1];		
-		if (0 == nWitch || 2 == nWitch){//小时检查
+		if (0 == nWitch || 2 == nWitch){//小Hour检查
 			if (timeArr[nWitch] > 24){
 				timeArr[nWitch] = 24;
 				bChange = true;
@@ -1983,7 +1983,7 @@ function ShowPeriod(timeSection, nAlarmType,KeepMask,callback){
 				timeArr[nWitch] = 24;
 				bChange = true;
 			}
-		}else{//分钟检查
+		}else{//Min钟检查
 			if (timeArr[nWitch] > 59){
 				timeArr[nWitch] = 59;
 				bChange = true;
@@ -2017,8 +2017,8 @@ function ShowPeriod(timeSection, nAlarmType,KeepMask,callback){
 	
 	$(".time-div input").blur(function (){
 		var i;
-		var nSect;	//组别
-		var nWitch;	//0开始时间小时. 1开始时间分钟 2结束时间小时. 3结束时间分钟
+		var nSect;	//Group别
+		var nWitch;	//0StartTime小Hour. 1StartTimeMin钟 2End Time小Hour. 3End TimeMin钟
 		var a = $("div[id^='Sect_Time']");
 		var b;
 		for(i = 0; i < 4; i++){
@@ -2038,7 +2038,7 @@ function ShowPeriod(timeSection, nAlarmType,KeepMask,callback){
 		
 		var timeArr = [b.eq(0).val() * 1, b.eq(1).val() * 1,
 					   b.eq(2).val() * 1, b.eq(3).val() * 1];		
-		if (0 == nWitch || 2 == nWitch){//小时检查
+		if (0 == nWitch || 2 == nWitch){//小Hour检查
 			if (timeArr[2] < timeArr[0]){
 				timeArr[2] = timeArr[0];
 			}else if (timeArr[2] == timeArr[0]){
@@ -2046,7 +2046,7 @@ function ShowPeriod(timeSection, nAlarmType,KeepMask,callback){
 					timeArr[3] = timeArr[1];
 				}
 			}
-		}else{//分钟检查
+		}else{//Min钟检查
 			if (timeArr[2] == timeArr[0] && timeArr[3] < timeArr[1]){
 				timeArr[3] = timeArr[1];
 			}

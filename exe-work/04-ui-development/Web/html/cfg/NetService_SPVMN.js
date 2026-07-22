@@ -42,7 +42,7 @@ $(document).ready(function(){
 		}
 		else{
 			var cfg = NetGBProType[NetGBProType.Name];
-			if(cfg.SIPTranType == 3){						// 1: udp 2: tcp 3: udp和tcp自适应就是udp
+			if(cfg.SIPTranType == 3){						// 1: udp 2: tcp 3: udp和tcpAdaptive就YESudp
 				$("#SipTransPro").val(1);
 			}
 			else{

@@ -120,16 +120,16 @@ $(function () {
 		//--------------人形和移动----------------
 		$("#SA_MotionAndHumanDiv").css("display", chnIndex != gDevice.loginRsp.ChannelNum && HumanFunc ? "" : "none");
 		$("#SA_MotionAndHumanSwitch").attr("data", HumanEnable);
-		//选择全通道隐藏人形移动切换按钮
-		//报警声
+		//选择AllChannel隐藏人形移动切换按钮
+		//Alarm Sound
 		$("#SA_AlarmSound_line").css("display", AlarmSoundFunc ? "" : "none");
 		$("#SA_MotionAndHuman_AlarmSound").prop("checked", AlarmSoundEnable);
-		//报警灯
+		//Alarm灯
 		$("#SA_AlarmLight_line").css("display", AlarmLightFunc ? "" : "none");
 		$("#SA_MotionAndHuman_AlarmLight").prop("checked", AlarmLightEnable);
 		//手机上报
 		$("#SA_MotionAndHuman_PhoneUp").prop("checked", PhonePushEnable);
-		//录像
+		//RECORD
 		$("#SA_MotionAndHuman_Record").prop("checked", RecordEnable);
 		//--------------人脸------------------
 		$(".FaceClass").css("display", FaceFunc ? "" : "none");
@@ -1086,7 +1086,7 @@ $(function () {
 	function SaveIPCMotion(nIndex){
 		if(nIndex < gDevice.loginRsp.ChannelNum){
 			if ( bGetIPCMotion[nIndex]){
-				//2019-04-16 同步是否启用选项
+				//2019-04-16 SynchronousYESNOEnable选项
 				IPCMotionCfg[nIndex][IPCMotionCfg[nIndex].Name].Enable = motionCfg[nIndex][motionCfg[nIndex].Name].Enable;
 				RfParamCall(function(a){
 					SaveIPCMotion(nIndex + 1);
@@ -1344,9 +1344,9 @@ $(function () {
 	$(".SA_FaceL").each(function () {
 		$(this).text(lg.get("IDS_ALARM_FACE"))
 	})
-	//支持录像
+	//SupportRECORD
 	$("#SA_Record_line").css("display", bRecord ? "" : "none");
-	//支持手机上报.
+	//Support手机上报.
 	$("#SA_PhoneUp_line").css("display", GetFunAbility(gDevice.Ability.NetServerFunction.NetPMS) ? "" : "none");
 
 	$(function () {
@@ -1405,11 +1405,11 @@ $(function () {
 		});
 		$("#SA_Channel").change(function () {
 			var nChn = $("#SA_Channel").val() * 1;
-			//是否全通道
+			//YESNOAllChannel
 			var bAllChn = (nChn == gDevice.loginRsp.ChannelNum ? true : false);
 			$("#SA_RuleAndRegion").css("display", bAllChn ? "none" : "");
 			if (chnIndex != gDevice.loginRsp.ChannelNum) {
-				//TODO保存当前通道配置
+				//TODOSave当前Channel配置
 				CHOSDSaveSel(chnIndex);
 			}
 			chnIndex = nChn;
@@ -1571,7 +1571,7 @@ $(function () {
 						}
 					}
 
-					// 都支持客流统计
+					// 都SupportCustomer Flow Count
 					if(chFlowCount[copyChannel] && chFlowCount[k] 
 						&& isObject(detectCfg[copyChannel]) && isObject(detectCfg[k]))
 					{
@@ -1733,18 +1733,18 @@ $(function () {
 			if(chnIndex != gDevice.loginRsp.ChannelNum && HumanFunc){
 				$("#SA_MotionAndHumanSwitch").attr("data", HumanEnable);
 			}		
-			//选择全通道隐藏人形移动切换按钮
-			//报警声
+			//选择AllChannel隐藏人形移动切换按钮
+			//Alarm Sound
 			if(AlarmSoundFunc){
 				$("#SA_MotionAndHuman_AlarmSound").prop("checked", AlarmSoundEnable);
 			}
-			//报警灯
+			//Alarm灯
 			if(AlarmLightFunc){
 				$("#SA_MotionAndHuman_AlarmLight").prop("checked", AlarmLightEnable);
 			}			
 			//手机上报
 			$("#SA_MotionAndHuman_PhoneUp").prop("checked", PhonePushEnable);
-			//录像
+			//RECORD
 			$("#SA_MotionAndHuman_Record").prop("checked", RecordEnable);
 			//--------------人脸------------------
 			if(FaceFunc){

@@ -433,7 +433,7 @@ $(function(){
 					nWidth += 24;
 				}
 			}
-			var pDotBuf = new Uint8Array(nWidth*nLineNum*nHeight/8);		//点阵数组
+			var pDotBuf = new Uint8Array(nWidth*nLineNum*nHeight/8);		//点阵数Group
 			GetTextDot(nWidth, nHeight, nLineNum, arrText, pDotBuf);
 			gDevice.SendBinaryData(BinaryType.TypeOSDDot, nWidth, nHeight, nLineNum, pDotBuf, function(a){
 				if (a.Ret == 603) {
@@ -557,7 +557,7 @@ $(function(){
 			var cfg = VideoOut[VideoOut.Name];
 			var strRes = $("#SelVideoRes").find("option:selected").text();
 			if (strRes.split('*')[0] *1 >= 3840) {
-				//提示语
+				//Prompt语
 			}
 			cfg.Mode.Width = strRes.split('*')[0] *1;
 			cfg.Mode.Height = strRes.split('*')[1] *1;
@@ -587,7 +587,7 @@ $(function(){
 		canvas.width = nWidth;
 		canvas.height = nHeight;
 		ctx.clearRect(0, 0, nWidth, nHeight);
-		ctx.font = "normal " + nLineHeight + "px 宋体";
+		ctx.font = "normal " + nLineHeight + "px SimSun";
 		if(WebCms.web.language == "Russian"){
 			ctx.font = "normal " + nLineHeight + "px Arial";
 		}
@@ -627,7 +627,7 @@ $(function(){
 		span.innerText = txt;
 		span.style.fontSize = fontSize + "px";
 		span.style.fontWeight = "normal";
-		span.style.fontFamily = "宋体";
+		span.style.fontFamily = "SimSun";
 		if(WebCms.web.language == "Russian"){
 			span.style.fontFamily = "Arial";
 		}
@@ -660,7 +660,7 @@ $(function(){
 					cover = digVideoWidget[nDig][digVideoWidget[nDig].Name][0].Covers[i];
 				}				
 
-				// 若操作过，则使用客户端计算坐标，否则使用原配置坐标
+				// 若Operation过，则使用客户端计算坐标，NO则使用原配置坐标
 				if(typeof arrCoverWndPos[chnIndex] != "undefined" && arrCoverWndPos[chnIndex][i].bMoveLeft)
 				{
 					cover.RelativePos[0] = parseInt(pts[i][0].x*8192/ShelterWidth);
@@ -730,7 +730,7 @@ $(function(){
 				var nDig = chnIndex - gDevice.loginRsp.VideoInChannel;
 				cfg = digVideoWidget[nDig][digVideoWidget[nDig].Name][0];
 			}
-			// 若操作过，则使用客户端计算坐标，否则使用原配置坐标
+			// 若Operation过，则使用客户端计算坐标，NO则使用原配置坐标
 			if(typeof arrChnTitlePos[chnIndex] != "undefined" && arrChnTitlePos[chnIndex].bMove)
 			{
 				cfg.ChannelTitleAttribute.RelativePos[0] = parseInt(ChanPosX*8192.0/AreaWidth);
@@ -934,7 +934,7 @@ $(function(){
 		var nPointId = -1;		//按顺序左下右上
 		var nSelect = -1;
 		var bShow = [];
-		var bSelView = [];		//Cover区域是否被选中
+		var bSelView = [];		//CoverRegionYESNO被选中
 		pts = [];
 		initPts();
 		function  initPts(){
@@ -956,7 +956,7 @@ $(function(){
 				pts[i].push({'x': _right, 'y': _bottom});
 				pts[i].push({'x': _right, 'y': _top});
 				bSelView[i] = false;
-				// 坐上点和右下点坐标， 两点决定一个矩形, 存储初始状态
+				// 坐上点和右下点坐标， 两点决定一个矩形, Disk初始Status
 				if(typeof arrCoverWndPos[chnIndex] == "undefined")
 				{
 					arrCoverWndPos[chnIndex] = [];
@@ -966,10 +966,10 @@ $(function(){
 					posY1 : Covers[i].RelativePos[1],
 					posX2 : Covers[i].RelativePos[2],
 					posY2 : Covers[i].RelativePos[3],
-					bMoveLeft: false,			// 左边移动，修改X1
-					bMoveTop: false,			// 上边移动，修改Y1
-					bMoveRight: false,			// 右边移动，修改X2
-					bMoveBottom: false			// 下边移动，修改Y2
+					bMoveLeft: false,			// 左边移动，ModifyX1
+					bMoveTop: false,			// 上边移动，ModifyY1
+					bMoveRight: false,			// 右边移动，ModifyX2
+					bMoveBottom: false			// 下边移动，ModifyY2
 				}
 			}
 
@@ -1005,7 +1005,7 @@ $(function(){
 						if(nState == 2){
 							// 点击顶点
 						}else if(nState == 3){
-							// 对应区域覆盖框有移动的操作，标记该框，坐标计算以客户端计算为准，否则保持原有配置返回
+							// 对应Region Cover框有移动的Operation，标记该框，坐标计算以客户端计算为准，NO则保持原有配置返回
 							arrCoverWndPos[chnIndex][nSelect].bMoveLeft = true;
 							arrCoverWndPos[chnIndex][nSelect].bMoveTop = true;
 							arrCoverWndPos[chnIndex][nSelect].bMoveRight = true;
@@ -1089,19 +1089,19 @@ $(function(){
 							beginPos = endPos;
 							if(nPointId == 0)		// 移动左边
 							{
-								arrCoverWndPos[chnIndex][nSelect].bMoveLeft = true;			// 修改 x1
+								arrCoverWndPos[chnIndex][nSelect].bMoveLeft = true;			// Modify x1
 							}
 							else if(nPointId == 1)	// 移动下边
 							{
-								arrCoverWndPos[chnIndex][nSelect].bMoveBottom = true;		// 修改 y2
+								arrCoverWndPos[chnIndex][nSelect].bMoveBottom = true;		// Modify y2
 							}
 							else if(nPointId == 2)	// 移动右边
 							{
-								arrCoverWndPos[chnIndex][nSelect].bMoveRight = true;		// 修改 x2
+								arrCoverWndPos[chnIndex][nSelect].bMoveRight = true;		// Modify x2
 							}
 							else if(nPointId == 3)	// 移动上边
 							{
-								arrCoverWndPos[chnIndex][nSelect].bMoveTop = true;			// 修改 y1
+								arrCoverWndPos[chnIndex][nSelect].bMoveTop = true;			// Modify y1
 							}
 						}
 						drawPolygon();
@@ -1126,7 +1126,7 @@ $(function(){
 			var bFinded = false;
 			var points = pts[nIndex];
 			for ( var n = 0; n < pointNum; n ++ ){
-				// 查找mousedown触发坐标和矩形四顶点是否在一定误差内吻合，判断是否点击某一顶点
+				// 查找mousedown触发坐标和矩形四顶点YESNOAt一定误差内吻合，判断YESNO点击某一顶点
 				if(Math.abs(pt.x - points[n].x) < 5 && Math.abs(pt.y - points[n].y) < 5){
 					bFinded = true;
 					nState = 2;
@@ -1185,7 +1185,7 @@ $(function(){
 					txtPointY = Math.min(txtPointY, points[i].y);
 				}
 				ctx.lineTo(points[0].x, points[0].y);
-				// 设置颜色
+				// 设置Color
 				ctx.fillStyle = "#fff";
 				ctx.fillText(j+1, txtPointX, txtPointY + 10);
 				ctx.stroke();

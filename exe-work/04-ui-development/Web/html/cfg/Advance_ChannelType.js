@@ -30,7 +30,7 @@ $(document).ready(function() {
 		"DigitalCap4M", "DigitalCap4M_N", "DigitalCap5MChn", "DigitalCap5M_N", "DigitalCap720N", "DigitalCap720P", "DigitalCap960H",
 		"DigitalCap960PChn", "DigitalCapCIF", "DigitalCapD1","DigitalCapHD1", "DigitalCapWSVGA", "DigitalCapWUXGAChn"
 	]; 
-	// 模拟通道5M通用统一改为4K-N
+	// AnalogChannel5M通用统一改为4K-N
 	var chnModeName = [
 		"1080N", "1080P", "12M", "3M", "3M-N", "4K", "4K-N", 
 		"4M", "4M-N", "4K-N", "5M-N", "720N", "720P", "960H",
@@ -570,7 +570,7 @@ $(document).ready(function() {
 				}
 			}
 
-			// 若遍历完列表后都没有找到对应的最大支持数量，则需要从大往小比较，取最接近PreviewNum的最大支持数量
+			// 若遍历完List后都没有找To对应的最大Support数量，则需要从大往小比较，取最接近PreviewNum的最大Support数量
 			if(SupportChannel[nIndex] != MaxPreviewNum[MaxPreviewNum.Name].PreviewNum)
 			{
 				for(var i = SupportChannel.length - 1; i >= 0; i--)

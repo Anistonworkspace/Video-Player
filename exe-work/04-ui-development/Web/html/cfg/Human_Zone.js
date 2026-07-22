@@ -91,7 +91,7 @@ var HumanZone = function(options) {
 				TripWirePosSet[i].bMoveEnd = true;
 			}
 		}
-		// 规则框顶点坐标和方向
+		// Rule框顶点坐标和方向
 		pointsNum = [];
 		sideDrect = [];
 		pts = [];
@@ -126,19 +126,19 @@ var HumanZone = function(options) {
 			$("#TripWireShape").css("display", "");
 			$("#PerimeterShape").css("display", "none");
 			showTripWireRule();
-		}else if(_opts.PedRule[0].RuleType == 1){		// 规则框
+		}else if(_opts.PedRule[0].RuleType == 1){		// Rule框
 			$("#PerimeterRadio").prop("checked", true);
 			$("#TripWireShape").css("display", "none");
 			$("#PerimeterShape").css("display", "");
 			showPerimeterRule();
 		}
 		
-		// 2023-06-01: 针对Nova算法处理，隐藏人形警戒区域设置框
+		// 2023-06-01: 针对Nova算法处理，隐藏HumanSenseRegion设置框
 		if(bNovaAlgorithmRule){
 			$("#PZ_Rect, #typeBox, #ShowRuleDiv, #ShowPedRuleBox").css("display", "none");
 		}
 
-		// 客户端绘制规则框的，颜色和宽度设置
+		// 客户端绘制Rule框的，Color和宽度设置
 		if(_opts.bShowRuleStyle)
 		{
 			$("#RuleBorderStyle").css("display", "");
@@ -229,7 +229,7 @@ var HumanZone = function(options) {
 							for(var i=0;i<ptsNum;i++){
 								points[i].x = temp[i].x;
 								points[i].y = temp[i].y;
-								PermiterPosSet[nSelected]["MoveFlag"][i] = true;		// 全移动
+								PermiterPosSet[nSelected]["MoveFlag"][i] = true;		// All移动
 							}
 							pt = pt2;
 							drawPolygon();
@@ -283,7 +283,7 @@ var HumanZone = function(options) {
 			if(pt.x >= 0 && pt.x <= bkWidth && pt.y >=0 && pt.y <= bkHeight) return true;
 			return false;
 		}
-		// pt: 鼠标左键事件坐标，  nIndex: 警戒线/警戒框-索引
+		// pt: 鼠标左键事件坐标，  nIndex: Tripwire/警戒框-索引
 		function checkSelectArea(pt, nIndex){			
 			var bFinded = false;
 			var points = pts[nIndex];
@@ -394,9 +394,9 @@ var HumanZone = function(options) {
 				var n; //直线与y轴交点
 				m = pointBegin.y - pointEnd.y;
 				n = (pointBegin.x * pointEnd.y) - (pointEnd.x * pointBegin.y);
-				var y0 = 0; //因为m和n都乘上了(pointBegin.x - pointEnd.x)，所以判断的时候y0也要乘上这个值
+				var y0 = 0; //因为m和n都乘上了(pointBegin.x - pointEnd.x)，所以判断的Hour候y0也要乘上这个值
 				var x0 = 0;
-				var y = 0; //y = m * x0 + n  x0和y0是点的坐标，通过比较y和y0的大小，就可以确定两个点是否在一条直线的同一侧
+				var y = 0; //y = m * x0 + n  x0和y0YES点的坐标，通过比较y和y0的大小，就可以OK两个点YESNOAt一条直线的同一侧
 				var side1 = 0;
 				var side2 = 0;
 				if(pointBegin.x == pointEnd.x){
@@ -656,7 +656,7 @@ var HumanZone = function(options) {
 					$(this).bind("mousemove",function(ev){
 						var pt2 = { x : ev.pageX - offset.left, y : ev.pageY-offset.top};
 						var linePts = ruleLinePts[nSelected];
-						// 4：点击线   5： 点击起始点  6：点击结束点
+						// 4：点击线   5： 点击起始点  6：点击End点
 						if(state == 4){
 							var temp = cloneObj(linePts);
 							temp.StartX+=pt2.x-pt.x;
@@ -967,7 +967,7 @@ var HumanZone = function(options) {
 	});
 	$("#ShowPedRuleBox input").click(function(){
 		var index = $(this).attr("data") * 1;
-		// 警戒区域 / 警戒线显示使能
+		// Intrusion / Tripwire显示使能
 		Enable[index - 1] = $(this).prop("checked");
 		if($("#TripWireRadio").prop("checked")){
 			showTripWireRule();

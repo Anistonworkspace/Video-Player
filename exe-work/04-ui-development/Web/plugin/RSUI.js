@@ -1456,7 +1456,7 @@ var RSBtnStatus = {
 	_self = this;
 	var XqS = [
 		  ["Su","Mo","Tu","We","Th","Fr","Sa"],
-		  ["日","一","二","三","四","五","六"],
+		  ["Su","Mo","Tu","We","Th","Fr","Sa"],
 	];
 	$.fn.simpleCalendarCtrl = function(b, f) {
 		if (typeof b == "string" && b != "") {

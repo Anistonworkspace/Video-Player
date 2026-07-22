@@ -16,9 +16,9 @@ $(function() {
 	var _itemCount = 5;
 	var _itemAreaCount = 20;
 	var bHasCounted = false;
-	var nActionType = 0;	//0: 日报 1: 周报 2：月报 3：年报
-	var nFlowType = 0;		//0: 进入 1：离开 2：经过
-	var nDisplayType = 0;	//0：列表 1: 柱形  2：折线
+	var nActionType = 0;	//0: 日报 1: Day of Week报 2：月报 3：年报
+	var nFlowType = 0;		//0: 进入 1：离Open 2：经过
+	var nDisplayType = 0;	//0：List 1: 柱形  2：折线
 	var _timeArray = [24, 7, 31, 12];
 	var bIPC = gDevice.devType == devTypeEnum.DEV_IPC ? true : false;
 	var chnIndex = -1;

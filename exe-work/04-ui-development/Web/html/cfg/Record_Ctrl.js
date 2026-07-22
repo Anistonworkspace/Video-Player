@@ -149,9 +149,9 @@ $(function () {
 		}, pageTitle, "Record", -1, WSMsgID.WsMsgID_CONFIG_GET);
 	}
 	function FillDate(){
-		if(ExtAbilityPram == 1){ //  主辅码流二选一
+		if(ExtAbilityPram == 1){ //  主辅Stream二选一
 			$("#Main_StopBox").css("display", "none");
-		}else if(ExtAbilityPram == 2){//  主辅码流同时录像
+		}else if(ExtAbilityPram == 2){//  主辅Stream同HourRECORD
 			$("#Main_StopBox").css("display", "");
 		}else{
 			$("#ExtSplitDiv, #ExtBox").css("display", "none");

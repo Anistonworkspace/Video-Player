@@ -123,7 +123,7 @@ $(function () {
 			});
 		} else{
 			if (g_BrowseType != BrowseType.BrowseMSIE) {
-				//IE下不清空输入框
+				//IE下不Remove输入框
 				$("#UpGradeFileName").val("");
 				$("#choose").val("");
 			}

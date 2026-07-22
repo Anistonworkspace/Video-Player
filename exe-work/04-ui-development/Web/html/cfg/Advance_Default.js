@@ -92,10 +92,10 @@ $(function() {
 			};
 			RfParamCall(function(a,b){
 				if (a.Ret == 100) {
-					// 若是爱芯IPC设备，恢复默认了报警设置
+					// 若YES爱芯IPC设备，恢复默认了Alarm设置
 					if(DefaultConfig.Alarm && gDevice.devType == devTypeEnum.DEV_IPC && GetFunAbility(gDevice.Ability.AlarmFunction.HumanDection))
 					{
-						// 若是支持客户端绘制规则框，需要重置一下插件的显示使能
+						// 若YESSupport客户端绘制Rule框，需要Reset Password Procedure一下插件的显示使能
 						RfParamCall(function(a){
 							if(a.Ret == 100){
 								var humanAbility = a[a.Name];

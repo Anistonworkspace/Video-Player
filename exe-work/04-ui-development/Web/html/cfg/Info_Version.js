@@ -185,7 +185,7 @@ $(function() {
 		}
 		MasklayerHide();
 	}
-	//人脸、虚拟网卡配置
+	//人脸、虚拟Net Card配置
 	function GetFunctionEnable()
 	{
 		if(gDevice.devType != devTypeEnum.DEV_IPC && (GetFunAbility(gDevice.Ability.PreviewFunction.NetVniceControl) 
@@ -205,7 +205,7 @@ $(function() {
 			GetMCUVersion();
 		}
 	}
-	// MCU版本号
+	// MCUVersion号
 	function GetMCUVersion()
 	{
 		if(bSupportMCUVer)
@@ -399,7 +399,7 @@ $(function() {
 				$("#RemoteType_Div").css("display", "");
 				$("#PadType_Div").css("display", "");
 
-				// 蜂鸣常显, 云台和串口隐藏
+				// Buzzer常显, PTZ和Comm隐藏
 				var nBeep = cfg.EnableBeep.substr(cfg.EnableBeep.length - 1) * 1;
 				$("#BuzzerSwitch").prop("checked", nBeep ? true : false);
 				$("#Buzzer_Div").css("display", "");
@@ -453,7 +453,7 @@ $(function() {
 					}
 					if(GetFunAbility(gDevice.Ability.PreviewFunction.NetVniceControl))
 					{
-						//虚拟网卡
+						//虚拟Net Card
 						$("#EnableVirtualNetworkCard_Div").css("display", "");
 						$("#EnableVirtualNetworkCard").prop("checked", cfgFunctionEnable[cfgFunctionEnable.Name].VNICFunctionEnable);
 					}

@@ -121,11 +121,11 @@ $(function() {
 				$("#DDNSTest").prop("disabled", false);
 				if (a.Ret == 100){
 					ShowPaop(pageTitle, lg.get("IDS_DDNSTEST_SUC"));
-				} else if (a.Ret == 101){	//服务器不在线或连接失败
+				} else if (a.Ret == 101){	//服务器Offline或连接失败
 					ShowPaop(pageTitle, lg.get("IDS_DDNSTEST_CONNECT_ERR"));
-				} else if (a.Ret == 106){	//权限校验失败
+				} else if (a.Ret == 106){	//AuthorityParity失败
 					ShowPaop(pageTitle, lg.get("IDS_DDNSTEST_PERMISSION_CHECK_ERR"));
-				} else {					//108, 超时，未知错误
+				} else {					//108, 超Hour，UnknownError
 					ShowPaop(pageTitle, lg.get("IDS_UNKNOWN_ERR"));
 				}
 			}, pageTitle, "OPDDNSTest", -1, cgiCmd.opcontrol, data);

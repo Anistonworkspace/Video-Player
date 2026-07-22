@@ -37,7 +37,7 @@ $(document).ready(function () {
 	var bFisheyeBitrate = GetFunAbility(gDevice.Ability.OtherFunction.SupportFishEye);
 	var bLowBitrate = GetFunAbility(gDevice.Ability.EncodeFunction.LowBitRate);
 	var bMaxSupportEncFPS = GetFunAbility(gDevice.Ability.EncodeFunction.MaxSupportEncFPS);
-	var bNoSyns = GetFunAbility(gDevice.Ability.EncodeFunction.NoSyncCompression);//是否支持主副码流
+	var bNoSyns = GetFunAbility(gDevice.Ability.EncodeFunction.NoSyncCompression);//YESNOSupport主副Stream
 	var maxEncFPS = null;
 	var nAudioInNum = gDevice.loginRsp.AudioInChannel;
 	var bIPC = gDevice.devType == devTypeEnum.DEV_IPC ? true : false;
@@ -656,7 +656,7 @@ $(document).ready(function () {
 
 		var nSel = vfSetFormat.BitRateControl == "CBR"?0:1;
 		$(ControlTag[nEncodeType][ControlType.BITCONTROL]).val(nSel);
-		if (vfSetFormat.Quality > 6 || vfSetFormat.Quality <= 0) {  //  Quality 画质超出范围后默认
+		if (vfSetFormat.Quality > 6 || vfSetFormat.Quality <= 0) {  //  Quality Quality超出范围后默认
 			vfSetFormat.Quality = 4;
 		}
 		$(ControlTag[nEncodeType][ControlType.QUALITY]).val(vfSetFormat.Quality);
@@ -901,7 +901,7 @@ $(document).ready(function () {
 
 					var nDig = nChannelNum - nAnaChannel;
 					var nIndex = ssRemoteDevice["NetWork.RemoteDeviceV3"][nDig].SingleConnId - 1; // 配置的第几个
-					var nChannel = ssRemoteDevice["NetWork.RemoteDeviceV3"][nDig].Decoder[nIndex].Channel; // 解码器连接的通道数
+					var nChannel = ssRemoteDevice["NetWork.RemoteDeviceV3"][nDig].Decoder[nIndex].Channel; // 解码器连接的Channel数
 					var cfg = digEncode[nDig][digEncode[nDig].Name];
 					var pConfigEncode = cfg[nChannel];
 
@@ -935,7 +935,7 @@ $(document).ready(function () {
 					}
 					var nDig = nChannelNum - nAnaChannel;
 					var nIndex = ssRemoteDevice["NetWork.RemoteDeviceV3"][nDig].SingleConnId - 1; // 配置的第几个
-					var nChannel = ssRemoteDevice["NetWork.RemoteDeviceV3"][nDig].Decoder[nIndex].Channel; // 解码器连接的通道数
+					var nChannel = ssRemoteDevice["NetWork.RemoteDeviceV3"][nDig].Decoder[nIndex].Channel; // 解码器连接的Channel数
 
 					var cfg = digEncode[nDig][digEncode[nDig].Name];
 					var pConfigEncode = cfg[nChannel];

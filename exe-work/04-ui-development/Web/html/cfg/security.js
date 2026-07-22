@@ -7,7 +7,7 @@ $(function() {
 	var bMd5Flag = [false, false];
 	var verifyType;
 	
-	var bSendMethod = true;	//验证码发送方式(1为电话号码,0为邮箱)//验证码发送方式(1为电话号码,0为邮箱)
+	var bSendMethod = true;	//验证码Send方式(1为电话号码,0为邮箱)//验证码Send方式(1为电话号码,0为邮箱)
 	var bContactInfo = GetFunAbility(gDevice.Ability.OtherFunction.SupportAdminContactInfo);				
 	var bQuestion = !GetFunAbility(gDevice.Ability.OtherFunction.NoSupportSafetyQuestion);
 	function SetContact(bMethod){
@@ -166,7 +166,7 @@ $(function() {
 			}
 		});
 		$("#contactSel").change(function (){
-			//处理中文有2个选项非中文1个选项的问题.
+			//处理中文有2个选项非中文1个选项的Question.
 			if ($(this).val() == 0 && bCHS){
 				SetContact(false);
 			}else{
@@ -206,16 +206,16 @@ $(function() {
 				}
 	
 			}
-			//联系方式不能为空
+			//Contact can not be empty
 			if ("" == $("#contactInput").val() && (verifyType > 0) && bContactInfo){
 				ShowPaop(pageTitle, lg.get("IDS_Contact_Empty"));
 				return;
 			}
 	
-			//仅在支持联系方式时才设置数据
+			//仅AtSupport联系方式Hour才设置数据
 			if (bContactInfo){
 				if(verifyType > 0){
-					//检测邮箱和电话格式
+					//Detect邮箱和电话格式
 				if (bSendMethod){
 						var re = /^\w+[\w-.]*@[\w-.]+\.\w+$/; 
 						if(!re.test($("#contactInput").val())){
@@ -236,7 +236,7 @@ $(function() {
 					cfg.SecurityEmail = "";
 					cfg.SecurityPhone = "";
 				}
-				//验证码发送对象
+				//验证码Send对象
 				cfg.VerifyCodeRestorePwdType = verifyType;
 	
 			}

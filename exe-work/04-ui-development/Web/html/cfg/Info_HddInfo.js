@@ -70,7 +70,7 @@ $(function() {
 					}
 					
 					allCapacity += capacity;
-					if (nDriverType == 0 || nDriverType == 4) { //本地端只计算抓图盘和读写盘的剩余容量
+					if (nDriverType == 0 || nDriverType == 4) { //Local端只计算抓图盘和Read/Write的Left Capacity
 						allLeftCapacity += leftCapacity;
 					}
 					var Version = "-";
@@ -245,7 +245,7 @@ $(function() {
 				$("#diskBtnOk").click(function() {
 					var nLogicNo = $("#disk_No").val() *1;						//逻辑磁盘号
 					var selText = $("#disk_No").find("option:selected").text();
-					var nPartNo = (selText.split("-")[1]) *1 -1;	//分区号
+					var nPartNo = (selText.split("-")[1]) *1 -1;	//Partition号
 					if (hddInfoArr[nLogicNo].Partition[nPartNo].DirverType == 1) {	//readonly
 						$("#btnCancel").click();
 						ShowPaop(pageTitle, lg.get("IDS_HDDM_CannotClear"));

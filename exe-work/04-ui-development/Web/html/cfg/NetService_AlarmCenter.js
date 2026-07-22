@@ -19,7 +19,7 @@ $(document).ready(function() {
 		$("#Alarm_Report").attr("data", cfg.Alarm * 1);
 		$("#Log_Report").attr("data", cfg.Log * 1);
 
-		// 心跳上报
+		// Heartbeat report
 		if(bSupportHeartBeatUpload)
 		{
 			$("#HeartBeatUploadEnableDiv").css("display", "");

@@ -541,7 +541,7 @@ $(document).ready(function () {
 		$("#INPaste").click(function () {
 			if(!bCopy[0] && !bCopy[1])
 				return;
-			if($("#alarmEnableSwitch").prop("disabled"))	//启用按钮禁用状态，粘贴功能无效
+			if($("#alarmEnableSwitch").prop("disabled"))	//Enable按钮禁用Status，Paste功能无效
 				return;	
 			var nCurType = $("#alarmType").val() * 1;
 			var nChn = $("#alarmChannel").val() * 1;

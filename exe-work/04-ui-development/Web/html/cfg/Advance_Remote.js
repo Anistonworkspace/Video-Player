@@ -13,13 +13,13 @@ var Remote = function(options) {
 	var NetDevList;
 	var listData = new Array;
 	var IPSetCfg;
-	var nLastType = 0;//0表示是我们自己的设备 1表示是大华设备
+	var nLastType = 0;//0表示YES我们自己的设备 1表示YES大华设备
 	var bSearching = false;
 	var bSearchbyDev = GetFunAbility(gDevice.Ability.OtherFunction.SupportNetLocalSearch);
 	var nSelectRow = -1;
 	var NetIPDevList = new Array;
 	var OnvifDevList = null;
-	var strSearchType = "Plugin";  // 远程搜索方式 CGI 或 Plugin
+	var strSearchType = "Plugin";  // 远程Search方式 CGI 或 Plugin
 	_opts = $.extend(_opts, options);
 	this.InitRemote = function(nIndex, data, _bAdd){	
 		NetConfig = data;
@@ -86,7 +86,7 @@ var Remote = function(options) {
 		$("#RemoteList .table-head").css("padding-right", nHeadPadding+"px");
 		$("#RemoteList .table-content").css("height", nHeight+'px');
 		
-		//表格支持单选行
+		//表格Support单选行
 		$(".CustomRemoteClass").click(function(){
 			nSelectRow = $(this)[0].rowIndex;
 			$(".CustomRemoteClass").attr("d", "not-active");
@@ -514,7 +514,7 @@ var Remote = function(options) {
 				}
 				
 				var strIP = "";
-				var strPort = "554";	//不存在端口，默认554
+				var strPort = "554";	//不存AtPort，默认554
 				var nPosIP = strIPandPort.indexOf(':');
 				if (nPosIP == -1) {		
 					strIP = strIPandPort;
@@ -612,7 +612,7 @@ var Remote = function(options) {
 				}
 				else
 				{
-					if(a.Ret == 1020)		// 插件不支持SDK搜索，则使用CGI搜索方式
+					if(a.Ret == 1020)		// 插件不SupportSDKSearch，则使用CGISearch方式
 					{
 						CGISearchDev();
 						return;
@@ -623,7 +623,7 @@ var Remote = function(options) {
 				return;
 			} 
 
-			// 搜索设备信息回调返回
+			// SearchDevice Info回调返回
 			var nIndex = a.Index;
 			var nTotal = a.Total;
 			var listSearchDev = a.OPLocalSearch;
@@ -633,7 +633,7 @@ var Remote = function(options) {
 				NetIPDevList = NetIPDevList.concat(listSearchDev);
 			}
 
-			if(nIndex == nTotal)		// 最后一个包
+			if(nIndex == nTotal)		// Finally一个包
 			{
 				var lCbm = $("#SearchPro").val() * 1;
 				var bNat = false;
@@ -1023,7 +1023,7 @@ var Remote = function(options) {
 				switch(lCbm){
 					case Protocol_V2.PROTOCOL_NETIP:
 						{
-							if(strSearchType == "Plugin")		// 使用插件SDK搜索，JIUAN协议
+							if(strSearchType == "Plugin")		// 使用插件SDKSearch，JIUANProtocol
 							{
 								NetIPDevList = [];
 								gDevice.SDKRemoteSearchDevs(SDKRemoteSearchDevCallaback);
@@ -1036,7 +1036,7 @@ var Remote = function(options) {
 						break;
 					case Protocol_V2.PROTOCOL_NETIPV6:
 						{
-							if(strSearchType == "Plugin")		// 使用插件SDK搜索，JIUAN协议
+							if(strSearchType == "Plugin")		// 使用插件SDKSearch，JIUANProtocol
 							{
 								NetIPDevList = [];
 								gDevice.SDKRemoteSearchDevs(SDKRemoteSearchDevCallaback);
@@ -1061,7 +1061,7 @@ var Remote = function(options) {
 					case 65535:{
 							SearchRemoteDevice(Protocol_V2.PROTOCOL_ONVIF, function(b){
 								OnvifDevList = b[b.Name];
-								if(strSearchType == "Plugin")		// 使用插件SDK搜索，JIUAN协议
+								if(strSearchType == "Plugin")		// 使用插件SDKSearch，JIUANProtocol
 								{
 									NetIPDevList = [];
 									gDevice.SDKRemoteSearchDevs(SDKRemoteSearchDevCallaback);

@@ -38,6 +38,31 @@ MIME = {
 }
 IMG_EXT = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".ico", ".bmp")
 
+# --- hot-reload: files we watch for live changes ---
+WATCH_EXT = (".html", ".htm", ".css", ".js", ".png", ".gif", ".jpg", ".jpeg", ".svg")
+
+
+def watch_fingerprint():
+    """Cheap fingerprint of the editable UI: count + newest mtime of watched
+    files across the Web root and the harness host folder. Changes whenever a
+    file is saved/added/removed, which the browser polls to auto-reload."""
+    latest = 0.0
+    count = 0
+    for root in (WEB_ROOT, HOST_ROOT):
+        if not root or not os.path.isdir(root):
+            continue
+        for dirpath, _dirs, files in os.walk(root):
+            for fn in files:
+                if fn.lower().endswith(WATCH_EXT):
+                    try:
+                        m = os.path.getmtime(os.path.join(dirpath, fn))
+                    except OSError:
+                        continue
+                    count += 1
+                    if m > latest:
+                        latest = m
+    return "%d:%.3f" % (count, latest)
+
 
 def mime_for(path):
     _, ext = os.path.splitext(path.lower())
@@ -109,6 +134,9 @@ class Handler(BaseHTTPRequestHandler):
             return
         if path == "/__ping":
             self._send(200, "ok")
+            return
+        if path == "/__changes":
+            self._send(200, watch_fingerprint(), "text/plain; charset=utf-8")
             return
         if path.startswith("/__harness/"):
             fp = safe_join(HOST_ROOT, path[len("/__harness"):])

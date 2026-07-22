@@ -1,0 +1,230 @@
+{
+ "map_size": 2519,
+ "conflicts_skipped": 236,
+ "files": {
+  "html/client.js": {
+   "replaced": 3,
+   "remaining_cjk_chars": 32
+  },
+  "html/config.js": {
+   "replaced": 16,
+   "remaining_cjk_chars": 29
+  },
+  "html/forgetpwd.js": {
+   "replaced": 4,
+   "remaining_cjk_chars": 15
+  },
+  "html/live.html": {
+   "replaced": 11,
+   "remaining_cjk_chars": 2
+  },
+  "html/live.js": {
+   "replaced": 32,
+   "remaining_cjk_chars": 84
+  },
+  "html/login.js": {
+   "replaced": 1,
+   "remaining_cjk_chars": 2
+  },
+  "html/playback.html": {
+   "replaced": 15,
+   "remaining_cjk_chars": 2
+  },
+  "html/playback.js": {
+   "replaced": 30,
+   "remaining_cjk_chars": 41
+  },
+  "html/timeline.js": {
+   "replaced": 2,
+   "remaining_cjk_chars": 16
+  },
+  "html/cfg/Advance_Account.js": {
+   "replaced": 3,
+   "remaining_cjk_chars": 22
+  },
+  "html/cfg/Advance_ChannelType.js": {
+   "replaced": 6,
+   "remaining_cjk_chars": 69
+  },
+  "html/cfg/Advance_Default.js": {
+   "replaced": 7,
+   "remaining_cjk_chars": 24
+  },
+  "html/cfg/Advance_Digital.js": {
+   "replaced": 15,
+   "remaining_cjk_chars": 28
+  },
+  "html/cfg/Advance_HddManager.js": {
+   "replaced": 15,
+   "remaining_cjk_chars": 45
+  },
+  "html/cfg/Advance_ImportEx.html": {
+   "replaced": 1,
+   "remaining_cjk_chars": 1
+  },
+  "html/cfg/Advance_ImportEx.js": {
+   "replaced": 5,
+   "remaining_cjk_chars": 21
+  },
+  "html/cfg/Advance_Remote.js": {
+   "replaced": 18,
+   "remaining_cjk_chars": 55
+  },
+  "html/cfg/Advance_Upgrade.js": {
+   "replaced": 1,
+   "remaining_cjk_chars": 5
+  },
+  "html/cfg/Alarm_Input.js": {
+   "replaced": 5,
+   "remaining_cjk_chars": 11
+  },
+  "html/cfg/Alarm_Intelligent.js": {
+   "replaced": 10,
+   "remaining_cjk_chars": 18
+  },
+  "html/cfg/Alarm_Motion.js": {
+   "replaced": 7,
+   "remaining_cjk_chars": 60
+  },
+  "html/cfg/Alarm_SmartAlarm.js": {
+   "replaced": 32,
+   "remaining_cjk_chars": 97
+  },
+  "html/cfg/Alarm_SmartAlarm_G2.js": {
+   "replaced": 1,
+   "remaining_cjk_chars": 43
+  },
+  "html/cfg/Alarm_VideoLoss.js": {
+   "replaced": 5,
+   "remaining_cjk_chars": 21
+  },
+  "html/cfg/Human_Zone.js": {
+   "replaced": 20,
+   "remaining_cjk_chars": 199
+  },
+  "html/cfg/Info_CustomerFlow.html": {
+   "replaced": 4,
+   "remaining_cjk_chars": 0
+  },
+  "html/cfg/Info_CustomerFlow.js": {
+   "replaced": 3,
+   "remaining_cjk_chars": 16
+  },
+  "html/cfg/Info_HddInfo.js": {
+   "replaced": 5,
+   "remaining_cjk_chars": 13
+  },
+  "html/cfg/Info_Log.js": {
+   "replaced": 1,
+   "remaining_cjk_chars": 9
+  },
+  "html/cfg/Info_Version.js": {
+   "replaced": 7,
+   "remaining_cjk_chars": 22
+  },
+  "html/cfg/IPCParam_ImageSet.js": {
+   "replaced": 43,
+   "remaining_cjk_chars": 81
+  },
+  "html/cfg/NetService_AlarmCenter.js": {
+   "replaced": 1,
+   "remaining_cjk_chars": 0
+  },
+  "html/cfg/NetService_DDNS.js": {
+   "replaced": 6,
+   "remaining_cjk_chars": 29
+  },
+  "html/cfg/NetService_Nat.js": {
+   "replaced": 2,
+   "remaining_cjk_chars": 3
+  },
+  "html/cfg/NetService_SPVMN.js": {
+   "replaced": 2,
+   "remaining_cjk_chars": 2
+  },
+  "html/cfg/NetService_Wifi.js": {
+   "replaced": 2,
+   "remaining_cjk_chars": 11
+  },
+  "html/cfg/PEA_Zone.js": {
+   "replaced": 7,
+   "remaining_cjk_chars": 69
+  },
+  "html/cfg/Record_Ctrl.js": {
+   "replaced": 4,
+   "remaining_cjk_chars": 6
+  },
+  "html/cfg/Record_Manager.js": {
+   "replaced": 22,
+   "remaining_cjk_chars": 22
+  },
+  "html/cfg/Record_Snap.js": {
+   "replaced": 11,
+   "remaining_cjk_chars": 11
+  },
+  "html/cfg/Record_SnapSchedule.html": {
+   "replaced": 1,
+   "remaining_cjk_chars": 0
+  },
+  "html/cfg/Record_SnapSchedule.js": {
+   "replaced": 5,
+   "remaining_cjk_chars": 21
+  },
+  "html/cfg/security.js": {
+   "replaced": 15,
+   "remaining_cjk_chars": 58
+  },
+  "html/cfg/System_CameraParam.js": {
+   "replaced": 3,
+   "remaining_cjk_chars": 7
+  },
+  "html/cfg/System_ColorParam.js": {
+   "replaced": 1,
+   "remaining_cjk_chars": 4
+  },
+  "html/cfg/System_Display.js": {
+   "replaced": 33,
+   "remaining_cjk_chars": 222
+  },
+  "html/cfg/System_Encode.js": {
+   "replaced": 9,
+   "remaining_cjk_chars": 31
+  },
+  "html/cfg/System_General.js": {
+   "replaced": 26,
+   "remaining_cjk_chars": 55
+  },
+  "html/cfg/System_Network.js": {
+   "replaced": 49,
+   "remaining_cjk_chars": 56
+  },
+  "html/cfg/System_NetworkIPV6.js": {
+   "replaced": 8,
+   "remaining_cjk_chars": 11
+  },
+  "html/cfg/System_PTZ.js": {
+   "replaced": 4,
+   "remaining_cjk_chars": 5
+  },
+  "plugin/class.js": {
+   "replaced": 103,
+   "remaining_cjk_chars": 236
+  },
+  "plugin/common.js": {
+   "replaced": 27,
+   "remaining_cjk_chars": 73
+  },
+  "plugin/extend.js": {
+   "replaced": 6,
+   "remaining_cjk_chars": 20
+  },
+  "plugin/function.js": {
+   "replaced": 70,
+   "remaining_cjk_chars": 226
+  },
+  "plugin/RSUI.js": {
+   "replaced": 0,
+   "remaining_cjk_chars": 7
+  }
+ }
+}

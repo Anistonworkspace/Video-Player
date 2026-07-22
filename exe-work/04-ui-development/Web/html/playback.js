@@ -23,10 +23,10 @@ $(function(){
 	var views = [];
 	var sAlarm = {
 		"*": 0xff,
-		"R": 0x00,    ///< 普通文件(R)
-		"A": 0x01,    ///< 外部报警(A)
-		"M": 0x02,    ///< 动态检测(M)
-		"H": 0x04    ///< 手动录像(H)
+		"R": 0x00,    ///< RegularFile(R)
+		"A": 0x01,    ///< Alarm Record(A)
+		"M": 0x02,    ///< 动态Detect(M)
+		"H": 0x04    ///< 手动RECORD(H)
 	}
 	var downloadByTime = {};
 	if(gDevice.loginRsp.ChannelNum > 1){
@@ -329,9 +329,9 @@ $(function(){
 						nCurPage++;
 						nGetPage++;
 					}
-					if (a.OPFileQuery == null || nLen < 64) { //不存在下一页
+					if (a.OPFileQuery == null || nLen < 64) { //不存AtNextPage
 						SetBtnEnable("#PageDown", false);
-					}else { 										//存在下一页
+					}else { 										//存AtNextPage
 						queryParam.BeginTime = a.OPFileQuery[nLen-1].EndTime;
 						SetBtnEnable("#PageDown", true);
 					}
@@ -341,7 +341,7 @@ $(function(){
 					ShowPaop(pageTitle, lg.get("IDS_NORECORD"));
 				}
 			}else if(playStyle == PlayBackType.PBK_TYPE_REMOTE_TIME) {
-				//处理按时间回放数据
+				//处理By Timeplayback数据
 				if(!isObject(a) || a.Ret == WEB_ERROR.ERR_RUNNING || a["OPFileQuery"] == null ){
 					if(a.Ret == 119){
 						ShowPaop(pageTitle, lg.get("IDS_NORECORD"));
@@ -378,7 +378,7 @@ $(function(){
 										nLastType = m_nTimeSect[i][j];
 									}
 									if(m_nTimeSect[i][j] != nLastType && nLastType > 0){
-										//录像种类发生改变
+										//RECORD种类发生改变
 										var temp = {
 											Begin: nStartMin,
 											End: nEndMin,
@@ -387,14 +387,14 @@ $(function(){
 										};
 										recordData[wnd].push(temp);
 
-										//重新开始统计时间段
+										//重新StartCount Time段
 										nStartMin = nMinute;
 										nEndMin = nStartMin + 1;
 										nLastType = m_nTimeSect[i][j];
 									}else if(nLastType > 0){
 										nEndMin = nMinute + 1;
 									}
-								}else{//这分种没有录像
+								}else{//这Min种没有RECORD
 									if(nStartMin != -1 && nEndMin != -1 && nLastType > 0){
 										var temp = {
 											Begin: nStartMin,
@@ -501,7 +501,7 @@ $(function(){
 		gDevice.PlayBackControl(chn, PlaybackCtrl.PlaybackSetPos, value, function(a){
 			bSettingPos = false;
 
-			// 插件V4.0.0.1开始，远程回放按文件回放，设置进度的操作是重新播放文件，之前的录像会关闭，因此重置为Normal状态
+			// 插件V4.0.0.1Start，RemoteBy Nameplayback，设置进度的OperationYES重新PlayFile，之前的RECORD会Close闭，因此Reset Password Procedure为NormalStatus
 			if(typeof a.Recording != "undefined"){
 				$("#pbBtnRecord").RSButton("setStatus", RSBtnStatus.Normal);
 			}
@@ -693,7 +693,7 @@ $(function(){
 			}
 		});
 	}
-	function TimeLineClickedEvent(wnd, time, bInZone) {	//点击时间刻度表
+	function TimeLineClickedEvent(wnd, time, bInZone) {	//点击Time刻度表
 		if (!bInZone){
 			return;
 		}

@@ -1,0 +1,2519 @@
+[UTC+07:00]曼谷,河内,雅加达|[UTC+08:00]北京,乌鲁木齐,台北,新加坡|[UTC+09:00]大阪,札幌,汉城,东京|[UTC+09:30]阿德莱德,达尔文|[UTC+10:00]堪培拉,墨尔本,悉尼	[UTC+07:00]Bangkok,Hanoi,Jakarta|[UTC+08:00]Beijing,Urumqi,Taipei,Singapore|[UTC+09:00]Osaka,Sapporo,Seoul,Tokyo|[UTC+09:30]Adelaide,Darwin|[UTC+10:00]Canberra,Melbourne,Sydney
+[UTC+07:00]曼谷,河內,雅加達|[UTC+08:00]北京,烏魯木齊,臺北,新加坡|[UTC+09:00]大阪,札幌,漢城,東京|[UTC+09:30]阿德萊德,達爾文|[UTC+10:00]坎培拉,墨爾本,悉尼	[UTC+07:00]Bangkok,Hanoi,Jakarta|[UTC+08:00]Beijing,Urumqi,Taipei,Singapore|[UTC+09:00]Osaka,Sapporo,Seoul,Tokyo|[UTC+09:30]Adelaide,Darwin|[UTC+10:00]Canberra,Melbourne,Sydney
+[UTC-07:00]山区时间(美国和加拿大)|[UTC-06:00]中部时间(美国和加拿大)|[UTC-05:00]东部时间(美国和加拿大)|[UTC-04:00]大西洋时间(加拿大)|[UTC-03:30]纽芬兰	[UTC-07:00]mountain Time(U.S. and Canada)|[UTC-06:00]central Time(U.S. and Canada)|[UTC-05:00]Eastern Time(U.S. and Canada)|[UTC-04:00]Atlantic Time(Canada)|[UTC-03:30]Newfoundland
+[UTC-07:00]山區時間(美國和加拿大)|[UTC-06:00]中部時間(美國和加拿大)|[UTC-05:00]東部時間(美國和加拿大)|[UTC-04:00]大西洋時間(加拿大)|[UTC-03:30]紐芬蘭	[UTC-07:00]mountain Time(U.S. and Canada)|[UTC-06:00]central Time(U.S. and Canada)|[UTC-05:00]Eastern Time(U.S. and Canada)|[UTC-04:00]Atlantic Time(Canada)|[UTC-03:30]Newfoundland
+[UTC-03:00]巴西利亚,乔治敦|[UTC-02:00]中大西洋|[UTC-01:00]亚速群岛,佛得角群岛|[UTC+00:00]都柏林,伦敦,爱丁堡|[UTC+01:00]柏林,阿姆斯特丹,巴黎,罗马	[UTC-03:00]Brasilia,Georgetown|[UTC-02:00]mid-Atlantic|[UTC-01:00]Azores,Cape Verde Islands|[UTC+00:00]Dublin,London,Edinburgh|[UTC+01:00]Berlin,Amsterdam,Paris,Rome
+[UTC-03:00]巴西利亞,喬治城|[UTC-02:00]中大西洋|[UTC-01:00]亞速群島,佛德角群島|[UTC+00:00]都柏林,倫敦,愛丁堡|[UTC+01:00]柏林,阿姆斯特丹,巴黎,羅馬	[UTC-03:00]Brasilia,Georgetown|[UTC-02:00]mid-Atlantic|[UTC-01:00]Azores,Cape Verde Islands|[UTC+00:00]Dublin,London,Edinburgh|[UTC+01:00]Berlin,Amsterdam,Paris,Rome
+[UTC+02:00]雅典,耶路撒冷,伊斯坦布尔|[UTC+03:00]巴格达,科威特,莫斯科|[UTC+03:30]德黑兰|[UTC+04:00]阿布扎比,巴库,马斯喀特|[UTC+04:30]坎布尔	[UTC+02:00]Athens,Jerusalem,Istanbul|[UTC+03:00]Baghdad,Kuwait,Moscow|[UTC+03:30]Tehran|[UTC+04:00]Abu Dhabi,Baku,Muscat|[UTC+04:30]Kabul
+[UTC+02:00]雅典,耶路撒冷,伊斯坦布爾|[UTC+03:00]巴格達,科威特,莫斯科|[UTC+03:30]德黑蘭|[UTC+04:00]阿布達比,巴庫,馬斯喀特|[UTC+04:30]坎布林	[UTC+02:00]Athens,Jerusalem,Istanbul|[UTC+03:00]Baghdad,Kuwait,Moscow|[UTC+03:30]Tehran|[UTC+04:00]Abu Dhabi,Baku,Muscat|[UTC+04:30]Kabul
+[UTC+05:00]伊斯蘭馬巴德,卡拉奇,塔什干|[UTC+05:30]孟買,馬德拉斯,新德里|[UTC+05:45]加德滿都|[UTC+06:00]阿拉木圖,可倫坡,達卡|[UTC+06:30]仰光	[UTC+05:00]Islamabad,Karachi,Tashkent|[UTC+05:30]Bombay,Madras,New Delhi|[UTC+05:45]Kathmandu|[UTC+06:00]Almaty,Colombo,Dhaka|[UTC+06:30]Yangon
+[UTC+05:00]伊斯兰堡,卡拉奇,塔什干|[UTC+05:30]孟买,马德拉斯,新德里|[UTC+05:45]加德满都|[UTC+06:00]阿拉木图,科伦坡,达卡|[UTC+06:30]仰光	[UTC+05:00]Islamabad,Karachi,Tashkent|[UTC+05:30]Bombay,Madras,New Delhi|[UTC+05:45]Kathmandu|[UTC+06:00]Almaty,Colombo,Dhaka|[UTC+06:30]Yangon
+[UTC-12:00]日界线西|[UTC-11:00]中途岛,萨摩亚群岛|[UTC-10:00]夏威夷|[UTC-09:00]阿拉斯加|[UTC-08:00]太平洋时间(美国和加拿大)	[UTC-12:00]Dateline West|[UTC-11:00]Midway Island,Samoa|[UTC-10:00]Hawaii|[UTC-09:00]Alaska|[UTC-08:00]Pacific Time(U.S. and Canada)
+[UTC-12:00]日界線西|[UTC-11:00]中途島,薩摩亞群島|[UTC-10:00]夏威夷|[UTC-09:00]阿拉斯加|[UTC-08:00]太平洋時間(美國和加拿大)	[UTC-12:00]Dateline West|[UTC-11:00]Midway Island,Samoa|[UTC-10:00]Hawaii|[UTC-09:00]Alaska|[UTC-08:00]Pacific Time(U.S. and Canada)
+请打开手机上的监控APP(可以扫描页面右边的二维码进行安装)，账户登录或者本地登录，然后点击上方扫一扫按钮，扫描页面左边的二维码，最后输入获得的验证码重置密码。	Please open the monitoring APP on your mobile phone (you can scan the QR code on the right side of the page to install it), log in with your account or log in locally, then click the scan button above, scan the QR code on the left side of the page, and finally enter the verification code to reset. password.
+請打開手機上的監控APP(可以掃描頁面右邊的二維碼進行安裝)，帳戶登錄或本地登錄，然後點擊上方掃一掃按鈕，掃描頁面左邊的二維碼，最後輸入獲得的驗證碼重置密碼。	Please open the monitoring APP on your mobile phone (you can scan the QR code on the right side of the page to install it), log in with your account or log in locally, then click the scan button above, scan the QR code on the left side of the page, and finally enter the verification code to reset. password.
+密碼格式不正確！ 請重新設置密碼！ 密碼由數位和字母組成，長度為6-8位，密碼至少有一個數字，一個大寫字母，一個小寫字母。	Password format is incorrect! Please, reset your password! Your password must contain 6-8 characters, including letters (uppercase and lowercase) and numbers.
+密码格式不正确！请重新设置密码！密码由数字和字母组成，长度为6-8位，密码至少有一个数字，一个大写字母，一个小写字母。	Password format is incorrect! Please, reset your password! Your password must contain 6-8 characters, including letters (uppercase and lowercase) and numbers.
+[UTC+11:00]马加丹,所罗门群岛|[UTC+12:00]奥克兰,惠灵顿|[UTC+13:00]努库阿洛法	[UTC+11:00]Magadan,Solomon Islands|[UTC+12:00]Auckland,Wellington|[UTC+13:00]Nuku Alor law
+[UTC+11:00]馬加丹,所羅門群島|[UTC+12:00]奧克蘭,威靈頓|[UTC+13:00]努瓜婁發	[UTC+11:00]Magadan,Solomon Islands|[UTC+12:00]Auckland,Wellington|[UTC+13:00]Nuku Alor law
+不能使用常用用戶名。 （例：guest,administrator,admin,root,system)	Cannot use commonly used username. (Example:guest,administrator,admin,root,system)
+不能使用常用用户名。(例：guest,administrator,admin,root,system)	Cannot use commonly used username. (Example:guest,administrator,admin,root,system)
+执行此操作将将该存储设备设置为只读盘，执行该操作将使录像数据不会被覆盖，确定要执行此操作吗？	This Operation will Set the Storage Equipment Read Only, All the Video Record will not be Covered, Are You Sure to Execute?
+執行此操作將將該存放裝置設置為唯讀盤，執行該操作將使錄影資料不會被覆蓋，確定要執行此操作嗎？	This Operation will Set the Storage Equipment Read Only, All the Video Record will not be Covered, Are You Sure to Execute?
+新设定的http端口号为非安全端口号，设置后浏览器就不能正常登陆设备，是否仍然要这样设置？	The newly set http port number is a non secure port number. After setting, the browser cannot log in to the device normally. Do you still want to set it this way?
+新設定的http埠號為非安全埠號，設定後瀏覽器就不能正常登陸設備，是否仍然要這樣設定？	The newly set http port number is a non secure port number. After setting, the browser cannot log in to the device normally. Do you still want to set it this way?
+使用以下DNS服务器--------------------------------	Use the following DNS servers--------------------------------
+使用以下DNS伺服器--------------------------------	Use the following DNS servers--------------------------------
+执行此操作将将该存储设备设置为冗余盘，使该盘只能存放冗余录像，确定要执行此操作吗？	This Operation will Set the Storage Equipment As Redundant Disk, and Store Redundancy Only, Are You Sure to Execute?
+执行此操作将将该存储设备设置为快照盘，使该盘只能用来存放图片，确定要执行此操作吗？	This Operation will Set the Storage Equipment As Snapshot Disk, and Store Snapshot Only, Are You Sure to Execute?
+執行此操作將將該存放裝置設置為冗餘盤，使該盤只能存放冗餘錄影，確定要執行此操作嗎？	This Operation will Set the Storage Equipment As Redundant Disk, and Store Redundancy Only, Are You Sure to Execute?
+執行此操作將將該存放裝置設置為快照盤，使該盤只能用來存放圖片，確定要執行此操作嗎？	This Operation will Set the Storage Equipment As Snapshot Disk, and Store Snapshot Only, Are You Sure to Execute?
+执行此操作将清除该存储设备上所有的录像数据，按“确定”继续，按“取消”中止该操作	This Operation Will Clear All Video Record In the Storage Equipment, Click "OK"to Continue, Click "Cancel" to Suspend
+執行此操作將清除該存放裝置上所有的錄影資料，按“確定”繼續，按“取消”中止該操作	This Operation Will Clear All Video Record In the Storage Equipment, Click "OK"to Continue, Click "Cancel" to Suspend
+恢復出廠作業完成，需重新啟動生效；如果此時設備沒有重啟，請手動重新啟動設備。	The factory restore operation is completed and needs to be restarted to take effect; if the device does not restart at this time, please restart the device manually.
+用户名和组名不能包含 . [ ] % 不能以&amp;开头，且不能为空！	user name and group name can not contain .[ ] %  can not begin with &amp;, also can not be empty.
+用戶名和組名不能包含 . [ ] % 不能以&amp;開頭，且不能為空！	user name and group name can not contain .[ ] %  can not begin with &amp;, also can not be empty.
+恢复出厂操作完成，需要重启生效；如果此时设备没有重启，请手动重启设备。	The factory restore operation is completed and needs to be restarted to take effect; if the device does not restart at this time, please restart the device manually.
+执行此操作将将该存储设备设置为读写，使该盘可以用来作为录像的工作盘	This Operation will Set the Storage Equipment As Work Disk ,can be read or written
+執行此操作將將該存放裝置設置為讀寫，使該盤可以用來作為錄影的工作盤	This Operation will Set the Storage Equipment As Work Disk ,can be read or written
+为了确保该功能能正常使用，确认路由器上的UPNP功能已经启用.	Make sure UPNP is running on router,befor using this.
+建議密碼長度至少6比特，包含數位、大小寫字母和其他字元至少2種	Suggested password length is at least 6 characters, including at least 2 types of numbers, uppercase and lowercase letters, and other characters
+為了確保該功能能正常使用，確認路由器上的UPNP功能已經啟用.	Make sure UPNP is running on router,befor using this.
+检测到最新版本，如需更新，请在“客户端配置-版本信息”内下载	The latest version is detected, if you need to update, please download it in "Local Setting-Version"
+建议密码长度至少6位，包含数字、大小写字母和其他字符至少2种	Suggested password length is at least 6 characters, including at least 2 types of numbers, uppercase and lowercase letters, and other characters
+全通道预览打开失败，CPU占比超过90%，请手动开关通道预览	Full channel preview failed to open, CPU usage exceeds 90%, please manually switch on/off channel preview
+檢測到最新版本，如需更新，請在“用戶端配置-版本資訊”內下載	The latest version is detected, if you need to update, please download it in "Local Setting-Version"
+全通道預覽打開失敗，CPU占比超過90%，請手動開關通道預覽	Full channel preview failed to open, CPU usage exceeds 90%, please manually switch on/off channel preview
+全通道預覽打開失敗，記憶體占比超過90%，請手動開關通道預覽	Full channel preview failed to open, memory usage exceeds 90%, please manually switch on/off channel preview
+在线升级失败，可能是设备禁用了远程升级功能，请检查设备配置	Failure To Online Upgrade,Maybe The Device Disable The Function Of Online Upgrade,Please Check It Out
+通道名称错误，名称中不能包含 ' " ' 、' \ '字符	Channel name error, name cannot contain ",  \ characters
+全通道预览打开失败，内存占比超过90%，请手动开关通道预览	Full channel preview failed to open, memory usage exceeds 90%, please manually switch on/off channel preview
+線上升級失敗，可能是設備禁用了遠端升級功能，請檢查設備配置	Failure To Online Upgrade,Maybe The Device Disable The Function Of Online Upgrade,Please Check It Out
+秒后浏览器将会自动关闭当前页面,请等待设备启动后重新登录	seconds later, the browser will automatically close the current page. Please log in again after the device starts
+秒後流覽器將會自動關閉當前頁面,請等待設備啟動後重新登錄	seconds later, the browser will automatically close the current page. Please log in again after the device starts
+秒后浏览器将会自动关闭当前页面,请使用搜索工具重新登录	second later ,the browser will be closed automatically,please use the search tool to re-login
+为了设备安装后稳定运行，连接24小时后本功能将自动关闭	For stable operation after installation, the function will be turned off automatically after 24 hours of connection.
+本機功能變數名稱長度為5-50位，只能由字母和數位組成	The domain must have a maximum of 50 characters and minimum of 5 characters. Use letters or numbers.
+秒後流覽器將會自動關閉當前頁面,請使用搜索工具重新登錄	second later ,the browser will be closed automatically,please use the search tool to re-login
+為了設備安裝後穩定運行，連接24小時後本功能將自動關閉	For stable operation after installation, the function will be turned off automatically after 24 hours of connection.
+禁用复用后，浏览器将无法访问设备，是否确认禁用复用?	After disabling reuse, the browser will not be able to access the device. Are you sure you want to disable reuse
+关闭自动模式，自动修改前端IP功能将关闭，是否继续？	Turn off the automatic mode, automatically modify the front-end IP function will be closed, continue?
+开启自动模式，自动修改前端IP功能将开启，是否继续？	Turn on automatic mode, automatically modify the front-end IP function will open, continue?
+保存失败，报警输出的延时时间范围是10秒到300秒	Save Failed, The alarm output delay time should be between 10 and 300 seconds
+该功能仅适用于工程人员调试使用，普通用户请勿使用！	This function is only applicable to engineering personnel debugging use, ordinary users do not user!
+禁用複用後，瀏覽器將無法訪問設備，是否確認禁用複用	After disabling reuse, the browser will not be able to access the device. Are you sure you want to disable reuse
+關閉自動模式，自動修改前端IP功能將被關閉，繼續？	Turn off the automatic mode, automatically modify the front-end IP function will be closed, continue?
+保存失敗，報警輸出的延時時間範圍是10秒到300秒	Save Failed, The alarm output delay time should be between 10 and 300 seconds
+有线网卡1和有线网卡2无法配置为同一网段下的IP	Wired network card 1 and wired network card 2 cannot be configured as IP addresses in the same network segment
+建议您写下您的问题和答案，并将其存储在安全的位置	Recommends you write down your questions and answers and store it in a secure location
+有線網卡1和有線網卡2無法配寘為同一網段下的IP	Wired network card 1 and wired network card 2 cannot be configured as IP addresses in the same network segment
+建議您寫下您的問題和答案，並將其存儲在安全的位置	Recommends you write down your questions and answers and store it in a secure location
+打開自動模式，自動修改前端IP功能會打開，繼續？	Turn on automatic mode, automatically modify the front-end IP function will open, continue?
+該功能僅適用於工程人員調試使用，普通用戶請勿使用	This function is only applicable to engineering personnel debugging use, ordinary users do not user!
+本机域名长度为5-50位，只能由字母和数字组成	The domain must have a maximum of 50 characters and minimum of 5 characters. Use letters or numbers.
+本次操作会将摄像机参数恢复默认，是否继续操作？	This operation will restore the camera parameters to the default. Do you want to continue?
+本次操作會將攝像機參數恢復默認，是否繼續操作？	This operation will restore the camera parameters to the default. Do you want to continue?
+数据保存成功，重启系统后生效，立即重启系统?	Set has been Successful,and will Work after Restart,Restart immediately?
+当前指定的下载路径不存在，请检查客户端配置！	The specified download path does not exist. Please check the client configuration!
+设备端口信息已经更改，请退出后，重启设备生效	Device port information has changed, please exit and reboot the device to take effect
+資料保存成功，重啟系統後生效，立即重啟系統?	Set has been Successful,and will Work after Restart,Restart immediately?
+當前指定的下載路徑不存在，請檢查用戶端配置！	The specified download path does not exist. Please check the client configuration!
+設備端口咨訊已經更改，請退出後，重啟設備生效	Device port information has changed, please exit and reboot the device to take effect
+设备恢复默认后，首次登录，强制客户设置密码	After restoring the device to default, log in for the first time and force password setting
+(恢復常用配置，Ip位址與使用者資訊除外)	(Restore Common Parameters Except IP Address & Username-Password)
+校验超时，可能线距过长！建议使用短线升级	Check timeout, may be too long line! Proposed close-range upgrade
+(恢复常用配置，Ip地址与用户信息除外)	(Restore Common Parameters Except IP Address & Username-Password)
+当前正在通道对讲，请关闭后再进行设备对讲	The current channel intercom is in progress. Close the channel and start the device intercom
+当前正在设备对讲，请关闭后再进行通道对讲	The device is interworking. Shut down the device and start channel interworking
+周一,周二,周三,周四,周五,周六,周日	Mon.,Tues.,Wed.,Thur.,Fri.,Sat.,Sun.
+当前设备正在广播，请关闭后再进行设备对讲	The device is broadcasting. Close the broadcast and start the device intercom
+当前设备正在广播，请关闭后再进行通道对讲	The device is broadcasting. Close the broadcast and start channel interworking
+连续错误3次，登录已锁定，1分钟后再尝试	3 consecutive errors, login locked, try again in 1 minute
+校驗超時，可能線距過長！建議使用短線升級	Check timeout, may be too long line! Proposed close-range upgrade
+使用者密碼與確認密碼不一致，請重新輸入!	The two passwords do not match, please re-enter!
+當前正在通道對講，請關閉後再進行設備對講	The current channel intercom is in progress. Close the channel and start the device intercom
+當前正在設備對講，請關閉後再進行通道對講	The device is interworking. Shut down the device and start channel interworking
+週一,週二,週三,週四,週五,週六,週日	Mon.,Tues.,Wed.,Thur.,Fri.,Sat.,Sun.
+當前設備正在廣播，請關閉後再進行設備對講	The device is broadcasting. Close the broadcast and start the device intercom
+當前設備正在廣播，請關閉後再進行通道對講	The device is broadcasting. Close the broadcast and start channel interworking
+連續錯誤3次，登入已鎖定，1分鐘後再嘗試	3 consecutive errors, login locked, try again in 1 minute
+修改当前用户成功, 即将退出请重新登陆	Successfully modified the current user. Please log in again
+用户密码与确认密码不一致，请重新输入!	The two passwords do not match, please re-enter!
+密码至少包含数字、字母、字符中的两种!	The password must contain at least two types of digits, letters, and characters!
+邮箱格式不正确，请输入有效的邮箱地址。	E-mail is invalid. Please input an valid e-mail address.
+该操作会改变前端设备的IP，是否确定?	This action will change the IP of front-end devices, Are you sure?
+IPv6地址无效,每组最多4个十六进制	Invalid IPv6 address, max 4 hex per group
+密碼至少包含數位、字母、字元中的兩種!	The password must contain at least two types of digits, letters, and characters!
+郵箱格式不正確，請輸入有效的郵箱地址。	E-mail is invalid. Please input an valid e-mail address.
+通道名稱錯誤，名稱中不能包含“，\字元	Channel name error, name cannot contain ",  \ characters
+設備恢復默認後，首次登入，強制設置密碼	After restoring the device to default, log in for the first time and force password setting
+該操作會改變前端設備的IP，是否確定?	This action will change the IP of front-end devices, Are you sure?
+IPv6地址無效，每組最多4個十六進位	Invalid IPv6 address, max 4 hex per group
+该用户名已被使用,请重新输入用户名!	The username exists, please re-enter different username!
+验证次数超过限制,请重启设备再次尝试	The number of verifications exceeds the limit. Please restart the device and try again
+当前正在通道对讲，请关闭后再进行广播	The current channel intercom is in progress. Close the channel and start broadcast
+当前正在设备对讲，请关闭后再进行广播	The device is interworking. Shut down the device and start broadcast
+修改當前用戶成功，即將退出請重新登陸	Successfully modified the current user. Please log in again
+該用戶名已被使用,請重新輸入用戶名!	The username exists, please re-enter different username!
+驗證次數超過限制,請重啟設備再次嘗試	The number of verifications exceeds the limit. Please restart the device and try again
+當前正在通道對講，請關閉後再進行廣播	The current channel intercom is in progress. Close the channel and start broadcast
+當前正在設備對講，請關閉後再進行廣播	The device is interworking. Shut down the device and start broadcast
+该域名已经被占用了，请尝试其他域名	the domain name already in use, please try another
+正在格式化磁盘,请不要进行其他操作	Format disk,please not do other operations
+用户名或密码已被更改，请重新登录!	Username or password has been changed, please login again!
+默认回放路数不能多于最大回放路数！	Default can not be more than the maximum!
+超过最大时间段个数，无法继续添加！	Exceeded the maximum number of time periods, unable to continue adding!
+正在格式化磁片,請不要進行其他操作	Format disk,please not do other operations
+用戶名或密碼已被更改，請重新登錄!	Username or password has been changed, please login again!
+默認回放路數不能多於最大回放路數！	Default can not be more than the maximum!
+磁盘正在分区,请不要进行其他操作	Partitioning disk,please do not do other operations
+设备网络已经更改，请重新登录设备	Network device has changed, please re-log the device!
+超过最大连接数限制，不能继续添加	Exceed the maximum number of connections limit, you can not continue to add
+请完善下列信息，以便以后重置密码	Please set security questiones to reset your password later
+更新时请勿关闭浏览器或关闭电源!	Warning : Do not Close the Browser or Turn Off Power when Upgrading
+當前許可權已有用戶使用，禁止刪除	The current permission is in use
+磁片正在分區,請不要進行其他操作	Partitioning disk,please do not do other operations
+設備網路已經更改，請重新登錄設備	Network device has changed, please re-log the device!
+超過最大連接數限制，不能繼續添加	Exceed the maximum number of connections limit, you can not continue to add
+請完善下列資訊，以便以後重置密碼	Please set security questiones to reset your password later
+更新時請勿關閉流覽器或關閉電源!	Warning : Do not Close the Browser or Turn Off Power when Upgrading
+当前权限已有用户使用，禁止删除	The current permission is in use
+秒后浏览器将会自动关闭当前页面	seconds later,the browser will automatically close the current page
+当前有设备正在升级，请稍后登录	Currently, some devices are being upgraded. Please log in later
+验证码直接发送到预留的联系方式	Send verification code to my contact profile
+设置车辆状态对应的报警输入方式	Set the corresponding relations between Alarm Input and Car Status
+初始化服务器或者开发者账户失败	Failed to initialize server or developer account
+非法请求，设备未登录或登录失效	Illegal request, device not logged in or login invalid
+当前密码为空，建议尽快修改密码	The current password is empty,please change the password as soon as possible
+不能重复设置默认密码admin	Cannot set default password admin repeatedly
+秒後流覽器將會自動關閉當前頁面	seconds later,the browser will automatically close the current page
+當前有設備正在陞級，請稍後登入	Currently, some devices are being upgraded. Please log in later
+驗證碼直接發送到預留的聯繫方式	Send verification code to my contact profile
+設置車輛狀態對應的報警輸入方式	Set the corresponding relations between Alarm Input and Car Status
+ip、 子網路遮罩、閘道不匹配	ip, subnet mask, gateway mismatch
+初始化服務器或者開發者帳戶失敗	Failed to initialize server or developer account
+非法請求、設備未登錄或登入無效	Illegal request, device not logged in or login invalid
+當前密碼為空，建議盡快修改密碼	The current password is empty,please change the password as soon as possible
+無法重複設定默認密碼admin	Cannot set default password admin repeatedly
+浏览器绑定已失效，请重新登录	The browser binding has expired, please log in again
+使用手机APP直接获得验证码	Send verification code to mobile app
+查询uuid所在的服务器超时	Query the server of uuid time out!
+开始时间和结束时间不能相同!	Start time and end time cannot be the same!
+确定要清空视频人数OSD吗？	Are you sure you want to remove all flow count of video OSD?
+当前登录方式不支持主码流预览	The current login method does not support main stream preview
+瀏覽器綁定已失效，請重新登錄	The browser binding has expired, please log in again
+使用手機APP直接獲得驗證碼	Send verification code to mobile app
+獲取 macaddr 失敗！	Get the macaddr failed!
+開始時間和結束時間不能相同!	Start time and end time cannot be the same!
+確定要清空視頻人數OSD嗎？	Are you sure you want to remove all flow count of video OSD?
+設備介面訪問權杖身份驗證失敗	Device interface access token authentication failed
+(恢复所有设置为出厂状态)	(Restore All Settings to Factory Settings)
+最多可以添加64个黑名单!	64 blacklists can be added at most!
+最多可以添加64个白名单!	64 whitelists can be added at most!
+手动重启设备，端口配置生效	Manually reboot the device and port configuration to take effect!
+密码安全系数较低！请修改!	Password security factor is low! Please modify!
+ip、子网掩码、网关不匹配	ip, subnet mask, gateway does not match
+邮件被拦截，请更换邮件主题	The message was blocked, please change the message subject!
+该用户复用未开启，无法登录	The user reuse is not enabled and cannot log in
+wifi保存成功,重启生效	Wifi Save Successful,Need To Reboot
+开始时间不能比结束时间大!	Start time cannot be greater than end time!
+保存成功，设备将重新启动!	Save successfully, the device will reboot!
+确定要删除所有人数记录吗？	Are you sure you want to remove all flow count records?
+登录已锁定，1分钟后再尝试	Login locked, try again in 1 minute
+(恢復所有設置為出廠狀態)	(Restore All Settings to Factory Settings)
+最多可以添加64個黑名單!	64 blacklists can be added at most!
+最多可以添加64個白名單!	64 whitelists can be added at most!
+密碼安全係數低！ 請修改！	Password security factor is low! Please modify!
+ip、子網掩碼、網關不匹配	ip, subnet mask, gateway does not match
+郵件被攔截，請更換郵件主題	The message was blocked, please change the message subject!
+該用戶複用未開啟，無法登入	The user reuse is not enabled and cannot log in
+wifi保存成功,重啟生效	Wifi Save Successful,Need To Reboot
+查詢uuid超時的服務器！	Query the server of uuid time out!
+開始時間不能大於結束時間!	Start time cannot be greater than end time!
+確定要删除所有人數記錄嗎？	Are you sure you want to remove all flow count records?
+當前登入方法不支持主流預覽	The current login method does not support main stream preview
+登入已鎖定，1分鐘後再嘗試	Login locked, try again in 1 minute
+请选择要恢复默认的设置项	Please select setting entries that you want to default
+设备已断线，请重连...	Disconnected, please reconnect
+升级失败，设备正在重启!	Upgrade failed，The Device will reboot!
+升级成功，设备正在重启!	Upgrade success，The Device will reboot!
+(FTP端口不小于21)	(FTP port can't be less than 21)
+抓图分区容量不得少于1G	The capacity of the snapshot partition should not be less than 1G
+录像分区容量不得少于1G	The recording partition capacity shall not be less than 1G
+文件超出最大传输字节数!	The file exceeds the maximum transfer bytes!
+正在进行操作中，请稍候!	Operation in progress, please wait!
+这不是一个正确的手机号码	It is not a correct mobile number
+升级失败,设备正在重启!	The upgrade failed, the device is restarting!
+等待服务器的鉴权消息超时	Check out license time out!
+服务器上没部署该UUID	The server has no this ID
+等待服务器的连接应答超时	Wait for the connection request time out!
+设置超过范围，设置失败!	Setting out of range, setting failed!
+设备接口访问令牌认证失败	Device interface access token authentication failed
+請選擇要恢復默認的設置項	Please select setting entries that you want to default
+設備已斷線，請重連...	Disconnected, please reconnect
+升級失敗，設備正在重啟!	Upgrade failed，The Device will reboot!
+升級成功，設備正在重啟!	Upgrade success，The Device will reboot!
+抓圖分區容量不得少於1G	The capacity of the snapshot partition should not be less than 1G
+記錄分區容量不得小於1G	The recording partition capacity shall not be less than 1G
+檔超出最大傳輸位元組數!	The file exceeds the maximum transfer bytes!
+正在進行操作中，請稍候!	Operation in progress, please wait!
+手動重啟設備，埠配置生效	Manually reboot the device and port configuration to take effect!
+這不是一個正確的手機號碼	It is not a correct mobile number
+升級失敗,設備正在重啟!	The upgrade failed, the device is restarting!
+請選擇要刪除的許可 IP	Please select a licensed IP to delete
+udp端口不是8765！	The udp port is not 8765!
+客戶端 uuid 不為空	The client uuid is not null
+設置超出範圍，設置失敗!	Setting out of range, setting failed!
+设备有新的报警消息发生	A new alarm message has occurred on the device
+抓图成功! 存储路径:	Capture Successful! Storage path:
+解压成功! 解压路径:	Decompression successful! Decompression path:
+时间与通道标题位置设置	Time Channel Setting
+下载开始! 存储路径:	Start download!Path:
+下载成功! 存储路径:	Download successful!Path:
+SMTP服务器不能为空	SMTP server cannot be empty,please enter details...
+该IP已经在白名单中了	This ipaddrss already existed in trustlist
+确定要清除所有日志吗？	Are you sure you want to remove all logs?
+请连接局域网后再次尝试	Please try again after connecting to the LAN
+非法的时间，请重新输入	Invalid time, please input again
+最大订阅数500,已用	Maximum subscriptions 500,used
+录像成功! 存储路径:	Record Successful! Storage path:
+升级成功,设备正在重启	The upgrade is successful and the device is restarting
+正在操作，请等待...	Running, wait please...
+主机IP更新，重启设备	Host IP Update, reboot the device
+客户端的uuid不为空	The client uuid is not null
+请选择要删除的许可IP	Please select a licensed IP to delete
+确定后设备将重新启动!	After confirming the device will restart!
+用户token认证失败	User token authentication failed
+密码位数限定为4~16	Maintain Password Length Limit(4~16)
+設備有新的報警消息發生	A new alarm message has occurred on the device
+抓圖成功! 存儲路徑:	Capture Successful! Storage path:
+解壓成功！ 解壓路徑：	Decompression successful! Decompression path:
+時間與通道標題位置設置	Time Channel Setting
+下載開始! 存儲路徑:	Start download!Path:
+下載成功! 存儲路徑:	Download successful!Path:
+SMTP伺服器不能為空	SMTP server cannot be empty,please enter details...
+(FTP埠不小於21)	(FTP port can't be less than 21)
+該IP已經在白名單中了	This ipaddrss already existed in trustlist
+確定要清除所有日誌嗎？	Are you sure you want to remove all logs?
+請連接局域網後再次嘗試	Please try again after connecting to the LAN
+非法的時間，請重新輸入	Invalid time, please input again
+最大訂閱數500,已用	Maximum subscriptions 500,used
+錄影成功! 存儲路徑:	Record Successful! Storage path:
+升級成功,設備正在重啟	The upgrade is successful and the device is restarting
+正在操作，請等待...	Running, wait please...
+主機IP更新，重啟設備	Host IP Update, reboot the device
+查詢WAN IP超時！	Query wan IP time out!
+等待設備超時連接響應！	Wait for the connection response of device time out!
+保存成功，設備會重啟!	Save successfully, the device will reboot!
+密碼位數限定為4~16	Maintain Password Length Limit(4~16)
+设置DVR延时开关机	Set the DVR delay switch
+请选择一个视频通道!	Please Select One Channel!
+服务器地址不能为空!	IP Address Cannot be Empty!
+只读盘不能进行格式化	The disk is read only, cannot be formatted!
+请提供答案以重设密码	Please provide answer in order to reset password
+IP地址范围不合法!	IP address scope is not legal!
+通道模式配置无更改!	Channel mode is not changed!
+请选择一个视频通道！	Please Select One Camera Channel!
+RTSP地址开头错误	RTSP address at the beginning of the error
+请选择想要复制的通道	Please select the channel you want to copy
+抓图间隔不能小于5秒	The capture interval can not be less than 5 seconds
+oemid过了有效期	The time of ID passed its time
+等待设备反向连接超时	Wait for the connection response of device time out!
+代理服务器连接数满了	The number of connection in the proxy is full!
+设备接口访问令牌过期	Device interface access token expiration
+输入的电话号码不合法	The phone number entered is not legal
+設置DVR延時開關機	Set the DVR delay switch
+請選擇一個視頻通道!	Please Select One Channel!
+伺服器位址不能為空!	IP Address Cannot be Empty!
+唯讀盤不能進行格式化	The disk is read only, cannot be formatted!
+請提供答案以重設密碼	Please provide answer in order to reset password
+IP地址範圍不合法!	IP address scope is not legal!
+通道模式配置無更改!	Channel mode is not changed!
+請選擇一個視頻通道！	Please Select One Camera Channel!
+RTSP位址開頭錯誤	RTSP address at the beginning of the error
+請選擇想要複製的通道	Please select the channel you want to copy
+抓圖間隔不能小於5秒	The capture interval can not be less than 5 seconds
+網路功能變數名稱服務	Net DNS
+ID的時間已經過去了	The time of ID passed its time
+代理中的連接數已滿！	The number of connection in the proxy is full!
+設備介面訪問權杖過期	Device interface access token expiration
+用戶權杖身份驗證失敗	User token authentication failed
+輸入的電話號碼不合法	The phone number entered is not legal
+该用户组中存在用户	Cannot Delete  Group Containing Users
+保留用户不允许删除	Cannot Delete Reserved User.
+保留用户不允许修改	Cannot Modify Reserved User.
+音频文件打开失败!	Audio file can't open!
+码流值(Kb/S)	Bit Rate(Kb/S)
+DDNS测试成功.	DDNS test is successful.
+只读盘不能进行分区	The disk is read only, cannot be partitioned!
+查看存储类型和容量	View Type And Capacity
+IP地址在黑名单中	The IP address is in the blacklist
+回放最大支持通道数	Max support channel of playback
+预览最大支持通道数	Maximum number of preview
+Onvif密码校验	Onvif Check
+只能选择一个通道！	Only One Channel Can Be Selected!
+点击确认，立即重启	Click confirm, restart now
+SIP服务器DNS	SIP Server DNS
+发送升级文件失败!	Failed to send the upgrade file!
+该设备不支持此功能	The feature is not supported by the device.
+升级文件型号不匹配	Upgrade file models do not match
+获取mac地址失败	Get the macaddr failed!
+打开可读写文件失败	Open file failed!
+查询服务器列表超时	Query the server list time out
+清空视频人数OSD	Reset Flow OSD
+用户token过期	User token expiration
+低功耗设备唤醒失败	Low power device wake-up failure
+該用戶組中存在用戶	Cannot Delete  Group Containing Users
+保留用戶不允許刪除	Cannot Delete Reserved User.
+保留用戶不允許修改	Cannot Modify Reserved User.
+碼流值(Kb/S)	Bit Rate(Kb/S)
+DDNS測試成功.	DDNS test is successful.
+請下載最新外掛程式	Download the latest plugin
+唯讀盤不能進行分區	The disk is read only, cannot be partitioned!
+查看存儲類型和容量	View Type And Capacity
+IP地址在黑名單中	The IP address is in the blacklist
+回放最大支持頻道數	Max support channel of playback
+預覽最大支持通道數	Maximum number of preview
+Onvif密碼校驗	Onvif Check
+子網路遮罩設置失敗	Set submark failed!
+只能選擇一個通道！	Only One Channel Can Be Selected!
+點擊確認，立即重啟	Click confirm, restart now
+SIP伺服器DNS	SIP Server DNS
+注冊有有效期(秒)	Valid(Sec.)
+請更新最新外掛程式	Update the latest plugin
+該設備不支援此功能	The feature is not supported by the device.
+查詢頻道的全部錄影	SearchAll
+查詢服務器列表超時	Query the server list time out
+服務器沒有這個ID	The server has no this ID
+等待連接請求超時!	Wait for the connection request time out!
+確認設備將重啟後!	After confirming the device will restart!
+發件人 IP 地址	Sender IP address
+清空視頻人數OSD	Reset Flow OSD
+低功率設備喚醒失敗	Low power device wake-up failure
+静态编码参数V2	Encode parametersV2
+用户名不能为空!	Empty Name.
+音频文件不存在!	Audio file does not exist!
+CGI格式错误!	Error CGI
+用户名或密码错误	Username error
+检测更新中...	Checking for updates...
+联系方式不能为空	Contact can not be empty
+连接服务器失败!	Connect sever error!
+查看存储录像时间	View Recording Times
+该IP在黑名单中	This ipaddrss already existed in blacklist
+IP 或者 ID	IP or ID
+Json格式错误	Error Json
+自动升级重要固件	Automatic firmware upgrade Important
+安全问题必须设置	Security issues must be set
+自动获取IP地址	DHCP Enable
+子网掩码设置失败	Set submark failed!
+没有找到对应文件	No corresponding file found
+请选择一个文件!	Please Select One File!
+首选DNS不合法	Primary DNS is not valid
+安全问题不能相同	Security issues can not be same
+禁止连接本机通道	Forbid connect the local channel
+SIP服务器IP	SIP Server IP
+SIP服务器编号	SIP Server No.
+SIP服务器端口	SIP Server Port
+注册有效期(秒)	Valid(Sec.)
+启动报警接收失败	Failed to start alarm
+备用DNS不合法	Secondary DNS
+用验证码重置密码	Reset password by verification code
+视频丢失字符显示	Video missing character display
+修改外设存储位置	Modify the peripheral storage location
+视频输出优先配置	Video output priority configuration
+端口不是8765	The udp port is not 8765!
+校验鉴权文件失败	Check out license failed!
+该巡航线路不存在	The cruise line does not exist
+删除所有人数记录	Reset Flow count
+靜態編碼參數V2	Encode parametersV2
+用戶名不能為空!	Empty Name.
+音訊檔打開失敗!	Audio file can't open!
+CGI格式錯誤!	Error CGI
+用戶名或密碼錯誤	Username error
+檢測更新中...	Checking for updates...
+聯繫方式不能為空	Contact can not be empty
+連接伺服器失敗!	Connect sever error!
+許可權校驗失敗!	Permission check error!
+本機功能變數名稱	Domain Name
+預設閘道器不合法	Gateway is not valid
+查看存儲錄影時間	View Recording Times
+該IP在黑名單中	This ipaddrss already existed in blacklist
+Json格式錯誤	Error Json
+自動升級重要固件	Automatic firmware upgrade Important
+安全問題必須設置	Security issues must be set
+子網路遮罩不合法	Subnet mask is not valid
+自動獲取IP位址	DHCP Enable
+用戶沒有許可權!	No User Permission!
+首選DNS不合法	Primary DNS is not valid
+安全問題不能相同	Security issues can not be same
+禁止連接本機通道	Forbid connect the local channel
+SIP伺服器IP	SIP Server IP
+SIP伺服器編號	SIP Server No.
+啟動報警接收失敗	Failed to start alarm
+備用DNS不合法	Secondary DNS
+發送升級檔失敗!	Failed to send the upgrade file!
+用驗證碼重置密碼	Reset password by verification code
+升級檔型號不匹配	Upgrade file models do not match
+視頻丟失字符顯示	Video missing character display
+修改外設存儲位置	Modify the peripheral storage location
+視頻輸出優先配置	Video output priority configuration
+初始化標誌失敗！	Init flag failed!
+服務器地址為空！	The serveraddr is null!
+服務器地址無效！	The serveraddr is invalid!
+檢查許可證超時！	Check out license time out!
+簽出許可證失敗！	Check out license failed!
+該巡航線路不存在	The cruise line does not exist
+啟用 RS232	Enable RS232
+删除所有人數記錄	Reset Flow count
+模拟通道分辨率	AHDChannelState
+清除驱动器数据	Clear Driver
+是否为店外客流	Outside
+正在连接服务器	Connecting
+编码器静态参数	Encoder static parameters
+查询时间段错误	ErrorTime
+FTP自动上传	FTP is automatically uploaded
+增加用户组成功	Add Group Succeeded
+删除用户组成功	Delete Group Succeeded
+用户组名已存在	Group Name Exists
+修改用户组成功	Modify Group Succeeded
+确定要删除吗?	Confirm Delete?
+文件发送失败!	File Send Fail!
+文件发送成功!	File Send Successful!
+绑定浏览器失败	Failed to bind browse
+取消下载成功！	Download terminated!
+密码长度必须是	Password must be exactly
+播放工具版本:	Tool Version:
+连接播放器失败	Failed to connect player
+数据复制失败!	Failed to Copy Data!
+数据复制成功!	Data Copy Successful!
+权限校验失败!	Permission check error!
+SIP传输协议	SIP Transport Protocol
+请下载最新插件	Download the latest plugin
+设备正在重启!	The Device will reboot!
+用户名不能为空	Username cannot be empty,please enter details...
+SMTP服务器	SMTP Server
+I帧间隔(S)	I Frame Interval
+Smart编码	Smart Encode
+编码器静态配置	Static Encode Config
+发送EMAIL	Send Email
+帧率(FPS)	Frame Rate(fps)
+端口不能为空!	Port cannot be empty!
+默认网关不合法	Gateway is not valid
+完成分区，重启	The disk partition is complete and the device is about to restart
+IP已经存在!	IP already exists!
+步长(1-8)	Speed
+自动删除旧文件	Auto-Delete Old Files
+语言文件缺失!	Missing language file!
+该用户被锁定!	Hostname exists but is blocked!
+子网掩码不合法	Subnet mask is not valid
+Email设置	Email
+国标28181	GB 28181
+Onvif端口	Onvif Port
+可能设备不存在	Can't find the device
+密码不能为空!	Password cannot be empty!
+用户没有权限!	No User Permission!
+当前视频未打开	The current video is not open
+自动选择服务器	Auto Select Server
+未设置安全问题	Security issues are not set
+RS485设备	RS485 Device
+确认重启设备?	Do you want to restart the device?
+MAC地址错误	MAC Address Error
+选择语言错误!	The selected language error!
+连接服务器失败	Connect sever error!
+心跳周期(秒)	Cardiac
+Sip板卡地址	Sip IP
+开启巡航失败!	Failed to start cruise!
+开启巡航成功!	Start cruise successful
+关闭巡航失败!	Failed to stop cruise!
+关闭巡航成功!	Successfully stop cruise!
+程序版本已最新	The program version is up to date
+请更新最新插件	Update the latest plugin
+请求升级失败!	Request to upgrade failed!
+网络连接失败!	Network Connection Failed!
+前端不支持升级	Upgrading is not supported on the front end
+摄像机扩展参数	Camera extension parameter
+正在探测DNS	Probing DNS
+设置驱动器类型	Set Driver Type
+初始化标志失败	Init flag failed!
+服务器地址为空	The serveraddr is null!
+服务器地址非法	The serveraddr is invalid!
+代理服务器为空	The proxy addr is null!
+该预置点不存在	The preset not exist
+报警声音时间段	Alarm Sound Period
+媒体服务器报错	Media server error
+设备不支持服务	The device does not support services
+周期内报警数量	Period Number
+周期时长(秒)	Period Duration (sec)
+联系人不能填空	The contact name can not be empty
+模擬通道分辨率	AHDChannelState
+清除驅動器資料	Clear Driver
+是否為店外客流	Outside
+正在連接伺服器	Connecting
+編碼器靜態參數	Encoder static parameters
+FTP自動上傳	FTP is automatically uploaded
+增加用戶組成功	Add Group Succeeded
+刪除用戶組成功	Delete Group Succeeded
+用戶組名已存在	Group Name Exists
+修改用戶組成功	Modify Group Succeeded
+確定要刪除嗎?	Confirm Delete?
+音訊檔不存在!	Audio file does not exist!
+綁定流覽器失敗	Failed to bind browse
+取消下載成功！	Download terminated!
+紅外星光/自動	STAR IR
+密碼長度必須是	Password must be exactly
+(當前已最新)	Newest
+開源軟件許可證	Open Source Software Licenses
+連接播放機失敗	Failed to connect player
+資料複製失敗!	Failed to Copy Data!
+資料複製成功!	Data Copy Successful!
+SIP傳輸協定	SIP Transport Protocol
+設備正在重啟!	The Device will reboot!
+用戶名不能為空	Username cannot be empty,please enter details...
+SMTP伺服器	SMTP Server
+I幀間隔(S)	I Frame Interval
+Smart編碼	Smart Encode
+編碼器靜態配置	Static Encode Config
+發送EMAIL	Send Email
+幀率(FPS)	Frame Rate(fps)
+完成分區，重啟	The disk partition is complete and the device is about to restart
+IP已經存在!	IP already exists!
+該用戶被鎖定!	Hostname exists but is blocked!
+Email設置	Email
+IP許可權設置	IP FILTER
+國標28181	GB 28181
+沒有找到對應檔	No corresponding file found
+可能設備不存在	Can't find the device
+密碼不能為空!	Password cannot be empty!
+當前視頻未打開	The current video is not open
+自動選擇伺服器	Auto Select Server
+未設置安全問題	Security issues are not set
+請選擇一個檔!	Please Select One File!
+RS485設備	RS485 Device
+確認重啟設備?	Do you want to restart the device?
+MAC位址錯誤	MAC Address Error
+選擇語言錯誤!	The selected language error!
+連接伺服器失敗	Connect sever error!
+Email設定	Email
+心跳週期(秒)	Cardiac
+SIP伺服器埠	SIP Server Port
+開啟輪巡失敗!	Failed to start cruise!
+開啟輪巡成功!	Start cruise successful
+關閉輪巡失敗!	Failed to stop cruise!
+關閉輪巡成功!	Successfully stop cruise!
+RS232設定	RS232
+程式版本已最新	The program version is up to date
+請求升級失敗!	Request to upgrade failed!
+網路連接失敗!	Network Connection Failed!
+前端不支援升級	Upgrading is not supported on the front end
+攝像機擴展參數	Camera extension parameter
+正在探測DNS	Probing DNS
+設置驅動器類型	Set Driver Type
+打開文件失敗！	Open file failed!
+代理地址為空！	The proxy addr is null!
+註冊代理超時！	Register for the proxy time out!
+代理握手超時！	Handshake by the proxy time out!
+媒體服務器錯誤	Media server error
+設備不支持服務	The device does not support services
+週期內報警數量	Period Number
+週期時長（秒）	Period Duration (sec)
+連絡人不能填空	The contact name can not be empty
+編輯/解除綁定	Edit/Unbind
+账号还原默认	Account Restore
+模拟通道配置	CoaxialControlArr
+文件删除失败	DeleteFileFailed
+保存设备信息	Device Description
+通道管理显示	Channel Show
+存储设备变动	Disk Changed
+报警显示延时	Alarm display delay
+事件工作目录	EventPath
+文件访问出错	File Access Error
+获取配置失败	Failed to get the configuration
+添加用户成功	Add User Succeeded
+删除用户成功	Delete User Succeeded
+修改用户成功	Modify User Succeeded
+实时监控通道	Monitor
+用户名已存在	User Name Exists.
+存储设备出错	Storage Device Access Failure
+联动声音报警	Linkage sound alarm
+剩余录音时间	Remaining Time
+智能分析报警	Intelligent analysis alarm
+DDNS类型	DDNS Type
+录像文件备份	Backup
+实时监视通道	Monitor
+系统信息查看	Query System Info
+场景变换检测	Scene change detection
+答案不能为空	The answer can not be empty
+自动曝光参考	AE Reference
+白天降噪等级	DayNTLevel
+IR镜片反序	IRSwap
+晚上降噪等级	NightNTLevel
+AE 灵敏度	AE Sensitivity
+夜晚特殊情景	SpecialNight
+灯板同步切换	Light board switching
+浏览路径失败	Failed to browse the path
+压缩文件路径	Compressed file path
+自定义报警声	Custom Audio
+DDNS测试	Test DDNS
+域名创建成功	domain was created successfully
+恢复默认设置	Restore Default Settings
+恢复出厂设置	Restore Factory Settings
+设备已更改!	The device has changed!
+设备信息异常	Device information is abnormal
+网络配置列表	Network Configuration List
+对讲传输协议	Talk Transport Protocol
+通道名称设置	Channel Name Setting
+区域覆盖设置	Video Shelter Setting
+测试中...	testing...
+SMTP端口	SMTP Port
+音频编码模式	Audio mode
+最大文件长度	File Length
+最大心跳次数	Maximum Heart-beat Count
+视图库用户名	View-library Username
+初始化...	Initializing...
+用户已经登录	The user has logged in
+格式化完毕！	Disk Format Successful
+硬盘操作成功	Successful operation
+存储空间不足	Storage Space Lack Alarm
+智能警戒系统	Intelligent Alert
+IP格式错误	"IP format error...!"
+报警音量设置	Alarm Volume setting
+清除巡航线路	Clear the cruise line
+打开对讲失败	Start Talk Failed
+连接中...	Connecting...
+清除日志成功	Clear log successful
+邮箱格式错误	Mailbox Format Error
+IP权限设置	IP FILTER
+网络高速下载	HS Download
+HTTP端口	Http Port
+设置网关失败	Failed to set Gateway
+网络传输策略	Transfer Policy
+设备不支持!	This device is not Supported!
+视频检测抓拍	Detect Snap
+规则边框颜色	Rule border color
+规则边框宽度	Rule border width
+打开预览失败	Failed to open preview
+PTZ 设置	PTZ Device
+时间不应小于	time port can't be less than
+报警信息编号	Alarm No.
+通道信息编号	Channel No.
+设置密码成功	Set password successfully.
+邮箱测试失败	Email test is failed!
+邮箱测试成功	Email test is successful.
+布撤防时间段	Period
+手机监控端口	Mobile Port
+请选择文件!	Please Choose File!
+Nat状态码	Nat status code
+系统运行状态	System Status
+ASCII码	ASCII
+一氧化碳过高	High carbon monoxide
+U盘接触不良	U disk contact is bad
+视频丢失检测	Loss Detect
+修改系统时间	Modify System Time
+网络域名服务	Net DNS
+网络白黑名单	IP Filter
+网络时间服务	NTP
+巡    迹	Pattern
+文件读取失败	ReadFileFailed
+只读工作目录	ReadOnly
+读写工作目录	ReadWrite
+恢复系统时间	Recover Time
+冗余工作目录	Redunancy
+注册状态跳变	Registration status transitions
+数字通道配置	Digital channel
+保存系统状态	SaveSystemState
+全部录像查询	SearchAll
+检测录像查询	SearchDetect
+普通录像查询	SearchGeneral
+手动录像查询	SearchHand
+快照工作目录	SnapShot
+串口数据上传	Serial data upload
+主机IP更新	Host IP Update
+UPNP配置	UpnpSet
+预览画面调节	Preview screen adjust
+输出颜色调试	Color Adjust
+文件写入失败	WriteFileFailed
+查询外网超时	Query wan IP time out!
+注册代理超时	Register for the proxy time out!
+代理握手超时	Handshake by the proxy time out!
+关闭自动模式	Turn off automatic mode
+默认回放路数	Default playback large
+启用串口功能	Enable RS232
+启用云台功能	Enable PTZ
+最大回放路数	Maximum playback channels
+报警输入通道	Alarm In Channels
+报警输出通道	Alarm Out Channels
+音频输入通道	Audio In Channels
+启用人脸检测	Enable face detection
+启用人脸识别	Enable face recognition
+搜索随机账户	Search random account
+网关设置失败	Gateway setup failed
+打开广播失败	Start Broadcast Failed
+清除数据成功	Remove data successful
+清除数据失败	Remove data Failed
+发送文件失败	Send File Failed
+视频渲染模式	Video rendering mode
+存储卡热插拔	Disk hot-swap
+提示最新更新	Prompt for the latest updates
+LED灯恒亮	LED Always Bright
+启用虚拟网卡	Enable virtual network card
+维护密码错误	Maintain Password Fail
+帳號還原默認	Account Restore
+模擬通道配置	CoaxialControlArr
+刪除檔案失敗	DeleteFileFailed
+保存設備資訊	Device Description
+通道管理顯示	Channel Show
+存放裝置變動	Disk Changed
+報警顯示延時	Alarm display delay
+查詢時間錯誤	ErrorTime
+事件工作目錄	EventPath
+獲取配置失敗	Failed to get the configuration
+添加用戶成功	Add User Succeeded
+刪除用戶成功	Delete User Succeeded
+空許可權列表	Empty Authority
+修改用戶成功	Modify User Succeeded
+即時監控通道	Monitor
+用戶名已存在	User Name Exists.
+檔發送失敗!	File Send Fail!
+檔發送成功!	File Send Successful!
+聯動聲音報警	Linkage sound alarm
+剩餘錄音時間	Remaining Time
+智慧分析報警	Intelligent analysis alarm
+DDNS類型	DDNS Type
+錄影檔案備份	Backup
+即時監視通道	Monitor
+系統資訊查看	Query System Info
+場景變換檢測	Scene change detection
+答案不能為空	The answer can not be empty
+自動曝光參考	AE Reference
+白天降噪等級	DayNTLevel
+IR鏡片反序	IRSwap
+晚上降噪等級	NightNTLevel
+AE 靈敏度	AE Sensitivity
+智能可變光源	ColorSense
+燈板同步切換	Light board switching
+流覽路徑失敗	Failed to browse the path
+DDNS測試	Test DDNS
+恢復默認設置	Restore Default Settings
+恢復出廠設置	Restore Factory Settings
+設備已更改!	The device has changed!
+設備資訊異常	Device information is abnormal
+網路配置清單	Network Configuration List
+對講傳輸協定	Talk Transport Protocol
+通道名稱設置	Channel Name Setting
+區域覆蓋設置	Video Shelter Setting
+音訊編碼模式	Audio mode
+最大文件長度	File Length
+埠不能為空!	Port cannot be empty!
+測試中...	Testing...
+最大心跳次數	Maximum Heart-beat Count
+視圖庫用戶名	View-library Username
+日期分隔符號	Date Separator
+用戶已經登錄	The user has logged in
+格式化完畢！	Disk Format Successful
+硬碟操作成功	Successful operation
+存儲空間不足	Storage Space Lack Alarm
+智能警戒系統	Intelligent Alert
+IP格式錯誤	"IP format error...!"
+克羅埃西亞語	Croatian
+報警音量設置	Alarm Volume setting
+清除巡航線路	Clear the cruise line
+打開對講失敗	Start Talk Failed
+連接中...	Connecting...
+清除日誌成功	Clear log successful
+自動刪除舊檔	Auto-Delete Old Files
+語言檔缺失!	Missing language file!
+郵箱格式錯誤	Mailbox Format Error
+IP自我調整	Adaptive IP
+網路高速下載	HS Download
+Onvif埠	Onvif Port
+設置閘道失敗	Failed to set Gateway
+網路傳輸策略	Transfer Policy
+設備不支援!	This device is not Supported!
+視頻檢測抓拍	Detect Snap
+規則邊框顏色	Rule border color
+規則邊框寬度	Rule border width
+打開預覽失敗	Failed to open preview
+串列傳輸速率	Baud rate
+奇數同位檢查	Odd
+PTZ 設置	PTZ Device
+時間不應小於	time port can't be less than
+功能變數名稱	domain name
+報警信息編號	Alarm No.
+通道資訊編號	Channel No.
+畫質張數設定	Encode
+設置密碼成功	Set password successfully.
+郵箱測試失敗	Email test is failed!
+郵箱測試成功	Email test is successful.
+Nat狀態碼	Nat status code
+系統運行狀態	System Status
+ASCII碼	ASCII
+一氧化碳過高	High carbon monoxide
+U盤接觸不良	U disk contact is bad
+視頻丟失檢測	Loss Detect
+修改系統時間	Modify System Time
+網路白黑名單	IP Filter
+網路時間服務	NTP
+網路優先順序	NetOrder
+巡    跡	Pattern
+唯讀工作目錄	ReadOnly
+讀寫工作目錄	ReadWrite
+恢復系統時間	Recover Time
+鏡射工作目錄	Redunancy
+註冊狀態跳變	Registration status transitions
+數位通道配置	Digital channel
+保存系統狀態	SaveSystemState
+查詢警報錄影	SearchAlarm
+查詢偵測錄影	SearchDetect
+查詢普通錄影	SearchGeneral
+查詢手動錄影	SearchHand
+快照工作目錄	SnapShot
+存放裝置出錯	Storage Device Error
+串口數據上傳	Serial data upload
+主機IP更新	Host IP Update
+預覽畫面調節	Preview screen adjust
+輸出顏色調試	Color Adjust
+關閉自動模式	Turn off automatic mode
+預設回放路數	Default playback large
+啟用 PTZ	Enable PTZ
+最大回放路數	Maximum playback channels
+報警輸入頻道	Alarm In Channels
+報警輸出頻道	Alarm Out Channels
+音頻輸入頻道	Audio In Channels
+啓用人臉檢測	Enable face detection
+啓用人臉識別	Enable face recognition
+蒐索隨機帳戶	Search random account
+系統維​​護	IPC Maintain
+閘道設定失敗	Gateway setup failed
+打開廣播失敗	Start Broadcast Failed
+清除數據成功	Remove data successful
+清除數據失敗	Remove data Failed
+報警聲音時段	Alarm Sound Period
+用戶權杖過期	User token expiration
+發送檔案失敗	Send File Failed
+視頻渲染模式	Video rendering mode
+存儲卡熱插拔	Disk hot-swap
+LED始終亮	LED Always Bright
+啟用虛擬網卡	Enable virtual network card
+維護密碼錯誤	Maintain Password Fail
+下載外掛程式	Download plugin
+报警服务器	Alarm Server
+辅码流录像	Auxiliary stream video
+GPS校时	GPS Timing
+空权限列表	Empty Authority
+导入/导出	Import/Export
+服务器地址	Server Address
+文件发送中	File Sending
+FTP上传	FTP upload
+IPC报警	IPC Alarm
+摄像机参数	Camera parameters
+OSD菜单	OSD Menu
+日/夜模式	Day/Night mode
+电子慢快门	Slow Shutter
+人脸无过曝	Prevent Exposure
+日光灯防闪	Anti Flicker
+最大分辨率	Max. resolution
+当前分辨率	This Resolution
+当前已最新	Newest
+解压失败!	Decompression failed!
+更新状态:	Update status:
+服务器端口	Server Port
+同步分辨率	Sync Resolution
+UTC时间	UTCDate
+时区和时间	Time Zone
+通道分割线	Channel dividing line
+OSD信息	OSD info
+设备二维码	Device QR
+验证码错误	Verification code error
+首选DNS	Primary DNS
+测试失败!	FTP test is failed!
+测试成功.	FTP test is successful.
+视图库密码	View-library Password
+年 月 日	YYYY MM DD
+月 日 年	MM DD YYYY
+日 月 年	DD MM YYYY
+日期分隔符	Date Separator
+夏令时模式	DST Mode
+夏令时设置	Dst Setting
+格式化磁盘	Format Disk
+设为读写盘	Read/Write
+设为只读盘	Read only
+设为冗余盘	Redundant
+设为快照盘	Snapshot
+无存储设备	Storage Deivce Not Exist
+导出失败.	Export fail
+导出成功.	Export Successful.
+导入成功.	Import Successful.
+红外灯关闭	IR LED off
+红外灯开启	IR LED on
+IPC联动	IPC Activation
+保加利亚语	Bulgarian
+克罗地亚语	Croatian
+爱沙尼亚语	Norsk
+塞尔维亚语	Serbian
+斯洛伐克语	Slovakia
+添加预置点	Add Preset
+关闭全录像	Stop All Record
+删除预置点	Delete Preset
+全通道预览	Full channel preview
+全通道录像	Full Channel Record
+全通道播放	Play All Video
+客户端录像	Record
+关闭全通道	Stop All Video
+麦克风音量	Micphone Volume
+自定义模式	Custom
+NTP设置	NTP
+IP自适应	Adaptive IP
+MAC地址	MAC Address
+备用DNS	Secondary DNS
+无录像文件	No Record
+客户端配置	Local Setting
+码流未启用	Stream not enabled
+断电前位置	Off position before
+响应超时!	Response time out!
+SD卡录像	SD Card Record
+USB录像	USB Record
+刷新失败!	Refresh Failed!
+刷新成功!	Refresh Successful!
+保存失败!	Save Failed!
+保存成功!	Save is successful!
+未知错误!	Unknown error!
+最新版本:	Latest version:
+TCP端口	TCP Port
+文件无效!	Invalid File!
+Nat状态	Securus Cloud
+视频/音频	Video/Audio
+NAT服务	NAT service
+FTP配置	Set FTP
+网络优先级	NetOrder
+云台预置点	Ptz Preset
+鱼眼软校正	ShowPreMode
+设备不在线	The device is offline
+调用预置点	Call preset
+未打开预览	Preview is not open
+遥控器类型	Remote control type
+IPC参数	IPC Param
+发送方域名	Sender IP address
+时|天|月	Hour|Day|Month
+服务器错误	Server error
+网页版本:	Web Version:
+更新日志:	Update log:
+存储卡插入	Disk In
+存储卡拔出	Disk Remove
+麦克风降噪	Microphone noise reduction
+配置不存在	Configuration does not exist
+密码不正确	Invalid password
+联系人姓名	Contact Name
+联系人电话	Contact Number
+亮灯时间段	Light Up Time
+编辑/解绑	Edit/Unbind
+報警伺服器	Alarm Server
+使用者資訊	User Info
+輔碼流錄影	Auxiliary stream video
+檔訪問出錯	File Access Error
+GPS校時	GPS Timing
+管理許可權	System Manager
+導入/導出	Import/Export
+伺服器地址	Server Address
+文件發送中	File Sending
+FTP上傳	FTP upload
+IPC報警	IPC Alarm
+攝像機參數	Camera parameters
+OSD選單	OSD Menu
+電子慢快門	Slow Shutter
+日光燈防閃	Anti Flicker
+最大解析度	Max. resolution
+當前解析度	This Resolution
+壓縮檔路徑	Compressed file path
+解壓失敗！	Decompression failed!
+更新狀態:	Update status:
+自訂報警聲	Custom Audio
+同步分辯率	Sync Resolution
+UTC時間	UTCDate
+時區和時間	Time Zone
+通道分割線	Channel dividing line
+設備二維碼	Device QR
+SMTP埠	SMTP Port
+驗證碼錯誤	Verification code error
+首選DNS	Primary DNS
+測試失敗!	FTP test is failed!
+測試成功.	FTP test is successful.
+視圖庫密碼	View-library Password
+夏令時模式	DST Mode
+夏令時設置	Dst Setting
+格式化存儲	Format Disk
+設成讀寫碟	Read/Write
+設成唯讀碟	Read only
+設成鏡射碟	Redundant
+設成快照碟	Snapshot
+無存放裝置	Storage Deivce Not Exist
+匯出失敗.	Export fail
+匯出成功.	Export Successful.
+導入成功.	Import Successful.
+紅外燈關閉	IR LED off
+紅外燈開啟	IR LED on
+IPC聯動	IPC Activation
+保加利亞語	Bulgarian
+愛沙尼亞語	Norsk
+塞爾維亞語	Serbian
+斯洛伐克語	Slovakia
+增加預置點	Add Preset
+關閉全錄影	Stop All Record
+刪除預置點	Delete Preset
+全通道預覽	Full channel preview
+全通道錄影	Full Channel Record
+用戶端錄影	Record
+關閉全通道	Stop All Video
+麥克風音量	Micphone Volume
+NTP設置	NTP
+預設閘道器	Gateway
+HTTP埠	Http Port
+子網路遮罩	Subnet Mask
+備用DNS	Secondary DNS
+用戶端配置	Local Setting
+碼流未啟用	Stream not enabled
+斷電前位置	Off position before
+回應超時!	Response time out!
+SD卡錄影	SD Card Record
+USB錄影	USB Record
+刷新失敗!	Refresh Failed!
+保存失敗!	Save Failed!
+限位元開關	Limit Switch
+FTP設定	FTP
+未知錯誤!	Unknown error!
+手機監控埠	Mobile Port
+請選擇檔!	Please Choose File!
+Nat狀態	Securus Cloud
+視頻/音訊	Video/Audio
+當地語系化	Location
+NAT服務	NAT service
+雲台預置點	Ptz Preset
+讀檔案失敗	ReadFileFailed
+魚眼軟矯正	ShowPreMode
+寫檔案失敗	WriteFileFailed
+預覽未打開	Preview is not open
+預設不存在	The preset not exist
+測試...	testing...
+遙控器類型	Remote control type
+啟用蜂鳴器	Enable Buzzer
+IPC參數	IPC Param
+時|天|月	Hour|Day|Month
+設備未聯機	Device not online
+服務器錯誤	Server error
+網頁版本:	Web Version:
+更新日誌:	Update log:
+存儲卡插入	Disk In
+存儲卡拔出	Disk Remove
+密碼不正確	Invalid password
+連絡人姓名	Contact Name
+連絡人電話	Contact Number
+亮燈時間段	Light Up Time
+添加用户	Add User
+本地报警	Local Alarm
+手动报警	Manual Alarm
+网络报警	Net Alarm
+报警输出	Alarm Output
+智能分析	Intelligent Analysis
+音量调节	AudioDeviceVolume
+语音对讲	SPEAK
+模式选择	Mode selection
+自动维护	AUTO MAINTENANCE
+遮挡检测	Video Blind
+车形检测	Vehicle Detection
+通道标题	Channel Title
+清除日志	Clear Log
+关闭录像	Close Record
+组合编码	CombineEncode
+使能开关	Enable switch
+客流使能	Enable Customer Flow
+连接成功	Connected
+网络配置	Network Configuration
+解码参数	Decoding parameter
+删除用户	Delete User
+搜索时长	Search Time
+数字通道	Digital channels
+通道管理	Digital Management
+存储已满	Hard disk is full
+显示设置	Display Settings
+下载文件	DownloadFile
+延迟事件	Latch Event
+报警开始	Start
+报警结束	End
+用户信息	User Info
+人脸检测	Face Detect
+人脸识别	Face Recognition
+文件存取	File Access
+文件查询	File Search
+人形检测	Human Detect
+拨号号码	Dial Number
+异常处理	Abnormal
+增加用户	Add User
+确认密码	Confirm
+修改密码	Modify Password
+修改用户	Modify User
+回放通道	Playback
+账号安全	Security
+管理权限	System Manager
+管理工具	Advanced
+用户管理	Account
+通道模式	Turbo Mode
+恢复默认	Default
+存储管理	HDD Manager
+系统升级	Upgrade
+警报上报	Alarm Report
+日志上报	Log Report
+心跳上报	Heartbeat report
+心跳周期	Heartbeat cycle
+协议类型	Protocol Type
+报警类型	Alarm Type
+手机上报	Mobile reported
+设备类型	Type
+报警输入	Alarm Input
+间隔时间	MD Interval
+报警功能	Alarm
+报警端口	Alarm port
+录像通道	Record Channel
+录像延时	Post Recording
+开始录音	Record
+录音失败	Record Voice Fail
+结束录音	Stop
+试听失败	Fail To Test Listen
+更新周期	Update Period
+用户帐号	Account
+报警设置	Alarm Set
+串口设置	RS232
+删除日志	Clear Log
+编码设置	Encode
+普通配置	General
+网络设置	Network
+云台控制	PTZ Control
+电子云台	PTZ Electronic
+云台配置	PTZ Settintg
+日志查询	Query Log Info
+录像设置	Schedule
+远程预览	Remote Preview
+关闭设备	Shutdown
+升级系统	System Update
+输出调节	Output Adjust
+通道对讲	Channel Talk
+设备对讲	Device Talk
+轮巡配置	TourConfig
+视频检测	Motion
+颜色配置	Color Config
+远程控制	Remote Control
+自动重启	Auto-Reboot System
+报警模式	Alarm Mode
+码流控制	Bit Rate Type
+自动增益	Automatic Gain
+自动光圈	Auto Iris
+自动切换	Automatic switching
+背光补偿	BLC
+情景模式	Profiles
+前端命令	Front-end command
+走廊模式	Corridor Mode
+非常危险	Dangerous
+曝光模式	Exposure Mode
+图像风格	Image Style
+最小时间	Minimum Time
+最大时间	Maximum time
+普通模式	Normal Mode
+档位控制	Dnc Threshold
+星光红外	STAR IR
+白光全彩	Full Color
+黑白模式	Black and White
+人形警戒	HumanSense
+暖光全彩	ColorSense
+红外模式	SmartExir
+车牌模式	License Plate Mode
+取消下载	Cancel
+抓图失败	Capture failed
+图片目录	Capture Path
+抓图模式	Capture Mode
+算法规则	Algorithm
+报警规则	Alarm rules
+报警联动	Alarm linkage
+显示规则	Show Rules
+显示踪迹	Show Traces
+检测更新	Updates
+通道名称	Channel Name
+连接状态	Connect Status
+路径设置	Path
+录像类型	RecordType
+图片类型	PictureType
+外部接口	External interface
+开源声明	Open Source Software Licenses
+版本信息	Version
+编码模式	Compression
+本机域名	Domain Name
+全部选择	Select all
+输出模式	GUI Display
+普通设置	General
+网络服务	NetServer
+设备名称	Device Name
+配置名称	Configuration Name
+解码策略	Decode Order
+流畅优先	Fluency Preferred
+本地时间	Local Time
+连接模式	Connect mode
+实时优先	Real time
+远程通道	Remote channel
+音频输出	Audio output
+时间同步	Time Sync
+轮巡时间	SEQ time
+存储出错	Disk Error
+报警闪烁	Alarm flashing
+报警状态	Alarm Status
+码流信息	Bitrate Info
+区域覆盖	Region Cover
+录像状态	Record Status
+时间标题	Time Title
+下载目录	Download Path
+测试邮箱	Test Email
+加密方式	Encryption
+时间间隔	Interval
+加密错误	Encryption error
+限定码率	CBR
+可变码率	VBR
+定时报警	Alarm interval
+屏幕提示	Show Message
+事件类型	Event Type
+回答错误	Wrong Answer
+忘记密码	Forgot Password
+远程目录	Dir Name
+设备ID	Device ID
+注册状态	Registor Status
+日期格式	Date Format
+本机编号	Dev No
+停止录像	Stop Record
+存储满时	HDD Full
+选择语言	Language
+待机时间	Auto Logout
+系统时间	System Time
+时间格式	Time Format
+24小时	24-HOUR
+12小时	12-HOUR
+视频制式	Video Standard
+抓图分区	Image Partition
+剩余容量	Left Capacity
+磁盘分区	HDD Partition
+录像分区	Record Partition
+恢复错误	Recover
+结束时间	End Time
+开始时间	Start Time
+未格式化	Unformatted
+喇叭音量	Horn Volume
+宠物检测	Pet Detect
+配置导出	Config Export
+日志导出	Log Export
+配置导入	Config Import
+导入失败	Import fail
+图像颜色	Color
+水平锐度	Horizontal Acutance
+垂直锐度	Vertical Acutance
+系统信息	Information
+通道状态	Channel Status
+存储信息	HDD Info
+日志信息	Log
+非法输入	Invalid Input
+非法请求	Illegal request
+无效设置	Invalid setting
+外部告警	I/O Trigger
+限制类型	Restricted Type
+IP冲突	IP Conflict
+阿拉伯语	Arabic
+阿赛拜疆	Azerbaycan
+希伯来语	Hebrew
+匈牙利语	Hungarian
+意大利语	Italian
+葡萄牙语	Portugal
+罗马尼亚	Romanian
+简体中文	SimpChinese
+西班牙语	Spanish
+繁体中文	TradChinese
+土耳其语	Turkey
+乌克兰语	Ukrainian
+切换比例	Ratio
+数字放大	Digital Zoom
+其他设置	Other
+铺满窗口	Wide
+原始比例	Original
+点间巡航	Tour
+巡航线路	Patrol No
+报警事件	Alarm
+配置操作	Configuration
+文件操作	FileAccess
+录像操作	Record
+数据管理	Storage
+系统操作	System
+物联事件	IOT
+产生时间	Time
+在线升级	Online Upgrade
+每星期五	Every Friday
+每星期一	Every Monday
+每星期六	Every Saturday
+每星期日	Every Sunday
+每星期四	Every Thursday
+每星期二	Every Tuesday
+每星期三	Every Wednesday
+MTU值	MTU
+平台监控	Info
+主服务器	Platform monitoring
+辅服务器	Slave Server
+无线拨号	Wireless Config
+报警中心	AlarmServer
+组播设置	MULTICAST
+串口透传	Serial pass-through
+绑定网卡	Bind network card
+默认网关	Gateway
+子网掩码	Subnet Mask
+网络加密	Network Encryption
+端口冲突	Port Conflict
+无效端口	Invalid Port
+画质优先	Quality Preferred
+媒体端口	Media Port
+网传优先	NetWork  Priority
+有线网卡	Wire Netcard
+许可IP	Abled IP
+断网事件	NetAbort
+禁用IP	Disabled IP
+IP地址	IP Address
+物品滞留	Abandoned
+非法停车	Illegal parking
+物品盗移	Missing Object
+实时预览	Live
+回放类型	PlayBack
+外部报警	Alarm Record
+告警抓拍	Alarm Snap
+所有录像	All videos
+所有图片	All Picture
+普通录像	General Record
+定时抓拍	Regular Snap
+手动录像	Manual Record
+手动抓拍	Manual Snap
+关键录像	Key Video
+本地回放	Local
+暂停回放	Pause
+回放模式	QueryMode
+局部放大	Zoomed
+远程回放	Remote
+码流类型	Stream
+徘徊时间	Wander Time
+警戒区域	Intrusion
+密码错误	Password error
+开机调用	Boot Call
+控制方式	Control Mode
+空闲时间	Free Time
+空闲调用	Free Call
+云台联动	PTZ Activation
+标志校验	Mark
+重新连接	Reconnect
+录像目录	Record Path
+录像控制	Record Mode
+录像模式	Record Mode
+录像功能	Record
+图片存储	SnapShot
+自动分配	Auto assigned
+操作成功	Operation succeeds
+设备信息	Device Info
+记住密码	Remember Password
+录像回放	Playback
+重置密码	Reset password
+重置类型	Reset Type
+找回密码	Retrieve Password
+安全问题	Safety Question
+安全邮箱	Safe Email
+串口功能	Function
+左右切换	Left Right
+限位开关	Limit Switch
+上下切换	Up Down
+报警上报	Alarm reporting
+绝对地址	Absolute address
+视频诊断	Video Diagnosis
+球机跟踪	Ball machine tracking
+物品看护	Items care
+周界警戒	Perimeter alert
+周期抓图	Cycle capture
+抓图时间	Capture time
+定时抓图	Timed Capture
+上传时间	Upload time
+报警级别	Alarm level
+本地端口	Local Port
+注册密码	Register code
+系统设置	System
+颜色设置	Color
+云台设置	PTZ Config
+设备配置	Remote Setting
+发送失败	Failed to send!
+操作超时	TimeOut
+时间段1	Period 1
+时间段2	Period 2
+时间段3	Period 3
+时间段4	Period 4
+时间段5	Period 5
+时间段6	Period 6
+升级终止	Update Abort!
+升级失败	Update failed!
+本地升级	Local Upgrade
+文件名:	File Name:
+升级成功	Update successful
+下载进度	DownLoad Progress
+发送进度	Send Progress
+升级进度	Upgrade Progress
+发布日期	Build Date
+扩展通道	Extra Channel
+系统版本	System
+视频遮挡	Video Blind
+视频丢失	Video Loss
+移动侦测	Video Motion
+声音检测	Volume Detection
+报警间隔	Alarm interval
+语音提示	Voice Prompt
+十六进制	Hex
+密钥类型	Key Type
+探头报警	Probe alarm
+紧急情况	Emergency
+气体报警	Gas alarm
+玻璃破碎	Glass broken
+在家模式	At home mode
+人体检测	Human body detection
+布防模式	Arming Mode
+撤防模式	Disarm mode
+烟雾报警	Smoke alarm
+温度报警	Temperature Alarm
+需要服务	Service required
+用户登录	Log In
+用户登出	Log Out
+无线网络	3G
+通用网络	Net Common
+电子邮件	Email
+手机监控	Cell phone monitoring
+云台报警	PTZ Alarm
+云台巡迹	PTZPattern
+巡航路线	Tour
+回放文件	Playback
+录像使能	RecordEnable
+重启恢复	ResumePtzState
+保存配置	Settings
+录像查询	SearchAlarm
+设置时间	SetTime
+存储位置	Storage location
+系统状态	System Status
+TV调节	TV Adjust
+生产配置	Production Configuration
+修改时间	Modification time
+定时录像	General
+更新失败	UpdateFailed
+视频输出	Video Output
+视频信号	Video signal
+视频分割	Video Split
+视频物件	Video Widget
+无比特率	No Bitrate
+不可修改	Unchangeable
+面板类型	Pad Type
+维护功能	Maintain
+调试模式	Debug Mode
+启用蜂鸣	Enable Buzzer
+星光全彩	Starlight full color
+红外夜视	infrared night vision
+双光警戒	double light warning
+图像设置	Image Set
+系统维护	IPC Maintain
+左右翻转	Mirroring
+上下翻转	Overturn
+亮灯时间	Lighting time
+工作模式	Operating mode
+常亮模式	Steady Mode
+自动模式	Auto Mode
+定时模式	Timer Mode
+智能模式	Smart Mode
+音乐模式	Music Mode
+灯光配置	Light set
+链路地址	Link Address
+客流统计	Customer Flow Count
+统计模式	Statisitc Mode
+店外统计	Outside
+店内统计	Inside
+查询条件	Query Conditions
+查询结果	Query Results
+报表类型	Report Form Type
+统计类型	Count Type
+进入人数	Enter Flow Count
+离开人数	Leave Flow Count
+经过人数	Pass Flow Count
+统计时间	Count Time
+清除数据	Remove Data
+音频编码	AudioCode
+设备型号	Device model
+音频文件	Audio File
+参数错误	parameter error
+容量不足	Insufficient capacity
+人形跌倒	Human Fall Down
+视频比例	Video Proportion
+复制星期	Copy Day
+复制通道	Copy Channel
+全部清除	Clear All
+设备版本	Device Version
+周期限制	Period Limit
+连续周期	Period Count
+超级密码	SupperPassword
+维护周期	MaintainDay
+网络模式	NIC Mode
+网卡组成	NIC Comp.
+默认网卡	Default NIC
+负载均衡	Load Balance
+下载插件	Download plugin
+添加用戶	Add User
+本地報警	Local Alarm
+手動報警	Manual Alarm
+網路報警	Net Alarm
+報警輸出	Alarm Output
+智慧分析	Intelligent Analysis
+音量調節	AudioDeviceVolume
+語音對講	SPEAK
+模式選擇	Mode selection
+自動維護	AUTO MAINTENANCE
+備份檔案	Backup
+遮擋檢測	Video Blind
+車形檢測	Vehicle Detection
+通道標題	Channel Title
+清除日誌	Clear Log
+關閉錄影	Close Record
+組合編碼	CombineEncode
+使能開關	Enable switch
+連接成功	Connected
+網路配置	Network Configuration
+解碼參數	Decoding parameter
+刪除用戶	Delete User
+搜索時長	Search Time
+數位通道	Digital channels
+存儲已滿	Hard disk is full
+顯示設定	Display Settings
+下載檔案	DownloadFile
+延遲事件	Latch Event
+報警開始	Start
+報警結束	End
+人臉檢測	Face Detect
+人臉識別	Face Recognition
+文件查詢	File Search
+人形檢測	Human Detect
+撥號號碼	Dial Number
+異常處理	Abnormal
+增加用戶	Add User
+確認密碼	Confirm
+修改密碼	Modify Password
+修改用戶	Modify User
+重播通道	Playback
+帳號安全	Security
+用戶管理	Account
+頻道模式	Turbo Mode
+恢復預設	Default
+數字頻道	IP Channels
+存儲管理	HDD Manager
+系統升級	Upgrade
+警報上報	Alarm Report
+日誌上報	Log Report
+心跳上報	Heartbeat report
+心跳週期	Heartbeat cycle
+協議類型	Protocol Type
+報警類型	Alarm Type
+手機上報	Mobile reported
+設備類型	Type
+存儲出錯	Storage Device Access Failure
+警報輸入	Alarm Input
+間隔時間	MD Interval
+警報功能	Alarm
+錄影頻道	Record Channel
+錄影延遲	Post Recording
+開始錄音	Record
+錄音失敗	Record Voice Fail
+結束錄音	Stop
+試聽失敗	Fail To Test Listen
+更新週期	Update Period
+用戶帳號	Account
+報警設置	Alarm Set
+串口設置	RS232
+恢復默認	Default
+刪除日誌	Clear Log
+編碼設置	Encode
+網路設置	Network
+雲台控制	PTZ Control
+電子云台	PTZ Electronic
+雲台配置	PTZ Settintg
+日誌查詢	Query Log Info
+錄影設置	Schedule
+遠程預覽	Remote Preview
+關閉設備	Shutdown
+升級系統	System Update
+輸出調節	Output Adjust
+通道對講	Channel Talk
+設備對講	Device Talk
+輪巡配置	TourConfig
+視頻檢測	Motion
+顏色配置	Color Config
+遠程控制	Remote Control
+自動重啟	Auto-Reboot System
+報警模式	Alarm Mode
+碼流控制	Bit Rate Type
+自動增益	Automatic Gain
+自動光圈	Auto Iris
+自動切換	Automatic switching
+背光補償	BLC
+圖像風格	Image Style
+最小時間	Minimum Time
+最大時間	Maximum time
+檔位控制	Dnc Threshold
+智能警戒	HumanSense
+智能紅外	SmartExir
+車牌模式	License Plate Mode
+取消下載	Cancel
+抓圖失敗	Capture failed
+圖片目錄	Capture Path
+抓圖模式	Capture Mode
+算法規則	Algorithm
+報警規則	Alarm rules
+報警聯動	Alarm linkage
+顯示規則	Show Rules
+顯示蹤跡	Show Traces
+檢測更新	Updates
+通道名稱	Channel Name
+連接狀態	Connect Status
+路徑設置	Path
+錄影類型	RecordType
+圖片類型	PictureType
+外部介面	External interface
+版本資訊	Version
+編碼模式	Compression
+伺服器埠	Server Port
+全部選擇	Select all
+輸出模式	GUI Display
+普通設置	General
+網路服務	NetServer
+設備名稱	Device Name
+配置名稱	Configuration Name
+解碼策略	Decode Order
+流暢優先	Fluency Preferred
+本地時間	Local Time
+連接模式	Connect mode
+即時優先	Real time
+遠程通道	Remote channel
+音訊輸出	Audio output
+時間同步	Time Sync
+輪巡時間	SEQ time
+警報閃爍	Alarm flashing
+報警狀態	Alarm Status
+位元訊息	Bitrate Info
+區域覆蓋	Region Cover
+錄影狀態	Record Status
+時間標題	Time Title
+下載目錄	Download Path
+測試郵箱	Test Email
+時間間隔	Interval
+加密錯誤	Encryption error
+限定碼率	CBR
+可變碼率	VBR
+定時報警	Alarm interval
+螢幕提示	Show Message
+事件類型	Event Type
+回答錯誤	Wrong Answer
+忘記密碼	Forgot Password
+遠端目錄	Dir Name
+設備ID	Device ID
+服務器埠	Server Port
+注册狀態	Registor Status
+本機編號	Dev No
+停止錄影	Stop Record
+存儲滿時	HDD Full
+選擇語言	Language
+待機時間	Auto Logout
+系統時間	System Time
+時間格式	Time Format
+24小時	24-HOUR
+12小時	12-HOUR
+視頻制式	Video Standard
+抓圖分區	Image Partition
+剩餘容量	Left Capacity
+存儲分割	Partition
+錄影分區	Record Partition
+恢復錯誤	Recover
+結束時間	End Time
+開始時間	Start Time
+寵物檢測	Pet Detect
+配置匯出	Config Export
+日誌匯出	Log Export
+配置導入	Config Import
+導入失敗	Import fail
+圖像顏色	Color
+水準銳度	Horizontal Acutance
+垂直銳度	Vertical Acutance
+系統訊息	Information
+通道狀態	Channel Status
+存儲訊息	HDD Info
+日誌訊息	Log
+版本訊息	Version
+非法輸入	Invalid Input
+非法請求	Illegal request
+無效設置	Invalid setting
+限制類型	Restricted Type
+IP衝突	IP Conflict
+阿拉伯語	Arabic
+希伯來語	Hebrew
+匈牙利語	Hungarian
+義大利語	Italian
+葡萄牙語	Portugal
+羅馬尼亞	Romanian
+簡體中文	SimpChinese
+西班牙語	Spanish
+繁體中文	TradChinese
+土耳其語	Turkey
+烏克蘭語	Ukrainian
+切換比例	Ratio
+數位放大	Digital Zoom
+其他設置	Other
+鋪滿窗口	Wide
+點間巡航	Tour
+巡航線路	Patrol No
+報警事件	Alarm
+錄影操作	Record
+資料管理	Storage
+系統操作	System
+物聯事件	IOT
+日誌資訊	Operation
+產生時間	Time
+線上升級	Online Upgrade
+自訂模式	Custom
+平臺監控	Info
+主服務器	Platform monitoring
+輔服務器	Slave Server
+無線撥號	Wireless Config
+報警中心	AlarmServer
+組播設置	MULTICAST
+串口透傳	Serial pass-through
+自我調整	Adaptive
+綁定網卡	Bind network card
+網路加密	Network Encryption
+畫質優先	Quality Preferred
+網傳優先	NetWork  Priority
+有線網卡	Wire Netcard
+許可IP	Abled IP
+斷網事件	NetAbort
+無錄影檔	No Record
+物品滯留	Abandoned
+非法停車	Illegal parking
+物品盜移	Missing Object
+即時預覽	Live
+警報輸出	Alarm Output
+重播類型	PlayBack
+外部報警	Alarm Record
+所有錄影	All videos
+所有圖片	All Picture
+普通錄影	General Record
+定時抓拍	Regular Snap
+手動錄影	Manual Record
+手動抓拍	Manual Snap
+關鍵錄影	Key Video
+本地重播	Local
+暫停重播	Pause
+重播模式	QueryMode
+遠程重播	Remote
+碼流類型	Stream
+徘徊時間	Wander Time
+警戒區域	Intrusion
+密碼錯誤	Password error
+開機調用	Boot Call
+數據位元	Data Bits
+閒置時間	Free Time
+空閒調用	Free Call
+雲台聯動	PTZ Activation
+標誌校驗	Mark
+重新連接	Reconnect
+錄影目錄	Record Path
+錄影控制	Record Mode
+錄影模式	Record Mode
+錄影功能	Record
+錄影排程	Record Conf.
+圖片存儲	SnapShot
+自動分配	Auto assigned
+主機訊息	Device Info
+網路設定	Network
+記住密碼	Remember Password
+錄影重播	Playback
+重置密碼	Reset password
+重置類型	Reset Type
+找回密碼	Retrieve Password
+安全問題	Safety Question
+安全郵箱	Safe Email
+左右切換	Left Right
+上下切換	Up Down
+報警上報	Alarm reporting
+絕對地址	Absolute address
+視頻診斷	Video Diagnosis
+球機跟蹤	Ball machine tracking
+物品看護	Items care
+週期抓圖	Cycle capture
+抓圖時間	Capture time
+定時抓圖	Timed Capture
+上傳時間	Upload time
+報警級別	Alarm level
+註冊密碼	Register code
+系統設定	System
+顏色設置	Color
+一般設定	General
+雲台設置	PTZ Config
+設備配置	Remote Setting
+發送失敗	Failed to send!
+操作超時	TimeOut
+偵測時段	Period
+記憶體:	Memory:
+升級終止	Update Abort!
+升級失敗	Update failed!
+本地升級	Local Upgrade
+檔案名:	File Name:
+升級成功	Update successful
+TCP埠	TCP Port
+下載進度	DownLoad Progress
+檔無效!	Invalid File!
+發送進度	Send Progress
+升級進度	Upgrade Progress
+報警輸入	Alarm In
+發布日期	Build Date
+影像頻道	Record Channel
+擴展通道	Extra Channel
+系統版本	System
+頻道遮蔽	Video Blind
+影像遺失	Video Loss
+位移偵測	Video Motion
+體積檢測	Volume Detection
+報警間隔	Alarm interval
+語音提示	Voice Prompt
+十六進位	Hex
+金鑰類型	Key Type
+探頭報警	Probe alarm
+緊急情況	Emergency
+氣體報警	Gas alarm
+人體檢測	Human body detection
+煙霧報警	Smoke alarm
+溫度報警	Temperature Alarm
+需要服務	Service required
+用戶登錄	Log In
+用戶登出	Log Out
+移動偵測	Motion Detect
+無線網路	3G
+通用網路	Net Common
+電子郵件	Email
+手機監控	Cell phone monitoring
+雲台報警	PTZ Alarm
+雲台巡跡	PTZPattern
+巡航路線	Tour
+回放檔案	Playback
+錄像使能	RecordEnable
+重啟恢復	ResumePtzState
+設置時間	SetTime
+存儲位置	Storage location
+系統狀態	System Status
+TV調節	TV Adjust
+生產配置	Production Configuration
+修改時間	Modification time
+定時錄影	General
+視頻輸出	Video Output
+視頻信號	Video signal
+視頻分割	Video Split
+視頻物件	Video Widget
+不可改變	Unchangeable
+設備離線	The device is offline
+添加預設	Add Preset
+刪除預設	Delete preset
+調用預設	Call preset
+面板類型	Pad Type
+維護功能	Maintain
+調試模式	Debug Mode
+紅外夜視	infrared night vision
+雙光警戒	double light warning
+圖像設置	Image Set
+亮燈時間	Lighting time
+自動模式	Auto Mode
+定時模式	Timer Mode
+音樂模式	Music Mode
+燈光配置	Light set
+連結地址	Link Address
+左右翻轉	Left-Right Flip
+上下翻轉	Up-Down Flip
+客流統計	Customer Flow Count
+統計模式	Statisitc Mode
+店外統計	Outside
+店內統計	Inside
+查詢準則	Query Conditions
+查詢結果	Query Results
+報表類型	Report Form Type
+統計類型	Count Type
+進入人數	Enter Flow Count
+離開人數	Leave Flow Count
+經過人數	Pass Flow Count
+統計時間	Count Time
+清除數據	Remove Data
+音訊編碼	AudioCode
+設備型號	Device model
+音頻文件	Audio File
+參數誤差	parameter error
+捕獲失敗	Capture failed
+視頻比例	Video Proportion
+複製星期	Copy Day
+複製通道	Copy Channel
+設備版本	Device Version
+週期限制	Period Limit
+連續週期	Period Count
+系統維護	System Maintain
+超級密碼	SupperPassword
+維護週期	MaintainDay
+網絡模式	NIC Mode
+網卡組成	NIC Comp.
+網卡綁定	Static
+默認網卡	Default NIC
+負載均衡	Load Balance
+添加组	Add Group
+车牌号	Car Plate
+删除组	Delete Group
+未开启	DisEnable
+接入点	AP
+增加组	Add Group
+修改组	Modify Group
+新密码	New Password
+旧密码	Old Password
+报警灯	Alarm Lights
+报警声	Alarm Sound
+报警音	Alarm Tone
+写日志	Write Log
+默认值	Defaults
+宽动态	DWDR
+已连接	Connected
+未配置	Not configured
+未连接	Not connected
+未登录	Not logged in
+不在线	Offline
+最新:	Newest:
+解压到	Decompress to
+自定义	Custom
+序列号	Serial number
+多连接	Multi-link
+单连接	Single connect
+存储满	Disk Full
+抗抖动	Deflick
+透明度	Transparency
+分辨率	Resolution
+收件人	Receiver
+发件人	Sender
+辅码流	Extra Stream
+主码流	Main Stream
+夏令时	DST
+第一个	1st week
+第二个	2nd week
+第三个	3th week
+第四个	4th week
+星期五	Fri
+星期一	Mon
+星期六	Sat
+星期日	Sun
+星期四	Thur
+星期二	Tues
+星期三	Wed
+总容量	Capacity
+事件盘	Event Driver
+只读盘	Read only
+读写盘	Read/Write
+冗余盘	Redundant
+快照盘	Snapshot
+对比度	Contrast
+饱和度	Saturation
+不支持	Not Supported
+黑名单	Black List
+白名单	White List
+巴西语	Brazilian
+中英文	ChineseEnglish
+捷克语	Czech
+丹麦语	Dansk
+荷兰语	Dutch
+波斯语	Farsi
+芬兰语	Finnish
+希腊语	Greek
+印尼语	Indonesian
+波兰语	Poland
+瑞典语	Swedish
+泰国语	Thai
+越南语	Vietnamese
+预置点	Preset
+单画面	View1
+四画面	View4
+下一页	NextPage
+上一页	PrePage
+十一月	Nov
+十二月	Dec
+辅端口	Secondary port
+主端口	Primary port
+云服务	Securus Cloud
+自适应	Adaptive
+按文件	By Name
+按时间	By Time
+下一帧	Next Frame
+上一帧	Prev Frame
+警戒线	Tripwire
+波特率	Baud rate
+数据位	Data Bits
+偶校验	Even
+奇校验	Odd
+空检验	Space
+停止位	Stop Bits
+二维码	QR Code
+验证码	Captcha
+缩略图	Thumbnails
+手机号	cell-phone number
+灵敏度	Snesitiveness
+设备号	Device No.
+内存:	Memory:
+提示:	Notes:
+用户名	User Name
+设备码	Cloud ID
+非常好	Excellent
+无信号	NoSingnal
+门铃响	Door bell ringing
+本地化	Location
+成功!	Success!
+失败!	Failed!
+气氛灯	Atmosphere Light
+时间段	Period
+日报表	Daily Report
+周报表	Weekly Report
+月报表	Monthly Report
+年报表	Annual Report
+柱状图	Histogram
+折线图	Line Chart
+单网卡	Single
+添加組	Add Group
+車牌號	Car Plate
+刪除組	Delete Group
+未開啟	DisEnable
+接入點	AP
+增加組	Add Group
+許可權	Authority
+修改組	Modify Group
+新密碼	New Password
+舊密碼	Old Password
+序列號	No
+報警燈	Alarm Lights
+報警埠	Alarm port
+報警聲	Alarm Sound
+報警音	Alarm Tone
+寫日誌	Write Log
+默認值	Defaults
+防過曝	Prevent Exposure
+寬動態	DWDR
+已連接	Connected
+未連接	Not connected
+未登錄	Not logged in
+不線上	Offline
+解壓至	Decompress to
+多連接	Multi-link
+單連接	Single connect
+存儲滿	Disk Full
+抗抖動	Deflick
+解析度	Resolution
+寄件者	Sender
+輔碼流	Extra Stream
+主碼流	Main Stream
+夏令時	DST
+第一個	1st week
+第二個	2nd week
+第三個	3th week
+第四個	4th week
+總容量	Capacity
+事件盤	Event Driver
+唯讀盤	Read only
+讀寫盤	Read/Write
+冗餘盤	Redundant
+快照盤	Snapshot
+對比度	Contrast
+飽和度	Saturation
+黑名單	Black List
+白名單	White List
+巴西語	Brazilian
+捷克語	Czech
+丹麥語	Dansk
+荷蘭語	Dutch
+波斯語	Farsi
+芬蘭語	Finnish
+希臘語	Greek
+印尼語	Indonesian
+波蘭語	Poland
+瑞典語	Swedish
+泰國語	Thai
+越南語	Vietnamese
+預置點	Preset
+單畫面	View1
+四畫面	View4
+檔操作	FileAccess
+下一頁	NextPage
+上一頁	PrePage
+位元組	BYTE
+雲服務	Securus Cloud
+埠衝突	Port Conflict
+無效埠	Invalid Port
+媒體埠	Media Port
+按時間	By Time
+下一幀	Next Frame
+上一幀	Prev Frame
+警戒線	Tripwire
+偶校驗	Even
+空檢驗	Space
+二維碼	QR Code
+驗證碼	Captcha
+縮略圖	Thumbnails
+手機號	cell-phone number
+靈敏度	Snesitiveness
+設備號	Device No.
+本地埠	Local Port
+識別度	Sensitivity
+時段1	Period 1
+時段2	Period 2
+時段3	Period 3
+時段4	Period 4
+時段5	Period 5
+時段6	Period 6
+用戶名	User Name
+設備碼	Cloud ID
+無信號	NoSingnal
+門鈴響	Door bell ringing
+無碼流	No Bitrate
+失敗!	Failed!
+氣氛燈	Atmosphere Light
+時間段	Period
+日報表	Daily Report
+周報表	Weekly Report
+月報表	Monthly Report
+年報表	Annual Report
+柱狀圖	Histogram
+折線圖	Line Chart
+單網卡	Single
+异常	Abnormal
+手动	manual
+自动	Auto
+备份	Backup
+通道	Channel
+去雾	Defogging
+串口	Comm
+导出	Export
+导入	Import
+编码	Encode
+错误	Error
+全景	Panorama
+普通	Regular
+向导	Guide
+启用	Enable
+类型	Type
+权限	Authority
+组名	Group Name
+备注	Memo
+复用	Reuseable
+用户	User
+序号	No
+添加	Add
+高级	Advanced
+重启	Reboot
+端口	Port
+报警	Alarm
+间隔	Interval
+彩信	MMS
+常闭	Normal Close
+常开	Normal Open
+操作	Operation
+提示	Prompt
+发送	Send
+短信	SMS
+抓图	Snapshot
+试听	Test
+轮巡	Tour
+停止	Stop
+模拟	Analog
+答案	Answer
+配置	Configuration
+状态	Status
+蜂鸣	Buzzer
+室内	Indoor
+等级	Grade
+镜像	Mirror
+上限	Upper limit
+室外	Outdoor
+倒影	Reflection
+翻转	Flip
+保存	Save
+风格	Style
+取消	Cancel
+预拍	PreSnap
+规则	Rule
+位!	characters!
+属性	Attribute
+未知	Unknown
+清除	Clear
+解压	Decompress
+关闭	close
+复制	Copy
+注册	Register
+删除	Delete
+数字	Digital
+码流	Stream
+名称	Name
+下载	Download
+主题	Title
+最好	Best
+很好	Better
+一般	General
+较差	Worse
+很差	Worst
+退出	Exit
+匿名	Anonymous
+测试	Test
+离线	Offline
+在线	Online
+覆盖	Overwrite
+日期	Date
+结束	End
+设置	Setting
+开始	Start
+最后	Finally
+时区	Time Zone
+容量	Capacity
+存储	Disk
+分区	Partition
+下限	Less Than
+版本	Version
+锐度	Acutance
+亮度	Brightness
+增益	Gain
+色调	Hue
+支持	Support
+英语	English
+法语	French
+德语	German
+日语	Japanese
+韩语	Korean
+俄语	Russian
+音频	Audio
+颜色	Color
+编辑	Edit
+拉远	Zoom Out
+还原	Reduction
+步长	Speed
+拉近	Zoom In
+变焦	Focus
+调用	Call Preset
+光圈	Iris
+播放	Play
+全屏	Full Screen
+变倍	Zoom
+登出	Logout
+全部	All
+清空	Remove
+查询	Search
+天前	Day(s) Ago
+从不	Never
+每天	Everyday
+本地	Local
+网络	Net
+一月	Jan
+十月	Oct
+二月	Feb
+三月	Mar
+四月	Apr
+五月	May
+六月	Jun
+七月	Jul
+八月	Aug
+九月	Sep
+字节	BYTE
+超速	Speeding
+网卡	Net Card
+确定	OK
+粘贴	Paste
+快放	Fast
+文件	File
+同步	Synchronous
+搜索	Search
+慢放	Slow
+延时	OutDelay
+密码	Password
+地址	Address
+同轴	Coaxial
+校验	Parity
+协议	Protocol
+问题	Question
+检测	Detect
+长度	Length
+预录	PreRecord
+冗余	Redundancy
+刷新	Refresh
+重置	Reset Password Procedure
+区域	Region
+登录	Login
+域名	domain name
+最低	Lowest
+较低	Lower
+较高	High
+很高	Higher
+最高	Highest
+时间	Time
+浏览	Browse
+升级	Upgrade
+视频	Video
+画质	Quality
+星期	Week
+认证	Authentication
+信号	Signal
+较好	VeryGood
+很弱	VeryLow
+加水	Add Water
+呼叫	Call
+换药	Medicine change
+点单	Order
+结帐	Checkout
+病危	Critically Ill
+关门	Close the door
+开门	Open the door
+没电	No battery
+低压	Low Pressure
+拔针	Needle removal
+漏水	Water leaking
+被拆	It was demolished
+振动	Vibration
+正常	Normal
+云台	PTZ
+回放	playback
+录像	RECORD
+关机	Shut Down
+更新	Update
+音量	Volume
+广播	Broadcast
+统计	Count
+列表	List
+模式	Mode
+语言	Language
+图片	Picture
+打开	Open
+修改	Modify
+其他	Other
+静态	Static
+容错	Fault Tolerance
+異常	Abnormal
+手動	manual
+自動	Auto
+去霧	Defogging
+匯出	Export
+導入	Import
+編碼	Encode
+錯誤	Error
+嚮導	Guide
+啟用	Enable
+類型	Type
+組名	Group Name
+備註	Memo
+複用	Reuseable
+用戶	User
+進階	Advanced
+重啟	Reboot
+報警	Alarm
+間隔	Interval
+常閉	Normal Close
+常開	Normal Open
+發送	Send
+抓圖	Snapshot
+試聽	Test
+輪巡	Tour
+模擬	Analog
+狀態	Status
+蜂鳴	Buzzer
+危險	Dangerous
+室內	Indoor
+等級	Grade
+鏡像	Mirror
+翻轉	Flip
+黑白	Black and White
+風格	Style
+預拍	PreSnap
+規則	Rule
+頻道	Channel
+屬性	Attribute
+解壓	Decompress
+關閉	close
+關機	Shutdown
+自訂	Custom
+複製	Copy
+序號	Serial number
+刪除	Delete
+數字	Digital
+碼流	Stream
+名稱	Name
+下載	Download
+主題	Title
+較差	Worse
+測試	Test
+離線	Offline
+線上	Online
+覆蓋	Overwrite
+結束	End
+設置	Setting
+開始	Start
+最後	Finally
+時區	Time Zone
+存儲	Disk
+分區	HDD Partition
+銳度	Acutance
+色調	Hue
+英語	English
+法語	French
+德語	German
+日語	Japanese
+韓語	Korean
+俄語	Russian
+音訊	Audio
+顏色	Color
+編輯	Edit
+拉遠	Zoom Out
+還原	Reduction
+步長	Speed
+變焦	Focus
+調用	Call Preset
+變倍	Zoom
+查詢	Search
+從不	Never
+網絡	Net
+輔埠	Secondary port
+主埠	Primary port
+網卡	Net Card
+確定	OK
+粘貼	Paste
+延時	OutDelay
+密碼	Password
+同軸	Coaxial
+校驗	Parity
+協議	Protocol
+問題	Question
+檢測	Detect
+長度	Length
+預錄	PreRecord
+冗餘	Redundancy
+區域	Region
+登錄	Login
+較低	Lower
+較高	High
+時間	Time
+流覽	Browse
+升級	Upgrade
+視頻	Video
+畫質	Quality
+認證	Authentication
+信號	Signal
+較好	VeryGood
+換藥	Medicine change
+點單	Order
+結帳	Checkout
+關門	Close the door
+開門	Open the door
+沒電	No battery
+低壓	Low Pressure
+拔針	Needle removal
+振動	Vibration
+雲台	PTZ
+重播	playback
+錄影	RECORD
+廣播	Broadcast
+統計	Count
+清單	List
+語言	Language
+圖片	Picture
+打開	Open
+容錯	Fault Tolerance
+组	Group
+分	Min
+关	Close
+中	Medium
+开	Open
+高	Strong
+强	Strong
+弱	Weak
+无	No
+低	Weak
+张	Pictures
+全	All
+好	Good
+兆	M
+周	Day of Week
+在	At
+否	NO
+秒	Sec
+是	YES
+时	Hour
+到	To
+天	Day
+組	Group
+埠	Port
+關	Close
+開	Open
+強	Strong
+無	No
+張	Pictures
+時	Hour

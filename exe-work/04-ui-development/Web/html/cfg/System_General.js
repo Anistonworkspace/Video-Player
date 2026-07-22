@@ -6,7 +6,7 @@ $(function(){
 	var GeneralInfo = {};
 	var TimeZone = {};
 	var NetNTP = {};
-	var MultiVstd = {};		//支持视频制式
+	var MultiVstd = {};		//SupportVideo Standard
 	var NetCommon;
 	var DataFormat = ["YYMMDD", "MMDDYY", "DDMMYY"];
 	var DateSeparator = [".", "-", "/"];
@@ -227,12 +227,12 @@ $(function(){
 			},pageTitle, "NetWork.NetNTP", -1, WSMsgID.WsMsgID_CONFIG_GET);
 		}
 		
-		// 先有支持语言能力，后有支持视频制式能力，如果语言能力获取不到就代表视频制式也获取不到
+		// 先有SupportLanguage能力，后有SupportVideo Standard能力，如果Language能力获取不To就代表Video Standard也获取不To
 		$("#SelLanguage").empty();
 		$("#SelVideoMode").empty();
 		if (SupportLang == null || SupportLang.length == 0) {
 			$("#SelLanguage").append('<option value="0">ENGLISH</option>');
-			$("#SelLanguage").append('<option value="1">简体中文</option>');
+			$("#SelLanguage").append('<option value="1">SimpChinese</option>');
 			$("#SelVideoMode").append('<option value="0">PAL</option>');
 			$("#SelVideoMode").val(0);
 			$("#SelLanguage").val(1);
@@ -392,7 +392,7 @@ $(function(){
 		var SysTime = $("#SysTime").timer.GetTimeFor24($("#SysTime"));
 		SystemTime.OPTimeSetting = SysDate + " " + SysTime;
 		if (bSupportTimeZone) {
-			//	获得时区与时间
+			//	获得Hour区与Time
 			var text = $("#SelTimeZone2").find("option:selected").text();
 			var sPos = text.indexOf("[");
 			var ePos = text.indexOf("]");
@@ -408,7 +408,7 @@ $(function(){
 			timeZoneMin = TimeZone[TimeZone.Name].timeMin;
 			var timeZonetext = $("#SelTimeZone2").find("option:selected").text().match(/C(.*?)\]/);
 			var FullTimeFormat = SysDate + "T" + SysTime + timeZonetext[1];
-			//计算时区偏移:设置的时区向设备进行偏移
+			//计算Hour区偏移:设置的Hour区向设备进行偏移
 			var curFullTime = new Date(FullTimeFormat);
 			var utcTime = curFullTime.getTime() + curFullTime.getTimezoneOffset() * 60 * 1000;
 			var targetTime =  new Date(utcTime  - parseInt(timeZoneMin) * 60 * 1000);
@@ -419,11 +419,11 @@ $(function(){
 			var minutes = String(targetTime.getMinutes()).padStart(2, '0');
 			var seconds = String(targetTime.getSeconds()).padStart(2, '0');
 			resTimeSetting = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-			//设置时区偏移
+			//设置Hour区偏移
 			TimeZone[TimeZone.Name].timeMin = nFlag*(parseInt(arr[0])*60+parseInt(arr[1]));
 		}
 		if(resTimeSetting != "") SystemTime.OPTimeSetting = resTimeSetting;
-		var bReboot = false; //改变视频制式（PAL/NTSC）、切换语言需重启设备
+		var bReboot = false; //改变Video Standard（PAL/NTSC）、切换Language需Reboot设备
 		RfParamCall(function(a){
 			RfParamCall(function(a){
 				if (a.Ret == 603) {
@@ -684,7 +684,7 @@ $(function(){
 			strZone += prefixInteger(Math.abs(nHour),2) + ":" + prefixInteger(nMin,2);
 			RfParamCall(function(a,b){
 				if(a.Ret == 100){
-					//获得Dev时区与时间
+					//获得DevHour区与Time
 					var tmpOPTimeQuery = a["OPTimeQuery"];
 					var SysDate = tmpOPTimeQuery.split(" ")[0];
 					var SysTime = tmpOPTimeQuery.split(" ")[1];
@@ -702,13 +702,13 @@ $(function(){
 					stime = stime.substr(sPos+1,ePos-sPos-1);
 					var arr = stime.split(":");
 					var timeMin = nFlag*(parseInt(arr[0])*60+parseInt(arr[1]));
-					//计算时区偏移
+					//计算Hour区偏移
 					var currentDate = new Date(tmpSysCurDate);
 					var localTime = currentDate.getTime();
 					var offsetTime = currentDate.getTimezoneOffset() * 60 * 1000;
 					var utcTime = localTime + offsetTime;
 					var adjustedTime =new Date(utcTime - timeMin * 60 * 1000);
-					//设置控件时间
+					//设置控件Time
 					$("#SysTime").timer.SetTimeIn24("" + adjustedTime.getHours().toString().padStart(2, '0') + ":" + adjustedTime.getMinutes().toString().padStart(2, '0') + ":" + adjustedTime.getSeconds().toString().padStart(2, '0'), $("#SysTime"));
 					$("#SysTime").timer.fnRun($("#SysTime"), $("#SysDate"));	
 					var sDate = adjustedTime.toLocaleDateString('en-CA');

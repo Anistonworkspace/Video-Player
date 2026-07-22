@@ -549,7 +549,7 @@ $(function() {
 		createChannelList(gDevice.loginRsp.ChannelNum);
 		liveSetTipText();
 		$("#liveCtrlTip").html(lg.get("IDS_AUTH_PTZControl"));
-		// 通用定制，设置默认步长
+		// 通用定制，设置默认Speed
 		if(typeof g_defaultPtzStep != "undefined" && g_defaultPtzStep * 1 != NaN)
 		{
 			var nStep = g_defaultPtzStep * 1;
@@ -682,12 +682,12 @@ $(function() {
 					}
 					lambda();
 				}
-				// DVR获取音频采集模式
+				// DVR获取Audio采集Mode
 				function GetAudioAcquisitionMode(){
 					if(gDevice.loginRsp.VideoInChannel > 0){
 						RfParamCall(function(a){
 							if(a.Ret == 100){
-								// 同轴采集模式禁用设备对讲
+								// Coaxial采集Mode禁用Device Talk
 								if(a[a.Name]["AudioAcquisitionMode"][0] > 0){
 									DivBox(0, ".DeviceTalk_Box");
 									$("#btnDeviceTalkCtrl").css("pointer-events", "none");
@@ -705,7 +705,7 @@ $(function() {
 						fillTalkChannel();
 					}
 				}	
-				//获取通道能力级
+				//获取Channel能力级
 				RfParamCall(function(a){
 					if(a.Ret == 100){
 						SupportIPCTalk = a[a.Name];
@@ -745,7 +745,7 @@ $(function() {
 			var ch=gVar.CurChannel;
 
 			var obj = this;
-			// 从电子云台页面点击到非电子云台页面，需要设置状态为false
+			// 从PTZ Electronic页面点击To非PTZ Electronic页面，需要设置Status为false
 			if(m_PTZElect && id != "ElectBtn")
 			{
 				gDevice.PTZElect(ch, 11, 0, function(){	
@@ -1310,7 +1310,7 @@ $(function() {
 		});
 		$(".ptz-button1").click(function(){
 			var curId = $(this).attr("id");
-			if (curId == "ytCenterL") {			//打开菜单
+			if (curId == "ytCenterL") {			//Open菜单
 				var nPTZType = $(this).attr("data-uid") * 1;
 				var c = gVar.CurChannel;
 				var nSpeed = $("#speedNum").text() *1;
@@ -1476,7 +1476,7 @@ $(function() {
 							bSupportOnvif = false;
 						}
 					} else {
-						bSupportOnvif = true;  //获取不到默认支持onvif
+						bSupportOnvif = true;  //获取不To默认Supportonvif
 					}
 
 
@@ -1567,7 +1567,7 @@ $(function() {
 							bSupportOnvif = false;
 						}
 					} else {
-						bSupportOnvif = true;  //获取不到默认支持onvif
+						bSupportOnvif = true;  //获取不To默认Supportonvif
 					}
 
 					RfParamCall(function(b){
@@ -1653,7 +1653,7 @@ $(function() {
 						bSupportOnvif = false;
 					}
 				} else {
-					bSupportOnvif = true;  //获取不到默认支持onvif
+					bSupportOnvif = true;  //获取不To默认Supportonvif
 				}
 
 				if (nPTZType == 26 || nPTZType == 27){
@@ -1939,7 +1939,7 @@ $(function() {
 			}
 			gDevice.CheckToolVersion(0,function(){
 				var callbackFunc = function(){
-					// 后端设备登录后打开预览的时候，会显示 gVar.CurChannel通道的镜像翻转
+					// 后端设备Login后Open预览的Hour候，会显示 gVar.CurChannelChannel的MirrorFlip
                     if(gVar.CurChannel >= 0){
                         CheckFlipMirrorAfterPreview(gVar.CurChannel, function(){	
                             MasklayerHide();
@@ -1955,19 +1955,19 @@ $(function() {
 					return;
 				}
 	
-				// 登录后根据设备类型打开预览
+				// Login后根据设备TypeOpen预览
 				var channelNums = gDevice.loginRsp.ChannelNum;
 				channelNums = channelNums > WebCms.plugin.autopreviewnum?WebCms.plugin.autopreviewnum:channelNums;
 	
 				var Stream = 0;
 				var channels = 0;
-				// 非IPC设备，或者 多通道IPC设备
+				// 非IPC设备，或者 多ChannelIPC设备
 				var bOpenMultiChn = !bIPC || (bIPC && channelNums > 1);
 				if(!bOpenMultiChn){
 					callbackFunc = PreviewPlayCallback;
 				}else{
 					channels = channelNums + 256;
-					if(channelNums >= 8) Stream = 1;// 如果打开路数超过8路，默认辅码流
+					if(channelNums >= 8) Stream = 1;// 如果Open路数超过8路，默认辅Stream
 				}
 				if(!bOpenMultiChn && GetFunAbility(gDevice.Ability.PreviewFunction.PreviewShowPedRule)){
 					GetHumanCfg(0, HumanCfgCallBack, function(){

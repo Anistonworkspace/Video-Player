@@ -26,6 +26,10 @@
 
 <!-- (2) The real skin, then harness chrome -->
 <link id="skinCss" rel="stylesheet" href="/images_general/skin.css">
+<script>
+  /* cache-bust skin.css on every load so CSS edits (padding, layout) always show */
+  (function(){ var l=document.getElementById('skinCss'); if(l){ l.href='/images_general/skin.css?v='+Date.now(); } })();
+</script>
 <link rel="stylesheet" href="/__harness/harness.css">
 
 <!-- (3) Offline jQuery + the real plugin framework (load order matters) -->
@@ -69,5 +73,36 @@
   <div id="hz-errbadge" title="non-fatal JS notices"></div>
 
   <script src="/__harness/harness.js"></script>
+
+  <!-- hot-reload: auto-refresh the browser when any UI file is saved -->
+  <script>
+  (function(){
+    var last = null, misses = 0;
+    var badge = null;
+    function flash(txt){
+      if(!badge){
+        badge = document.createElement('div');
+        badge.style.cssText = 'position:fixed;left:12px;bottom:10px;z-index:99999;'
+          + 'font:12px/1.4 Menlo,Consolas,monospace;background:#6C5CE7;color:#fff;'
+          + 'padding:5px 10px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.3);opacity:.95';
+        document.body.appendChild(badge);
+      }
+      badge.textContent = txt;
+    }
+    function poll(){
+      fetch('/__changes', {cache:'no-store'}).then(function(r){return r.text();})
+        .then(function(t){
+          misses = 0;
+          if(last === null){ last = t; flash('live-reload: on');
+            setTimeout(function(){ if(badge) badge.style.display='none'; }, 1500); return; }
+          if(t !== last){ flash('↻ change detected — reloading');
+            setTimeout(function(){ location.reload(); }, 120); }
+        })
+        .catch(function(){ misses++; if(misses===1) flash('live-reload: server restarting…'); });
+    }
+    setInterval(poll, 1000);
+    poll();
+  })();
+  </script>
 </body>
 </html>

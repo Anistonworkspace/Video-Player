@@ -182,7 +182,7 @@ $(function(){
 								ssRemoteDevice = b[b.Name];
 
 								var allChnDisabled = true;
-								// 禁用未连接通道, 禁用非TCP协议
+								// 禁用未连接Channel, 禁用非TCPProtocol
 								for (var i = nAnaChannel; i < gDevice.loginRsp.ChannelNum; i++) {
 									var m = i - nAnaChannel;
 									var nIndex = ssRemoteDevice[m].SingleConnId - 1;	//配置的第几个
@@ -218,7 +218,7 @@ $(function(){
 									DivBox(0, "#SelectAll_CheckBox");
 								}
 								
-								// 禁用全选
+								// 禁用All选
 								var allSelect = $("#IPCLogChannelDiv").find("div[name='all']");
 								for(var i = 0; i < allSelect.length; i++){
 									allSelect.eq(i).unbind().css("opacity", 0.0);

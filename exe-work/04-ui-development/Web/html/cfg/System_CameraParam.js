@@ -317,7 +317,7 @@ $(document).ready(function () {
 			$("#SpecialNightSwitch").prop("checked", cfg.enable);
 		}
 
-		// 白光全彩模式才显示 亮灯时间段
+		// Full ColorMode才显示 Light Up Time
 		$("#WhiteLightUpTimeSectionBox").css("display", "none");
 		if(bSupportFullColorLightWorkPeriod && WhiteLightCfg != null)
 		{

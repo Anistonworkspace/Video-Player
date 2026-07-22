@@ -393,7 +393,7 @@ $(function () {
 		})
 		$("#SnapConChid").change(function(){
 			var nSel = $(this).val() * 1;		
-			//选择全部通道，默认显示第一通道数据，而且上一通道的数据也不需要保存
+			//选择AllChannel，默认显示第一Channel数据，而且上一Channel的数据也不需要Save
 			if (nSel == gDevice.loginRsp.ChannelNum){
 				GetSnapSchedule(0);
 				chnIndex = nSel;

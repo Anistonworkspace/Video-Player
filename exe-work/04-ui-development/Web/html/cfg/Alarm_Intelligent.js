@@ -55,7 +55,7 @@ $(document).ready(function () {
 	}
 	function ShowData(nIndex){
 		ShowModuleType(nIndex);
-		if (nIndex < gDevice.loginRsp.VideoInChannel || bIPC){//模拟通道、IPC
+		if (nIndex < gDevice.loginRsp.VideoInChannel || bIPC){//AnalogChannel、IPC
 			$("#LinkSetDiv, #TraceSwitchDiv, #RuleSwitchDiv").css("display", "");
 			var cfg = AnalyseCfg[nIndex][AnalyseCfg[nIndex].Name];
 			$("#Arithmetic").val(cfg.ModuleType);
@@ -154,10 +154,10 @@ $(document).ready(function () {
 	function FillChannel(){
 		$("#IntelligentCh").empty();
 		var dataHtml = '';
-		var iChannelFirst = -1;		//记录第一个有算法规则的通道
+		var iChannelFirst = -1;		//记录1st week有Algorithm的Channel
 		var bFirst = true;		
 		for (var i = 0; i < gDevice.loginRsp.ChannelNum; i++){
-			//主要该通道有一个有算法规则就显示
+			//主要该Channel有一个有Algorithm就显示
 			if(i < gDevice.loginRsp.VideoInChannel){ 
 				if((ExtractMask(analyseAbility.IntelAVD, i)
 				|| ExtractMask(analyseAbility.IntelOSC, i)
@@ -261,7 +261,7 @@ $(document).ready(function () {
 		});
 	}
 	function CHOSDSaveSel(nIndex) {
-		if (nIndex < gDevice.loginRsp.VideoInChannel || bIPC){//模拟通道、IPC
+		if (nIndex < gDevice.loginRsp.VideoInChannel || bIPC){//AnalogChannel、IPC
 			var cfg = AnalyseCfg[nIndex][AnalyseCfg[nIndex].Name];
 			cfg.Enable = $("#IntelSwitch").attr("data") * 1 ? true : false;
 			cfg.ModuleType = $("#Arithmetic").val() * 1;

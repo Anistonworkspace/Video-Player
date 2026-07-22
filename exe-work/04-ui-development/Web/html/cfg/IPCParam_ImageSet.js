@@ -125,7 +125,7 @@ $(function(){
         }
     }
     function UpdateDayNightSwitch(){
-        // 隐藏普通档位配置
+        // 隐藏Regular档位配置
         $("#IPC_GearCtrlBox").css("display", "none");
         $("#IPC_DayNightSwitch, #IPC_DayNightSwitchExBox").css("display", "");
         $("#IPC_DayNightSwtichSelect").empty();
@@ -140,15 +140,15 @@ $(function(){
             ShowAdjustVlaue("#IPC_Auto_Adjustment2", "#IPC_RDNC2");
             var switchMode = cfgEx["DayNightSwitch"]["SwitchMode"] * 1;
             if(switchMode == 0){
-                // 显示档位控制，隐藏时间设置
+                // 显示Dnc Threshold，隐藏Time设置
                 DivBox(1, "#IPC_GearCtrlBox2");
                 DivBox(0, "#IPC_KeepDayPeriodBox");
                 $("#IPC_GearCtrlBox2 .MaskDiv").css("display", "none");
             }else if(switchMode == 1 || switchMode == 2){
-                // 隐藏日夜切换的 档位控制和时间设置
+                // 隐藏日夜切换的 Dnc Threshold和Time设置
                 $("#IPC_DayNightSwitchExBox").css("display", "none");			
             }else if(switchMode == 3){
-                // 因此档位控制，显示时间设置
+                // 因此Dnc Threshold，显示Time设置
                 DivBox(0, "#IPC_GearCtrlBox2");
                 DivBox(1, "#IPC_KeepDayPeriodBox");
                 $("#IPC_GearCtrlBox2 .MaskDiv").css("display", "block");
@@ -355,7 +355,7 @@ $(function(){
         bGetCamera = nCamera == 100 ? true : false;
         try{
             if(nColor == 100){
-                // 时间段1配置
+                // Period 1配置
                 $("#IPC_TimeEnable").prop("checked", VideoColor[VideoColor.Name][0].Enable ? true : false);
                 var sect = VideoColor[VideoColor.Name][0].TimeSection.split(" ");
                 var tSect = sect[1].split("-");
@@ -365,7 +365,7 @@ $(function(){
                 $("#IPC_BM").val(btSect[1]);
                 $("#IPC_EH").val(etSect[0]);
                 $("#IPC_EM").val(etSect[1]);
-                // 图像颜色1
+                // 图像Color1
                 var cfg = VideoColor[VideoColor.Name][0].VideoColorParam;
                 $("#IPCBrightness_Slider").slider("setValue", cfg.Brightness);			
                 $("#IPCContrast_Slider").slider("setValue", cfg.Contrast);		
@@ -374,7 +374,7 @@ $(function(){
                 $("#IPCGain_Slider").slider("setValue", cfg.Gain);	
                 $("#IPCHorizontal_Slider").slider("setValue", cfg.Acutance & 0x00000000f);
                 $("#IPCVertical_Slider").slider("setValue", (cfg.Acutance & 0x000000f00) >> 8);
-                // 时间段2配置
+                // Period 2配置
                 $("#IPC_TimeEnable2").prop("checked", VideoColor[VideoColor.Name][1].Enable ? true : false);
                 var sect = VideoColor[VideoColor.Name][1].TimeSection.split(" ");
                 var tSect = sect[1].split("-");
@@ -384,7 +384,7 @@ $(function(){
                 $("#IPC_BM2").val(btSect[1]);
                 $("#IPC_EH2").val(etSect[0]);
                 $("#IPC_EM2").val(etSect[1]);
-                // 图像颜色2
+                // 图像Color2
                 cfg = VideoColor[VideoColor.Name][1].VideoColorParam;
                 $("#IPCBrightness_Slider2").slider("setValue", cfg.Brightness);			
                 $("#IPCContrast_Slider2").slider("setValue", cfg.Contrast);		
@@ -397,8 +397,8 @@ $(function(){
                 $("#TimeSection2 input").prop("disabled", !bEnable2);
                 $("#IPCBrightness_Slider2, #IPCContrast_Slider2, #IPCSaturation_Slider2, #IPCHue_Slider2, #IPCGain_Slider2, #IPCHorizontal_Slider2, #Vertical_Slider2").prop("disabled", !bEnable2);
         
-                $("#IPC_IR_Cut_0").css("display", "");          // 时间段控制
-                $("#IPC_IR_Cut_1").css("display", "none");      // 红外灯开关
+                $("#IPC_IR_Cut_0").css("display", "");          // Period控制
+                $("#IPC_IR_Cut_1").css("display", "none");      // 红外灯OpenClose
                 if(nCamera == 100){
                     if(CameraCfg[CameraCfg.Name].IRCUTMode == 0){
                         $("#IPC_IR_Cut_0").css("display", "none");
@@ -409,12 +409,12 @@ $(function(){
                 DivBox(1, "#VideoColor_Box");
                 $("#ImageSet_Ok").attr("disabled", false);
                 $("#ImageSet_Ok").stop().removeClass("btn-disable").fadeTo("slow", 1);
-                // 禁用时间段
+                // 禁用Period
                 DivBox(0, "#IPC_Sect");
                 DivBox(bEnable2 ? 1 : 0, "#TimeSection2");
                 EnableSlider();
             }else{
-                // 全部禁用显示
+                // All禁用显示
                 $("#VideoColor_Box .MaskDiv").css("display", "block");
                 DivBox(0, "#VideoColor_Box");
                 $("#CameraSet_Box .MaskDiv").css("display", "block");
@@ -429,7 +429,7 @@ $(function(){
                 $("#CameraSet_Box .MaskDiv").css("display", "none");
                 DivBox(1, "#CameraSet_Box"); 
                 
-                // 获取填充日夜模式
+                // 获取填充日夜Mode
                 UpdateDNMode();
                 $("#IPC_DNMode").val(0);
                 var i;
@@ -449,13 +449,13 @@ $(function(){
                     nDNval = LP4GLedParameter[LP4GLedParameter.Name].Type - 1;
                 }
                 SetCurComboData("#IPC_DNMode", nDNval);
-                // 白天黑夜切换
+                // 白Day黑夜切换
                 if(isObject(CameraAblity) && CameraAblity.SupManualSwitchDayNight == 1){
                     UpdateDayNightSwitch();
                 }else{
-                    // 隐藏白天黑夜模式的 日夜切换模式下拉框和时间设置
+                    // 隐藏白Day黑夜Mode的 日夜切换Mode下拉框和Time设置
                     $("#IPC_DayNightSwitch, #IPC_DayNightSwitchExBox").css("display", "none");
-                    // 显示普通档位控制
+                    // 显示RegularDnc Threshold
                     $("#IPC_GearCtrlBox").css("display", "");
                     // 档位1~5 和阈值10~50
                     ShowAdjustVlaue("#IPC_Auto_Adjustment", "#IPC_RDNC");
@@ -495,7 +495,7 @@ $(function(){
                     $("#IPC_BT_Div, #IPC_DayNightSwitch, #IPC_DayNightSwitchExBox").css("display", "none");
                 }   
                 
-                // 白光全彩模式才显示 亮灯时间段
+                // Full ColorMode才显示 Light Up Time
                 $("#IPC_WhiteLightUpBox").css("display", "none");
                 if(bSupportFullColorLightWorkPeriod && WhiteLightCfg != null)
                 {
@@ -969,19 +969,19 @@ $(function(){
     }
     
     $(function(){
-        // 图像风格
+        // Image Style
         $("#IPC_Image_Style").empty();
 		for (var i = 0; i < 3; i++) {
 			$("#IPC_Image_Style").append('<option value="'+i+'">'+ (lg.get("IDS_CAM_Style") + (i+1)) +'</option>');
 		} 
 
-        // 情景模式
+        // Profiles
         $("#IPC_WBMode").empty();
 		$("#IPC_WBMode").append('<option value="0">'+ lg.get("IDS_CAM_AutoOper") +'</option>');
 		$("#IPC_WBMode").append('<option value="1">'+ lg.get("IDS_CAM_Indoor") +'</option>');
 		$("#IPC_WBMode").append('<option value="2">'+ lg.get("IDS_CAM_Outdoor") +'</option>');
 
-        //宽动态
+        //DWDR
         $("#IPC_DwdrModeSwitch").click(function () {
 			ShowLevel($(this).attr('id'));
 		});
@@ -1026,7 +1026,7 @@ $(function(){
         $("#IPCVertical_Slider").slider({width: nTmpWidth, minValue: 0, maxValue: 15, mouseupCallback: SetColor});
         $("#IPCVertical_Slider2").slider({width: nTmpWidth, minValue: 0, maxValue: 15, mouseupCallback: SetColor});
 
-        // 时间段 和 日夜模式切换时间段初始化
+        // Period 和 日夜Mode切换Period初始化
         $("#TimeSection2 input, #IPC_KeepDayPeriod input").unbind();
         $("#TimeSection2 input, #IPC_KeepDayPeriod input").keyup(function(){
             var tmp = $(this).val().replace(/\D/g,'');
@@ -1274,7 +1274,7 @@ $(function(){
                 var ssRemoteDevice;
                 function AddDigitChannels(){
                     var digStatus = 0;
-                    // 初始化通道列表
+                    // 初始化ChannelList
                     for (var i = nAnaChannel; i < gDevice.loginRsp.ChannelNum; i++) {
 						var m = i - nAnaChannel;
                         if (ssDigitChStatus[m].Status != "Connected") {

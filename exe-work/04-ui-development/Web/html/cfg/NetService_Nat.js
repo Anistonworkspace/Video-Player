@@ -11,7 +11,7 @@ $(function() {
 		if(bSupportCRedDisExtApp){
 			var curDevIp = gDevice.ip;
 			var isIPv6 = curDevIp.indexOf("[") == -1 ? false : true;
-			if(isIPv6 && g_BrowseType == BrowseType.BrowseMSIE){	 	// UNC 和 IPV6地址兼容 (IE问题)
+			if(isIPv6 && g_BrowseType == BrowseType.BrowseMSIE){	 	// UNC 和 IPV6Address兼容 (IEQuestion)
 				var st = curDevIp.indexOf("[");
 				var ed = curDevIp.indexOf("]");
 				var temp = curDevIp.substr(st + 1, ed - 1);

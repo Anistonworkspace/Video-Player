@@ -122,7 +122,7 @@ $(function() {
 			case "FileAccess":
 				info.Type = lg.get("IDS_LOGTYPE_FILEACCESS");
 				break;
-			case "IOTAlarm": //物联事件
+			case "IOTAlarm": //IOT
 				if (objLog.Data.indexOf("<") >= 0 && objLog.Data.indexOf(".") >= 0) {
 					var str1 = objLog.Data.split('<');
 					var str2 = objLog.Data.split('.');
